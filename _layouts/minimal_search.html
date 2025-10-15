@@ -394,6 +394,44 @@
             margin-bottom: 10px;
         }
 
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            color: #1E3765;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        #back-to-top::before {
+            content: '↑';
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+            background-color: #f5f5f5;
+        }
+
         @media (max-width: 1024px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -416,6 +454,17 @@
 
             .pagination {
                 flex-wrap: wrap;
+            }
+
+            #back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+
+            #back-to-top::before {
+                font-size: 20px;
             }
         }
     </style>
@@ -811,27 +860,29 @@
             applyFilters();
         });
 
+        // Back-to-top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
         // Initialize on page load
         initializeFacets();
         applyFilters();
     </script>
 
-  <!-- {% if site.back_to_top %} -->
-    <a href="#top" id="back-to-top" aria-label="{{ site.back_to_top_text | default: 'Back to top' }}"></a>
+    <a href="#top" id="back-to-top" aria-label="Back to top"></a>
     <script>
       // Show/hide back to top button based on scroll position
-      const backToTopButton = document.getElementById('back-to-top');
+      const backToTop = document.getElementById('back-to-top');
 
       window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
-          backToTopButton.classList.add('show');
+          backToTop.classList.add('show');
         } else {
-          backToTopButton.classList.remove('show');
+          backToTop.classList.remove('show');
         }
-      });
+      }, { passive: true });
 
       // Smooth scroll to top
-      backToTopButton.addEventListener('click', function(e) {
+      backToTop.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
           top: 0,
@@ -839,7 +890,6 @@
         });
       });
     </script>
-  <!-- {% endif %} -->
 
 </body>
 </html>
