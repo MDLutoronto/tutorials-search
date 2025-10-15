@@ -27,7 +27,7 @@
         header {
             text-align: center;
             color: white;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         header h1 {
@@ -39,6 +39,20 @@
         header p {
             font-size: 1.1rem;
             opacity: 0.9;
+        }
+
+        .sticky-search-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .sticky-search-container {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .main-content {
@@ -79,38 +93,42 @@
         }
 
         .search-box {
-            margin-bottom: 25px;
             position: relative;
         }
 
         .search-box input {
             width: 100%;
-            padding: 12px 15px;
-            padding-right: 60px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: border-color 0.3s;
+            padding: 15px 20px;
+            padding-right: 70px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .search-box input:focus {
             outline: none;
-            border-color: rgba(30, 55, 101, 0.8);
+            border-color: rgba(255, 255, 255, 0.8);
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         .search-hint {
             position: absolute;
-            right: 12px;
+            right: 15px;
             top: 50%;
             transform: translateY(-50%);
-            background-color: #f5f5f5;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            padding: 4px 8px;
-            font-size: 11px;
-            color: #666;
+            background-color: rgba(30, 55, 101, 0.1);
+            border: 1px solid rgba(30, 55, 101, 0.2);
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #1E3765;
             pointer-events: none;
             font-family: monospace;
+            font-weight: 600;
         }
 
         .facet-group {
@@ -538,16 +556,21 @@
             <a href="https://library.utoronto.ca" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
             </a>
-            <h1>📚 Map & Data Library Guides</h1>
+            <h1>📚 Learn@MDL</h1>
             <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto.</p>
         </header>
 
-        <div class="main-content">
-            <aside class="sidebar">
+        <div class="sticky-search-wrapper">
+            <div class="sticky-search-container">
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search guides...">
                     <span class="search-hint">Ctrl+K</span>
                 </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <aside class="sidebar">
 
                 <div class="facet-group">
                     <h3>Technique</h3>
