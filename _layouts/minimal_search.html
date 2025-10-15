@@ -429,7 +429,9 @@
                     </div>
                 </div>
                 <div class="guides-grid" id="guidesGrid"></div>
-                <div class="pagination" id="pagination"></div>
+                <div class="loading-indicator" id="loadingIndicator" style="display: none; text-align: center; padding: 20px; color: #666; font-size: 14px;">
+                    Loading more guides...
+                </div>
                 <div class="page-info" id="pageInfo"></div>
             </main>
         </div>
@@ -448,8 +450,9 @@
             organization: new Set()
         };
         let currentSort = 'title';
-        let currentPage = 1;
-        let itemsPerPage = 12;
+        let displayedCount = 0;
+        let itemsPerLoad = 12;
+        let isLoading = false;
 
         // Extract unique values for facets (handles both arrays and single values)
         function getFacetValues(key) {
@@ -509,14 +512,14 @@
         function handleFacetChange(event) {
             const facet = event.target.dataset.facet;
             const value = event.target.dataset.value;
-            
+
             if (event.target.checked) {
                 activeFilters[facet].add(value);
             } else {
                 activeFilters[facet].delete(value);
             }
-            
-            currentPage = 1;
+
+            displayedCount = 0;
             applyFilters();
         }
 
@@ -557,8 +560,7 @@
 
             sortGuides();
             updateFacets();
-            renderGuides();
-            renderPagination();
+            renderGuides(true); // true = clear existing guides
         }
 
         // Update facet counts
@@ -577,23 +579,16 @@
             });
         }
 
-        // Get paginated guides
-        function getPaginatedGuides() {
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
-            return filteredGuides.slice(startIndex, endIndex);
-        }
-
-        // Calculate total pages
-        function getTotalPages() {
-            return Math.ceil(filteredGuides.length / itemsPerPage);
-        }
-
-        // Render guides cards
-        function renderGuides() {
+        // Render guides cards with infinite scroll
+        function renderGuides(clear = false) {
             const grid = document.getElementById('guidesGrid');
             const resultsCount = document.getElementById('resultsCount');
-            const paginatedGuides = getPaginatedGuides();
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            if (clear) {
+                grid.innerHTML = '';
+                displayedCount = 0;
+            }
 
             resultsCount.textContent = `${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
 
@@ -604,10 +599,16 @@
                         <p>Try adjusting your filters or search terms</p>
                     </div>
                 `;
+                loadingIndicator.style.display = 'none';
                 return;
             }
 
-            grid.innerHTML = paginatedGuides.map(guide => `
+            // Load next batch of guides
+            const startIndex = displayedCount;
+            const endIndex = Math.min(startIndex + itemsPerLoad, filteredGuides.length);
+            const guidesToRender = filteredGuides.slice(startIndex, endIndex);
+
+            const guidesHTML = guidesToRender.map(guide => `
                 <div class="guides-card">
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
                     <p class="guides-description">${guide.description}</p>
@@ -624,109 +625,79 @@
                 </div>
             `).join('');
 
-            const startItem = (currentPage - 1) * itemsPerPage + 1;
-            const endItem = Math.min(currentPage * itemsPerPage, filteredGuides.length);
-            document.getElementById('pageInfo').textContent =
-                `Showing ${startItem}-${endItem} of ${filteredGuides.length} Guides`;
+            grid.insertAdjacentHTML('beforeend', guidesHTML);
+            displayedCount = endIndex;
+
+            // Hide loading indicator if all guides are displayed
+            if (displayedCount >= filteredGuides.length) {
+                loadingIndicator.style.display = 'none';
+            }
+
+            isLoading = false;
+            updatePageInfo();
         }
 
-        // Render pagination
-        function renderPagination() {
-            const paginationContainer = document.getElementById('pagination');
-            const totalPages = getTotalPages();
+        // Update page info
+        function updatePageInfo() {
+            const pageInfo = document.getElementById('pageInfo');
+            if (filteredGuides.length === 0) {
+                pageInfo.textContent = '';
+            } else if (displayedCount >= filteredGuides.length) {
+                pageInfo.textContent = `Showing all ${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
+            } else {
+                pageInfo.textContent = `Showing ${displayedCount} of ${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
+            }
+        }
 
-            if (totalPages <= 1) {
-                paginationContainer.innerHTML = '';
+        // Infinite scroll handler
+        function handleScroll() {
+            if (isLoading || displayedCount >= filteredGuides.length) {
                 return;
             }
 
-            let pageNumbers = [];
-            pageNumbers.push(1);
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const pageHeight = document.documentElement.scrollHeight;
 
-            const range = 2;
-            let start = Math.max(2, currentPage - range);
-            let end = Math.min(totalPages - 1, currentPage + range);
+            // Load more when user is 300px from bottom
+            if (scrollPosition >= pageHeight - 300) {
+                isLoading = true;
+                loadingIndicator.style.display = 'block';
 
-            if (start > 2) {
-                pageNumbers.push('...');
+                // Simulate a small delay for better UX
+                setTimeout(() => {
+                    renderGuides(false);
+                }, 200);
             }
-
-            for (let i = start; i <= end; i++) {
-                pageNumbers.push(i);
-            }
-
-            if (end < totalPages - 1) {
-                pageNumbers.push('...');
-            }
-
-            if (totalPages > 1) {
-                pageNumbers.push(totalPages);
-            }
-
-            paginationContainer.innerHTML = `
-                <button id="prevPage" ${currentPage === 1 ? 'disabled' : ''}>
-                    ← Previous
-                </button>
-                <div class="page-numbers">
-                    ${pageNumbers.map(page => {
-                        if (page === '...') {
-                            return '<span class="page-ellipsis">...</span>';
-                        }
-                        return `
-                            <button class="page-number ${page === currentPage ? 'active' : ''}" 
-                                    data-page="${page}">
-                                ${page}
-                            </button>
-                        `;
-                    }).join('')}
-                </div>
-                <button id="nextPage" ${currentPage === totalPages ? 'disabled' : ''}>
-                    Next →
-                </button>
-            `;
-
-            document.getElementById('prevPage').addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    applyFilters();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-
-            document.getElementById('nextPage').addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    applyFilters();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-
-            document.querySelectorAll('.page-number').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    currentPage = parseInt(e.target.dataset.page);
-                    applyFilters();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            });
         }
+
+        // Throttle scroll event for performance
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(handleScroll, 100);
+        });
 
         // Search input handler
         document.getElementById('searchInput').addEventListener('input', (event) => {
             activeFilters.search = event.target.value;
-            currentPage = 1;
+            displayedCount = 0;
             applyFilters();
         });
 
         // Sort handler
         document.getElementById('sortSelect').addEventListener('change', (event) => {
             currentSort = event.target.value;
+            displayedCount = 0;
             applyFilters();
         });
 
-        // Items per page handler
+        // Items per load handler
         document.getElementById('perPageSelect').addEventListener('change', (event) => {
-            itemsPerPage = parseInt(event.target.value);
-            currentPage = 1;
+            itemsPerLoad = parseInt(event.target.value);
+            displayedCount = 0;
             applyFilters();
         });
 
@@ -739,7 +710,7 @@
                 organization: new Set()
             };
             document.getElementById('searchInput').value = '';
-            currentPage = 1;
+            displayedCount = 0;
             applyFilters();
         });
 
