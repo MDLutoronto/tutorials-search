@@ -80,11 +80,13 @@
 
         .search-box {
             margin-bottom: 25px;
+            position: relative;
         }
 
         .search-box input {
             width: 100%;
             padding: 12px 15px;
+            padding-right: 60px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 14px;
@@ -94,6 +96,21 @@
         .search-box input:focus {
             outline: none;
             border-color: rgba(30, 55, 101, 0.8);
+        }
+
+        .search-hint {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 11px;
+            color: #666;
+            pointer-events: none;
+            font-family: monospace;
         }
 
         .facet-group {
@@ -529,6 +546,7 @@
             <aside class="sidebar">
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search guides...">
+                    <span class="search-hint">Ctrl+K</span>
                 </div>
 
                 <div class="facet-group">
@@ -971,6 +989,24 @@
             // Scroll to top of results smoothly
             document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
+
+        // Keyboard shortcut: Ctrl+K or Cmd+K to focus search box
+        document.addEventListener('keydown', (event) => {
+            // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac)
+            if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+                event.preventDefault(); // Prevent default browser behavior
+                const searchInput = document.getElementById('searchInput');
+                searchInput.focus();
+                searchInput.select(); // Select all text if any exists
+            }
+        });
+
+        // Update search hint text based on OS
+        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+        const searchHint = document.querySelector('.search-hint');
+        if (isMac) {
+            searchHint.textContent = '⌘K';
+        }
 
         // Initialize on page load
         initializeFacets();
