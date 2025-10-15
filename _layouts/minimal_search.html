@@ -138,6 +138,29 @@
             background-color: #e0e0e0;
         }
 
+        .show-more-btn {
+            width: 100%;
+            padding: 6px;
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+        }
+
+        .show-more-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+        .facet-option.hidden {
+            display: none;
+        }
+
         .results-section {
             background: white;
             border-radius: 12px;
@@ -481,18 +504,20 @@
             createFacets('organization', 'organizationFacets');
         }
 
-        // Create facet checkboxes
+        // Create facet checkboxes with show more functionality
         function createFacets(facetKey, containerId) {
             const container = document.getElementById(containerId);
             const values = getFacetValues(facetKey);
-            
-            container.innerHTML = values.map(value => {
+            const maxVisible = 5; // Show first 5 items by default
+
+            const facetHTML = values.map((value, index) => {
                 const count = countFacetValues(facetKey, value);
                 const isChecked = activeFilters[facetKey].has(value);
+                const isHidden = index >= maxVisible ? 'hidden' : '';
                 return `
-                    <div class="facet-option">
-                        <input type="checkbox" id="${facetKey}-${value}" 
-                               data-facet="${facetKey}" 
+                    <div class="facet-option ${isHidden}" data-facet-item="${facetKey}">
+                        <input type="checkbox" id="${facetKey}-${value}"
+                               data-facet="${facetKey}"
                                data-value="${value}"
                                ${isChecked ? 'checked' : ''}>
                         <label for="${facetKey}-${value}">
@@ -503,9 +528,51 @@
                 `;
             }).join('');
 
+            // Add show more button if there are more than maxVisible items
+            const showMoreBtn = values.length > maxVisible
+                ? `<button class="show-more-btn" data-facet="${facetKey}" data-expanded="false">
+                     Show more (${values.length - maxVisible})
+                   </button>`
+                : '';
+
+            container.innerHTML = facetHTML + showMoreBtn;
+
+            // Add event listeners to checkboxes
             container.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', handleFacetChange);
             });
+
+            // Add event listener to show more button
+            const showMoreButton = container.querySelector('.show-more-btn');
+            if (showMoreButton) {
+                showMoreButton.addEventListener('click', (e) => toggleShowMore(e, facetKey, values.length, maxVisible));
+            }
+        }
+
+        // Toggle show more/less for facets
+        function toggleShowMore(event, facetKey, totalCount, maxVisible) {
+            const button = event.target;
+            const container = button.parentElement;
+            const isExpanded = button.dataset.expanded === 'true';
+            const allItems = container.querySelectorAll(`.facet-option[data-facet-item="${facetKey}"]`);
+
+            if (isExpanded) {
+                // Collapse - hide items beyond maxVisible
+                allItems.forEach((item, index) => {
+                    if (index >= maxVisible) {
+                        item.classList.add('hidden');
+                    }
+                });
+                button.textContent = `Show more (${totalCount - maxVisible})`;
+                button.dataset.expanded = 'false';
+            } else {
+                // Expand - show all items
+                allItems.forEach(item => {
+                    item.classList.remove('hidden');
+                });
+                button.textContent = 'Show less';
+                button.dataset.expanded = 'true';
+            }
         }
 
         // Handle facet selection
