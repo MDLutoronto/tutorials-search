@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Importing Alternative Sources in NVivo 14/15 for Windows",
+    "description": "Comprehensive guide on importing various data formats into NVivo 14/15 for Windows.",
+    "url": "https://mdlutoronto.github.io/nvivo-14-15-windows-importing-alternative-sources/",
+    "category": ["Qualitative Research", "NVivo"],
+    "format": "HTML",
+    "organization": "MDLUToronto",
+    "date": "2024-03-15"
+  },
+  {
+    "id": 2,
+    "title": " Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)",
+    "description": "Recording of the workshop covering basics of programming using Python for absolute beginners.",
+    "url": "https://mdlutoronto.github.io/workshop-intro-programming-absolute-beginners-python-2025/",
+    "category": ["Programming", "Python"],
+    "format": ["Video", "HTML"],
+    "organization": "MDLUToronto",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 3,
+    "title": " Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows",
+    "description": "Comprehensive guide on accessing and utilizing the CIPO Patent PostgreSQL Database on Windows.",
+    "url": "https://mdlutoronto.github.io/cipo-windows/",
+    "category": ["Intellectual Property", "CIPO", "SQL"],
+    "format": "HTML",
+    "organization": "MDLUToronto",
+    "date": "2024-01-10"
+  }
+]

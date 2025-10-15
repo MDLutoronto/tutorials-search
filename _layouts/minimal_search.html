@@ -187,14 +187,14 @@
             background: white;
         }
 
-        .dataset-grid {
+        .guides-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
         }
 
-        .dataset-card {
+        .guides-card {
             border: 2px solid #e0e0e0;
             border-radius: 10px;
             padding: 20px;
@@ -202,36 +202,36 @@
             background: white;
         }
 
-        .dataset-card:hover {
+        .guides-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             border-color: #667eea;
         }
 
-        .dataset-card h3 {
+        .guides-card h3 {
             color: #333;
             margin-bottom: 10px;
             font-size: 18px;
         }
 
-        .dataset-card h3 a {
+        .guides-card h3 a {
             color: #333;
             text-decoration: none;
             transition: color 0.2s;
         }
 
-        .dataset-card h3 a:hover {
+        .guides-card h3 a:hover {
             color: #667eea;
         }
 
-        .dataset-description {
+        .guides-description {
             color: #666;
             font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
         }
 
-        .dataset-tags {
+        .guides-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
@@ -257,7 +257,7 @@
             color: #7b1fa2;
         }
 
-        .dataset-meta {
+        .guides-meta {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -361,7 +361,7 @@
         }
 
         @media (max-width: 768px) {
-            .dataset-grid {
+            .guides-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -379,14 +379,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>📚 Data Catalog</h1>
-            <p>Browse and discover datasets with faceted search</p>
+            <h1>📚 Map & Data Library Guides</h1>
+            <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto.</p>
         </header>
 
         <div class="main-content">
             <aside class="sidebar">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search datasets...">
+                    <input type="text" id="searchInput" placeholder="Search guides...">
                 </div>
 
                 <div class="facet-group">
@@ -429,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dataset-grid" id="datasetGrid"></div>
+                <div class="guides-grid" id="guidesGrid"></div>
                 <div class="pagination" id="pagination"></div>
                 <div class="page-info" id="pageInfo"></div>
             </main>
@@ -438,10 +438,10 @@
 
     <script>
         // Jekyll injects the data here at build time using Liquid
-        const datasets = {{ site.data.datasets | jsonify }};
+        const guides = {{ site.data.guides | jsonify }};
 
         // State management
-        let filteredDatasets = [...datasets];
+        let filteredGuides = [...guides];
         let activeFilters = {
             search: '',
             category: new Set(),
@@ -452,14 +452,24 @@
         let currentPage = 1;
         let itemsPerPage = 12;
 
-        // Extract unique values for facets
+        // Extract unique values for facets (handles both arrays and single values)
         function getFacetValues(key) {
-            return [...new Set(datasets.map(d => d[key]))].sort();
+            const allValues = guides.flatMap(d => {
+                const value = d[key];
+                return Array.isArray(value) ? value : [value];
+            });
+            return [...new Set(allValues)].sort();
         }
 
-        // Count datasets for each facet value
+        // Count guides for each facet value (handles both arrays and single values)
         function countFacetValues(key, value) {
-            return filteredDatasets.filter(d => d[key] === value).length;
+            return filteredGuides.filter(d => {
+                const guideValue = d[key];
+                if (Array.isArray(guideValue)) {
+                    return guideValue.includes(value);
+                }
+                return guideValue === value;
+            }).length;
         }
 
         // Initialize facets
@@ -513,36 +523,42 @@
 
         // Apply all filters
         function applyFilters() {
-            filteredDatasets = datasets.filter(dataset => {
+            filteredGuides = guides.filter(guide => {
                 if (activeFilters.search) {
                     const searchTerm = activeFilters.search.toLowerCase();
-                    const matchesSearch = 
-                        dataset.title.toLowerCase().includes(searchTerm) ||
-                        dataset.description.toLowerCase().includes(searchTerm);
+                    const matchesSearch =
+                        guide.title.toLowerCase().includes(searchTerm) ||
+                        guide.description.toLowerCase().includes(searchTerm);
                     if (!matchesSearch) return false;
                 }
 
-                if (activeFilters.category.size > 0 && 
-                    !activeFilters.category.has(dataset.category)) {
-                    return false;
+                if (activeFilters.category.size > 0) {
+                    const guideCategories = Array.isArray(guide.category) ? guide.category : [guide.category];
+                    if (!guideCategories.some(cat => activeFilters.category.has(cat))) {
+                        return false;
+                    }
                 }
 
-                if (activeFilters.format.size > 0 && 
-                    !activeFilters.format.has(dataset.format)) {
-                    return false;
+                if (activeFilters.format.size > 0) {
+                    const guideFormats = Array.isArray(guide.format) ? guide.format : [guide.format];
+                    if (!guideFormats.some(fmt => activeFilters.format.has(fmt))) {
+                        return false;
+                    }
                 }
 
-                if (activeFilters.organization.size > 0 && 
-                    !activeFilters.organization.has(dataset.organization)) {
-                    return false;
+                if (activeFilters.organization.size > 0) {
+                    const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
+                    if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
+                        return false;
+                    }
                 }
 
                 return true;
             });
 
-            sortDatasets();
+            sortGuides();
             updateFacets();
-            renderDatasets();
+            renderGuides();
             renderPagination();
         }
 
@@ -551,9 +567,9 @@
             initializeFacets();
         }
 
-        // Sort datasets
-        function sortDatasets() {
-            filteredDatasets.sort((a, b) => {
+        // Sort guides
+        function sortGuides() {
+            filteredGuides.sort((a, b) => {
                 if (currentSort === 'title') {
                     return a.title.localeCompare(b.title);
                 } else if (currentSort === 'date') {
@@ -564,55 +580,57 @@
             });
         }
 
-        // Get paginated datasets
-        function getPaginatedDatasets() {
+        // Get paginated guides
+        function getPaginatedGuides() {
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            return filteredDatasets.slice(startIndex, endIndex);
+            return filteredGuides.slice(startIndex, endIndex);
         }
 
         // Calculate total pages
         function getTotalPages() {
-            return Math.ceil(filteredDatasets.length / itemsPerPage);
+            return Math.ceil(filteredGuides.length / itemsPerPage);
         }
 
-        // Render dataset cards
-        function renderDatasets() {
-            const grid = document.getElementById('datasetGrid');
+        // Render guides cards
+        function renderGuides() {
+            const grid = document.getElementById('guidesGrid');
             const resultsCount = document.getElementById('resultsCount');
-            const paginatedDatasets = getPaginatedDatasets();
-            
-            resultsCount.textContent = `${filteredDatasets.length} dataset${filteredDatasets.length !== 1 ? 's' : ''}`;
+            const paginatedGuides = getPaginatedGuides();
 
-            if (filteredDatasets.length === 0) {
+            resultsCount.textContent = `${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
+
+            if (filteredGuides.length === 0) {
                 grid.innerHTML = `
                     <div class="no-results">
-                        <h3>No datasets found</h3>
+                        <h3>No guides found</h3>
                         <p>Try adjusting your filters or search terms</p>
                     </div>
                 `;
                 return;
             }
 
-            grid.innerHTML = paginatedDatasets.map(dataset => `
-                <div class="dataset-card">
-                    <h3><a href="${dataset.url}" target="_blank">${dataset.title}</a></h3>
-                    <p class="dataset-description">${dataset.description}</p>
-                    <div class="dataset-tags">
-                        <span class="tag category">${dataset.category}</span>
-                        <span class="tag format">${dataset.format}</span>
+            grid.innerHTML = paginatedGuides.map(guide => `
+                <div class="guides-card">
+                    <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
+                    <p class="guides-description">${guide.description}</p>
+                    <div class="guides-tags">
+                        ${(Array.isArray(guide.category) ? guide.category : [guide.category])
+                            .map(cat => `<span class="tag category">${cat}</span>`).join('')}
+                        ${(Array.isArray(guide.format) ? guide.format : [guide.format])
+                            .map(fmt => `<span class="tag format">${fmt}</span>`).join('')}
                     </div>
-                    <div class="dataset-meta">
-                        <span>${dataset.organization}</span>
-                        <span>${dataset.date}</span>
+                    <div class="guides-meta">
+                        <span>${guide.organization}</span>
+                        <span>${guide.date}</span>
                     </div>
                 </div>
             `).join('');
 
             const startItem = (currentPage - 1) * itemsPerPage + 1;
-            const endItem = Math.min(currentPage * itemsPerPage, filteredDatasets.length);
-            document.getElementById('pageInfo').textContent = 
-                `Showing ${startItem}-${endItem} of ${filteredDatasets.length} datasets`;
+            const endItem = Math.min(currentPage * itemsPerPage, filteredGuides.length);
+            document.getElementById('pageInfo').textContent =
+                `Showing ${startItem}-${endItem} of ${filteredGuides.length} Guides`;
         }
 
         // Render pagination
