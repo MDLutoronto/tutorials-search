@@ -31,6 +31,9 @@
     - "CIPO"
     - "SQL"
   tool: "HTML"
+  dataFormat:
+    - "Database"
+    - "PostgreSQL"
   organization: "MDLUToronto"
   date: "2024-01-10"
 

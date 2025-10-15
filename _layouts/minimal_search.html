@@ -499,6 +499,11 @@
                 </div>
 
                 <div class="facet-group">
+                    <h3>Data Format</h3>
+                    <div id="dataFormatFacets"></div>
+                </div>
+
+                <div class="facet-group">
                     <h3>Organization</h3>
                     <div id="organizationFacets"></div>
                 </div>
@@ -546,6 +551,7 @@
             search: '',
             technique: new Set(),
             tool: new Set(),
+            dataFormat: new Set(),
             organization: new Set()
         };
         let currentSort = 'title';
@@ -578,6 +584,7 @@
             createFacets('technique', 'techniqueFacets');
             createFacets('tool', 'toolFacets');
             createFacets('organization', 'organizationFacets');
+            createFacets('dataFormat', 'dataFormatFacets');
         }
 
         // Create facet checkboxes with show more functionality
@@ -694,6 +701,13 @@
                 if (activeFilters.organization.size > 0) {
                     const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
                     if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
+                        return false;
+                    }
+                }
+
+                if (activeFilters.dataFormat.size > 0) {
+                    const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
+                    if (!guideDataFormats.some(fmt => activeFilters.dataFormat.has(fmt))) {
                         return false;
                     }
                 }
@@ -853,6 +867,7 @@
                 search: '',
                 technique: new Set(),
                 tool: new Set(),
+                dataFormat: new Set(),
                 organization: new Set()
             };
             document.getElementById('searchInput').value = '';
