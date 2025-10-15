@@ -48,6 +48,11 @@
             background: transparent;
             padding: 20px 0;
             margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sticky-search-wrapper.scrolled {
+            transform: translateY(-150px);
         }
 
         .sticky-search-container {
@@ -1043,6 +1048,7 @@
         let lastScrollTop = 0;
         const filterToggle = document.getElementById('filterToggle');
         const backToTopBtn = document.getElementById('back-to-top');
+        const stickySearchWrapper = document.querySelector('.sticky-search-wrapper');
 
         window.addEventListener('scroll', () => {
             if (scrollTimeout) {
@@ -1051,10 +1057,19 @@
             scrollTimeout = setTimeout(() => {
                 handleScroll();
 
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Hide search bar when scrolling down (when not at top)
+                if (currentScroll > lastScrollTop && currentScroll > 200) {
+                    // Scrolling down
+                    if (stickySearchWrapper) stickySearchWrapper.classList.add('scrolled');
+                } else {
+                    // Scrolling up or at top
+                    if (stickySearchWrapper) stickySearchWrapper.classList.remove('scrolled');
+                }
+
                 // Hide filter toggle and back-to-top button when scrolling down on mobile
                 if (window.innerWidth <= 1024) {
-                    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
                     if (currentScroll > lastScrollTop && currentScroll > 200) {
                         // Scrolling down
                         if (filterToggle) filterToggle.classList.add('scrolled');
@@ -1064,9 +1079,9 @@
                         if (filterToggle) filterToggle.classList.remove('scrolled');
                         if (backToTopBtn) backToTopBtn.classList.remove('scrolled');
                     }
-
-                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
                 }
+
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
             }, 150);
         }, { passive: true });
 
