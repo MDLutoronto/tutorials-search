@@ -14,7 +14,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -252,7 +252,7 @@
             color: #1976d2;
         }
 
-        .tag.format {
+        .tag.tool {
             background-color: #f3e5f5;
             color: #7b1fa2;
         }
@@ -395,8 +395,8 @@
                 </div>
 
                 <div class="facet-group">
-                    <h3>Format</h3>
-                    <div id="formatFacets"></div>
+                    <h3>Tool</h3>
+                    <div id="toolFacets"></div>
                 </div>
 
                 <div class="facet-group">
@@ -424,7 +424,6 @@
                             <select id="sortSelect">
                                 <option value="title">Sort by Title</option>
                                 <option value="date">Sort by Date</option>
-                                <option value="organization">Sort by Organization</option>
                             </select>
                         </div>
                     </div>
@@ -445,7 +444,7 @@
         let activeFilters = {
             search: '',
             category: new Set(),
-            format: new Set(),
+            tool: new Set(),
             organization: new Set()
         };
         let currentSort = 'title';
@@ -475,7 +474,7 @@
         // Initialize facets
         function initializeFacets() {
             createFacets('category', 'categoryFacets');
-            createFacets('format', 'formatFacets');
+            createFacets('tool', 'toolFacets');
             createFacets('organization', 'organizationFacets');
         }
 
@@ -539,9 +538,9 @@
                     }
                 }
 
-                if (activeFilters.format.size > 0) {
-                    const guideFormats = Array.isArray(guide.format) ? guide.format : [guide.format];
-                    if (!guideFormats.some(fmt => activeFilters.format.has(fmt))) {
+                if (activeFilters.tool.size > 0) {
+                    const guideFormats = Array.isArray(guide.tool) ? guide.tool : [guide.tool];
+                    if (!guideFormats.some(fmt => activeFilters.tool.has(fmt))) {
                         return false;
                     }
                 }
@@ -574,8 +573,6 @@
                     return a.title.localeCompare(b.title);
                 } else if (currentSort === 'date') {
                     return new Date(b.date) - new Date(a.date);
-                } else if (currentSort === 'organization') {
-                    return a.organization.localeCompare(b.organization);
                 }
             });
         }
@@ -617,8 +614,8 @@
                     <div class="guides-tags">
                         ${(Array.isArray(guide.category) ? guide.category : [guide.category])
                             .map(cat => `<span class="tag category">${cat}</span>`).join('')}
-                        ${(Array.isArray(guide.format) ? guide.format : [guide.format])
-                            .map(fmt => `<span class="tag format">${fmt}</span>`).join('')}
+                        ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
+                            .map(fmt => `<span class="tag tool">${fmt}</span>`).join('')}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
@@ -738,7 +735,7 @@
             activeFilters = {
                 search: '',
                 category: new Set(),
-                format: new Set(),
+                tool: new Set(),
                 organization: new Set()
             };
             document.getElementById('searchInput').value = '';
@@ -750,5 +747,31 @@
         initializeFacets();
         applyFilters();
     </script>
+
+  <!-- {% if site.back_to_top %} -->
+    <a href="#top" id="back-to-top" aria-label="{{ site.back_to_top_text | default: 'Back to top' }}"></a>
+    <script>
+      // Show/hide back to top button based on scroll position
+      const backToTopButton = document.getElementById('back-to-top');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+
+      // Smooth scroll to top
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+  <!-- {% endif %} -->
+
 </body>
 </html>
