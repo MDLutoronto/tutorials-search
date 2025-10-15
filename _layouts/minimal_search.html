@@ -563,15 +563,17 @@
         function getFacetValues(key) {
             const allValues = guides.flatMap(d => {
                 const value = d[key];
+                if (value === undefined || value === null) return [];
                 return Array.isArray(value) ? value : [value];
             });
-            return [...new Set(allValues)].sort();
+            return [...new Set(allValues)].filter(v => v !== undefined && v !== null).sort();
         }
 
         // Count guides for each facet value (handles both arrays and single values)
         function countFacetValues(key, value) {
             return filteredGuides.filter(d => {
                 const guideValue = d[key];
+                if (guideValue === undefined || guideValue === null) return false;
                 if (Array.isArray(guideValue)) {
                     return guideValue.includes(value);
                 }
@@ -706,6 +708,9 @@
                 }
 
                 if (activeFilters.dataFormat.size > 0) {
+                    if (guide.dataFormat === undefined || guide.dataFormat === null) {
+                        return false;
+                    }
                     const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
                     if (!guideDataFormats.some(fmt => activeFilters.dataFormat.has(fmt))) {
                         return false;
