@@ -55,6 +55,27 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             position: sticky;
             top: 20px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: #f5f5f5;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #999;
         }
 
         .search-box {
@@ -723,11 +744,14 @@
             }
 
             const loadingIndicator = document.getElementById('loadingIndicator');
-            const scrollPosition = window.innerHeight + window.scrollY;
-            const pageHeight = document.documentElement.scrollHeight;
+            const guidesGrid = document.getElementById('guidesGrid');
 
-            // Load more when user is 300px from bottom
-            if (scrollPosition >= pageHeight - 300) {
+            // Get the position of the loading indicator
+            const rect = loadingIndicator.getBoundingClientRect();
+            const isLoadingIndicatorVisible = rect.top < window.innerHeight + 300;
+
+            // Only load more if the loading indicator area is near the viewport
+            if (isLoadingIndicatorVisible) {
                 isLoading = true;
                 loadingIndicator.style.display = 'block';
 
@@ -744,8 +768,8 @@
             if (scrollTimeout) {
                 clearTimeout(scrollTimeout);
             }
-            scrollTimeout = setTimeout(handleScroll, 100);
-        });
+            scrollTimeout = setTimeout(handleScroll, 150);
+        }, { passive: true });
 
         // Search input handler
         document.getElementById('searchInput').addEventListener('input', (event) => {
