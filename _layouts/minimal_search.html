@@ -289,6 +289,14 @@
             border-radius: 12px;
             font-size: 12px;
             color: #666;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
         .tag.technique {
@@ -781,11 +789,11 @@
                     <p class="guides-description">${guide.description}</p>
                     <div class="guides-tags">
                         ${(Array.isArray(guide.technique) ? guide.technique : [guide.technique])
-                            .map(cat => `<span class="tag technique">${cat}</span>`).join('')}
+                            .map(cat => `<span class="tag technique" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
                         ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
-                            .map(fmt => `<span class="tag tool">${fmt}</span>`).join('')}
+                            .map(fmt => `<span class="tag tool" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
                         ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
-                            .map(fmt => `<span class="tag dataFormat">${fmt}</span>`).join('') : ''}
+                            .map(fmt => `<span class="tag dataFormat" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
@@ -889,6 +897,25 @@
 
         // Back-to-top button functionality
         const backToTopButton = document.getElementById('back-to-top');
+
+        // Handle tag clicks for filtering
+        document.getElementById('guidesGrid').addEventListener('click', (event) => {
+            const tag = event.target.closest('.tag');
+            if (!tag) return;
+
+            const facet = tag.dataset.facet;
+            const value = tag.dataset.value;
+
+            if (!facet || !value) return;
+
+            // Add the filter
+            activeFilters[facet].add(value);
+            displayedCount = 0;
+            applyFilters();
+
+            // Scroll to top of results smoothly
+            document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
 
         // Initialize on page load
         initializeFacets();
