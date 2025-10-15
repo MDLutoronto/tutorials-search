@@ -301,6 +301,11 @@
             color: #7b1fa2;
         }
 
+        .tag.dataFormat {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
         .guides-meta {
             display: flex;
             justify-content: space-between;
@@ -779,6 +784,8 @@
                             .map(cat => `<span class="tag technique">${cat}</span>`).join('')}
                         ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
                             .map(fmt => `<span class="tag tool">${fmt}</span>`).join('')}
+                        ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
+                            .map(fmt => `<span class="tag dataFormat">${fmt}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
