@@ -1153,14 +1153,34 @@
             document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
-        // Keyboard shortcut: Ctrl+K or Cmd+K to focus search box
+        // Keyboard shortcut: Ctrl+K or Cmd+K to show and focus search box
         document.addEventListener('keydown', (event) => {
             // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac)
             if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
                 event.preventDefault(); // Prevent default browser behavior
+                event.stopPropagation(); // Stop event from bubbling
+
+                // Save current scroll position
+                const currentScrollY = window.scrollY;
+
+                // Show the search bar if it's hidden
+                if (stickySearchWrapper && stickySearchWrapper.classList.contains('scrolled')) {
+                    stickySearchWrapper.classList.remove('scrolled');
+                }
+
+                // Focus and select the search input
                 const searchInput = document.getElementById('searchInput');
-                searchInput.focus();
-                searchInput.select(); // Select all text if any exists
+
+                // Use setTimeout to ensure focus happens after the transition starts
+                setTimeout(() => {
+                    searchInput.focus();
+                    searchInput.select(); // Select all text if any exists
+
+                    // Restore scroll position if it changed
+                    if (window.scrollY !== currentScrollY) {
+                        window.scrollTo(0, currentScrollY);
+                    }
+                }, 0);
             }
         });
 
