@@ -80,11 +80,13 @@
 
         .search-box {
             margin-bottom: 25px;
+            position: relative;
         }
 
         .search-box input {
             width: 100%;
             padding: 12px 15px;
+            padding-right: 60px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 14px;
@@ -93,7 +95,22 @@
 
         .search-box input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: rgba(30, 55, 101, 0.8);
+        }
+
+        .search-hint {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 11px;
+            color: #666;
+            pointer-events: none;
+            font-family: monospace;
         }
 
         .facet-group {
@@ -164,7 +181,7 @@
             padding: 6px;
             background: none;
             border: none;
-            color: #667eea;
+            color: #1E3765;
             cursor: pointer;
             font-size: 12px;
             text-align: center;
@@ -249,7 +266,8 @@
         .guides-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            border-color: #667eea;
+            border-color: rgba(30, 55, 101, 0.8);
+            opacity: 0.8;
         }
 
         .guides-card h3 {
@@ -265,7 +283,7 @@
         }
 
         .guides-card h3 a:hover {
-            color: #667eea;
+            color: #1E3765;
         }
 
         .guides-description {
@@ -300,34 +318,45 @@
         }
 
         .tag.technique {
-            background-color: #e3f2fd;
-            color: #1976d2;
+            background-color: #6FC7EA;
+            color: #004d63;
         }
 
         .tag.technique.active {
-            background-color: #1976d2;
+            background-color: #007FA3;
             color: white;
             font-weight: 600;
         }
 
         .tag.tool {
-            background-color: #f3e5f5;
-            color: #7b1fa2;
+            background-color: #D896F9;
+            color: #3d0d46;
         }
 
         .tag.tool.active {
-            background-color: #7b1fa2;
+            background-color: #6D247A;
             color: white;
             font-weight: 600;
         }
 
         .tag.dataFormat {
-            background-color: #e8f5e9;
-            color: #2e7d32;
+            background-color: #B4DF2E;
+            color: #3d5200;
         }
 
         .tag.dataFormat.active {
-            background-color: #2e7d32;
+            background-color: #8DBF46;
+            color: white;
+            font-weight: 600;
+        }
+
+        .tag.type {
+            background-color: #FFB470;
+            color: #8b2816;
+        }
+
+        .tag.type.active {
+            background-color: #DC4633;
             color: white;
             font-weight: 600;
         }
@@ -364,9 +393,9 @@
         }
 
         .pagination button:hover:not(:disabled) {
-            background-color: #667eea;
+            background-color: #1E3765;
             color: white;
-            border-color: #667eea;
+            border-color: rgba(30, 55, 101, 0.8);
         }
 
         .pagination button:disabled {
@@ -396,9 +425,9 @@
         }
 
         .pagination .page-number.active {
-            background-color: #667eea;
+            background-color: #1E3765;
             color: white;
-            border-color: #667eea;
+            border-color: rgba(30, 55, 101, 0.8);
             font-weight: 600;
         }
 
@@ -517,6 +546,7 @@
             <aside class="sidebar">
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search guides...">
+                    <span class="search-hint">Ctrl+K</span>
                 </div>
 
                 <div class="facet-group">
@@ -532,6 +562,11 @@
                 <div class="facet-group">
                     <h3>Data Format</h3>
                     <div id="dataFormatFacets"></div>
+                </div>
+
+                <div class="facet-group">
+                    <h3>Type</h3>
+                    <div id="typeFacets"></div>
                 </div>
 
                 <div class="facet-group">
@@ -583,6 +618,7 @@
             technique: new Set(),
             tool: new Set(),
             dataFormat: new Set(),
+            type: new Set(),
             organization: new Set()
         };
         let currentSort = 'title';
@@ -617,6 +653,7 @@
             createFacets('technique', 'techniqueFacets');
             createFacets('tool', 'toolFacets');
             createFacets('organization', 'organizationFacets');
+            createFacets('type', 'typeFacets');
             createFacets('dataFormat', 'dataFormatFacets');
         }
 
@@ -731,6 +768,12 @@
                     }
                 }
 
+                if (activeFilters.type.size > 0) {
+                    const guideTypes = Array.isArray(guide.type) ? guide.type : [guide.type];
+                    if (!guideTypes.some(t => activeFilters.type.has(t))) {
+                        return false;
+                    }
+                }
                 if (activeFilters.organization.size > 0) {
                     const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
                     if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
@@ -812,6 +855,8 @@
                             .map(fmt => `<span class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
                         ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
                             .map(fmt => `<span class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
+                        ${guide.type ? (Array.isArray(guide.type) ? guide.type : [guide.type])
+                            .map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
@@ -906,6 +951,7 @@
                 technique: new Set(),
                 tool: new Set(),
                 dataFormat: new Set(),
+                type: new Set(),
                 organization: new Set()
             };
             document.getElementById('searchInput').value = '';
@@ -943,6 +989,24 @@
             // Scroll to top of results smoothly
             document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
+
+        // Keyboard shortcut: Ctrl+K or Cmd+K to focus search box
+        document.addEventListener('keydown', (event) => {
+            // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac)
+            if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+                event.preventDefault(); // Prevent default browser behavior
+                const searchInput = document.getElementById('searchInput');
+                searchInput.focus();
+                searchInput.select(); // Select all text if any exists
+            }
+        });
+
+        // Update search hint text based on OS
+        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+        const searchHint = document.querySelector('.search-hint');
+        if (isMac) {
+            searchHint.textContent = '⌘K';
+        }
 
         // Initialize on page load
         initializeFacets();
