@@ -2,7 +2,7 @@
   title: "Importing Alternative Sources in NVivo 14/15 for Windows"
   description: "Comprehensive guide on importing various data formats into NVivo 14/15 for Windows."
   url: "https://mdlutoronto.github.io/nvivo-14-15-windows-importing-alternative-sources/"
-  category:
+  technique:
     - "Qualitative Research"
     - "NVivo"
   tool: "HTML"
@@ -13,7 +13,7 @@
   title: "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
   description: "Recording of the workshop covering basics of programming using Python for absolute beginners."
   url: "https://mdlutoronto.github.io/workshop-intro-programming-absolute-beginners-python-2025/"
-  category:
+  technique:
     - "Programming"
     - "Python"
   tool:
@@ -26,11 +26,14 @@
   title: "Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows"
   description: "Comprehensive guide on accessing and utilizing the CIPO Patent PostgreSQL Database on Windows."
   url: "https://mdlutoronto.github.io/cipo-windows/"
-  category:
+  technique:
     - "Intellectual Property"
     - "CIPO"
     - "SQL"
   tool: "HTML"
+  dataFormat:
+    - "Database"
+    - "PostgreSQL"
   organization: "MDLUToronto"
   date: "2024-01-10"
 
@@ -38,7 +41,7 @@
   title: "Introduction to GIS Mapping with ArcGIS Pro"
   description: "Learn the fundamentals of Geographic Information Systems and create your first map using ArcGIS Pro."
   url: "https://example.com/arcgis-intro"
-  category:
+  technique:
     - "GIS"
     - "Mapping"
   tool:
@@ -51,7 +54,7 @@
   title: "Data Visualization Best Practices with Tableau"
   description: "Master the art of creating compelling data visualizations using Tableau Desktop and Tableau Public."
   url: "https://example.com/tableau-viz"
-  category:
+  technique:
     - "Data Visualization"
     - "Analytics"
   tool: "Tutorial"
@@ -62,7 +65,7 @@
   title: "Workshop: Introduction to Web Scraping with Python and BeautifulSoup"
   description: "Learn how to extract data from websites using Python, BeautifulSoup, and requests library."
   url: "https://example.com/web-scraping"
-  category:
+  technique:
     - "Programming"
     - "Python"
     - "Data Collection"
@@ -76,7 +79,7 @@
   title: "Statistical Analysis with R and RStudio"
   description: "Comprehensive guide to performing statistical analysis and creating visualizations using R programming language."
   url: "https://example.com/r-stats"
-  category:
+  technique:
     - "Statistics"
     - "Programming"
     - "Data Analysis"
@@ -90,7 +93,7 @@
   title: "Creating Interactive Maps with Leaflet.js"
   description: "Build beautiful, interactive web maps using the Leaflet JavaScript library and OpenStreetMap data."
   url: "https://example.com/leaflet-maps"
-  category:
+  technique:
     - "GIS"
     - "Web Development"
     - "JavaScript"
@@ -102,7 +105,7 @@
   title: "Citation Management with Zotero"
   description: "Complete guide to managing your research references, creating bibliographies, and collaborating with Zotero."
   url: "https://example.com/zotero-guide"
-  category:
+  technique:
     - "Research Tools"
     - "Citation Management"
   tool:
@@ -115,7 +118,7 @@
   title: "Introduction to Machine Learning with scikit-learn"
   description: "Get started with machine learning concepts and build your first predictive models using Python and scikit-learn."
   url: "https://example.com/ml-sklearn"
-  category:
+  technique:
     - "Machine Learning"
     - "Python"
     - "Data Science"
@@ -129,7 +132,7 @@
   title: "Working with Census Data in Canada"
   description: "Learn how to access, download, and analyze Canadian census data from Statistics Canada."
   url: "https://example.com/census-data"
-  category:
+  technique:
     - "Demographics"
     - "Open Data"
     - "Statistics"
@@ -143,7 +146,7 @@
   title: "Excel Power Query and Power Pivot for Data Analysis"
   description: "Advanced Excel techniques for data transformation, modeling, and analysis using Power Query and Power Pivot."
   url: "https://example.com/excel-power"
-  category:
+  technique:
     - "Data Analysis"
     - "Excel"
   tool:
@@ -156,7 +159,7 @@
   title: "Version Control with Git and GitHub"
   description: "Master the basics of version control, collaboration, and code management using Git and GitHub."
   url: "https://example.com/git-github"
-  category:
+  technique:
     - "Programming"
     - "Version Control"
   tool: "Tutorial"
@@ -167,7 +170,7 @@
   title: "3D Modeling and Visualization with SketchUp"
   description: "Create 3D models for urban planning, architecture, and spatial analysis using SketchUp."
   url: "https://example.com/sketchup-3d"
-  category:
+  technique:
     - "3D Modeling"
     - "Visualization"
   tool:
@@ -180,7 +183,7 @@
   title: "Text Analysis with Python and NLTK"
   description: "Introduction to natural language processing and text mining techniques using Python's NLTK library."
   url: "https://example.com/text-analysis"
-  category:
+  technique:
     - "Text Analysis"
     - "Python"
     - "NLP"
@@ -194,7 +197,7 @@
   title: "Database Design and SQL Fundamentals"
   description: "Learn database design principles, entity-relationship modeling, and write SQL queries for data retrieval."
   url: "https://example.com/sql-fundamentals"
-  category:
+  technique:
     - "SQL"
     - "Database"
     - "Data Management"
@@ -206,7 +209,7 @@
   title: "Creating Digital Humanities Projects with Omeka"
   description: "Build and publish digital collections, exhibitions, and archives using the Omeka content management system."
   url: "https://example.com/omeka-dh"
-  category:
+  technique:
     - "Digital Humanities"
     - "Web Publishing"
   tool:
@@ -219,7 +222,7 @@
   title: "Spatial Analysis with QGIS"
   description: "Perform advanced spatial analysis, geoprocessing, and cartographic design using the free and open-source QGIS software."
   url: "https://example.com/qgis-spatial"
-  category:
+  technique:
     - "GIS"
     - "Spatial Analysis"
     - "Mapping"
@@ -233,7 +236,7 @@
   title: "Building Dashboards with Power BI"
   description: "Create interactive business intelligence dashboards and reports using Microsoft Power BI Desktop."
   url: "https://example.com/powerbi-dashboards"
-  category:
+  technique:
     - "Data Visualization"
     - "Business Intelligence"
     - "Analytics"
@@ -247,7 +250,7 @@
   title: "Network Analysis with Gephi"
   description: "Visualize and analyze complex networks, social graphs, and relationships using Gephi software."
   url: "https://example.com/gephi-network"
-  category:
+  technique:
     - "Network Analysis"
     - "Visualization"
     - "Social Networks"
@@ -261,7 +264,7 @@
   title: "Qualitative Data Analysis with MAXQDA"
   description: "Analyze qualitative data including interviews, focus groups, and text documents using MAXQDA software."
   url: "https://example.com/maxqda-analysis"
-  category:
+  technique:
     - "Qualitative Research"
     - "Data Analysis"
   tool: "Workshop"
@@ -272,7 +275,7 @@
   title: "Introduction to Docker for Researchers"
   description: "Learn containerization basics and how to use Docker to create reproducible research environments."
   url: "https://example.com/docker-research"
-  category:
+  technique:
     - "Programming"
     - "DevOps"
     - "Reproducibility"
@@ -286,7 +289,7 @@
   title: "Survey Design and Analysis with Qualtrics"
   description: "Design effective surveys, collect responses, and analyze results using the Qualtrics platform."
   url: "https://example.com/qualtrics-surveys"
-  category:
+  technique:
     - "Survey Research"
     - "Data Collection"
   tool:
@@ -299,7 +302,7 @@
   title: "Working with Geospatial Data in Python"
   description: "Process, analyze, and visualize geospatial data using Python libraries like GeoPandas, Shapely, and Folium."
   url: "https://example.com/python-geospatial"
-  category:
+  technique:
     - "GIS"
     - "Python"
     - "Spatial Analysis"
@@ -313,7 +316,7 @@
   title: "Image Processing with ImageJ/Fiji"
   description: "Analyze and process scientific images using the powerful ImageJ and Fiji image processing software."
   url: "https://example.com/imagej-processing"
-  category:
+  technique:
     - "Image Analysis"
     - "Scientific Computing"
   tool: "Tutorial"

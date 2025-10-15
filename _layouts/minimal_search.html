@@ -289,9 +289,17 @@
             border-radius: 12px;
             font-size: 12px;
             color: #666;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
         }
 
-        .tag.category {
+        .tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .tag.technique {
             background-color: #e3f2fd;
             color: #1976d2;
         }
@@ -299,6 +307,11 @@
         .tag.tool {
             background-color: #f3e5f5;
             color: #7b1fa2;
+        }
+
+        .tag.dataFormat {
+            background-color: #e8f5e9;
+            color: #2e7d32;
         }
 
         .guides-meta {
@@ -489,13 +502,18 @@
                 </div>
 
                 <div class="facet-group">
-                    <h3>Category</h3>
-                    <div id="categoryFacets"></div>
+                    <h3>Technique</h3>
+                    <div id="techniqueFacets"></div>
                 </div>
 
                 <div class="facet-group">
                     <h3>Tool</h3>
                     <div id="toolFacets"></div>
+                </div>
+
+                <div class="facet-group">
+                    <h3>Data Format</h3>
+                    <div id="dataFormatFacets"></div>
                 </div>
 
                 <div class="facet-group">
@@ -544,8 +562,9 @@
         let filteredGuides = [...guides];
         let activeFilters = {
             search: '',
-            category: new Set(),
+            technique: new Set(),
             tool: new Set(),
+            dataFormat: new Set(),
             organization: new Set()
         };
         let currentSort = 'title';
@@ -557,15 +576,17 @@
         function getFacetValues(key) {
             const allValues = guides.flatMap(d => {
                 const value = d[key];
+                if (value === undefined || value === null) return [];
                 return Array.isArray(value) ? value : [value];
             });
-            return [...new Set(allValues)].sort();
+            return [...new Set(allValues)].filter(v => v !== undefined && v !== null).sort();
         }
 
         // Count guides for each facet value (handles both arrays and single values)
         function countFacetValues(key, value) {
             return filteredGuides.filter(d => {
                 const guideValue = d[key];
+                if (guideValue === undefined || guideValue === null) return false;
                 if (Array.isArray(guideValue)) {
                     return guideValue.includes(value);
                 }
@@ -575,9 +596,10 @@
 
         // Initialize facets
         function initializeFacets() {
-            createFacets('category', 'categoryFacets');
+            createFacets('technique', 'techniqueFacets');
             createFacets('tool', 'toolFacets');
             createFacets('organization', 'organizationFacets');
+            createFacets('dataFormat', 'dataFormatFacets');
         }
 
         // Create facet checkboxes with show more functionality
@@ -677,9 +699,9 @@
                     if (!matchesSearch) return false;
                 }
 
-                if (activeFilters.category.size > 0) {
-                    const guideCategories = Array.isArray(guide.category) ? guide.category : [guide.category];
-                    if (!guideCategories.some(cat => activeFilters.category.has(cat))) {
+                if (activeFilters.technique.size > 0) {
+                    const guideCategories = Array.isArray(guide.technique) ? guide.technique : [guide.technique];
+                    if (!guideCategories.some(cat => activeFilters.technique.has(cat))) {
                         return false;
                     }
                 }
@@ -694,6 +716,16 @@
                 if (activeFilters.organization.size > 0) {
                     const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
                     if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
+                        return false;
+                    }
+                }
+
+                if (activeFilters.dataFormat.size > 0) {
+                    if (guide.dataFormat === undefined || guide.dataFormat === null) {
+                        return false;
+                    }
+                    const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
+                    if (!guideDataFormats.some(fmt => activeFilters.dataFormat.has(fmt))) {
                         return false;
                     }
                 }
@@ -756,10 +788,12 @@
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
                     <p class="guides-description">${guide.description}</p>
                     <div class="guides-tags">
-                        ${(Array.isArray(guide.category) ? guide.category : [guide.category])
-                            .map(cat => `<span class="tag category">${cat}</span>`).join('')}
+                        ${(Array.isArray(guide.technique) ? guide.technique : [guide.technique])
+                            .map(cat => `<span class="tag technique" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
                         ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
-                            .map(fmt => `<span class="tag tool">${fmt}</span>`).join('')}
+                            .map(fmt => `<span class="tag tool" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
+                        ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
+                            .map(fmt => `<span class="tag dataFormat" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
@@ -851,8 +885,9 @@
         document.getElementById('clearFilters').addEventListener('click', () => {
             activeFilters = {
                 search: '',
-                category: new Set(),
+                technique: new Set(),
                 tool: new Set(),
+                dataFormat: new Set(),
                 organization: new Set()
             };
             document.getElementById('searchInput').value = '';
@@ -862,6 +897,25 @@
 
         // Back-to-top button functionality
         const backToTopButton = document.getElementById('back-to-top');
+
+        // Handle tag clicks for filtering
+        document.getElementById('guidesGrid').addEventListener('click', (event) => {
+            const tag = event.target.closest('.tag');
+            if (!tag) return;
+
+            const facet = tag.dataset.facet;
+            const value = tag.dataset.value;
+
+            if (!facet || !value) return;
+
+            // Add the filter
+            activeFilters[facet].add(value);
+            displayedCount = 0;
+            applyFilters();
+
+            // Scroll to top of results smoothly
+            document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
 
         // Initialize on page load
         initializeFacets();
