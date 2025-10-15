@@ -304,14 +304,32 @@
             color: #1976d2;
         }
 
+        .tag.technique.active {
+            background-color: #1976d2;
+            color: white;
+            font-weight: 600;
+        }
+
         .tag.tool {
             background-color: #f3e5f5;
             color: #7b1fa2;
         }
 
+        .tag.tool.active {
+            background-color: #7b1fa2;
+            color: white;
+            font-weight: 600;
+        }
+
         .tag.dataFormat {
             background-color: #e8f5e9;
             color: #2e7d32;
+        }
+
+        .tag.dataFormat.active {
+            background-color: #2e7d32;
+            color: white;
+            font-weight: 600;
         }
 
         .guides-meta {
@@ -789,11 +807,11 @@
                     <p class="guides-description">${guide.description}</p>
                     <div class="guides-tags">
                         ${(Array.isArray(guide.technique) ? guide.technique : [guide.technique])
-                            .map(cat => `<span class="tag technique" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
+                            .map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
                         ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
-                            .map(fmt => `<span class="tag tool" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
+                            .map(fmt => `<span class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
                         ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
-                            .map(fmt => `<span class="tag dataFormat" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
+                            .map(fmt => `<span class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.organization}</span>
@@ -898,7 +916,7 @@
         // Back-to-top button functionality
         const backToTopButton = document.getElementById('back-to-top');
 
-        // Handle tag clicks for filtering
+        // Handle tag clicks for filtering (EXCLUSIVE/ONLY mode)
         document.getElementById('guidesGrid').addEventListener('click', (event) => {
             const tag = event.target.closest('.tag');
             if (!tag) return;
@@ -908,8 +926,17 @@
 
             if (!facet || !value) return;
 
-            // Add the filter
-            activeFilters[facet].add(value);
+            // EXCLUSIVE mode: If this filter is already the only one active, remove it
+            // Otherwise, clear all filters in this category and set only this one
+            if (activeFilters[facet].size === 1 && activeFilters[facet].has(value)) {
+                // If clicking the only active filter, turn it off
+                activeFilters[facet].delete(value);
+            } else {
+                // Clear all filters in this category and set only this one
+                activeFilters[facet].clear();
+                activeFilters[facet].add(value);
+            }
+
             displayedCount = 0;
             applyFilters();
 
