@@ -1,0 +1,115 @@
+<div class="side-bar">
+  <!-- This div controls the title of the site. -->
+  <div class="site-header" id="site-header">
+    <a id="title-link" href="{{ '/' | relative_url }}" class="site-title lh-tight" style="width:100%">
+      <div id="title-text">{% include title.html %}</div>
+    </a>
+    <a href="#" id="menu-button" class="site-button" aria-label="navigation menu">
+      <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+    </a>
+  </div>
+
+  <script>
+    // Initialize textFit
+    textFit(document.getElementById("title-text"));
+
+    // Debounce resize events to prevent excessive calls on mobile
+    let resizeTimeout;
+    addEventListener("resize", (event) => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        textFit(document.getElementById("title-text"));
+      }, 250);
+    });
+  </script>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+    {% assign pages_top_size = site.html_pages
+          | where_exp:"item", "item.title != nil"
+          | where_exp:"item", "item.parent == nil"
+          | where_exp:"item", "item.nav_exclude != true"
+          | size %}
+    {% if pages_top_size > 0 %}
+      {% include nav.html pages=site.html_pages key=nil %}
+    {% endif %}
+    {%- if site.nav_external_links -%}
+      <ul class="nav-list">
+        {%- for node in site.nav_external_links -%}
+          <li class="nav-list-item external">
+            <a href="{{ node.url | absolute_url }}" class="nav-list-link external"
+              {%- if node.opens_in_new_tab -%} target="_blank" rel="noopener noreferrer"{%- endif -%}
+            >
+              {{ node.title }}
+              {% unless node.hide_icon %}<svg viewBox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg>{% endunless %}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {% if site.just_the_docs.collections %}
+      {% assign collections_size = site.just_the_docs.collections | size %}
+      {% for collection_entry in site.just_the_docs.collections %}
+        {% assign collection_key = collection_entry[0] %}
+        {% assign collection_value = collection_entry[1] %}
+        {% assign collection = site[collection_key] %}
+        {% if collection_value.nav_exclude != true %}
+          {% if collections_size > 1 or pages_top_size > 0 %}
+            {% if collection_value.nav_fold == true %}
+              <ul class="nav-list nav-category-list">
+                <li class="nav-list-item{% if page.collection == collection_key %} active{% endif %}">
+                  {%- if collection.size > 0 -%}
+                  <a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a>
+                  {%- endif -%}
+                  <div class="nav-category">{{ collection_value.name }}</div>
+                  {% include nav.html pages=collection key=collection_key %}
+                </li>
+              </ul>
+            {% else %}
+              <div class="nav-category">{{ collection_value.name }}</div>
+              {% include nav.html pages=collection key=collection_key %}
+            {% endif %}
+          {% else %}
+            {% include nav.html pages=collection key=collection_key %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </nav>
+
+  <!-- NAVIGATION FOOTER -->
+  {% capture nav_footer_custom %}
+    {%- include nav_footer_custom.html -%}
+  {% endcapture %}
+  {% if nav_footer_custom != "" %}
+    {{ nav_footer_custom }}
+  {% else %}
+    <footer class="site-footer">
+      <div class="text-small text-grey-dk-300 mb-4" style="display:grid; justify-items:center; row-gap:5px; max-width:100%; box-sizing:border-box; overflow:hidden;">
+        {% if site.nav_footer_logo_top and site.nav_footer_logo_top != '' %}
+          {% if site.nav_footer_logo_top_href and site.nav_footer_logo_top_href != '' %}
+            <a href="{{ site.nav_footer_logo_top_href }}" target="_blank" rel="noopener noreferrer" style="text-align:center; display:block;">
+              <img style="max-width: 150px; width: 50%; height: auto; display: block; margin: 0 auto;" alt="Top Logo" src="{{ site.nav_footer_logo_top | relative_url }}">
+            </a>
+          {% else %}
+            <img style="max-width: 150px; width: 50%; height: auto; display: block; margin: 0 auto;" alt="Top Logo" src="{{ site.nav_footer_logo_top | relative_url }}">
+          {% endif %}
+        {%- else -%}
+        <a href="https://mdl.library.utoronto.ca/" target="_blank" rel="noopener noreferrer" style="text-align:center; display:block;">
+        <img style="max-width: 150px; width: 50%; height: auto; display: block; margin: 0 auto;" alt="Map & Data Library Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/mdl_full_logo.png"></a>
+        {% endif %}
+        {% if site.nav_footer_logo_bottom and site.nav_footer_logo_bottom != '' %}
+          {% if site.nav_footer_logo_bottom_href and site.nav_footer_logo_bottom_href != '' %}
+            <a href="{{ site.nav_footer_logo_bottom_href }}" target="_blank" rel="noopener noreferrer" style="text-align:center; display:block;">
+              <img style="max-width: 300px; width: 100%; height: auto; padding-bottom: 15px; padding-top: 10px; display: block; margin: 0 auto;" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom | relative_url }}">
+            </a>
+          {% else %}
+            <img style="max-width: 300px; width: 100%; height: auto; padding-bottom: 15px; padding-top: 10px; display: block; margin: 0 auto;" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom | relative_url }}">
+          {% endif %}
+          {% else %}
+            <a href="https://library.utoronto.ca/" target="_blank" rel="noopener noreferrer" style="text-align:center; display:block;">
+            <img style="max-width: 300px; width: 100%; height: auto; padding-bottom: 15px; padding-top: 10px; display: block; margin: 0 auto;" alt="University of Toronto Libraries Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/UTL.png"></a>
+        {% endif %}
+      </div>
+    </footer>
+  {% endif %}
+</div>
