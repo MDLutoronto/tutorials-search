@@ -74,6 +74,38 @@
             overflow-x: hidden;
         }
 
+        .filter-toggle {
+            display: none;
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            z-index: 101;
+            background: white;
+            border: 2px solid #1E3765;
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-size: 14px;
+            font-weight: 600;
+            color: #1E3765;
+            transition: all 0.3s;
+        }
+
+        .filter-toggle:hover {
+            background: #1E3765;
+            color: white;
+        }
+
+        .filter-toggle::before {
+            content: '☰ ';
+            font-size: 16px;
+        }
+
+        .filter-toggle.scrolled {
+            right: -150px;
+        }
+
         .sidebar::-webkit-scrollbar {
             width: 6px;
         }
@@ -510,13 +542,81 @@
             background-color: #f5f5f5;
         }
 
+        #back-to-top.scrolled {
+            right: -100px;
+        }
+
         @media (max-width: 1024px) {
             .main-content {
                 grid-template-columns: 1fr;
             }
 
+            .filter-toggle {
+                display: block;
+            }
+
             .sidebar {
-                position: static;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                max-width: 280px;
+                height: 100vh;
+                max-height: 100vh;
+                z-index: 102;
+                border-radius: 0;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                padding: 20px 15px;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 101;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .sidebar-overlay.show {
+                display: block;
+                opacity: 1;
+            }
+
+            .facet-group {
+                margin-bottom: 20px;
+            }
+
+            .facet-group h3 {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .facet-option {
+                margin-bottom: 6px;
+                padding: 3px;
+            }
+
+            .facet-option label {
+                font-size: 13px;
+            }
+
+            .facet-count {
+                font-size: 11px;
+            }
+
+            .clear-filters {
+                padding: 8px;
+                font-size: 12px;
             }
         }
 
@@ -569,8 +669,11 @@
             </div>
         </div>
 
+        <button class="filter-toggle" id="filterToggle">Filters</button>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
         <div class="main-content">
-            <aside class="sidebar">
+            <aside class="sidebar" id="sidebar">
 
                 <div class="facet-group">
                     <h3>Technique</h3>
@@ -937,13 +1040,36 @@
             }
         }
 
-        // Throttle scroll event for performance
+        // Throttle scroll event for performance and handle mobile button hiding
         let scrollTimeout;
+        let lastScrollTop = 0;
+        const filterToggle = document.getElementById('filterToggle');
+        const backToTopBtn = document.getElementById('back-to-top');
+
         window.addEventListener('scroll', () => {
             if (scrollTimeout) {
                 clearTimeout(scrollTimeout);
             }
-            scrollTimeout = setTimeout(handleScroll, 150);
+            scrollTimeout = setTimeout(() => {
+                handleScroll();
+
+                // Hide filter toggle and back-to-top button when scrolling down on mobile
+                if (window.innerWidth <= 1024) {
+                    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (currentScroll > lastScrollTop && currentScroll > 200) {
+                        // Scrolling down
+                        if (filterToggle) filterToggle.classList.add('scrolled');
+                        if (backToTopBtn) backToTopBtn.classList.add('scrolled');
+                    } else {
+                        // Scrolling up or at top
+                        if (filterToggle) filterToggle.classList.remove('scrolled');
+                        if (backToTopBtn) backToTopBtn.classList.remove('scrolled');
+                    }
+
+                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                }
+            }, 150);
         }, { passive: true });
 
         // Search input handler
@@ -1030,6 +1156,26 @@
         if (isMac) {
             searchHint.textContent = '⌘K';
         }
+
+        // Mobile sidebar toggle functionality
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('show');
+            document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+        }
+
+        filterToggle.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        // Close sidebar when a filter is selected on mobile
+        sidebar.addEventListener('click', (event) => {
+            if (window.innerWidth <= 1024 && event.target.type === 'checkbox') {
+                setTimeout(toggleSidebar, 300); // Small delay for better UX
+            }
+        });
 
         // Initialize on page load
         initializeFacets();
