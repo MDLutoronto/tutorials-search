@@ -45,9 +45,14 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
+            background: transparent;
             padding: 20px 0;
             margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sticky-search-wrapper.scrolled {
+            transform: translateY(-150px);
         }
 
         .sticky-search-container {
@@ -137,14 +142,12 @@
             font-size: 16px;
             transition: all 0.3s;
             background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .search-box input:focus {
             outline: none;
             border-color: rgba(255, 255, 255, 0.8);
             background: white;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         .search-hint {
@@ -651,7 +654,7 @@
     <div class="container">
         <header>
             <a href="https://mdl.library.utoronto.ca/" target="_blank" rel="noopener">
-                <img src="{{ '/assets/images/mdl_full_logo.png' | relative_url }}" alt="Map & Data Library Logo" style="height: 100px; margin-bottom: 15px;">
+                <img src="{{ '/assets/images/mdl_logo_transparent.png' | relative_url }}" alt="Map & Data Library Logo" style="height: 100px; margin-bottom: 15px;">
             </a>
             <a href="https://library.utoronto.ca" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
@@ -1045,6 +1048,7 @@
         let lastScrollTop = 0;
         const filterToggle = document.getElementById('filterToggle');
         const backToTopBtn = document.getElementById('back-to-top');
+        const stickySearchWrapper = document.querySelector('.sticky-search-wrapper');
 
         window.addEventListener('scroll', () => {
             if (scrollTimeout) {
@@ -1053,10 +1057,19 @@
             scrollTimeout = setTimeout(() => {
                 handleScroll();
 
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Hide search bar when scrolling down (when not at top)
+                if (currentScroll > lastScrollTop && currentScroll > 200) {
+                    // Scrolling down
+                    if (stickySearchWrapper) stickySearchWrapper.classList.add('scrolled');
+                } else {
+                    // Scrolling up or at top
+                    if (stickySearchWrapper) stickySearchWrapper.classList.remove('scrolled');
+                }
+
                 // Hide filter toggle and back-to-top button when scrolling down on mobile
                 if (window.innerWidth <= 1024) {
-                    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
                     if (currentScroll > lastScrollTop && currentScroll > 200) {
                         // Scrolling down
                         if (filterToggle) filterToggle.classList.add('scrolled');
@@ -1066,9 +1079,9 @@
                         if (filterToggle) filterToggle.classList.remove('scrolled');
                         if (backToTopBtn) backToTopBtn.classList.remove('scrolled');
                     }
-
-                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
                 }
+
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
             }, 150);
         }, { passive: true });
 
