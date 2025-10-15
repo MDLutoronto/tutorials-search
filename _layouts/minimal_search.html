@@ -45,7 +45,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
+            background: transparent;
             padding: 20px 0;
             margin-bottom: 20px;
         }
@@ -137,14 +137,12 @@
             font-size: 16px;
             transition: all 0.3s;
             background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .search-box input:focus {
             outline: none;
             border-color: rgba(255, 255, 255, 0.8);
             background: white;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         .search-hint {
@@ -651,7 +649,7 @@
     <div class="container">
         <header>
             <a href="https://mdl.library.utoronto.ca/" target="_blank" rel="noopener">
-                <img src="{{ '/assets/images/mdl_full_logo.png' | relative_url }}" alt="Map & Data Library Logo" style="height: 100px; margin-bottom: 15px;">
+                <img src="{{ '/assets/images/mdl_logo_transparent.png' | relative_url }}" alt="Map & Data Library Logo" style="height: 100px; margin-bottom: 15px;">
             </a>
             <a href="https://library.utoronto.ca" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
