@@ -1,7 +1,7 @@
 ## Site settings
 title: "Map & Data Library just the Docs Theme"
 description: "Workshops and guides from the Map & Data Library, University of Toronto"
-url: "https://MDLutoronto.github.io/jtd-theme"  # change the slug to the repo's name ('jtd-theme' in this case)
+url: "https://kenlhlui.github.io/jtd-page-find-testing"  # change the slug to the repo's name ('jtd-theme' in this case)
 repository: "MDLutoronto/jtd-theme" # for github-metadata
 
 ## Navigation footer logos and links

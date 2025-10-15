@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Global Climate Data 2020-2024",
+    "description": "Comprehensive climate data including temperature, precipitation, and atmospheric measurements from monitoring stations worldwide.",
+    "url": "https://example.com/climate-data",
+    "category": "Environment",
+    "format": "CSV",
+    "organization": "Climate Research Institute",
+    "date": "2024-03-15"
+  },
+  {
+    "id": 2,
+    "title": "Urban Population Statistics",
+    "description": "Demographic data for major metropolitan areas including population density, growth rates, and migration patterns.",
+    "url": "https://example.com/urban-population",
+    "category": "Demographics",
+    "format": "JSON",
+    "organization": "Urban Studies Center",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 3,
+    "title": "Public Transportation Routes",
+    "description": "Complete dataset of bus, train, and metro routes with schedules, stops, and geographic coordinates.",
+    "url": "https://example.com/transport-routes",
+    "category": "Transportation",
+    "format": "GeoJSON",
+    "organization": "Transit Authority",
+    "date": "2024-01-10"
+  }
+]
