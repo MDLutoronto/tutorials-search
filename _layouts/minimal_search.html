@@ -976,27 +976,43 @@
 
                 if (activeFilters.technique.size > 0) {
                     const guideCategories = Array.isArray(guide.technique) ? guide.technique : [guide.technique];
-                    if (!guideCategories.some(cat => activeFilters.technique.has(cat))) {
+                    // Check if guide has ALL selected techniques (AND logic)
+                    const hasAllTechniques = Array.from(activeFilters.technique).every(selectedTech =>
+                        guideCategories.includes(selectedTech)
+                    );
+                    if (!hasAllTechniques) {
                         return false;
                     }
                 }
 
                 if (activeFilters.tool.size > 0) {
                     const guideFormats = Array.isArray(guide.tool) ? guide.tool : [guide.tool];
-                    if (!guideFormats.some(fmt => activeFilters.tool.has(fmt))) {
+                    // Check if guide has ALL selected tools (AND logic)
+                    const hasAllTools = Array.from(activeFilters.tool).every(selectedTool =>
+                        guideFormats.includes(selectedTool)
+                    );
+                    if (!hasAllTools) {
                         return false;
                     }
                 }
 
                 if (activeFilters.type.size > 0) {
                     const guideTypes = Array.isArray(guide.type) ? guide.type : [guide.type];
-                    if (!guideTypes.some(t => activeFilters.type.has(t))) {
+                    // Check if guide has ALL selected types (AND logic)
+                    const hasAllTypes = Array.from(activeFilters.type).every(selectedType =>
+                        guideTypes.includes(selectedType)
+                    );
+                    if (!hasAllTypes) {
                         return false;
                     }
                 }
                 if (activeFilters.organization.size > 0) {
                     const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
-                    if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
+                    // Check if guide has ALL selected organizations (AND logic)
+                    const hasAllOrgs = Array.from(activeFilters.organization).every(selectedOrg =>
+                        guideOrgs.includes(selectedOrg)
+                    );
+                    if (!hasAllOrgs) {
                         return false;
                     }
                 }
@@ -1006,7 +1022,11 @@
                         return false;
                     }
                     const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
-                    if (!guideDataFormats.some(fmt => activeFilters.dataFormat.has(fmt))) {
+                    // Check if guide has ALL selected data formats (AND logic)
+                    const hasAllFormats = Array.from(activeFilters.dataFormat).every(selectedFormat =>
+                        guideDataFormats.includes(selectedFormat)
+                    );
+                    if (!hasAllFormats) {
                         return false;
                     }
                 }
