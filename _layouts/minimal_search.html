@@ -703,8 +703,8 @@
                 </div>
 
                 <div class="facet-group">
-                    <h3>Organization</h3>
-                    <div id="organizationFacets"></div>
+                    <h3>Series</h3>
+                    <div id="seriesFacets"></div>
                 </div>
 
                 <button class="clear-filters" id="clearFilters">Clear All Filters</button>
@@ -752,7 +752,7 @@
             tool: new Set(),
             dataFormat: new Set(),
             type: new Set(),
-            organization: new Set()
+            series: new Set()
         };
         let currentSort = 'title';
         let displayedCount = 0;
@@ -771,7 +771,7 @@
             }
 
             // Read filter parameters
-            ['technique', 'tool', 'dataFormat', 'type', 'organization'].forEach(facet => {
+            ['technique', 'tool', 'dataFormat', 'type', 'series'].forEach(facet => {
                 const values = params.getAll(facet);
                 if (values.length > 0) {
                     activeFilters[facet] = new Set(values);
@@ -802,7 +802,7 @@
             }
 
             // Add filter parameters
-            ['technique', 'tool', 'dataFormat', 'type', 'organization'].forEach(facet => {
+            ['technique', 'tool', 'dataFormat', 'type', 'series'].forEach(facet => {
                 if (activeFilters[facet].size > 0) {
                     activeFilters[facet].forEach(value => {
                         params.append(facet, value);
@@ -834,7 +834,7 @@
                 tool: new Set(),
                 dataFormat: new Set(),
                 type: new Set(),
-                organization: new Set()
+                series: new Set()
             };
 
             // Read URL parameters again
@@ -871,7 +871,7 @@
         function initializeFacets() {
             createFacets('technique', 'techniqueFacets');
             createFacets('tool', 'toolFacets');
-            createFacets('organization', 'organizationFacets');
+            createFacets('series', 'seriesFacets');
             createFacets('type', 'typeFacets');
             createFacets('dataFormat', 'dataFormatFacets');
         }
@@ -1006,22 +1006,22 @@
                         return false;
                     }
                 }
-                if (activeFilters.organization.size > 0) {
-                    const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
-                    // Check if guide has ALL selected organizations (AND logic)
-                    const hasAllOrgs = Array.from(activeFilters.organization).every(selectedOrg =>
-                        guideOrgs.includes(selectedOrg)
+                if (activeFilters.series.size > 0) {
+                    const guideSeries = Array.isArray(guide.series) ? guide.series : [guide.series];
+                    // Check if guide has ALL selected series (AND logic)
+                    const hasAllSeries = Array.from(activeFilters.series).every(selectedSeries =>
+                        guideSeries.includes(selectedSeries)
                     );
-                    if (!hasAllOrgs) {
+                    if (!hasAllSeries) {
                         return false;
                     }
                 }
 
                 if (activeFilters.dataFormat.size > 0) {
-                    if (guide.dataFormat === undefined || guide.dataFormat === null) {
-                        return false;
-                    }
-                    const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
+                    // If guide has no dataFormat, treat it as an empty array
+                    const guideDataFormats = (guide.dataFormat === undefined || guide.dataFormat === null)
+                        ? []
+                        : (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat]);
                     // Check if guide has ALL selected data formats (AND logic)
                     const hasAllFormats = Array.from(activeFilters.dataFormat).every(selectedFormat =>
                         guideDataFormats.includes(selectedFormat)
@@ -1099,7 +1099,7 @@
                             .map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
-                        <span>${guide.organization}</span>
+                        <span>${guide.series && guide.series !== 'null' && guide.series !== 'undefined' ? guide.series : ''}</span>
                         <span>${guide.date}</span>
                     </div>
                 </div>
@@ -1228,7 +1228,7 @@
                 tool: new Set(),
                 dataFormat: new Set(),
                 type: new Set(),
-                organization: new Set()
+                series: new Set()
             };
             document.getElementById('searchInput').value = '';
             displayedCount = 0;
