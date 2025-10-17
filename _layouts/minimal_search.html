@@ -759,6 +759,92 @@
         let itemsPerLoad = 12;
         let isLoading = false;
 
+        // URL Parameter Management
+        function readURLParameters() {
+            const params = new URLSearchParams(window.location.search);
+
+            // Read search query
+            const query = params.get('query') || params.get('q') || params.get('search');
+            if (query) {
+                activeFilters.search = query;
+                document.getElementById('searchInput').value = query;
+            }
+
+            // Read filter parameters
+            ['technique', 'tool', 'dataFormat', 'type', 'organization'].forEach(facet => {
+                const values = params.getAll(facet);
+                if (values.length > 0) {
+                    activeFilters[facet] = new Set(values);
+                }
+            });
+
+            // Read sort parameter
+            const sort = params.get('sort');
+            if (sort && (sort === 'title' || sort === 'date')) {
+                currentSort = sort;
+                document.getElementById('sortSelect').value = sort;
+            }
+
+            // Read per-page parameter
+            const perPage = params.get('perPage') || params.get('show');
+            if (perPage && ['12', '24', '48', '100'].includes(perPage)) {
+                itemsPerLoad = parseInt(perPage);
+                document.getElementById('perPageSelect').value = perPage;
+            }
+        }
+
+        function updateURL() {
+            const params = new URLSearchParams();
+
+            // Add search query
+            if (activeFilters.search) {
+                params.set('query', activeFilters.search);
+            }
+
+            // Add filter parameters
+            ['technique', 'tool', 'dataFormat', 'type', 'organization'].forEach(facet => {
+                if (activeFilters[facet].size > 0) {
+                    activeFilters[facet].forEach(value => {
+                        params.append(facet, value);
+                    });
+                }
+            });
+
+            // Add sort parameter if not default
+            if (currentSort !== 'title') {
+                params.set('sort', currentSort);
+            }
+
+            // Add per-page parameter if not default
+            if (itemsPerLoad !== 12) {
+                params.set('perPage', itemsPerLoad.toString());
+            }
+
+            // Update URL without reloading page
+            const newURL = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+            window.history.pushState({ filters: activeFilters }, '', newURL);
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', (event) => {
+            // Reset filters
+            activeFilters = {
+                search: '',
+                technique: new Set(),
+                tool: new Set(),
+                dataFormat: new Set(),
+                type: new Set(),
+                organization: new Set()
+            };
+
+            // Read URL parameters again
+            readURLParameters();
+
+            // Apply filters
+            displayedCount = 0;
+            applyFilters();
+        });
+
         // Extract unique values for facets (handles both arrays and single values)
         function getFacetValues(key) {
             const allValues = guides.flatMap(d => {
@@ -873,6 +959,7 @@
             }
 
             displayedCount = 0;
+            updateURL();
             applyFilters();
         }
 
@@ -1093,6 +1180,7 @@
         document.getElementById('searchInput').addEventListener('input', (event) => {
             activeFilters.search = event.target.value;
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1100,6 +1188,7 @@
         document.getElementById('sortSelect').addEventListener('change', (event) => {
             currentSort = event.target.value;
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1107,6 +1196,7 @@
         document.getElementById('perPageSelect').addEventListener('change', (event) => {
             itemsPerLoad = parseInt(event.target.value);
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1122,6 +1212,7 @@
             };
             document.getElementById('searchInput').value = '';
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1150,6 +1241,7 @@
             }
 
             displayedCount = 0;
+            updateURL();
             applyFilters();
 
             // Scroll to top of results smoothly
@@ -1215,6 +1307,7 @@
         });
 
         // Initialize on page load
+        readURLParameters(); // Read URL parameters first
         initializeFacets();
         applyFilters();
     </script>
