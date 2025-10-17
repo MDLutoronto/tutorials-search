@@ -703,8 +703,8 @@
                 </div>
 
                 <div class="facet-group">
-                    <h3>Organization</h3>
-                    <div id="organizationFacets"></div>
+                    <h3>Series</h3>
+                    <div id="seriesFacets"></div>
                 </div>
 
                 <button class="clear-filters" id="clearFilters">Clear All Filters</button>
@@ -752,12 +752,98 @@
             tool: new Set(),
             dataFormat: new Set(),
             type: new Set(),
-            organization: new Set()
+            series: new Set()
         };
         let currentSort = 'title';
         let displayedCount = 0;
         let itemsPerLoad = 12;
         let isLoading = false;
+
+        // URL Parameter Management
+        function readURLParameters() {
+            const params = new URLSearchParams(window.location.search);
+
+            // Read search query
+            const query = params.get('query') || params.get('q') || params.get('search');
+            if (query) {
+                activeFilters.search = query;
+                document.getElementById('searchInput').value = query;
+            }
+
+            // Read filter parameters
+            ['technique', 'tool', 'dataFormat', 'type', 'series'].forEach(facet => {
+                const values = params.getAll(facet);
+                if (values.length > 0) {
+                    activeFilters[facet] = new Set(values);
+                }
+            });
+
+            // Read sort parameter
+            const sort = params.get('sort');
+            if (sort && (sort === 'title' || sort === 'date')) {
+                currentSort = sort;
+                document.getElementById('sortSelect').value = sort;
+            }
+
+            // Read per-page parameter
+            const perPage = params.get('perPage') || params.get('show');
+            if (perPage && ['12', '24', '48', '100'].includes(perPage)) {
+                itemsPerLoad = parseInt(perPage);
+                document.getElementById('perPageSelect').value = perPage;
+            }
+        }
+
+        function updateURL() {
+            const params = new URLSearchParams();
+
+            // Add search query
+            if (activeFilters.search) {
+                params.set('query', activeFilters.search);
+            }
+
+            // Add filter parameters
+            ['technique', 'tool', 'dataFormat', 'type', 'series'].forEach(facet => {
+                if (activeFilters[facet].size > 0) {
+                    activeFilters[facet].forEach(value => {
+                        params.append(facet, value);
+                    });
+                }
+            });
+
+            // Add sort parameter if not default
+            if (currentSort !== 'title') {
+                params.set('sort', currentSort);
+            }
+
+            // Add per-page parameter if not default
+            if (itemsPerLoad !== 12) {
+                params.set('perPage', itemsPerLoad.toString());
+            }
+
+            // Update URL without reloading page
+            const newURL = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+            window.history.pushState({ filters: activeFilters }, '', newURL);
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', (event) => {
+            // Reset filters
+            activeFilters = {
+                search: '',
+                technique: new Set(),
+                tool: new Set(),
+                dataFormat: new Set(),
+                type: new Set(),
+                series: new Set()
+            };
+
+            // Read URL parameters again
+            readURLParameters();
+
+            // Apply filters
+            displayedCount = 0;
+            applyFilters();
+        });
 
         // Extract unique values for facets (handles both arrays and single values)
         function getFacetValues(key) {
@@ -785,7 +871,7 @@
         function initializeFacets() {
             createFacets('technique', 'techniqueFacets');
             createFacets('tool', 'toolFacets');
-            createFacets('organization', 'organizationFacets');
+            createFacets('series', 'seriesFacets');
             createFacets('type', 'typeFacets');
             createFacets('dataFormat', 'dataFormatFacets');
         }
@@ -873,6 +959,7 @@
             }
 
             displayedCount = 0;
+            updateURL();
             applyFilters();
         }
 
@@ -889,37 +976,57 @@
 
                 if (activeFilters.technique.size > 0) {
                     const guideCategories = Array.isArray(guide.technique) ? guide.technique : [guide.technique];
-                    if (!guideCategories.some(cat => activeFilters.technique.has(cat))) {
+                    // Check if guide has ALL selected techniques (AND logic)
+                    const hasAllTechniques = Array.from(activeFilters.technique).every(selectedTech =>
+                        guideCategories.includes(selectedTech)
+                    );
+                    if (!hasAllTechniques) {
                         return false;
                     }
                 }
 
                 if (activeFilters.tool.size > 0) {
                     const guideFormats = Array.isArray(guide.tool) ? guide.tool : [guide.tool];
-                    if (!guideFormats.some(fmt => activeFilters.tool.has(fmt))) {
+                    // Check if guide has ALL selected tools (AND logic)
+                    const hasAllTools = Array.from(activeFilters.tool).every(selectedTool =>
+                        guideFormats.includes(selectedTool)
+                    );
+                    if (!hasAllTools) {
                         return false;
                     }
                 }
 
                 if (activeFilters.type.size > 0) {
                     const guideTypes = Array.isArray(guide.type) ? guide.type : [guide.type];
-                    if (!guideTypes.some(t => activeFilters.type.has(t))) {
+                    // Check if guide has ALL selected types (AND logic)
+                    const hasAllTypes = Array.from(activeFilters.type).every(selectedType =>
+                        guideTypes.includes(selectedType)
+                    );
+                    if (!hasAllTypes) {
                         return false;
                     }
                 }
-                if (activeFilters.organization.size > 0) {
-                    const guideOrgs = Array.isArray(guide.organization) ? guide.organization : [guide.organization];
-                    if (!guideOrgs.some(org => activeFilters.organization.has(org))) {
+                if (activeFilters.series.size > 0) {
+                    const guideSeries = Array.isArray(guide.series) ? guide.series : [guide.series];
+                    // Check if guide has ALL selected series (AND logic)
+                    const hasAllSeries = Array.from(activeFilters.series).every(selectedSeries =>
+                        guideSeries.includes(selectedSeries)
+                    );
+                    if (!hasAllSeries) {
                         return false;
                     }
                 }
 
                 if (activeFilters.dataFormat.size > 0) {
-                    if (guide.dataFormat === undefined || guide.dataFormat === null) {
-                        return false;
-                    }
-                    const guideDataFormats = Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat];
-                    if (!guideDataFormats.some(fmt => activeFilters.dataFormat.has(fmt))) {
+                    // If guide has no dataFormat, treat it as an empty array
+                    const guideDataFormats = (guide.dataFormat === undefined || guide.dataFormat === null)
+                        ? []
+                        : (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat]);
+                    // Check if guide has ALL selected data formats (AND logic)
+                    const hasAllFormats = Array.from(activeFilters.dataFormat).every(selectedFormat =>
+                        guideDataFormats.includes(selectedFormat)
+                    );
+                    if (!hasAllFormats) {
                         return false;
                     }
                 }
@@ -992,7 +1099,7 @@
                             .map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('') : ''}
                     </div>
                     <div class="guides-meta">
-                        <span>${guide.organization}</span>
+                        <span>${guide.series && guide.series !== 'null' && guide.series !== 'undefined' ? guide.series : ''}</span>
                         <span>${guide.date}</span>
                     </div>
                 </div>
@@ -1093,6 +1200,7 @@
         document.getElementById('searchInput').addEventListener('input', (event) => {
             activeFilters.search = event.target.value;
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1100,6 +1208,7 @@
         document.getElementById('sortSelect').addEventListener('change', (event) => {
             currentSort = event.target.value;
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1107,6 +1216,7 @@
         document.getElementById('perPageSelect').addEventListener('change', (event) => {
             itemsPerLoad = parseInt(event.target.value);
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1118,10 +1228,11 @@
                 tool: new Set(),
                 dataFormat: new Set(),
                 type: new Set(),
-                organization: new Set()
+                series: new Set()
             };
             document.getElementById('searchInput').value = '';
             displayedCount = 0;
+            updateURL();
             applyFilters();
         });
 
@@ -1150,6 +1261,7 @@
             }
 
             displayedCount = 0;
+            updateURL();
             applyFilters();
 
             // Scroll to top of results smoothly
@@ -1215,6 +1327,7 @@
         });
 
         // Initialize on page load
+        readURLParameters(); // Read URL parameters first
         initializeFacets();
         applyFilters();
     </script>

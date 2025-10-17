@@ -6,7 +6,7 @@
     - "Qualitative Research"
     - "NVivo"
   tool: "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   type: "Workshop"
   date: "2024-03-15"
 
@@ -20,7 +20,7 @@
   tool:
     - "Video"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-20"
 
 - id: 3
@@ -35,7 +35,7 @@
   dataFormat:
     - "Database"
     - "PostgreSQL"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-10"
 
 - id: 4
@@ -48,7 +48,7 @@
   tool:
     - "Tutorial"
     - "Video"
-  organization: "MDLUToronto"
+  series: "Another Series"
   date: "2024-04-01"
 
 - id: 5
@@ -59,7 +59,7 @@
     - "Data Visualization"
     - "Analytics"
   tool: "Tutorial"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-03-28"
 
 - id: 6
@@ -73,7 +73,7 @@
   tool:
     - "Workshop"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-03-20"
 
 - id: 7
@@ -87,7 +87,7 @@
   tool:
     - "Tutorial"
     - "PDF"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-03-15"
 
 - id: 8
@@ -99,7 +99,7 @@
     - "Web Development"
     - "JavaScript"
   tool: "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-03-10"
 
 - id: 9
@@ -112,7 +112,7 @@
   tool:
     - "Tutorial"
     - "Video"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-03-05"
 
 - id: 10
@@ -126,7 +126,7 @@
   tool:
     - "Workshop"
     - "Jupyter Notebook"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-28"
 
 - id: 11
@@ -140,7 +140,7 @@
   tool:
     - "Tutorial"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-25"
 
 - id: 12
@@ -153,7 +153,7 @@
   tool:
     - "Workshop"
     - "Video"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-20"
 
 - id: 13
@@ -164,7 +164,7 @@
     - "Programming"
     - "Version Control"
   tool: "Tutorial"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-15"
 
 - id: 14
@@ -177,7 +177,7 @@
   tool:
     - "Workshop"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-10"
 
 - id: 15
@@ -191,7 +191,7 @@
   tool:
     - "Tutorial"
     - "Jupyter Notebook"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-02-05"
 
 - id: 16
@@ -203,7 +203,7 @@
     - "Database"
     - "Data Management"
   tool: "Tutorial"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-30"
 
 - id: 17
@@ -216,7 +216,7 @@
   tool:
     - "Workshop"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-25"
 
 - id: 18
@@ -230,7 +230,7 @@
   tool:
     - "Tutorial"
     - "PDF"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-20"
 
 - id: 19
@@ -244,7 +244,7 @@
   tool:
     - "Workshop"
     - "Video"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-15"
 
 - id: 20
@@ -258,7 +258,7 @@
   tool:
     - "Tutorial"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-10"
 
 - id: 21
@@ -269,7 +269,7 @@
     - "Qualitative Research"
     - "Data Analysis"
   tool: "Workshop"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2024-01-05"
 
 - id: 22
@@ -283,7 +283,7 @@
   tool:
     - "Tutorial"
     - "HTML"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2023-12-20"
 
 - id: 23
@@ -296,7 +296,7 @@
   tool:
     - "Tutorial"
     - "Video"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2023-12-15"
 
 - id: 24
@@ -310,7 +310,7 @@
   tool:
     - "Workshop"
     - "Jupyter Notebook"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2023-12-10"
 
 - id: 25
@@ -321,5 +321,5 @@
     - "Image Analysis"
     - "Scientific Computing"
   tool: "Tutorial"
-  organization: "MDLUToronto"
+  series: "Bits and Bites"
   date: "2023-12-05"
