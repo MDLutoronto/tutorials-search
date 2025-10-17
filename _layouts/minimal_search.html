@@ -48,11 +48,14 @@
             background: transparent;
             padding: 20px 0;
             margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
         }
 
         .sticky-search-wrapper.scrolled {
-            transform: translateY(-150px);
+            opacity: 0;
+            visibility: hidden;
         }
 
         .sticky-search-container {
