@@ -1,12 +1,15 @@
-# Map & Data Library tutorials search portal
+[![Site Deployment](https://img.shields.io/github/actions/workflow/status/MDLutoronto/tutorials-search/deploy.yml?branch=main&label=Site%20Deployment&logo=github)](https://github.com/MDLutoronto/tutorials-search/actions/workflows/deploy.yml)
+[![YAML Lint](https://img.shields.io/github/actions/workflow/status/MDLutoronto/tutorials-search/yamllint.yml?branch=main&label=YAML%20Lint&logo=github)](https://github.com/MDLutoronto/tutorials-search/actions/workflows/yamllint.yml)
+
+# 🔍 Map & Data Library tutorials search portal
 This repository is the codebase for a javascript based website that serves as a search interface for the [Map & Data Library Tutorials](https://mdlutoronto.github.io/tutorials-search/). 
 
 It is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
-# Updating tutorials data
+# 📄 Updating tutorials data
 See the [instructions for updating the tutorials data](/docs/update-data/README.md).
 
-# Development
+# 🏗️ Development
 ## Site structure
 - The main layout file is located at `_layouts/minimal_search.html`.
 - The tutorials data is stored in the `_data/guides.yml` file.
@@ -45,3 +48,9 @@ Another way to fix it is to try the following steps:
 2. Go to the repository's **Settings** > **Pages**. Find the `Source` under the **Build and deployment** section, change it to `Deploy from a branch`
 3. Wait for a few seconds, then change it back to `GitHub Actions`.
 4. Retrigger the deployment by pushing a new commit, or re-running the workflow under the **Actions** > **Deploy Jekyll site to Pages**.
+
+# ✏️ Author
+Initial code developed by [Ken Lui](https://github.com/kenlhlui), Data Curation Specialist at the Map & Data Library at the University of Toronto.
+
+# 📜 License
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
