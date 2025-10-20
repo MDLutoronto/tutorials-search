@@ -8,7 +8,7 @@
     <style>
         :root {
             /* Maximum number of cards to display per row on wider screens */
-            --max-cards-per-row: 3;
+            --max-cards-per-row: {{ site.cards_per_row | default: 2 }};
         }
 
         * {
