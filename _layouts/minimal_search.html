@@ -360,7 +360,36 @@
             color: #666;
             font-size: 14px;
             line-height: 1.5;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s ease;
+        }
+
+        .guides-description.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
+            max-height: none;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: #1E3765;
+            font-size: 13px;
+            cursor: pointer;
+            padding: 0;
             margin-bottom: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .read-more-btn:hover {
+            color: #007FA3;
         }
 
         .guides-tags {
@@ -1095,10 +1124,13 @@
             const endIndex = Math.min(startIndex + itemsPerLoad, filteredGuides.length);
             const guidesToRender = filteredGuides.slice(startIndex, endIndex);
 
-            const guidesHTML = guidesToRender.map(guide => `
+            const guidesHTML = guidesToRender.map((guide, index) => {
+                const uniqueId = `desc-${startIndex + index}`;
+                return `
                 <div class="guides-card">
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
-                    <p class="guides-description">${guide.description}</p>
+                    <p class="guides-description" id="${uniqueId}" data-full-text="${guide.description.replace(/"/g, '&quot;')}">${guide.description}</p>
+                    <button class="read-more-btn" id="btn-${uniqueId}" onclick="toggleDescription('${uniqueId}', this)" style="display: none;">Read more</button>
                     <div class="guides-tags">
                         ${(Array.isArray(guide.technique) ? guide.technique : [guide.technique])
                             .map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
@@ -1114,10 +1146,25 @@
                         <span>${guide.date}</span>
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             grid.insertAdjacentHTML('beforeend', guidesHTML);
             displayedCount = endIndex;
+
+            // Check which descriptions need "Read more" buttons
+            guidesToRender.forEach((guide, index) => {
+                const uniqueId = `desc-${startIndex + index}`;
+                const descElement = document.getElementById(uniqueId);
+                const btnElement = document.getElementById(`btn-${uniqueId}`);
+
+                if (descElement && btnElement) {
+                    // Check if text is truncated by comparing scrollHeight to clientHeight
+                    if (descElement.scrollHeight > descElement.clientHeight) {
+                        btnElement.style.display = 'block';
+                    }
+                }
+            });
 
             // Hide loading indicator if all guides are displayed
             if (displayedCount >= filteredGuides.length) {
@@ -1309,6 +1356,21 @@
                 }, 0);
             }
         });
+
+        // Toggle description expand/collapse
+        function toggleDescription(descriptionId, button) {
+            const description = document.getElementById(descriptionId);
+            if (description.classList.contains('expanded')) {
+                description.classList.remove('expanded');
+                button.textContent = 'Read more';
+            } else {
+                description.classList.add('expanded');
+                button.textContent = 'Read less';
+            }
+        }
+
+        // Make function globally accessible
+        window.toggleDescription = toggleDescription;
 
         // Update search hint text based on OS
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
