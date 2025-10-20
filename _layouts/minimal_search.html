@@ -12,6 +12,19 @@
             box-sizing: border-box;
         }
 
+        a {
+        color: inherit;           
+        text-decoration: none;    
+        }
+
+        a:hover {
+        text-decoration: underline; 
+        }
+
+        a:visited {
+        color: inherit;  
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
@@ -663,7 +676,7 @@
             <a href="https://library.utoronto.ca" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
             </a>
-            <h1>📚 Learn@MDL</h1>
+            <h1><a href="/">📚 Learn@MDL</a></h1>
             <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto.</p>
         </header>
 
@@ -681,7 +694,7 @@
 
         <div class="main-content">
             <aside class="sidebar" id="sidebar">
-
+                <button class="clear-filters" id="clearFilters">Clear All Filters</button><br><br>
                 <div class="facet-group">
                     <h3>Technique</h3>
                     <div id="techniqueFacets"></div>
@@ -706,8 +719,6 @@
                     <h3>Series</h3>
                     <div id="seriesFacets"></div>
                 </div>
-
-                <button class="clear-filters" id="clearFilters">Clear All Filters</button>
             </aside>
 
             <main class="results-section">
