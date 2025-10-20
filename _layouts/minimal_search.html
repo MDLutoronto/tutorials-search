@@ -360,7 +360,36 @@
             color: #666;
             font-size: 14px;
             line-height: 1.5;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s ease;
+        }
+
+        .guides-description.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
+            max-height: none;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: #1E3765;
+            font-size: 13px;
+            cursor: pointer;
+            padding: 0;
             margin-bottom: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .read-more-btn:hover {
+            color: #007FA3;
         }
 
         .guides-tags {
@@ -979,9 +1008,11 @@
             filteredGuides = guides.filter(guide => {
                 if (activeFilters.search) {
                     const searchTerm = activeFilters.search.toLowerCase();
+                    const title = guide.title || '';
+                    const description = guide.description || '';
                     const matchesSearch =
-                        guide.title.toLowerCase().includes(searchTerm) ||
-                        guide.description.toLowerCase().includes(searchTerm);
+                        title.toLowerCase().includes(searchTerm) ||
+                        description.toLowerCase().includes(searchTerm);
                     if (!matchesSearch) return false;
                 }
 
@@ -1095,29 +1126,59 @@
             const endIndex = Math.min(startIndex + itemsPerLoad, filteredGuides.length);
             const guidesToRender = filteredGuides.slice(startIndex, endIndex);
 
-            const guidesHTML = guidesToRender.map(guide => `
+            const guidesHTML = guidesToRender.map((guide, index) => {
+                const uniqueId = `desc-${startIndex + index}`;
+
+                // Helper function to safely get array values, filtering out undefined/null
+                const getArrayValues = (value) => {
+                    if (!value || value === 'undefined' || value === 'null') return [];
+                    const arr = Array.isArray(value) ? value : [value];
+                    return arr.filter(v => v && v !== 'undefined' && v !== 'null');
+                };
+
+                const techniques = getArrayValues(guide.technique);
+                const tools = getArrayValues(guide.tool);
+                const dataFormats = getArrayValues(guide.dataFormat);
+                const types = getArrayValues(guide.type);
+
+                // Safely handle description
+                const description = guide.description && guide.description !== 'undefined' && guide.description !== 'null' ? guide.description : '';
+
+                return `
                 <div class="guides-card">
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
-                    <p class="guides-description">${guide.description}</p>
+                    <p class="guides-description" id="${uniqueId}" data-full-text="${description.replace(/"/g, '&quot;')}">${description}</p>
+                    <button class="read-more-btn" id="btn-${uniqueId}" onclick="toggleDescription('${uniqueId}', this)" style="display: none;">Read more</button>
                     <div class="guides-tags">
-                        ${(Array.isArray(guide.technique) ? guide.technique : [guide.technique])
-                            .map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
-                        ${(Array.isArray(guide.tool) ? guide.tool : [guide.tool])
-                            .map(fmt => `<span class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
-                        ${guide.dataFormat ? (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat])
-                            .map(fmt => `<span class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('') : ''}
-                        ${guide.type ? (Array.isArray(guide.type) ? guide.type : [guide.type])
-                            .map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('') : ''}
+                        ${techniques.map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
+                        ${tools.map(fmt => `<span class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
+                        ${dataFormats.map(fmt => `<span class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('')}
+                        ${types.map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('')}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.series && guide.series !== 'null' && guide.series !== 'undefined' ? guide.series : ''}</span>
-                        <span>${guide.date}</span>
+                        <span>${guide.date || ''}</span>
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             grid.insertAdjacentHTML('beforeend', guidesHTML);
             displayedCount = endIndex;
+
+            // Check which descriptions need "Read more" buttons
+            guidesToRender.forEach((guide, index) => {
+                const uniqueId = `desc-${startIndex + index}`;
+                const descElement = document.getElementById(uniqueId);
+                const btnElement = document.getElementById(`btn-${uniqueId}`);
+
+                if (descElement && btnElement) {
+                    // Check if text is truncated by comparing scrollHeight to clientHeight
+                    if (descElement.scrollHeight > descElement.clientHeight) {
+                        btnElement.style.display = 'block';
+                    }
+                }
+            });
 
             // Hide loading indicator if all guides are displayed
             if (displayedCount >= filteredGuides.length) {
@@ -1309,6 +1370,21 @@
                 }, 0);
             }
         });
+
+        // Toggle description expand/collapse
+        function toggleDescription(descriptionId, button) {
+            const description = document.getElementById(descriptionId);
+            if (description.classList.contains('expanded')) {
+                description.classList.remove('expanded');
+                button.textContent = 'Read more';
+            } else {
+                description.classList.add('expanded');
+                button.textContent = 'Read less';
+            }
+        }
+
+        // Make function globally accessible
+        window.toggleDescription = toggleDescription;
 
         // Update search hint text based on OS
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
