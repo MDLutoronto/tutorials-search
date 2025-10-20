@@ -39,7 +39,7 @@ cd tutorials-search
 ```bash
 bundle install && bundle exec jekyll serve --livereload --port 4000
 ```
-4. Open your web browser and go to `http://localhost:4000` to view the site.
+4. Open your web browser and go to `http://localhost:4000/tutorials-search/` to view the site.
 
 # 🐛 Deployment bug fix
 If the deployment in GitHub Actions keeps looping the following messages:

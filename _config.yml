@@ -1,8 +1,9 @@
 ## Site settings
 title: "Map & Data Library just the Docs Theme"
 description: "Workshops and guides from the Map & Data Library, University of Toronto"
-url: "https://mdlutoronto.github.io/tutorials-search"  # change the slug to the repo's name ('jtd-theme' in this case)
-repository: "MDLutoronto/jtd-theme" # for github-metadata
+url: "https://mdlutoronto.github.io"
+baseurl: "/tutorials-search" # the subpath of your site, e.g. /blog
+repository: "MDLutoronto/tutorials-search" # for github-metadata
 
 ## Navigation footer logos and links
 ## Change it only if you want to use different logos or links
@@ -38,8 +39,6 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 # 🚨 DANGER ZONE 🚨
 # ONLY CHANGE BELOW THIS LINE IF YOU KNOW WHAT YOU ARE DOING
 #################################################
-
-baseurl: "" # the subpath of your site, e.g. /blog
 
 # # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
