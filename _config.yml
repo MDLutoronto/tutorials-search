@@ -2,7 +2,7 @@
 title: "Map & Data Library just the Docs Theme"
 description: "Workshops and guides from the Map & Data Library, University of Toronto"
 url: "https://mdlutoronto.github.io/tutorials-search"  # change the slug to the repo's name ('jtd-theme' in this case)
-repository: "MDLutoronto/tutorials-search" # for github-metadata
+repository: "MDLutoronto/jtd-theme" # for github-metadata
 
 ## Navigation footer logos and links
 ## Change it only if you want to use different logos or links
