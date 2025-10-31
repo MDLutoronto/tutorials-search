@@ -4,10 +4,8 @@ description: "Workshops and guides from the Map & Data Library, University of To
 url: "https://mdlutoronto.github.io"
 baseurl: "/tutorials-search" # the subpath of your site, e.g. /blog
 repository: "MDLutoronto/tutorials-search" # for github-metadata
-
 # Cards per row in search results
 cards_per_row: 3 # How many cards to show per row in search results (default is 3)
-
 ## Navigation footer logos and links
 ## Change it only if you want to use different logos or links
 ## Logos should be placed in the /assets/images/ directory, or you can use an external image link
@@ -15,13 +13,11 @@ nav_footer_logo_bottom: "/assets/images/UTL.png"
 nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
 nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
 nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
-
 ## License information
 ##  If left empty, a default Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license will be used
 license_name: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
 license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" # link to the license
 license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" # image Link or image file path for the license
-
 # #  Aux links for the upper right search bar (optional)
 # # Uncomment if you want to have the aux links (right side of the top nav bar)
 # aux_links:
@@ -44,7 +40,6 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 
 # # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
-
 # # External navigation links that appear in the sidebar and shows after all the sub-pages
 # # Each link must have a title and a url
 nav_external_links:
@@ -57,19 +52,15 @@ nav_external_links:
 
 # # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: mdl
-
 # #  Remote theme
 remote_theme: "MDLutoronto/jtd-theme"
-
 permalink: pretty
-
 defaults:
   - scope:
       path: "docs" # an empty string here means all files in the project
       type: "pages"
     values:
       layout: "default"
-
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
   - .sass-cache/
@@ -97,7 +88,6 @@ exclude:
   - Dockerfile
   # theme test code
   - fixtures/
-
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
 
@@ -129,10 +119,8 @@ search:
   button: false
   # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
   focus_shortcut_key: "k"
-
 # For copy button on code
 enable_copy_code_button: true
-
 # By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
 mermaid:
   # Version of mermaid library
@@ -146,35 +134,27 @@ mermaid:
   # for (<v10):
   # path: "/assets/js/mermaid.min.js"
   # Note: copy both `mermaid.esm.min.mjs` (v10+) or `mermaid.min.js` (<v10) and the associated `.map` file from the specified version of `mermaid/dist` to `/assets/js/`.
-
 # Enable or disable heading anchors
 heading_anchors: true
-
 # Enable or disable the side/mobile menu globally
 # Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
 nav_enabled: true
-
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
-
 # Show navigation error report
 nav_error_report: true # default is false/nil.
-
 liquid:
   error_mode: strict
   strict_filters: true
-
 # Footer content
 # appears at the bottom of every page's main content
 
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
-
 # Footer last edited timestamp
 last_edit_timestamp: false # Keep this be `false`, since it's set inside the footer_custom.html ; use `last_modified_date` in the page's front matter instead
-
 # # Footer "Edit this page on GitHub" link text
 # gh_edit_link: true # show or hide edit this page link
 # gh_edit_link_text: "Edit this page on GitHub"
@@ -182,7 +162,6 @@ last_edit_timestamp: false # Keep this be `false`, since it's set inside the foo
 # gh_edit_branch: "main" # the branch that your docs is served from
 # # gh_edit_source: docs # the source that your files originate from
 # gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
-
 callouts_level: quiet # or loud
 callouts:
   highlight:
@@ -199,13 +178,11 @@ callouts:
   warning:
     title: Warning
     color: red
-
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 # Note: the main Just the Docs site does *not* use Google Analytics.
 # ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
@@ -213,12 +190,10 @@ plugins:
   - jekyll-sitemap
   # - jekyll-toc
   - jekyll-remote-theme
-
 kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-
 compress_html:
   clippings: all
   comments: all
@@ -228,9 +203,7 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
-
 sass:
   quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
   silence_deprecations: ["import"] # https://github.com/just-the-docs/just-the-docs/issues/1607
 
-ci_last_modified_date: "2025-10-31""2025-10-31"

@@ -46,30 +46,10 @@ jobs:
           echo "date_yyyy_mm_dd=$date_value" >> $GITHUB_ENV
           echo "date=$date_value" >> $GITHUB_OUTPUT
 
-      # Update the YAML line safely (no need to hunt for a placeholder)
       - name: Update _config.yml
-        shell: bash
-        run: |
-          set -euo pipefail
-          export LC_ALL=C
-
-          # Normalize line endings in case of CRLF
-          if file _config.yml | grep -q CRLF; then
-            sed -i 's/\r$//' _config.yml
-          fi
-
-          # Add key if not present (ignore commented lines)
-          if ! grep -Eq '^[[:space:]]*ci_last_modified_date:' _config.yml; then
-            echo "ci_last_modified_date not found, adding it."
-            printf '\nci_last_modified_date: "%s"\n' "$date_yyyy_mm_dd" >> _config.yml
-          else
-            echo "ci_last_modified_date found, updating it."
-            # Update exactly the line that sets the key (first match), keep it quoted
-            # Handles optional indentation before the key
-            sed -i -E '0,/^[[:space:]]*ci_last_modified_date:[[:space:]]*/ s//ci_last_modified_date: "'"$date_yyyy_mm_dd"'"/' _config.yml
-          fi
-
-          echo "Updated to: $date_yyyy_mm_dd"
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq -i '.ci_last_modified_date = "${{ steps.set_date.outputs.date }}"' _config.yml
 
       - name: Commit and Push
         uses: stefanzweifel/git-auto-commit-action@v7
