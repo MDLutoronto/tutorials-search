@@ -26,37 +26,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Auto-generate date job to update _config.yml
-  auto-gen-date:
-    name: Update ci_last_modified_date
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          persist-credentials: true
-          fetch-depth: 0
-
-      - name: Set date
-        id: set_date
-        run: |
-          date_value=$(date +'%Y-%m-%d')
-          echo "date_yyyy_mm_dd=$date_value" >> $GITHUB_ENV
-          echo "date=$date_value" >> $GITHUB_OUTPUT
-
-      - name: Update _config.yml
-        uses: mikefarah/yq@master
-        with:
-          cmd: yq -i '.ci_last_modified_date = "${{ steps.set_date.outputs.date }}"' _config.yml
-
-      - name: Commit and Push
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }} [skip ci]"
-          file_pattern: "_config.yml"
-          push_options: --force
 
   # Build job
   build:
