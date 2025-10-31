@@ -16,7 +16,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -30,11 +30,14 @@ jobs:
   auto-gen-date:
     name: Update ci_last_modified_date
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           persist-credentials: true
+          fetch-depth: 0
 
       - name: Set date
         id: set_date
@@ -73,6 +76,7 @@ jobs:
         with:
           commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }} [skip ci]"
           file_pattern: "_config.yml"
+          push_options: --force
 
   # Build job
   build:
