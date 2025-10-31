@@ -1,8 +1,10 @@
 [![Site Deployment](https://img.shields.io/github/actions/workflow/status/MDLutoronto/tutorials-search/deploy.yml?branch=main&label=Site%20Deployment&logo=github)](https://github.com/MDLutoronto/tutorials-search/actions/workflows/deploy.yml)
-[![YAML Lint](https://img.shields.io/github/actions/workflow/status/MDLutoronto/tutorials-search/yamllint.yml?branch=main&label=YAML%20Lint&logo=github)](https://github.com/MDLutoronto/tutorials-search/actions/workflows/yamllint.yml)
+[![CI](https://github.com/MDLutoronto/tutorials-search/actions/workflows/ci_pr.yml/badge.svg)](https://github.com/MDLutoronto/tutorials-search/actions/workflows/ci_pr.yml)
 
 # 🔍 Map & Data Library tutorials search portal
-<img src="docs/screenshot.png" alt="Screenshot of the Map & Data Library tutorials search portal" style="max-width: 600px;">
+<a href="https://mdlutoronto.github.io/tutorials-search/" target="_blank">
+  <img src="docs/screenshot.png" alt="Screenshot of the Map & Data Library tutorials search portal" style="max-width: 600px;">
+</a>
 
 This repository is the codebase for a javascript based website that serves as a search interface for the [Map & Data Library Tutorials](https://mdlutoronto.github.io/tutorials-search/). 
 
