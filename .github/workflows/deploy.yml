@@ -10,6 +10,8 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,12 +32,14 @@ jobs:
   auto-gen-date:
     name: Update ci_last_modified_date
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
     permissions:
       contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
+          ref: ${{ github.head_ref }}
           persist-credentials: true
           fetch-depth: 0
 
@@ -54,9 +58,8 @@ jobs:
       - name: Commit and Push
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }} [skip ci]"
+          commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }}"
           file_pattern: "_config.yml"
-          push_options: --force
 
   # Build job
   build:
