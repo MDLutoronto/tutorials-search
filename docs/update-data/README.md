@@ -4,7 +4,7 @@ The cards data are stored in the `_data/guides.yml` file.
 Each tutorial entry can have the following fields:
 | Field         | Mandatory | Description                                                                                                    | Type / Format              |
 |----------------|------------|----------------------------------------------------------------------------------------------------------------|-----------------------------|
-| `id`           | No         | A unique identifier for the tutorial.                                                                         | String                     |
+| `id`           | No         | A unique identifier for the tutorial.                                                                         | String / Integer                     |
 | `title`        | Yes        | The title of the tutorial.                                                                                    | String                     |
 | `description`  | No         | A brief description of the tutorial.                                                                          | String                     |
 | `url`          | Yes        | The URL of the tutorial.                                                                                      | String (URL)                |
@@ -34,6 +34,24 @@ technique:
   - "Data Analysis"
   - "Visualization"
 ```
+# Validate the YAML file against the schema
+You can validate the `_data/guides.yml` file against the schema defined in `_data/guides_schema.yml` using a YAML schema validation tool or library. The following example will be using [`check-jsonschema`](https://github.com/python-jsonschema/check-jsonschema):
+
+You have to first install `check-jsonschema` if you haven't already:
+```bash
+pip install check-jsonschema
+```
+Then run the following command to validate the `_data/guides.yml` file:
+```bash
+check-jsonschema --schemafile _data/guides_schema.yml _data/guides.yml
+```
+
+Alternatively, if you have uv (&uvx) installed, you can use the following command:
+```bash
+uvx check-jsonschema --schemafile _data/guides_schema.yml _data/guides.yml
+```
+
+
 
 # Best Practices
 Follow these best practices when making updates to the `_data/guides.yml` file:
