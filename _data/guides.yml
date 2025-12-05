@@ -736,7 +736,7 @@
     - Data Visualization
   tool:
     - R
-  dataFormat: Microdata
+  data Format: Microdata
   date: "2024-03-27"
   series: MDL Tutorials
   type: Tutorial
