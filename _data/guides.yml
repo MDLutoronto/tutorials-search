@@ -459,9 +459,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-text-analysis-tasting-menu-sampling-available-tools-feb-14
   description:
     This page provides a video recording of a workshop on various text
-    analysis tools.Please note thatConstellate is endingon July 1st, 2025. Some learning
-    materials will remain available afterwards.Please also note thatHathiTrust Research
-    Center will no longer be fundedby the end of 2026.
+    analysis tools.Please note thatConstellate is ending on July 1st, 2025. Some learning
+    materials will remain available afterwards.Please also note that Hathi Trust Research
+    Center will no longer be funded by the end of 2026.
   technique:
     - Text and Data Mining
     - Cleaning data
@@ -469,7 +469,7 @@
   tool:
     - Constellate
     - Digital Scholar Lab
-    - HathiTrust Research Center
+    - Hathi Trust Research Center
   date: "2025-01-28"
   series: MDL Tutorials
   type: Tutorial
