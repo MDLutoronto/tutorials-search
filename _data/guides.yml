@@ -864,7 +864,7 @@
     In order for many GIS functions to work properly, your datasets need
     to be stored in a common projected coordinate system. This guide will assist you
     with the projection process in ArcGIS Pro. (Unsure of what the appropriate projection
-    is for your area of interest? Refer to thishelp documentor ask a staff member
+    is for your area of interest? Refer to this help document or ask a staff member
     for assistance in helping you determine it.)
   technique:
     - Projecting
