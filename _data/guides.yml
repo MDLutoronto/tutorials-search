@@ -25,7 +25,7 @@
     - Data Visualization
   tool:
     - Power BI
-  data Format: Statistics
+  dataFormat: Statistics
   date: "2025-09-05"
   series: MDL Tutorials
   type: Tutorial
@@ -718,7 +718,7 @@
     and contextual analysis.
   technique:
     - Searching for maps and data
-  data Format: 
+  dataFormat: 
     - Paper maps
     - Statistics
     - Vector
@@ -736,7 +736,7 @@
     - Data Visualization
   tool:
     - R
-  data Format: Microdata
+  dataFormat: Microdata
   date: "2024-03-27"
   series: MDL Tutorials
   type: Tutorial
@@ -750,7 +750,7 @@
     - Georeferencing
   tool:
     - ArcGIS Online
-  data Format: Raster
+  dataFormat: Raster
   date: "2024-03-15"
   series: MDL Tutorials
   type: Tutorial
