@@ -718,7 +718,10 @@
     and contextual analysis.
   technique:
     - Searching for maps and data
-  dataFormat: Paper maps, Statistics, Vector
+  data Format: 
+    - Paper maps
+    - Statistics
+    - Vector
   date: "2024-08-12"
   series: MDL Tutorials
   type: Tutorial
