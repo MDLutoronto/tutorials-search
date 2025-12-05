@@ -750,7 +750,7 @@
     - Georeferencing
   tool:
     - ArcGIS Online
-  dataFormat: Raster
+  data Format: Raster
   date: "2024-03-15"
   series: MDL Tutorials
   type: Tutorial
