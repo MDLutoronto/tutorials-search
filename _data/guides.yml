@@ -1637,13 +1637,13 @@
   title: Getting Started with the Web of Science PostgreSQL Database - Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database-MAC
   description:
-    "This tutorial will help you get up and running querying theWeb of
+    "This tutorial will help you get up and running querying the Web of
     Science PostgreSQL databaseon a Mac computer. It will cover accessing the high
     performance computing environment, querying the database via SQL statements and
-    from within a python script, and downloading the results of the query.You will
+    from within a python script, and downloading the results of the query. You will
     need a Compute Canada account with the proper credentials to access this database.
     If you haven’t done so already, you should first follow theinstructions to get
-    your account set up.Note: This tutorial is intended for Mac users. If you are
+    your account set up. Note: This tutorial is intended for Mac users. If you are
     using Windows, check out thistutorialinstead."
   date: "2022-02-07"
   series: MDL Tutorials
