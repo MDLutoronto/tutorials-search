@@ -1194,7 +1194,7 @@
   description:
     "This page provides an overview and tips for working as a team using
     NVivo. There are three main options: the manual way, the old collaboration cloud,
-    and the new collaboration cloud. There is alsoNVivo Collaboration Server, but
+    and the new collaboration cloud. There is also NVivo Collaboration Server, but
     that involves purchasing, setting up, and maintaining NVivo Server software, and
     it only works in a Windows environment with NVivo 12 or 13."
   technique:
@@ -1214,10 +1214,10 @@
     Intellectual Property Office (CIPO) Patent PostgreSQL Database. It will cover
     accessing the high performance computing environment, querying the database via
     SQL statements and from within a python script, and downloading the results of
-    the query.You will need a Compute Canada account with the proper credentials to
+    the query. You will need a Compute Canada account with the proper credentials to
     access this database. If you haven’t done so already, you should first follow
-    theinstructions to get your account set up.Note: This tutorial is intended for
-    Windows users. If you are using a Mac, check out thistutorialinstead."
+    the instructions to get your account set up. Note: This tutorial is intended for
+    Windows users. If you are using a Mac, check out this tutorial instead."
   date: "2023-01-05"
   series: MDL Tutorials
   type: Tutorial
@@ -1233,8 +1233,8 @@
     SQL statements and from within a python script, and downloading the results of
     the query.You will need a Compute Canada account with the proper credentials to
     access this database. If you haven’t done so already, you should first follow
-    theinstructions to get your account set up.Note: This tutorial is intended for
-    Mac users. If you are using Windows, check out thistutorialinstead."
+    the instructions to get your account set up. Note: This tutorial is intended for
+    Mac users. If you are using Windows, check out this tutorial instead."
   date: "2022-11-30"
   series: MDL Tutorials
   type: Tutorial
