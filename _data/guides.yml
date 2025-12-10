@@ -1243,9 +1243,11 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-mapping-and-spatial-analysis-qgis
   description:
     Learn the basics of GIS with open source software, QGIS (https://qgis.org).
-    This tutorial/workshop is made up of three modules.Module 1. Getting startedModule
-    2. Making a map using layoutsModule 3. Manipulating geospatial datasetsDownload
-    the datasets used for this workshop at this location:https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zipNote
+    This tutorial/workshop is made up of three modules. 
+    - Module 1. Getting started
+    - Module 2. Making a map using layouts
+    - Module 3. Manipulating geospatial datasets 
+    Download the datasets used for this workshop at this location:https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zipNote
     that while the examples shown in this tutorial were captured using the windows
     version of QGIS, all modules and operations can be completed using the linux or
     mac OS version of QGIS.
