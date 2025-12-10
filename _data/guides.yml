@@ -1812,7 +1812,7 @@
   title: How to Access Online GIS Classes in ESRI Academy
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
   description:
-    ​University of Toronto community members can access online GIS courses
+   ​University of Toronto community members can access online GIS courses
     through ESRI Academy. Content is designed for beginners and experienced users.
   tool:
     - ArcGIS
@@ -1826,9 +1826,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-constellate
   description:
     This tutorial walks you through accessing Constellate using the University
-    of Toronto's institutional privileges. Please see ourgeneral Constellate pagefor
-    more information and see ourtutorial on creating a datasetonce you have logged
-    in.Please note thatConstellate is endingon July 1st, 2025. Some learning materials
+    of Toronto's institutional privileges. Please see ourgeneral Constellate page for
+    more information and see ourtutorial on creating a dataset once you have logged
+    in. Please note that Constellate is ending on July 1st, 2025. Some learning materials
     will remain available afterwards.
   tool:
     - Constellate
