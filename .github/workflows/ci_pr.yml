@@ -28,12 +28,7 @@ jobs:
       - name: Lint YAML files
         run: "yamllint -f github -d '{extends: default, rules: {line-length: disable}}' _data/guides.yml"
 
-      - name: Sort Keys by title
-        uses: mikefarah/yq@master
-        with:
-            cmd: yq -i 'sort_by(.title)' _data/guides.yml
-
-          # Auto-generate date job to update _config.yml
+  # Auto-generate date job to update _config.yml
   auto-gen-date:
     name: Update ci_last_modified_date
     runs-on: ubuntu-latest
@@ -64,3 +59,27 @@ jobs:
         with:
           commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }} [skip ci]"
           file_pattern: "_config.yml"
+
+  sort-yaml-by-title:
+    name: Sort YAML files by title
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Sort Keys by title
+        uses: mikefarah/yq@master
+        with:
+            cmd: yq -i 'sort_by(.title)' _data/guides.yml
+
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "ci: Auto-sort _data/guides.yml by title [skip ci]"
+          file_pattern: "_data/guides.yml"
