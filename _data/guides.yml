@@ -1481,10 +1481,10 @@
   title: "R and RStudio: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/r-and-rstudio-information-tutorials-and-workshops
   description:
-    Ris a programming language and a free software environment to write
-    and execute the R language.RStudiois an Integrated Development Environment that
+    R is a programming language and a free software environment to write
+    and execute the R language. RStudio is an Integrated Development Environment that
     provides free and open-source tools for R. While you can run your data analysis
-    in the basic R environment, RStudio has a more intuitive interface and more tools
+    in the basic R environment, R Studio has a more intuitive interface and more tools
     to help you write your R code.
   technique:
     - Converting data formats
