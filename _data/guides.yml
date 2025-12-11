@@ -2165,8 +2165,8 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2-using-reconciliation-services
   description:
     This tutorial will teach you how to use OpenRefine's reconciliation
-    service to connect data in your dataset with Wikidata. ***Note 1:*** *Complete Augmenting
-    activity 1 first before attempting this activity.* ***Note 2:*** *In order to complete this
+    service to connect data in your dataset with Wikidata. ***Note 1:*** *Complete [Augmenting
+    activity 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data) first before attempting this activity.* ***Note 2:*** *In order to complete this
     activity, you need to be running the latest version of OpenRefine.*
   technique:
     - Cleaning data
@@ -2180,7 +2180,7 @@
   title: OpenRefine Tutorial 4. 311 Calls Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-4-311-calls-activity
   description:
-    "This tutorial has been developed for OpenRefine version 3.7.5Update:
+    "This tutorial has been developed for OpenRefine version 3.7.5 Update:
     please note that as of March 18, 2020, Open Data Toronto has suspended service
     and so their service is not available for API calls. Until service resumes, please
     skip step 3, and during step 5, please chose to Get Data From: This Computer and
