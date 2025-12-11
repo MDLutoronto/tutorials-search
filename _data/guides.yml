@@ -1826,8 +1826,8 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-constellate
   description:
     This tutorial walks you through accessing Constellate using the University
-    of Toronto's institutional privileges. Please see ourgeneral Constellate page for
-    more information and see ourtutorial on creating a dataset once you have logged
+    of Toronto's institutional privileges. Please see our general Constellate page for
+    more information and see our tutorial on creating a dataset once you have logged
     in. Please note that Constellate is ending on July 1st, 2025. Some learning materials
     will remain available afterwards.
   tool:
@@ -1840,9 +1840,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-build-dataset-constellate
   description:
     This tutorial shows you how to build a dataset in Constellate. We recommend
-    reading ourgeneral information on Constellatefirst. Please also see thisaccess
+    reading ourgeneral information on Constellate first. Please also see this access
     tutorial in order to log in with institutional privileges. Please note that Constellate
-    is endingon July 1st, 2025. Some learning materials will remain available afterwards.
+    is ending on July 1st, 2025. Some learning materials will remain available afterwards.
   technique:
     - Data Visualization
     - Cleaning data
