@@ -1978,7 +1978,7 @@
   description:
     This guide helps you get started with the R and RStudio software and
     R code. You can install R from theR homepage. And you can install RStudio from
-    theRStudio homepage. A more thorough introduction to the R language is coveredhere.
+    the RStudio homepage. A more thorough introduction to the R language is covered here.
   tool:
     - R
   date: "2020-07-03"
