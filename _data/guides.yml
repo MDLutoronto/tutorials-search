@@ -2301,18 +2301,20 @@
   title: OpenRefine Tutorial 1. Survey of Household Spending Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity
   description:
-    This tutorial has been developed for OpenRefine version 3.7.5Please
-    note that we also have converted some of this tutorial into a self-paced course
-    with videos. U of T students, staff, and faculty canenroll in our OpenRefine Quercus
-    course.This is the first activity in this tutorial series, and assumes no prior
+    *This tutorial has been developed for OpenRefine version 3.7.5*
+    
+    Please note that we also have converted some of this tutorial into a self-paced course
+    with videos. U of T students, staff, and faculty can [enroll in our OpenRefine Quercus
+    course](http://q.utoronto.ca/enroll/E4JKAW).This is the first activity in this tutorial series, and assumes no prior
     knowledge of OpenRefine. In this activity you will be importing a spreadsheet
     of data into OpenRefine and exploring it. The goal of this activity is to use
     a simple dataset to introduce you to the OpenRefine user interface and some of
     the basic types of tasks you can accomplish. This dataset isn’t particularly “messy,”
     but provides some of the core knowledge needed to work with messier datasets in
     later activities. If you need a copy of OpenRefine on your personal computer, please
-    follow theseinstallation instructions.Before you begin, please download theOpenRefine
-    workshop sample datasets.
+    follow these [installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions). 
+    
+    Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip).
   technique:
     - Cleaning data
   tool:
