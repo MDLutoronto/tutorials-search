@@ -1859,7 +1859,7 @@
     This guide gives users an introduction to SAS. The topics covered are
     importing, exploring, modifying, and managing data. It has been created using
     SAS 9.4. The main dataset used is the flights dataset. It contains the US domestic
-    flights in January 2020[1]. For additional support, fill out thesupport request
+    flights in January 2020[1]. For additional support, fill out the support request
     form.
   tool:
     - SAS
