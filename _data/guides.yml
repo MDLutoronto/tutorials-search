@@ -2120,7 +2120,7 @@
   description:
     The goal of this activity is to try out running Python in OpenRefine.
     We will use it to make an API call to augment our books dataset with information
-    on the authors from Wikipedia.Note:Complete Augmenting Activities1,2&3first before
+    on the authors from Wikipedia. Note: Complete Augmenting Activities 1, 2 & 3 first before
     attempting this activity.
   technique:
     - Cleaning data
