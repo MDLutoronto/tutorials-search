@@ -2136,8 +2136,8 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3-using-add-column-fetching-urls
   description:
     This tutorial will show you how to use the Add Column by Fetching URLs
-    feature in OpenRefine.Note:Complete Augmenting Activities1&2first before attempting
-    this activity.
+    feature in OpenRefine. *Note:Complete Augmenting Activities 1 & 2 first before attempting
+    this activity.*
   technique:
     - Cleaning data
     - Extracting data
