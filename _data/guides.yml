@@ -2150,9 +2150,9 @@
   title: "OpenRefine Augmenting Activity 1: Preparing the data"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data
   description:
-    "In this tutorial, we will begin work on augmenting datasets.Note:
-    This is an advanced tutorial. If you are new to OpenRefine, please begin withOpenRefine
-    tutorial 1. This tutorial has been developed for OpenRefine version 3.7.5"
+    "In this tutorial, we will begin work on augmenting datasets. *Note:
+    This is an advanced tutorial. If you are new to OpenRefine, please begin with OpenRefine
+    tutorial 1. This tutorial has been developed for OpenRefine version 3.7.5"*
   technique:
     - Cleaning data
   tool:
