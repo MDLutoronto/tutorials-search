@@ -2197,7 +2197,7 @@
     discoveries.***Note:*** *This assumes that you have learned the basics of OpenRefine already
     through [the Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and the [Citizen Science activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity).
     This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON
-    dataset can be found in the sample datain case the API call does not work."***
+    dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work."***
   technique:
     - Cleaning data
     - Extracting data
@@ -2210,18 +2210,19 @@
   title: OpenRefine Tutorial 3. Regular Expressions (Regex) Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-3-regular-expressions-regex-activity
   description:
-    This tutorial has been developed for OpenRefine version 3.7.5You were
-    introduced to GREL in the previous activity, so you know that GREL is a powerful
+    *This tutorial has been developed for OpenRefine version 3.7.5*
+    
+    You were introduced to GREL in the previous activity, so you know that GREL is a powerful
     tool for cleaning/editing your data. You can make GREL even more powerful by learning
     how to use regular expressions (aka regex). A regular expression is a sequence
     of characters that define a search pattern – it is used to search for matches
     within text. In OpenRefine, you can use it in your GREL expressions to create
     sophisticated patterns describing what type of information you want to find within
     your dataset, then do something with the matching text (edit it, delete it, put
-    it in a new column, etc.).This activity assumes you have already completed theSurvey
-    of Household SpendingandCitizen Scienceactivities, have a familiarity with OpenRefine
+    it in a new column, etc.). This activity assumes you have already completed the [Survey
+    of Household Spending](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and [Citizen Science](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity) activities, have a familiarity with OpenRefine
     and know how to create simple GREL expressions. Before you begin, please download
-    theOpenRefine workshop sample datasets, if you have not already.
+    the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
   technique:
     - Cleaning data
   tool:
