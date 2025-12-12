@@ -3,8 +3,8 @@
   title: Installing Power BI Desktop
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-power-bi-desktop
   description:
-    This tutorial will run you through the steps for installing Power BI
-    Desktop on your own device. Power BI is Microsoft's Data Visualization tool, allowing
+    This tutorial will run you through the steps for installing **Power BI
+    Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing
     users to turn their data into insightful visuals.
   technique:
     - Data Visualization
