@@ -6,7 +6,7 @@ Each tutorial entry can have the following fields:
 |----------------|------------|----------------------------------------------------------------------------------------------------------------|-----------------------------|
 | `id`           | No         | A unique identifier for the tutorial.                                                                         | String                     |
 | `title`        | Yes        | The title of the tutorial.                                                                                    | String                     |
-| `description`  | No         | A brief description of the tutorial. <br><br>**Note**: Markdown is supported when rendering this field.               | String                     |
+| `description`  | No         | A brief description of the tutorial. <br><br>**Note**: Markdown is supported when rendering this field in the web interface.               | String                     |
 | `url`          | Yes        | The URL of the tutorial.                                                                                      | String (URL)                |
 | `technique`    | No         | The technique(s) covered in the tutorial.                                                                     | String or Array of Strings  |
 | `tool`         | No         | The tool(s) used in the tutorial.                                                                             | String or Array of Strings  |
