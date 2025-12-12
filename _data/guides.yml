@@ -2522,7 +2522,10 @@
 - id: 163
   title: How to use SDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-use-sda
-  description: Link to CHASS list of how-to guides for SDA:http://sda.chass.utoronto.ca/legacy_sda/sda.htm#how_to
+  description: | 
+    Link to CHASS list of how-to guides for SDA: 
+
+    [How-to guides for SDA](http://sda.chass.utoronto.ca/legacy_sda/sda.htm#how_to)
   technique:
     - Searching for maps and data
   date: "2017-05-05"
@@ -2531,7 +2534,8 @@
 - id: 164
   title: Introduction to R (Datacamp)
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-datacamp
-  description: Link to Datacamp's free intro course on R:https://www.datacamp.com/courses/free-introduction-to-r
+  description: 
+    Link to Datacamp's free intro course on R: https://www.datacamp.com/courses/free-introduction-to-r
   tool:
     - R
   date: "2017-05-05"
