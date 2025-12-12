@@ -2705,8 +2705,9 @@
   description:
     This exercise will showcase how to use Scholars GeoPortal to extract
     Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal
-    using two methods:1) querying the attribute table of the dataset, or2) downloading
-    based on a predefined census boundary (ex. CMAs).
+    using two methods:
+    1. querying the attribute table of the dataset, or
+    2. downloading based on a predefined census boundary (ex. CMAs).
   technique:
     - Searching for maps and data
   dataFormat: Vector
