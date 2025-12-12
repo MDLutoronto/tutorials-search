@@ -2545,8 +2545,9 @@
   title: Introduction to Stata
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata
   description:
-    This guide gives users an introduction to Stata. The topics covered
-    are importing, exploring, modifying and managing data.
+    This guide gives users an introduction to Stata. 
+    
+    The topics covered are importing, exploring, modifying and managing data.
   tool:
     - Stata
   date: "2017-05-05"
