@@ -2482,11 +2482,13 @@
   title: Accessing Statistics Canada’s Socioeconomic Time Series Data (formerly CANSIM)
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-statistics-canadas-socioeconomic-time-series-data-formerly-cansim
   description:
-    "This guide is primarily designed to help users unfamiliar with the
-    CANSIM database find and download data.Note: This guide outlines how to search
-    for CANSIM data on the Statistics Canada website. University of Toronto faculty,
-    staff, and students may alsodownload CANSIM series for free via CHASS. You will
-    need to be using a UofT IP address to access CHASS."
+    "This guide is primarily designed to help users unfamiliar with the CANSIM database find and download data.
+    
+    Note: This guide outlines how to search for CANSIM data on the Statistics Canada website. 
+
+    University of Toronto faculty, staff, and students may also [download CANSIM series for free via CHASS](http://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-though-chass). 
+    
+    You will need to be using a UofT IP address to access CHASS."
   technique:
     - Searching for maps and data
   date: "2017-05-05"
