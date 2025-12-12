@@ -2374,7 +2374,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/findingextractingdownloading-gis-data-using-scholars-geoportal
   description:
     This tutorial provides an example of finding, extracting, and downloading
-    data from Scholars GeoPortal.Scholars GeoPortalis a geospatial discovery tool
+    data from Scholars GeoPortal. [Scholars GeoPortal](http://geo2.scholarsportal.info.myaccess.library.utoronto.ca/) is a geospatial discovery tool
     that provides access to large scale geospatial datasets that can be used for mapping
     or analysis. Scholars Geoportal can be used to access both vector and raster data
     on a variety of topics such as land-use, transportation networks, census geography,
