@@ -2571,8 +2571,10 @@
   title: R Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/r-learning-modules-ucla
   description:
-    "Comprehensive set of guides that include installing R, learning R
-    fundamentals including graphics and advanced data analysis examples.Link:"
+    Comprehensive set of guides that include installing R, learning R
+    fundamentals including graphics and advanced data analysis examples. 
+    
+    Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/r/
   tool:
     - R
   date: "2017-05-05"
@@ -2582,8 +2584,10 @@
   title: SAS Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/sas-learning-modules-ucla
   description:
-    "Comprehensive set of guides that include installing SAS, learning
-    SAS fundamentals and advanced data analysis examples.Link:"
+    Comprehensive set of guides that include installing SAS, learning
+    SAS fundamentals and advanced data analysis examples.
+    
+    Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/
   tool:
     - SAS
   date: "2017-05-05"
@@ -2605,7 +2609,8 @@
 - id: 170
   title: Searching microdata in <odesi>
   url: https://mdl.library.utoronto.ca/technology/tutorials/searching-microdata
-  description: Link to Scholars Portal guide:http://guides.scholarsportal.info/odesi
+  description: 
+    Link to Scholars Portal guide: http://guides.scholarsportal.info/odesi
   technique:
     - Searching for maps and data
   date: "2017-05-05"
@@ -2635,8 +2640,8 @@
   title: Stata Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-learning-modules-ucla
   description:
-    "Comprehensive set of guides that include installing Stata, learning
-    Stata fundamentals including graphics and advanced data analysis examples.Link:"
+    Comprehensive set of guides that include installing Stata, learning
+    Stata fundamentals including graphics and advanced data analysis examples.Link:
   tool:
     - Stata
   date: "2017-05-05"
