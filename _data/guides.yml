@@ -2546,7 +2546,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata
   description:
     This guide gives users an introduction to Stata. 
-    
+
     The topics covered are importing, exploring, modifying and managing data.
   tool:
     - Stata
@@ -2558,8 +2558,10 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata-princeton
   description:
     An overview of the guide provided by Princeton with a link to the original
-    guide. If you want to learn how to use Stata, you might find this guide by German
-    Rodriguez at Princeton University useful:http://data.princeton.edu/stata/default.html
+    guide.
+    
+    If you want to learn how to use Stata, you might find this guide by German
+    Rodriguez at Princeton University useful: http://data.princeton.edu/stata/default.html
   tool:
     - Stata
   date: "2017-05-05"
