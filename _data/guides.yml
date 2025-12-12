@@ -2466,8 +2466,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/online-resources-build-topography-3d-models
   description:
     This document compiles online resources that help to build terrain
-    3D models with a variety of software-options.  Brief introductions on the pros
-    and cons of each option are provided.
+    3D models with a variety of software-options. 
+    
+    Brief introductions on the pros and cons of each option are provided.
   technique:
     - Searching for maps and data
     - Converting data formats
