@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         :root {
             /* Maximum number of cards to display per row on wider screens */
@@ -409,6 +410,16 @@
             display: block;
             -webkit-line-clamp: unset;
             max-height: none;
+        }
+
+        .guides-description a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        .guides-description a:hover {
+            color: #004499;
+            text-decoration: underline;
         }
 
         .read-more-btn {
@@ -1205,11 +1216,12 @@
 
                 // Safely handle description
                 const description = guide.description && guide.description !== 'undefined' && guide.description !== 'null' ? guide.description : '';
+                const descriptionHtml = description ? marked.parse(description) : '';
 
                 return `
                 <div class="guides-card">
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
-                    <p class="guides-description" id="${uniqueId}" data-full-text="${description.replace(/"/g, '&quot;')}">${description}</p>
+                    <div class="guides-description" id="${uniqueId}" data-full-text="${description.replace(/"/g, '&quot;')}">${descriptionHtml}</div>
                     <button class="read-more-btn" id="btn-${uniqueId}" onclick="toggleDescription('${uniqueId}', this)" style="display: none;">Read more</button>
                     <div class="guides-tags">
                         ${techniques.map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
