@@ -2755,9 +2755,9 @@
   description:
     This guide, compiled by Alberta Auringer Wood of the Association of
     Canadian Map Libraries and Archives, provides recommended citation formats for
-    a wide variety of geospatial data sources.Additionally, if using Esri products
-    (e.g. ArcGIS Online) or Esri data, please consult thisguide on How to Cite ArcGIS
-    Maps and Data.
+    a wide variety of geospatial data sources. (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
+    
+    Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
     - Citing data
   dataFormat: Paper maps, Raster, Vector
@@ -2770,7 +2770,7 @@
   description:
     If you need to uninstall and reinstall your authorized copy of ArcGIS
     (for example, if you are reformatting your hard drive or switching to a new computer
-    oryou have entered your eva code in once and it did not authorize) please follow
+    or **you have entered your eva code in once and it did not authorize**) please follow
     these instructions before uninstalling the software.
   technique:
     - Installation
