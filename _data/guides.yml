@@ -2409,7 +2409,9 @@
   description:
     This online tutorial will provide an introduction to SimplyAnalytics
     and a few of its many possible uses. SimplyAnalytics is a web-based data visualization
-    application. It can be used to create simple thematic maps and tables from census
+    application. 
+    
+    It can be used to create simple thematic maps and tables from census
     and other socio-demographic data, as well as business point data.
   technique:
     - Data Visualization
