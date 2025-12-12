@@ -2348,7 +2348,7 @@
 - id: 150
   title: Helpful tips when using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/helpful-tips-when-using-scholars-geoportal
-  description: Please visit this link for extensive help with Scholars GeoPortal.
+  description: Please [visit this link](http://guides.scholarsportal.info.myaccess.library.utoronto.ca/geoportal/usinggeoportal) for extensive help with Scholars GeoPortal.
   tool:
     - Scholars GeoPortal
   date: "2018-02-07"
