@@ -148,8 +148,8 @@
   title: Accessing and Querying the Revelio Datasets
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-and-querying-revelio-datasets
   description:
-    The University of Toronto has licensed six separate datasets from Revelio
-    Labs. These are workforce datasets that range in size from 1 to 4 TB. To facilitate
+    The University of Toronto has licensed six separate datasets from [Revelio
+    Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate
     easy access and querying across products, all datasets have been loaded into SciNet's
     supercomputing environment. Access to this environment can only be granted to
     current University of Toronto Faculty, Staff and Students, after an application
