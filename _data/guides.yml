@@ -2391,7 +2391,7 @@
   title: Extracting/downloading data using CHASS Canadian Census Analyser
   url: https://mdl.library.utoronto.ca/technology/tutorials/extractingdownloading-data-using-chass-canadian-census-analyser
   description:
-    TheCHASS Canadian Census Analyserallows members of the University of
+    The CHASS [Canadian Census Analyser](http://dc.chass.utoronto.ca.myaccess.library.utoronto.ca/census/) allows members of the University of
     Toronto research community to generate custom tables from the Census of Canada
     (1961-2016) and the National Household Survey (2011). This tutorial provides an
     example of extracting and downloading data from CHASS.
