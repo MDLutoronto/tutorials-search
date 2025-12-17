@@ -1573,8 +1573,8 @@
 - id: 99
   title: "OpenRefine: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-information-tutorials-and-workshops
-  description:
-    OpenRefineis a free, open-source program used for working with messy
+  description: >-
+    [OpenRefine](https://openrefine.org/) is a free, open-source program used for working with messy
     data. It allows you to clean, transform, and augment data in preparation for analysis
     and visualization.
   technique:
