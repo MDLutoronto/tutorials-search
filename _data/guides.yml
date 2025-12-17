@@ -1085,24 +1085,33 @@
   title: "Excel: Beyond The Basics - Mac"
   url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-mac
   description:
-    "About this workshop **What**: This is a beginner to intermediate tutorial,
-    that will allow you to gain a deeper understanding of the uses and types of data
+    About this workshop 
+    
+    **What**: This is a beginner to intermediate tutorial, that will allow you to gain a deeper understanding of the uses and types of data
     that can be manipulated in Excel, an extremely popular spreadsheet software. Through
     practical exercises using real world data from the Toronto Transit Commission
     (TTC), you will learn important terminology and software features, and gain a
     better understanding of Excel’s built-in methods for data manipulation and cleaning,
-    as well as analysis and visualization. **Why**: Excel is a popular spreadsheet software
+    as well as analysis and visualization. 
+  
+    **Why**: Excel is a popular spreadsheet software
     that allows you to organize, modify and analyze your data. It remains one of the
     most widely used software for data analytics. A deeper understanding of Excel
     will help you better navigate the tool to work with your data sets, in the classroom
-    and beyond. **Who**: This tutorial assumes you have used Excel before at a basic level,
+    and beyond. 
+
+    **Who**: This tutorial assumes you have used Excel before at a basic level,
     but haven’t explored all it has to offer. There are no prerequisites or assumptions
-    of knowledge of math, statistics, or programming! **Software**: Excel is freely available for
+    of knowledge of math, statistics, or programming! 
+
+    **Software**: Excel is freely available for
     download for University of Toronto staff, faculty and students. Note: This tutorial
-    is intended for Mac users. If you are using Windows, check out this tutorial instead. **Code
-    of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment
-    for learning. To learn more, check out ourCode of Conduct. **For help contact**: Map
-    & Data Library,mdl@library.utoronto.ca"
+    is intended for Mac users. If you are using Windows, check out this tutorial instead. 
+    
+    **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment
+    for learning. To learn more, check out ourCode of Conduct. 
+    
+    **For help contact**: Map & Data Library, mdl@library.utoronto.ca
   tool:
     - Excel
   date: "2023-02-21"
