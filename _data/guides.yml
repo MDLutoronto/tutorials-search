@@ -858,7 +858,9 @@
     - Extracting data
   tool:
     - ArcGIS Pro
-  dataFormat: DEM, Raster
+  dataFormat: 
+    - DEM
+    - Raster
   date: "2024-01-15"
   series: MDL Tutorials
   type: Tutorial
