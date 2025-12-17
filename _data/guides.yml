@@ -1207,12 +1207,13 @@
   title: Transcription Options
   url: https://mdl.library.utoronto.ca/technology/tutorials/transcription-options
   description:
-    "If you have an audio or video file that you need to get transcribed,
+    If you have an audio or video file that you need to get transcribed,
     this page describes some automated options to consider. But keep in mind, though,
     that none of these options (including NVivo transcription) provides a 100% perfectly
-    accurate transcript. You will always have to go back in and correct your transcript.Note:
-    If you want to pay a human to transcribe things accurately (so no or minimal correction
-    is needed later), you could try Rev or Transcript Divas."
+    accurate transcript. You will always have to go back in and correct your transcript. 
+    
+    Note: If you want to pay a human to transcribe things accurately (so no or minimal correction
+    is needed later), you could try [Rev](https://www.rev.com/) or [Transcript Divas](https://transcriptdivas.co.uk/about/).
   technique:
     - Qualitative Data Analysis
   tool:
