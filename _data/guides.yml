@@ -1286,8 +1286,9 @@
     - Module 1. Getting started
     - Module 2. Making a map using layouts
     - Module 3. Manipulating geospatial datasets 
-    Download the datasets used for this workshop at this location:https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zipNote
-    that while the examples shown in this tutorial were captured using the windows
+    Download the datasets used for this workshop at this location: https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zip
+    
+    Note that while the examples shown in this tutorial were captured using the windows
     version of QGIS, all modules and operations can be completed using the linux or
     mac OS version of QGIS.
   technique:
