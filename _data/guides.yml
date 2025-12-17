@@ -1225,11 +1225,11 @@
   title: Working in Teams Using NVivo
   url: https://mdl.library.utoronto.ca/technology/tutorials/working-teams-using-nvivo
   description:
-    "This page provides an overview and tips for working as a team using
+    This page provides an overview and tips for working as a team using
     NVivo. There are three main options: the manual way, the old collaboration cloud,
-    and the new collaboration cloud. There is also NVivo Collaboration Server, but
+    and the new collaboration cloud. There is also [NVivo Collaboration Server](https://community.lumivero.com/s/article/TRC-Using-NVivo-with-NVivo-Collaboration-Server?language=en_US), but
     that involves purchasing, setting up, and maintaining NVivo Server software, and
-    it only works in a Windows environment with NVivo 12 or 13."
+    it only works in a Windows environment with NVivo 12 or 13.
   technique:
     - Qualitative Data Analysis
   tool:
