@@ -1926,8 +1926,8 @@
   description:
     This tutorial will teach you the basic features in Gephi that will
     allow you to visualize network data. This tutorial is part of a longer workshop,
-    “An Introduction to Network Visualization and Analysis.” You can download the workshop
-    materials (alternate workshop materials download) and watch the recording (1:44:18) to
+    “An Introduction to Network Visualization and Analysis.” You can [download the workshop
+    materials](https://maps.library.utoronto.ca/workshops/GephiOnline/WorkshopFiles.zip) ([alternate workshop materials download](https://maps.library.utoronto.ca/datapub/workshops/GephiWorkshopFiles.zip)) and [watch the recording (1:44:18)](https://play.library.utoronto.ca/23aef5db74b792db735a4f2fb39f7d7f) to
     learn more about network theory and see video demonstrations of working with Gephi.
   technique:
     - Data Visualization
