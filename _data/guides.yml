@@ -1976,7 +1976,9 @@
   tool:
     - ArcGIS Online
     - ArcGIS Storymaps
-  dataFormat: Raster, Vector
+  dataFormat: 
+    - Raster
+    - Vector
   date: "2021-03-05"
   series: MDL Tutorials
   type: Tutorial
