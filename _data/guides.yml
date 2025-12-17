@@ -1639,11 +1639,13 @@
 - id: 103
   title: Digital Scholar Lab - Collections
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-collections
-  description:
-    Return to the main Gale Digital Scholar Lab tutorial
+  description: >-
+    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
     
     This tutorial shows you how to create a collection in the Digital Scholar Lab, both by searching Gale
-    Primary Sources and by uploading your own texts. Please note that Gale is periodically
+    Primary Sources and by uploading your own texts. 
+    
+    Please note that Gale is periodically
     adding new documents to their collections, so your document counts and results
     may look slightly different from our screenshots and examples below.
   technique:
