@@ -788,7 +788,9 @@
   tool:
     - ArcGIS Pro
     - CHASS Census Analyzer
-  dataFormat: Statistics, Vector
+  dataFormat: 
+    - Statistics
+    - Vector
   date: "2024-02-09"
   series: MDL Tutorials
   type: Tutorial
