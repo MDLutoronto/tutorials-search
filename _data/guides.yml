@@ -1399,8 +1399,8 @@
 - id: 88
   title: "ArcGIS Online: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-information-tutorials-and-workshops
-  description:
-    ArcGIS Online is a web-based mapping software that allows you to build,
+  description: >-
+    [ArcGIS Online](https://www.arcgis.com/index.html) is a web-based mapping software that allows you to build,
     share, and access interactive web maps.
   technique:
     - Mapping
