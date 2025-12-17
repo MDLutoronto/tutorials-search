@@ -1384,7 +1384,8 @@
 - id: 87
   title: "ArcGIS Pro: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-information-tutorials-and-workshops
-  description: ArcGIS Pro is a desktop GIS software developed by Esri.
+  description: >-
+    [ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) is a desktop GIS software developed by Esri.
   technique:
     - Mapping
     - Spatial Analysis
