@@ -2035,8 +2035,8 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-r-and-r-studio
   description:
     This guide helps you get started with the R and RStudio software and
-    R code. You can install R from theR homepage. And you can install RStudio from
-    the RStudio homepage. A more thorough introduction to the R language is covered here.
+    R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from
+    the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdl.library.utoronto.ca/technology/tutorials/introduction-r).
   tool:
     - R
   date: "2020-07-03"
