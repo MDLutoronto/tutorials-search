@@ -1732,7 +1732,7 @@
 - id: 109
   title: ArcGIS Online Part I (October 2022) - https://uoft.me/AGOL
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-i-october-2022-httpsuoftmeagol
-  description: The following slide deck is Part 1 of an introduction to ArcGIS Online.https://uoft.me/AGOL
+  description: The following slide deck is Part 1 of an introduction to ArcGIS Online. https://uoft.me/AGOL
   technique:
     - Mapping
     - Spatial Analysis
@@ -1867,8 +1867,7 @@
   title: How to Access Online GIS Classes in ESRI Academy
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
   description:
-   ​University of Toronto community members can access online GIS courses
-    through ESRI Academy. Content is designed for beginners and experienced users.
+    ​University of Toronto community members can access online GIS courses through ESRI Academy. Content is designed for beginners and experienced users.
   tool:
     - ArcGIS
     - ArcGIS Online
