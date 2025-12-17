@@ -1587,8 +1587,10 @@
 - id: 100
   title: Digital Scholar Lab - Additional Training
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-additional-training
-  description:
-    Return to the main Gale Digital Scholar Lab tutorialHere are some ways
+  description: >-
+    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
+    
+    Here are some ways
     to dig deeper into the archival and instructional materials in theDigital Scholar
     Lab.
   tool:
