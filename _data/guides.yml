@@ -1985,7 +1985,7 @@
 - id: 126
   title: Downloading Data from GeoGratis
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-data-geogratis
-  description:
+  description: >-
     *National Resources Canada* *(NRCAN)* produced a portal called GeoGratis
     for allowing access to, and downloads of, their high-quality, free, and publicly
     available maps and geospatial data. This tutorial guides you in navigating their
@@ -1996,7 +1996,9 @@
     - Extracting data
   tool:
     - GeoGratis
-  dataFormat: DEM, Raster
+  dataFormat: 
+    - DEM
+    - Raster
   date: "2021-01-15"
   series: MDL Tutorials
   type: Tutorial
