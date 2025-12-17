@@ -1368,11 +1368,11 @@
 - id: 86
   title: Introduction to SimplyAnalytics - Video Tutorials
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics-video-tutorials
-  description:
-    SimplyAnalyticsis a web-based data visualization application that can
+  description: >-
+    [SimplyAnalytics](https://simplyanalytics.com/) is a web-based data visualization application that can
     be used to create simple thematic maps and support analyses of socio-demographic
     data. This tutorial introduces SimplyAnalytics and its capabilities with the help
-    of videos produced by our colleagues at UTSC.
+    of [videos produced by our colleagues at UTSC](https://www.utsc.utoronto.ca/thebridge/%20.).
   technique:
     - Data Visualization
     - Mapping
