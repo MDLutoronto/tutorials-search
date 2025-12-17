@@ -1507,8 +1507,8 @@
 - id: 95
   title: "NVivo: Information, Resources, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/nvivo-information-resources-tutorials-and-workshops
-  description:
-    NVivo is a program used for qualitative data analysis. It supports researchers
+  description: >-
+    [NVivo](https://lumivero.com/products/nvivo/) is a program used for qualitative data analysis. It supports researchers
     in managing, organizing, and analyzing qualitative data to produce new insight,
     infer relationships, and identify themes.
   technique:
