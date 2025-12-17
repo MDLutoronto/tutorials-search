@@ -1678,7 +1678,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac
   description:
     These instructions will help you create SSH key pairs on a Mac computer,
-    for access to theWeb of Science PostgreSQL Database.
+    for access to the [Web of Science PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/web-science-postgresql-database).
   date: "2022-02-07"
   series: MDL Tutorials
   type: Tutorial
