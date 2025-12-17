@@ -1539,8 +1539,8 @@
 - id: 97
   title: "Stata: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-information-tutorials-and-workshops
-  description:
-    Stata is a statistical software for data manipulation, data visualization
+  description: >-
+    [Stata](https://www.stata.com/) is a statistical software for data manipulation, data visualization
     and data analysis.
   technique:
     - Converting data formats
