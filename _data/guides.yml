@@ -1493,8 +1493,8 @@
 - id: 94
   title: "Gephi: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/gephi-information-tutorials-and-workshops
-  description:
-    Gephi is an open-source network analysis and visualization program that
+  description: >-
+    [Gephi](https://gephi.org/) is an open-source network analysis and visualization program that
     allows users to analyze and display relationships between individuals, groups,
     and other entities in a network.
   technique:
