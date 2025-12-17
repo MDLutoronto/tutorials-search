@@ -2020,10 +2020,10 @@
 - id: 128
   title: Logging into Digital Scholar Lab through the Catalog
   url: https://mdl.library.utoronto.ca/technology/tutorials/logging-digital-scholar-lab-through-catalog
-  description:
-    Return to the main Gale Digital Scholar Lab tutorial
+  description: >-
+    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
     
-    This short guide provides instructions on how to log into theGale Digital Scholar Labvia the University
+    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University
     of Toronto institutional access.
   tool:
     - Digital Scholar Lab
