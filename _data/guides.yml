@@ -2069,22 +2069,27 @@
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
   description:
-    "This tutorial introduces Gale's Digital Scholar Lab(DSL), a digital
-    humanities tool. In this tutorial, you will learn how to: Build a collection of
-    texts, including uploading your own materials 
+    This tutorial introduces [Gale's Digital Scholar Lab(DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
+    humanities tool. In this tutorial, you will learn how to: 
+    
+    - Build a collection of texts, including uploading your own materials 
     
     - Create collaborative workspaces
     
-    - Clean textsRun analytical tools on texts and visualize the results
+    - Clean texts
+    
+    - Run analytical tools on texts and visualize the results
     
     - Download the data, graphs, and other visualizations produced through this tool
     
-    - Download the scanned texts in your collection, so that you can use them in other programsFind additional
-    training and resources
+    - Download the scanned texts in your collection, so that you can use them in other programs
+    
+    - Find additional training and resources
     
     *Note: Gale periodically updates the Digital Scholar Lab,
-    so some features of this tutorial might not always match the latest interface.*
-    This tutorial was last updated in March 2023."
+    so some features of this tutorial might not always match the latest interface.
+    This tutorial was last updated in March 2023.*
+
   technique:
     - Text and Data Mining
     - Cleaning data
@@ -2358,7 +2363,7 @@
 - id: 147
   title: OpenRefine Tutorial 1. Survey of Household Spending Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity
-  description:
+  description: >-
     *This tutorial has been developed for OpenRefine version 3.7.5*
     
     Please note that we also have converted some of this tutorial into a self-paced course
