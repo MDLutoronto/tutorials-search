@@ -2135,9 +2135,9 @@
   description:
     This is a beginner-to-intermediate level tutorial for Tableau Desktop
     version 2020.2. To acquire a free student, researcher, or instructor license for
-    Tableau Desktop, please follow these licensing and installation instructions. If
+    Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If
     you want to learn this material in an online, self-paced course, with video instructions,
-    you can self-enroll in our Practice with Tableau course. 
+    you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT). 
   technique:
     - Data Visualization
   tool:
