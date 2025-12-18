@@ -2490,7 +2490,9 @@
     - Extracting data
   tool:
     - CHASS Census Analyzer
-  dataFormat: Statistics, Vector
+  dataFormat: 
+    - Statistics
+    - Vector
   date: "2018-01-08"
   series: MDL Tutorials
   type: Tutorial
