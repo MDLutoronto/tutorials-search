@@ -2627,7 +2627,7 @@
 - id: 164
   title: Introduction to R (Datacamp)
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-datacamp
-  description: 
+  description: >-
     Link to Datacamp's free intro course on R: https://www.datacamp.com/courses/free-introduction-to-r
   tool:
     - R
@@ -2649,7 +2649,7 @@
 - id: 166
   title: Introduction to STATA (Princeton)
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata-princeton
-  description:
+  description: >-
     An overview of the guide provided by Princeton with a link to the original
     guide.
     
@@ -2663,7 +2663,7 @@
 - id: 167
   title: R Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/r-learning-modules-ucla
-  description:
+  description: >-
     Comprehensive set of guides that include installing R, learning R
     fundamentals including graphics and advanced data analysis examples. 
     
@@ -2676,7 +2676,7 @@
 - id: 168
   title: SAS Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/sas-learning-modules-ucla
-  description:
+  description: >-
     Comprehensive set of guides that include installing SAS, learning
     SAS fundamentals and advanced data analysis examples.
     
@@ -2702,7 +2702,7 @@
 - id: 170
   title: Searching microdata in <odesi>
   url: https://mdl.library.utoronto.ca/technology/tutorials/searching-microdata
-  description: 
+  description: >-
     Link to Scholars Portal guide: http://guides.scholarsportal.info/odesi
   technique:
     - Searching for maps and data
