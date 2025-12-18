@@ -2576,7 +2576,7 @@
 - id: 160
   title: Accessing Statistics Canada’s Socioeconomic Time Series Data (formerly CANSIM)
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-statistics-canadas-socioeconomic-time-series-data-formerly-cansim
-  description:
+  description: >-
     This guide is primarily designed to help users unfamiliar with the CANSIM database find and download data.
     
     Note: This guide outlines how to search for CANSIM data on the Statistics Canada website. 
@@ -2617,10 +2617,8 @@
 - id: 163
   title: How to use SDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-use-sda
-  description: | 
-    Link to CHASS list of how-to guides for SDA: 
-
-    [How-to guides for SDA](http://sda.chass.utoronto.ca/legacy_sda/sda.htm#how_to)
+  description: >-
+    Link to CHASS list of how-to guides for SDA: [How-to guides for SDA](http://sda.chass.utoronto.ca/legacy_sda/sda.htm#how_to)
   technique:
     - Searching for maps and data
   date: "2017-05-05"
