@@ -2472,7 +2472,9 @@
     - Extracting data
   tool:
     - Scholars GeoPortal
-  dataFormat: Raster, Vector
+  dataFormat: 
+    - Raster
+    - Vector
   date: "2018-01-15"
   series: MDL Tutorials
   type: Tutorial
