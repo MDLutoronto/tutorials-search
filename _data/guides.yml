@@ -844,7 +844,9 @@
     explains how to derive contours from DEMs using ArcGIS Pro.
   tool:
     - ArcGIS Pro
-  dataFormat: DEM, Raster
+  dataFormat: 
+    - DEM
+    - Raster
   date: "2024-01-17"
   series: MDL Tutorials
   type: Tutorial
