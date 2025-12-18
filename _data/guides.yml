@@ -2148,11 +2148,11 @@
 - id: 136
   title: Installing Tableau Desktop
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop
-  description:
-    "NOTE: THIS GUIDE IS OUT OF DATE AS OF MARCH 11, 2025. TABLEAU IS NO
+  description: >-
+    NOTE: THIS GUIDE IS OUT OF DATE AS OF MARCH 11, 2025. TABLEAU IS NO
     LONGER PROVIDING FREE LICENSES FOR TABLEAU DESKTOP FOR STUDENTS. INSTEAD, STUDENTS
-    SHOULD DOWNLOAD AND USE THE FREE VERSION, TABLEAU PUBLIC, WHICH IS VERY SIMILAR.This
-    is a guide to installing and running Tableau Desktop on your personal computer."
+    SHOULD DOWNLOAD AND USE THE FREE VERSION, [TABLEAU PUBLIC](https://www.tableau.com/products/public/download), WHICH IS VERY SIMILAR. This
+    is a guide to installing and running Tableau Desktop on your personal computer.
   technique:
     - Installation
   tool:
