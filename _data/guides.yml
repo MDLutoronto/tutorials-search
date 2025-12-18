@@ -2445,10 +2445,12 @@
   title: Accessing CANSIM data through CHASS
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
   description:
-    "This guide is primarily designed to help users unfamiliar with the
-    CANSIM database to find and download data through CHASS. **Please note** that a University
+    This guide is primarily designed to help users unfamiliar with the
+    CANSIM database to find and download data through CHASS. 
+    
+    **Please note** that a University
     of Toronto IP address is required to access CHASS. 
-    CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide)."
+    CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide).
   technique:
     - Searching for maps and data
   tool:
