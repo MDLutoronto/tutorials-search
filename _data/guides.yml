@@ -16,7 +16,7 @@
 - id: 2
   title: Introduction to Power BI
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-power-bi
-  description:
+  description: >-
     This tutorial outlines the steps taken in the demonstration during
     the live workshop on an Introduction to Data Visualization Using Power BI. This
     is a companion tutorial, but can also be used as a stand-alone introduction to
@@ -32,7 +32,7 @@
 - id: 3
   title: Getting MAXQDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-maxqda
-  description:
+  description: >-
     MAXQDA is qualitative data analysis software. You are able to access
     it in the 4th floor computer lab of Robarts Library or purchase your own personal
     copy.
@@ -46,7 +46,7 @@
 - id: 4
   title: Introduction to Using MAXQDA for Qualitative Data Analysis
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-using-maxqda-qualitative-data-analysis
-  description:
+  description: >-
     This is an introductory tutorial for MAXQDA. The goal of this tutorial
     is to learn about the basic features in MAXQDA that will allow you to organize
     and analyze qualitative data. Part 1 will teach you to use MAXQDA, to load information,
@@ -64,7 +64,7 @@
 - id: 5
   title: Moving from NVivo to MAXQDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/moving-nvivo-maxqda
-  description:
+  description: >-
     To move between qualitative data analysis tools, you must put your
     project file into [REFI-QDA standard](https://www.qdasoftware.org/).
   technique:
@@ -91,7 +91,7 @@
 - id: 7
   title: Accessing JSTOR Text Analysis Support
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-jstor-text-analysis-support
-  description:
+  description: >-
     This tutorial shows how to register for a JSTOR account and use the
     JSTOR Text Analysis tools, which replace the [now-ended Constellate platform](https://constellate.org/docs/constellate-sunset).
   technique:
@@ -104,7 +104,7 @@
 - id: 8
   title: Transferring Data to a Public ArcGIS Online Account
   url: https://mdl.library.utoronto.ca/technology/tutorials/transferring-data-public-arcgis-online-account
-  description:
+  description: >-
     This tutorial provides step-by-step guidance on how to transfer work
     on ArcGIS Online from a University of Toronto (UofT) institutional account to
     the free (aka ‘public’) version of the service.
@@ -119,7 +119,7 @@
 - id: 9
   title: Geospatial Analysis with Python & Jupyter Notebooks
   url: https://mdl.library.utoronto.ca/technology/tutorials/geospatial-analysis-python-jupyter-notebooks
-  description:
+  description: >-
     This tutorial provides detailed walk-throughs of how to use Jupyter
     Notebooks and open-source Python libraries to perform geospatial analysis.
   technique:
@@ -132,7 +132,7 @@
 - id: 10
   title: Working with the Data Axle Historical Business Location Data
   url: https://mdl.library.utoronto.ca/technology/tutorials/working-data-axle-historical-business-location-data
-  description:
+  description: >-
     The Data Axle Historical Business Location Data provides one data file
     (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains
     11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains
@@ -147,7 +147,7 @@
 - id: 11
   title: Accessing and Querying the Revelio Datasets
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-and-querying-revelio-datasets
-  description:
+  description: >-
     The University of Toronto has licensed six separate datasets from [Revelio
     Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate
     easy access and querying across products, all datasets have been loaded into SciNet's
@@ -163,7 +163,7 @@
 - id: 12
   title: Introduction to Working with Notebooks in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-working-notebooks-arcgis-pro
-  description:
+  description: >-
     This guide provides some introductory information on how to use notebooks
     in the ArcGIS Pro environment. You will learn about what notebooks are, how to
     use them, and some useful tips on using ArcPy to analyze your geospatial data.
@@ -179,7 +179,7 @@
 - id: 13
   title: "Bits and Bytes Series: Canadian Census Discovery Portal (Sept. 22, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-canadian-census-discovery-portal-sept-22-2020
-  description:
+  description: >-
     This page provides a presentation on the **Canadian Census Discovery Portal** as
     part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
     features presentations and demonstrations on data-related topics and tools, such
@@ -194,7 +194,7 @@
     "Bits and Bytes Series: Constellate - A New Platform to Learn Text Analysis
     (Jun. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-constellate-new-platform-learn-text-analysis-jun-28-2021
-  description:
+  description: >-
     Please note that Constellate is ending on July 1st, 2025. Some learning
     materials will remain available afterwards. This page provides a presentation on Constellate:
     A New Platform to Learn Text Analysis as part of the Bits and Bytes Webinar Series hosted
@@ -212,7 +212,7 @@
     "Bits and Bytes Series: Getting Started with Python in ArcGIS Pro (Nov. 17,
     2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-getting-started-python-arcgis-pro-nov-17-2020
-  description:
+  description: >-
     This page provides a presentation on **Getting Started with Python in
     ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data
     Library that features presentations and demonstrations on data-related topics
@@ -232,7 +232,7 @@
     "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.
     1, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
-  description:
+  description: >-
     This page provides a presentation on an **Introduction to Dataverse for
     Sharing Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data
     Library that features presentations and demonstrations on data-related topics
@@ -243,7 +243,7 @@
 - id: 17
   title: "Bits and Bytes Series: Introduction to Web APIs (Apr. 1, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-web-apis-apr-1-2021
-  description:
+  description: >-
     This page provides a presentation on an **Introduction to Web APIs** as part
     of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features
     presentations and demonstrations on data-related topics and tools, such as web
@@ -257,7 +257,7 @@
 - id: 18
   title: "Bits and Bytes Series: Using LiDAR Data in ArcGIS Pro (Feb. 25, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-using-lidar-data-arcgis-pro-feb-25-2021
-  description:
+  description: >-
     This page provides a presentation on **Using LiDAR Data in ArcGIS Pro** as
     part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
     features presentations and demonstrations on data-related topics and tools, such
@@ -272,7 +272,7 @@
 - id: 19
   title: "Bits and Bytes Series: Working with Web Archive Data (Sept. 29, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-working-web-archive-data-sept-29-2020
-  description:
+  description: >-
     This page provides a presentation on **Working with Web Archive Data** as
     part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
     features presentations and demonstrations on data-related topics and tools, such
@@ -287,7 +287,7 @@
   title:
     "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-programming-absolute-beginners-using-python-pt-2-march-2025
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     Python, continuing from where the first part of the Python series left off.
   tool:
@@ -300,7 +300,7 @@
     "Workshop Recording: An Introduction to Programming for Absolute Beginners
     Using Python Pt. 1 (March 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-programming-absolute-beginners-using-python-pt
-  description:
+  description: >-
     This page provides a video recording of the first part of an introductory
     workshop series on Python.
   tool:
@@ -311,7 +311,7 @@
 - id: 22
   title: "Workshop Recording: Excel: Beyond the Basics (Oct. 25, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-excel-beyond-basics-oct-25-2022
-  description:
+  description: >-
     This page provides a video recording of a workshop on using intermediate
     features of Excel.
   technique:
@@ -326,7 +326,7 @@
     "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop
     (Nov. 24, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-data-visualization-using-tableau-desktop-nov
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     using Tableau Desktop for data visualization.
   technique:
@@ -341,7 +341,7 @@
     "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social
     Science Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-feb-3-2022-social-science
-  description:
+  description: >-
     This page provides a video recording of a workshop on best practices
     for creating infographics - with a specific social science related infographic
     critique example.
@@ -355,7 +355,7 @@
     "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health
     Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-nov-16-2021-health-critique
-  description:
+  description: >-
     This page provides a video recording of a workshop on best practices
     for creating infographics - with a specific health-related infographic critique
     example.
@@ -369,7 +369,7 @@
     "Workshop Recording: Introduction to Network Analysis and Visualization Using
     Gephi (Nov. 2, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-network-analysis-and-visualization-using-gephi
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     using Gephi for network analysis and visualization.
   technique:
@@ -382,7 +382,7 @@
 - id: 27
   title: "Workshop Recording: Introduction to NVivo 12 (Mac Version) (Mar. 17, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-mac-version-mar-17-2022
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     NVivo 12 for Mac.
   technique:
@@ -395,7 +395,7 @@
 - id: 28
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-r-dec-8-2020
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     using the R statistical programming language.
   technique:
@@ -410,7 +410,7 @@
 - id: 29
   title: "Workshop Recording: Introduction to Stata (Dec. 3, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-stata-dec-3-2021
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     Stata.
   technique:
@@ -427,7 +427,7 @@
     "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data
     Analysis (Mac Version) (Nov. 26, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis-mac
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     NVivo 14/15 for Mac.
   technique:
@@ -442,7 +442,7 @@
     "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data
     Analysis (Windows Version) (Nov. 12, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     NVivo 14/15 for Windows.
   technique:
@@ -457,7 +457,7 @@
     "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available
     Tools (Feb. 14, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-text-analysis-tasting-menu-sampling-available-tools-feb-14
-  description:
+  description: >-
     This page provides a video recording of a workshop on various text
     analysis tools. 
 
@@ -478,7 +478,8 @@
 - id: 33
   title: "Workshop Recording: Working with Messy Data in Open Refine (Oct. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-working-messy-data-openrefine-oct-28-2021
-  description: This page provides a video recording of a workshop on Open Refine.
+  description: >-
+    This page provides a video recording of a workshop on Open Refine.
   technique:
     - Cleaning data
   tool:
@@ -491,7 +492,7 @@
     "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 –
     Theory and Critique)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-1-theory-and
-  description:
+  description: >-
     This page provides access to a Data Visualization self-paced online
     Quercus course that focuses on data viz theory and provides opportunities to practice
     critiquing visualizations.
@@ -505,7 +506,7 @@
     "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 –
     Practice with Tableau)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-2-practice
-  description:
+  description: >-
     This page provides access to a Data Visualization self-paced online
     Quercus course that introduces participants to Tableau Desktop. Participants will
     learn to create visualizations using some example datasets.
@@ -519,7 +520,7 @@
 - id: 36
   title: "Self-Paced Online Course: Introduction to Infographics"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-introduction-infographics
-  description:
+  description: >-
     This page provides access to an Infographics self-paced online Quercus
     course that focuses on best practices for creating infographics.
   technique:
@@ -532,7 +533,7 @@
 - id: 37
   title: "Self-Paced Online Course: R - An Introduction"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-introduction
-  description:
+  description: >-
     This page provides access to a self-paced online Quercus course that
     focuses on how to use R for exploring and manipulating data.
   technique:
@@ -547,7 +548,7 @@
 - id: 38
   title: "Self-Paced Online Course: R - Intermediate"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-intermediate
-  description:
+  description: >-
     This page provides access to a self-paced online Quercus course that
     focuses on using R for intermediate level data manipulation and visualization,
     and programming flow control.
@@ -563,7 +564,7 @@
 - id: 39
   title: "Self-Paced Online Course: Working with Messy Data in OpenRefine"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-working-messy-data-openrefine
-  description:
+  description: >-
     This page provides access to a self-paced online Quercus course that
     focuses on data cleaning using OpenRefine.
   technique:
@@ -576,7 +577,7 @@
 - id: 40
   title: "Workshop Recording: An Introductory Tour of ArcGIS Pro (Oct. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introductory-tour-arcgis-pro-oct-1-2024
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     ArcGIS Pro.
   technique:
@@ -590,7 +591,7 @@
 - id: 41
   title: "Workshop Recording: ArcGIS Pro -  Spatial Analysis (Nov. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-spatial-analysis-nov-1-2024
-  description:
+  description: >-
     This page provides a video recording of a workshop in ArcGIS Pro focusing
     on spatial analysis.
   technique:
@@ -606,7 +607,7 @@
     "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15,
     2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-loading-and-manipulating-data-oct-15-2024
-  description:
+  description: >-
     This page provides a video recording of a workshop on ArcGIS Pro that
     focuses on loading and manipulating data.
   technique:
@@ -622,7 +623,7 @@
     "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov.
     30, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-constellate-new-platform-text-analysis-nov-30-2021
-  description:
+  description: >-
     This page provides a video recording of an introductory workshop on
     Constellate. Please note that Constellate is ending on July 1st, 2025. Some learning
     materials will remain available afterwards.
@@ -638,7 +639,7 @@
     "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15,
     2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-windows-version-mar-15-2022
-  description:
+  description: >-
     This page provides a video recording of a introductory workshop on
     NVivo 12 for Windows.
   technique:
@@ -663,7 +664,7 @@
 - id: 46
   title: Introduction to GIS using R
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-gis-using-r
-  description:
+  description: >-
     This tutorial is a beginner friendly introduction to work with GIS
     data using R. The topics covered are creating and importing GIS data including
     point, line, and polygon features; making maps; and running common spatial analyses.
@@ -712,7 +713,7 @@
 - id: 49
   title: Guide for Site Research
   url: https://mdl.library.utoronto.ca/technology/tutorials/guide-site-research
-  description:
+  description: >-
     Site research involves the comprehensive analysis of a location's physical,
     cultural, and environmental characteristics. This process encompasses assessing
     topography, climate, zoning regulations, and existing infrastructure, as well
@@ -731,7 +732,7 @@
 - id: 50
   title: Introduction to R Shiny
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-shiny
-  description:
+  description: >-
     Shiny is a powerful open-source tool that is used to build easy interactive
     web applications. This guide will help users get started in creating R Shiny applications.
   technique:
@@ -746,7 +747,7 @@
 - id: 51
   title: Adding Media Layers in ArcGIS Online
   url: https://mdl.library.utoronto.ca/technology/tutorials/adding-media-layers-arcgis-online
-  description:
+  description: >-
     This tutorial will cover how to 'georeference' a raster image through
     media layers in ArcGIS Online.
   technique:
@@ -760,7 +761,7 @@
 - id: 52
   title: Creating a point layer of locations in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-point-layer-locations-arcgis-pro
-  description:
+  description: >-
     This is a beginner’s guide to creating a point layer in ArcGIS Pro
     using the latitude and longitude of the locations you wish to display. How to
     locate coordinates online will be discussed. The first part of this guide will
@@ -778,7 +779,7 @@
 - id: 53
   title: Mapping Census Data in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/mapping-census-data-arcgis-pro
-  description:
+  description: >-
     This tutorial will cover how to download census data and census boundary
     files and match them together in ArcGIS Pro for further analysis. Census data
     will be downloaded using CHASS.
@@ -797,7 +798,7 @@
 - id: 54
   title: Converting GIS data to AutoCAD in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-autocad-arcgis-pro
-  description:
+  description: >-
     This tutorial will demonstrate how to convert geospatial datasets saved
     as shapefiles into AutoCAD format.
   technique:
@@ -814,7 +815,7 @@
     Extracting the geographic features you need from a larger dataset in ArcGIS
     Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/extracting-geographic-features-you-need-larger-dataset-arcgis-pro
-  description:
+  description: >-
     You may have noticed that many GIS datasets contain information about
     a geographic extent that is larger than your area of interest. Your research may
     involve analysis of data related to a single municipality in Ontario, yet you
@@ -835,7 +836,7 @@
 - id: 56
   title: Creating contours using ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-arcgis-pro
-  description:
+  description: >-
     Digital elevation models (DEMs) are geospatial datasets that contain
     elevation values sampled according to a regularly spaced rectangular grid. They
     can be used in terrain analysis, SD visualizations and hydrological modelling,
@@ -853,7 +854,7 @@
 - id: 57
   title: Clipping Rasters in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/clipping-rasters-arcgis-pro
-  description:
+  description: >-
     This tutorial covers two methods for clipping raster datasets from
     ArcGIS Pro.
   technique:
@@ -869,7 +870,7 @@
 - id: 58
   title: Projecting your data in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/projecting-your-data-arcgis-pro
-  description:
+  description: >-
     In order for many GIS functions to work properly, your datasets need
     to be stored in a common projected coordinate system. This guide will assist you
     with the projection process in ArcGIS Pro. (Unsure of what the appropriate projection
@@ -888,7 +889,7 @@
 - id: 59
   title: Exporting Data from OpenStreetMap for QGIS
   url: https://mdl.library.utoronto.ca/tutorials/exporting-map-data-osm-qgis
-  description:
+  description: >-
     In the case you need to acquire detailed city data to produce a large-scale
     map and we don’t have what you’re looking for in our data inventory, there is
     a chance that the user-contributed maps of OpenStreetMap.org may do the trick.
@@ -903,7 +904,7 @@
 - id: 60
   title: Importing Alternative Sources in NVivo 14/15 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-1415-mac
-  description:
+  description: >-
     NVivo can handle many types of files, such as text, audio, videos,
     images, etc. You would import these from the Data menu, by choosing the appropriate
     option. However, this tutorial will show you a common source of data that you
@@ -918,7 +919,7 @@
 - id: 61
   title: Importing Alternative Sources in NVivo 14/15 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-1415-windows
-  description:
+  description: >-
     NVivo can handle many types of files, such as text, audio, videos,
     images, etc. You would import these from the Import Ribbon, by choosing the Files
     option. However, this tutorial will show you two common sources of data that you
@@ -931,7 +932,7 @@
 - id: 62
   title: Installing and Licensing NVivo 14
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-14
-  description:
+  description: >-
     This tutorial describes how to request a license for NVivo 14, download
     it, and license it.
   technique:
@@ -944,7 +945,7 @@
 - id: 63
   title: Introduction to NVivo 14/15 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-1415-mac
-  description:
+  description: >-
     This is a beginner level tutorial for NVivo 14 or 15 for Mac (the versions
     are almost identical). The goal of this tutorial is to learn about the basic features
     in NVivo that will allow you to organize and analyze qualitative data. Part 1
@@ -962,7 +963,7 @@
 - id: 64
   title: Introduction to NVivo 14/15 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-1415-windows
-  description:
+  description: >-
     This is a beginner level tutorial for NVivo 14 or 15 for Windows (the
     versions are almost identical). The goal of this tutorial is to learn about the
     basic features in NVivo that will allow you to organize and analyze qualitative
@@ -980,7 +981,7 @@
 - id: 65
   title: How to georeference images in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-georeference-images-arcgis-pro
-  description:
+  description: >-
     This tutorial will explain how to georeference a raster image in ArcGIS
     so it can be used as an overlay or for digitizing purposes.
   technique:
@@ -1004,7 +1005,7 @@
 - id: 67
   title: PCCF Guide
   url: https://mdl.library.utoronto.ca/technology/tutorials/pccf-guide
-  description:
+  description: >-
     In this tutorial, we will use the Postal Code Conversion File (PCCF)
     to match postal codes to dissemination areas in order to incorporate additional
     neighbourhood-level demographic data into your dataset.
@@ -1021,7 +1022,7 @@
 - id: 68
   title: PCCF+ Guide
   url: https://mdl.library.utoronto.ca/technology/tutorials/pccf-plus-guide
-  description:
+  description: >-
     In this tutorial, we will use the Postal Code Conversion File Plus
     (PCCF+) to match postal codes to dissemination areas in order to incorporate additional
     neighbourhood-level demographic data into your dataset.
@@ -1038,7 +1039,7 @@
 - id: 69
   title: Importing Alternative Sources in NVivo 12 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-12-mac
-  description:
+  description: >-
     NVivo can handle many types of files, such as text, audio, videos,
     images, etc. You would import these from the Data menu, by choosing the appropriate
     option. However, this tutorial will show you two common sources of data that you
@@ -1053,7 +1054,7 @@
 - id: 70
   title: Importing Alternative Sources in NVivo 12 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-12-windows
-  description:
+  description: >-
     NVivo can handle many types of files, such as text, audio, videos,
     images, etc. You would import these from the Import Ribbon, by choosing the Files
     option. However, this tutorial will show you two common sources of data that you
@@ -1068,7 +1069,7 @@
 - id: 71
   title: Intermediate R Course
   url: https://mdl.library.utoronto.ca/technology/tutorials/intermediate-r-course
-  description:
+  description: >-
     To get started with intermediate R, enroll in this Intermediate R quercus
     course here. To enroll, you will need to use your UTORid login. This course consists
     of demonstration videos. By enrolling in this course, you can keep track of your
@@ -1149,8 +1150,7 @@
     **Note**: This tutorial
     is intended for Windows users. If you are using a Mac, check out this tutorial instead. 
     
-    **Code
-    of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment
+    **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment
     for learning. To learn more, check out our Code of Conduct. 
     
     **For help contact**: Map
@@ -1177,7 +1177,7 @@
 - id: 75
   title: "Python: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/python-information-tutorials-and-workshops
-  description:
+  description: >-
     Python is a simple programming language that is popular for being easy
     to learn to read, write, and understand. You can use Python for automating repetitive
     tasks like cleaning data, creating data visualizations, analyzing data, conducting
@@ -1193,7 +1193,7 @@
 - id: 76
   title: Qualitative Data Analysis Software Options
   url: https://mdl.library.utoronto.ca/technology/tutorials/qualitative-data-analysis-software-options
-  description:
+  description: >-
     UofT currently subscribes to the latest few versions of NVivo. Consult
     our [NVivo software license page](https://mdl.library.utoronto.ca/technology/nvivo-software) to request a license key. Consult our [getting started
     guide for NVivo](https://mdl.library.utoronto.ca/technology/tutorials/nvivo-12-information-tutorials-and-workshops) or our for tutorials, resources, and workshop recordings to help
@@ -1226,7 +1226,7 @@
 - id: 78
   title: Working in Teams Using NVivo
   url: https://mdl.library.utoronto.ca/technology/tutorials/working-teams-using-nvivo
-  description:
+  description: >-
     This page provides an overview and tips for working as a team using
     NVivo. There are three main options: the manual way, the old collaboration cloud,
     and the new collaboration cloud. There is also [NVivo Collaboration Server](https://community.lumivero.com/s/article/TRC-Using-NVivo-with-NVivo-Collaboration-Server?language=en_US), but
@@ -1282,7 +1282,7 @@
 - id: 81
   title: An Introduction to Mapping and Spatial Analysis with QGIS
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-mapping-and-spatial-analysis-qgis
-  description:
+  description: |-
     Learn the basics of GIS with open source software, QGIS (https://qgis.org).
     This tutorial/workshop is made up of three modules. 
     - Module 1. Getting started
@@ -1290,9 +1290,7 @@
     - Module 3. Manipulating geospatial datasets 
     Download the datasets used for this workshop at this location: https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zip
     
-    Note that while the examples shown in this tutorial were captured using the windows
-    version of QGIS, all modules and operations can be completed using the linux or
-    mac OS version of QGIS.
+    Note that while the examples shown in this tutorial were captured using the windows version of QGIS, all modules and operations can be completed using the linux or mac OS version of QGIS.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1304,7 +1302,7 @@
 - id: 82
   title: Introduction to R Course
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-course
-  description:
+  description: >-
     For a gentle and thorough introduction to R, enroll in this [Introduction
     to R](https://q.utoronto.ca/courses/176769/assignments/syllabus) quercus course [here](https://q.utoronto.ca/enroll/ET679B). To enroll, you will need to use your UTORid login. This
     course consists of demonstration video, activity and quizzes. By enrolling in
@@ -1319,7 +1317,7 @@
 - id: 83
   title: Introduction to NVivo 12 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-mac
-  description:
+  description: >-
     This is a beginner level tutorial for NVivo 12 for Mac. The goal of
     this tutorial is to learn about the basic features in NVivo that will allow you
     to organize and analyze qualitative data. Part 1 will go over the basics of navigating
@@ -1337,7 +1335,7 @@
 - id: 84
   title: Tableau Workshop Demonstration Tutorial
   url: https://mdl.library.utoronto.ca/technology/tutorials/tableau-workshop-demonstration-tutorial
-  description:
+  description: >-
     This tutorial outlines the steps taken in the demonstration during
     the live workshop on an Introduction to Data Visualization Using Tableau Desktop.
     This is a companion tutorial, but can also be used as a stand-alone introduction
@@ -1352,7 +1350,7 @@
 - id: 85
   title: Introduction to NVivo 12 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-windows
-  description:
+  description: >-
     This is a beginner level tutorial for NVivo 12 for Windows. The goal
     of this tutorial is to learn about the basic features in NVivo that will allow
     you to organize and analyze qualitative data. Part 1 will go over the basics of
@@ -1429,7 +1427,7 @@
 - id: 90
   title: "HathiTrust Research Center: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/hathitrust-research-center-information-tutorials-and-workshops
-  description:
+  description: >-
     The HathiTrust Research Center (HTRC) is the research arm of HathiTrust.
     It develops tools and resources that enable text or computational analysis of
     the HathiTrust corpus. This corpus or digital library includes over 10 million
@@ -1448,7 +1446,7 @@
 - id: 91
   title: "Infographics: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/infographics-information-tutorials-and-workshops
-  description:
+  description: >-
     Infographics are a type of data visualization. They are usually a mixture
     of text and images, but they are graphic heavy, often only visualize a small amount
     of data, and have specific goals. Those goals are normally to inform or persuade
@@ -1479,7 +1477,7 @@
 - id: 93
   title: "Gale Digital Scholar Lab: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/gale-digital-scholar-lab-information-tutorials-and-workshops
-  description:
+  description: >-
     The [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab) is a platform that allows users to discover
     and create collections of digitized texts from the Gale Historical Collections,
     run a variety of textual analysis on them, and visualize the resulting data.
@@ -1556,7 +1554,7 @@
 - id: 98
   title: "Data Visualization and Tableau: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/data-visualization-and-tableau-information-tutorials-and-workshops
-  description:
+  description: >-
     Data Visualization is a broad term that basically involves anything
     that uses graphical or pictorial representations of data for exploration, sense-making,
     and communication. Data visualization allows you and your audience to identify
@@ -1678,7 +1676,7 @@
 - id: 105
   title: Generating SSH Key Pairs on a Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac
-  description:
+  description: >-
     These instructions will help you create SSH key pairs on a Mac computer,
     for access to the [Web of Science PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/web-science-postgresql-database).
   date: "2022-02-07"
@@ -1724,7 +1722,7 @@
 - id: 108
   title: How to Access the PostgreSQL Databases
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-postgresql-databases
-  description:
+  description: >-
     Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian
     Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access
     to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
@@ -1734,7 +1732,8 @@
 - id: 109
   title: ArcGIS Online Part I (October 2022) - https://uoft.me/AGOL
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-i-october-2022-httpsuoftmeagol
-  description: The following slide deck is Part 1 of an introduction to ArcGIS Online. https://uoft.me/AGOL
+  description: >-
+    The following slide deck is Part 1 of an introduction to ArcGIS Online. https://uoft.me/AGOL
   technique:
     - Mapping
     - Spatial Analysis
@@ -1747,7 +1746,7 @@
 - id: 110
   title: ArcGIS Online Part II  (November 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-ii-november-2021
-  description:
+  description: >-
     The following slide deck will guide you through Part 2 of the ArcGIS
     Online workshop. Part 2 covers topics such as choropleth mapping, spatial analytic
     tools, and linking ArcGIS Pro to ArcGIS Online.
@@ -1763,7 +1762,7 @@
 - id: 111
   title: ArcGIS Pro Module 1 - The Basics (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-1-basics-fall-2021
-  description:
+  description: >-
     The following slide deck walks you through the basics of learning about
     ArcGIS Pro's main tools, viewing and manipulating datasets and basemaps, and exporting
     a basic map view.
@@ -1778,7 +1777,7 @@
 - id: 112
   title: ArcGIS Pro Module 2 - Authoring and Publishing a Map (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-2-authoring-and-publishing-map-fall-2021
-  description:
+  description: >-
     Learn to create a map project which will include a legend, scale bar,
     an inset map, a title and a north arrow.
   technique:
@@ -1792,7 +1791,7 @@
 - id: 113
   title: ArcGIS Pro Module 3 - Loading and Manipulating Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-3-loading-and-manipulating-data-fall-2021
-  description:
+  description: >-
     The following slide deck will walk you through Module 3 of the ArcGIS
     Pro tutorial. This module will teach you how to add and format vector and raster
     data layers to your project, as well as how to geocode data.
@@ -1807,7 +1806,7 @@
 - id: 114
   title: ArcGIS Pro Module 4  - Data Analysis (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-4-data-analysis-fall-2021
-  description:
+  description: >-
     The following slide deck is for Module 4 of the ArcGIS Pro tutorial.
     This module helps the user apply knowledge and skills learned in previous 3 modules
     in solving a real life spatial problem.
@@ -1822,7 +1821,7 @@
 - id: 115
   title: ArcGIS Pro Module 5 - Working with Raster Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-5-working-raster-data-fall-2021
-  description:
+  description: >-
     The following slide deck is for Module 5 of the ArcGIS Pro workshop.
     This module will teach you how to manipulate and analyze raster data in ArcGIS
     Pro.
@@ -1837,7 +1836,7 @@
 - id: 116
   title: ArcGIS Pro Module 6 - Wrangling and Mapping Covid-19 Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-6-wrangling-and-mapping-covid-19-data-fall-2021
-  description:
+  description: >-
     The following slide deck is for Module 6 of the ArcGIS Pro tutorial.
     This module will teach you how to do basic data cleaning and converting to prepare
     data to be used in ArcGIS Pro. This module will also present a real life problem
@@ -1853,7 +1852,7 @@
 - id: 117
   title: ArcGIS StoryMaps (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps-fall-2021
-  description:
+  description: >-
     The following slide deck is a tutorial on ArcGIS StoryMaps. This tutorial
     will teach you the basics of ArcGIS StoryMaps, how they can be used, and how you
     can make your own StoryMap.
@@ -1868,7 +1867,7 @@
 - id: 118
   title: How to Access Online GIS Classes in ESRI Academy
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
-  description:
+  description: >-
     ​University of Toronto community members can access online GIS courses through ESRI Academy. Content is designed for beginners and experienced users.
   tool:
     - ArcGIS
@@ -1880,7 +1879,7 @@
 - id: 119
   title: How to Access Constellate
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-constellate
-  description:
+  description: >-
     This tutorial walks you through accessing Constellate using the University
     of Toronto's institutional privileges. Please see our general Constellate page for
     more information and see our tutorial on creating a dataset once you have logged
@@ -1894,7 +1893,7 @@
 - id: 120
   title: How to Build a Dataset in Constellate
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-build-dataset-constellate
-  description:
+  description: >-
     This tutorial shows you how to build a dataset in Constellate. We recommend
     reading our general information on Constellate first. Please also see this access
     tutorial in order to log in with institutional privileges. Please note that Constellate
@@ -1911,7 +1910,7 @@
 - id: 121
   title: Introduction to SAS
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-sas
-  description:
+  description: >-
     This guide gives users an introduction to SAS. The topics covered are
     importing, exploring, modifying, and managing data. It has been created using
     SAS 9.4. The main dataset used is the flights dataset. It contains the US domestic
@@ -1925,7 +1924,7 @@
 - id: 122
   title: Visualizing a Network Dataset Using Gephi
   url: https://mdl.library.utoronto.ca/technology/tutorials/visualizing-network-dataset-using-gephi
-  description:
+  description: >-
     This tutorial will teach you the basic features in Gephi that will
     allow you to visualize network data. This tutorial is part of a longer workshop,
     “An Introduction to Network Visualization and Analysis.” You can [download the workshop
@@ -1941,7 +1940,7 @@
 - id: 123
   title: Installing and Licensing NVivo 12
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-12
-  description:
+  description: >-
     This tutorial describes how to request a license for NVivo 12 Plus,
     download it, and license it.
   technique:
@@ -1955,7 +1954,7 @@
 - id: 124
   title: ArcGIS Online - Workshop videos
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-workshop-videos
-  description:
+  description: >-
     Created by Marcel Fortin, GIS and Map Librarian, in January 2021, this
     4-part video tutorial will teach you how to format, edit, and map spatial data
     using ArcGIS Online.
@@ -1970,7 +1969,8 @@
 - id: 125
   title: ArcGIS Storymaps
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps
-  description: ESRI ArcGIS StoryMaps online workshop videos, January 2021
+  description: >-
+    ESRI ArcGIS StoryMaps online workshop videos, January 2021
   technique:
     - Data Visualization
     - Mapping
@@ -2007,7 +2007,7 @@
 - id: 127
   title: ArcGIS Pro Workshop Outline
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-workshop-outline
-  description:
+  description: >-
     This tutorial will use 7 modules to teach you the basics of ArcGIS
     Pro. These modules will cover topics such as adding, manipulating, analyzing,
     and mapping vector and raster data.
@@ -2035,7 +2035,7 @@
 - id: 129
   title: Getting Started with R and R Studio
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-r-and-r-studio
-  description:
+  description: >-
     This guide helps you get started with the R and RStudio software and
     R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from
     the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdl.library.utoronto.ca/technology/tutorials/introduction-r).
@@ -2047,7 +2047,7 @@
 - id: 130
   title: RTRA SAS Program Guide
   url: https://mdl.library.utoronto.ca/technology/tutorials/rtra-sas-program-guide
-  description:
+  description: >-
     This guide helps users get started with writing a SAS program/code
     for RTRA purposes.
   technique:
@@ -2070,7 +2070,7 @@
 - id: 132
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
-  description: >-
+  description: |-
     This tutorial introduces [Gale's Digital Scholar Lab(DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
     humanities tool. In this tutorial, you will learn how to: 
     
@@ -2104,7 +2104,7 @@
 - id: 133
   title: Downloading, Installing, and Licensing ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-installing-and-licensing-arcgis-pro
-  description:
+  description: >-
     This tutorial goes over how to download, install, and license ArcGIS
     Pro with your UTORid. Please be advised that ArcGIS Pro is also [available on library
     computers](https://mdl.library.utoronto.ca/technology/computers-with-gis-software) on the St George campus.
@@ -2119,7 +2119,7 @@
 - id: 134
   title: Creating a Tableau Dashboard using COVID-19 data (Intermediate)
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate
-  description:
+  description: >-
     This tutorial provides an opportunity to learn data visualization skills
     using a common data visualization tool, Tableau Desktop. People often say that
     they learn better when using data that resonates with them, so we are using COVID-19
@@ -2134,7 +2134,7 @@
 - id: 135
   title: Getting Started with Tableau Desktop (Beginner to Intermediate)
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-tableau-desktop-beginner-intermediate
-  description:
+  description: >-
     This is a beginner-to-intermediate level tutorial for Tableau Desktop
     version 2020.2. To acquire a free student, researcher, or instructor license for
     Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If
@@ -2165,7 +2165,7 @@
 - id: 137
   title: Introduction to Infographic Design and Using Piktochart
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-infographic-design-and-using-piktochart
-  description:
+  description: >-
     This tutorial is an introduction to Piktochart, a popular online tool
     used to create infographics. This exercise will illustrate some infographic design
     principles and specific features of Piktochart to create an infographic about
@@ -2314,7 +2314,7 @@
 - id: 144
   title: Creating Data Visualizations Using Tableau Desktop (Beginner)
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-data-visualizations-using-tableau-desktop-beginner
-  description:
+  description: >-
     This guide is suitable for new Tableau users looking for information
     on producing popular data visualizations in Tableau, such as bar graphs, line
     graphs, scatterplots, tree maps, and dashboards. If you are looking for more general
@@ -2374,7 +2374,7 @@
 - id: 146
   title: OpenRefine Installation Instructions
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions
-  description:
+  description: >-
     This is a guide to installing and running OpenRefine on your personal
     computer. Please note that all computers in the Map and Data Library (on the fifth
     floor of Robarts) and in the computer labs on the fourth and fifth floors of Robarts
@@ -2414,7 +2414,7 @@
 - id: 148
   title: Finding Statistics Using Statcan's Data Portal (Laurier)
   url: https://mdl.library.utoronto.ca/technology/tutorials/finding-statistics-using-statcans-data-portal-laurier
-  description:
+  description: >-
     Link to a video tutorial on how to find statistics and manipulate tables
     to get the data you need.
   technique:
@@ -2425,7 +2425,7 @@
 - id: 149
   title: Logging in to ArcGIS Online
   url: https://mdl.library.utoronto.ca/technology/tutorials/logging-arcgis-online
-  description:
+  description: >-
     This tutorial will take you through two ways of logging in to your
     ESRI ArcGIS Online account for the first time using your UTORid.
   tool:
@@ -2437,7 +2437,8 @@
 - id: 150
   title: Helpful tips when using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/helpful-tips-when-using-scholars-geoportal
-  description: Please [visit this link](http://guides.scholarsportal.info.myaccess.library.utoronto.ca/geoportal/usinggeoportal) for extensive help with Scholars GeoPortal.
+  description: >-
+    Please [visit this link](http://guides.scholarsportal.info.myaccess.library.utoronto.ca/geoportal/usinggeoportal) for extensive help with Scholars GeoPortal.
   tool:
     - Scholars GeoPortal
   date: "2018-02-07"
@@ -2446,7 +2447,7 @@
 - id: 151
   title: Accessing CANSIM data through CHASS
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
-  description: 
+  description: >-
     This guide is primarily designed to help users unfamiliar with the
     CANSIM database to find and download data through CHASS. 
     
@@ -2463,7 +2464,7 @@
 - id: 152
   title: Finding/extracting/downloading GIS data using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/findingextractingdownloading-gis-data-using-scholars-geoportal
-  description:
+  description: >-
     This tutorial provides an example of finding, extracting, and downloading
     data from Scholars GeoPortal. [Scholars GeoPortal](http://geo2.scholarsportal.info.myaccess.library.utoronto.ca/) is a geospatial discovery tool
     that provides access to large scale geospatial datasets that can be used for mapping
@@ -2483,7 +2484,7 @@
 - id: 153
   title: Extracting/downloading data using CHASS Canadian Census Analyser
   url: https://mdl.library.utoronto.ca/technology/tutorials/extractingdownloading-data-using-chass-canadian-census-analyser
-  description:
+  description: >-
     The CHASS [Canadian Census Analyser](http://dc.chass.utoronto.ca.myaccess.library.utoronto.ca/census/) allows members of the University of
     Toronto research community to generate custom tables from the Census of Canada
     (1961-2016) and the National Household Survey (2011). This tutorial provides an
@@ -2501,7 +2502,7 @@
 - id: 154
   title: Introduction to SimplyAnalytics
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics
-  description:
+  description: >-
     This online tutorial will provide an introduction to SimplyAnalytics
     and a few of its many possible uses. SimplyAnalytics is a web-based data visualization
     application. 
@@ -2522,7 +2523,7 @@
 - id: 155
   title: Creating contours using Global Mapper
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-global-mapper
-  description:
+  description: >-
     The guide in this PDF will teach the user how to generate contours
     using DEM files in Global Mapper.
   tool:
@@ -2534,7 +2535,7 @@
 - id: 156
   title: Citation rules for machine-readable data in Canadian historical journals
   url: https://mdl.library.utoronto.ca/technology/tutorials/citation-rules-machine-readable-data-canadian-historical-journals
-  description:
+  description: >-
     The following PDF contains an article that elaborates on citation rules
     for machine-readable data in Canadian historical journals.
   technique:
@@ -2561,7 +2562,7 @@
 - id: 159
   title: Online resources to build topography 3D models
   url: https://mdl.library.utoronto.ca/technology/tutorials/online-resources-build-topography-3d-models
-  description:
+  description: >-
     This document compiles online resources that help to build terrain
     3D models with a variety of software-options. 
     
@@ -2594,7 +2595,7 @@
 - id: 161
   title: Cleaning data in STATA
   url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-stata
-  description:
+  description: >-
     Stata is a good tool for cleaning and manipulating data, regardless
     of the software you intend to use for analysis. This workshop is suitable for
     both first time data-cleaners and for those familiar with data cleaning.
@@ -2608,7 +2609,8 @@
 - id: 162
   title: Downloading SDA data from CHASS into STATA
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-sda-data-chass-stata
-  description: This tutorial demonstrates how to load SDA data for use in Stata.
+  description: >-
+    This tutorial demonstrates how to load SDA data for use in Stata.
   technique:
     - Extracting data
   tool:
@@ -2691,7 +2693,7 @@
 - id: 169
   title: Scraping tweets using Python
   url: https://mdl.library.utoronto.ca/technology/tutorials/scraping-tweets-using-python
-  description:
+  description: >-
     This tutorial demonstrates how to scrape tweets for data analysis using
     Python and the Twitter API.
   technique:
@@ -2714,7 +2716,7 @@
 - id: 171
   title: SPSS Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/spss-learning-modules-ucla
-  description:
+  description: >-
     Comprehensive set of guides that include obtaining SPSS, learning SPSS
     fundamentals and advanced data analysis examples.
   tool:
@@ -2725,7 +2727,8 @@
 - id: 172
   title: Stat/Transfer (File Transfer Utility)
   url: https://mdl.library.utoronto.ca/technology/tutorials/stattransfer-file-transfer-utility
-  description: Introductory guide to the Stat/Transfer utility (version 10).
+  description: >-
+    Introductory guide to the Stat/Transfer utility (version 10).
   technique:
     - Converting data formats
   date: "2017-05-05"
@@ -2734,7 +2737,7 @@
 - id: 173
   title: Stata Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-learning-modules-ucla
-  description:
+  description: >-
     Comprehensive set of guides that include installing Stata, learning
     Stata fundamentals including graphics and advanced data analysis examples.Link:
   tool:
@@ -2745,7 +2748,7 @@
 - id: 174
   title: Summary statistics in STATA
   url: https://mdl.library.utoronto.ca/technology/tutorials/summary-statistics-stata
-  description:
+  description: >-
     Summary statistics are a way to explore your dataset, find patterns,
     and maybe even refine your question of interest. In this workshop, you will learn
     to use Stata to create basic summary statistics, cross-tabulations, and increasingly
@@ -2768,7 +2771,7 @@
 - id: 176
   title: Cleaning Data in Python
   url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-python
-  description:
+  description: >-
     This guide shows the user how to use Spyder to load and clean data
     for further analysis.
   technique:
@@ -2781,7 +2784,7 @@
 - id: 177
   title: Introduction to R
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r
-  description:
+  description: >-
     This guide is suitable for new R-users or advanced level R-users looking
     for information on specific topics. The topics covered in this guide are importing,
     exploring, modifying and managing data.
@@ -2798,7 +2801,7 @@
 - id: 178
   title: Downloading census boundary files using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-census-boundary-files-using-scholars-geoportal
-  description:
+  description: |-
     This exercise will showcase how to use Scholars GeoPortal to extract
     Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal
     using two methods:
@@ -2813,7 +2816,7 @@
 - id: 179
   title: Converting GIS data in FME Quick Translator
   url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-fme-quick-translator
-  description:
+  description: >-
     FME (File Manipulation Engine) is a powerful software package that
     allows users to quickly convert spatial and non-spatial datasets into other formats
     to facilitate sharing and interoperability. One of its components, FME Quick Translator,
@@ -2834,7 +2837,7 @@
 - id: 180
   title: Selecting the right projection
   url: https://mdl.library.utoronto.ca/technology/tutorials/selecting-right-projection
-  description:
+  description: >-
     Unsure of which projection to use in your GIS work? This tutorial will
     help you figure out your options.
   technique:
@@ -2852,7 +2855,7 @@
 - id: 181
   title: Citing geospatial data resources
   url: https://mdl.library.utoronto.ca/technology/tutorials/citing-geospatial-data-resources
-  description:
+  description: >-
     This guide, compiled by Alberta Auringer Wood of the Association of
     Canadian Map Libraries and Archives, provides recommended citation formats for
     a wide variety of geospatial data sources. (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
@@ -2870,7 +2873,7 @@
 - id: 182
   title: Deauthorizing ArcGIS
   url: https://mdl.library.utoronto.ca/technology/tutorials/deauthorizing-arcgis
-  description:
+  description: >-
     If you need to uninstall and reinstall your authorized copy of ArcGIS
     (for example, if you are reformatting your hard drive or switching to a new computer
     or **you have entered your eva code in once and it did not authorize**) please follow
@@ -2885,7 +2888,7 @@
 - id: 183
   title: Finding paper maps and atlases
   url: https://mdl.library.utoronto.ca/technology/tutorials/finding-paper-maps-and-atlases
-  description:
+  description: >-
     This tutorial demonstrates how to find paper maps and atlases in the
     University of Toronto Libraries catalogue, then locate them in Map & Data Library's
     fifth floor collection.
@@ -2898,7 +2901,7 @@
 - id: 184
   title: Using the large format scanner
   url: https://mdl.library.utoronto.ca/technology/tutorials/using-large-format-scanner
-  description:
+  description: >-
     This tutorial will help users learn how to properly use the Map and
     Data Library's large format scanner.
   technique:
