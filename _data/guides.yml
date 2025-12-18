@@ -2841,7 +2841,9 @@
     - ArcGIS
     - Global Mapper
     - QGIS
-  dataFormat: Raster, Vector
+  dataFormat: 
+    - Raster
+    - Vector
   date: "2016-04-26"
   series: MDL Tutorials
   type: Tutorial
