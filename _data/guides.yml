@@ -2858,7 +2858,10 @@
     Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
     - Citing data
-  dataFormat: Paper maps, Raster, Vector
+  dataFormat: 
+    - Paper maps
+    - Raster
+    - Vector
   date: "2016-04-12"
   series: MDL Tutorials
   type: Tutorial
