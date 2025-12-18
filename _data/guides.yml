@@ -2511,7 +2511,9 @@
     - Searching for maps and data
   tool:
     - SimplyAnalytics
-  dataFormat: Statistics, Vector
+  dataFormat: 
+    - Statistics
+    - Vector
   date: "2018-01-04"
   series: MDL Tutorials
   type: Tutorial
