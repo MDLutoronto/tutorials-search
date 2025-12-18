@@ -2342,22 +2342,26 @@
 - id: 145
   title: OpenRefine Tutorial 2. Citizen Science Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity
-  description:
-    "*This tutorial has been developed for OpenRefine version 3.7.5*
+  description: >-
+    *This tutorial has been developed for OpenRefine version 3.7.5*
     
     We are going to work with a bit messier dataset now for the next few tasks. This is a
     citizen science dataset captured using an app called iNaturalist. The data was
-    captured for a city nature challenge and shared on [data.world](https://data.world/). This activity will
-    showcase some more features in OpenRefine.The goal of this activity is to create
+    captured for a city nature challenge and shared on [data.world](https://data.world/). 
+    
+    This activity will
+    showcase some more features in OpenRefine. The goal of this activity is to create
     a new project with this citizen science dataset and work with the data. You will
     use clustering to improve the consistency of the dataset. You will also perform
     various manipulations, such as split and concatenate. Finally, you will learn
     various ways to remove columns and rows, and work with the Undo/Redo features
-    in OpenRefine. Before you begin, please download the OpenRefine workshop sample
+    in OpenRefine. 
+    
+    Before you begin, please download the OpenRefine workshop sample
     datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already. 
     
     ***Note***: *This assumes that you have learned the
-    basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*"
+    basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*
   technique:
     - Cleaning data
   tool:
