@@ -195,11 +195,11 @@
     (Jun. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-constellate-new-platform-learn-text-analysis-jun-28-2021
   description:
-    "Please note that Constellate is ending on July 1st, 2025. Some learning
+    Please note that Constellate is ending on July 1st, 2025. Some learning
     materials will remain available afterwards. This page provides a presentation on Constellate:
     A New Platform to Learn Text Analysis as part of the Bits and Bytes Webinar Series hosted
     by the Map & Data Library that features presentations and demonstrations on data-related
-    topics and tools, such as web archives, visualization, GIS and statistics."
+    topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Text and Data Mining
   tool:
@@ -229,7 +229,7 @@
   type: Tutorial
 - id: 16
   title:
-  "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.
+    "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.
     1, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
   description:
@@ -285,7 +285,7 @@
   type: Tutorial
 - id: 20
   title:
-    "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)”
+    "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-programming-absolute-beginners-using-python-pt-2-march-2025
   description:
     This page provides a video recording of an introductory workshop on
@@ -681,10 +681,10 @@
 - id: 47
   title: Installing and Licensing NVivo 15 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-15-mac
-  description:
+  description: >-
     This tutorial is for installing and licensing **NVivo 15** on Mac computers. 
     
-    Findinformation on how to request a license, download and install the software, as
+    Find information on how to request a license, download and install the software, as
     well as how to activate the license key for new and existing users. Note: If you
     need NVivo 14, please reach out to us using our contact form
   technique:
@@ -697,7 +697,7 @@
 - id: 48
   title: Installing and Licensing NVivo 15 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-15-windows
-  description:
+  description: >-
     This tutorial is for installing and licensing **NVivo 15** on Windows computers. Find
     information on how to request a license, download and install the software, as
     well as how to activate the license key for new and existing users. *Note: If you
@@ -1086,7 +1086,7 @@
 - id: 72
   title: "Excel: Beyond The Basics - Mac"
   url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-mac
-  description:
+  description: >-
     About this workshop 
     
     **What**: This is a beginner to intermediate tutorial, that will allow you to gain a deeper understanding of the uses and types of data
@@ -1111,7 +1111,7 @@
     is intended for Mac users. If you are using Windows, check out this tutorial instead. 
     
     **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment
-    for learning. To learn more, check out ourCode of Conduct. 
+    for learning. To learn more, check out our Code of Conduct. 
     
     **For help contact**: Map & Data Library, mdl@library.utoronto.ca
   tool:
@@ -1122,7 +1122,7 @@
 - id: 73
   title: "Excel: Beyond The Basics - Windows"
   url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-windows
-  description:
+  description: >-
     About this workshop 
     
     **What**: This is a beginner to intermediate tutorial,
@@ -1208,7 +1208,7 @@
 - id: 77
   title: Transcription Options
   url: https://mdl.library.utoronto.ca/technology/tutorials/transcription-options
-  description:
+  description: >-
     If you have an audio or video file that you need to get transcribed,
     this page describes some automated options to consider. But keep in mind, though,
     that none of these options (including NVivo transcription) provides a 100% perfectly
@@ -1244,7 +1244,7 @@
     Getting Started with the Canadian Intellectual Property Office (CIPO) Patent
     PostgreSQL Database - Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-WINDOWS
-  description:
+  description: >-
     This tutorial will help you get up and running querying the [Canadian
     Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover
     accessing the high performance computing environment, querying the database via
@@ -1264,7 +1264,7 @@
     Getting Started with the Canadian Intellectual Property Office (CIPO) Patent
     PostgreSQL Database - Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-MAC
-  description:
+  description: >-
     This tutorial will help you get up and running querying the [Canadian
     Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover
     accessing the high performance computing environment, querying the database via
@@ -1687,7 +1687,7 @@
 - id: 106
   title: Getting Started with the Web of Science PostgreSQL Database - Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database-MAC
-  description:
+  description: >-
     This tutorial will help you get up and running querying the [Web of
     Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database) on a Mac computer. It will cover accessing the high
     performance computing environment, querying the database via SQL statements and
@@ -1706,7 +1706,7 @@
 - id: 107
   title: Getting Started with the Web of Science PostgreSQL Database
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database
-  description:
+  description: >-
     This tutorial will help you get up and running querying the [Web of
     Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing
     environment, querying the database via SQL statements and from within a python
@@ -1725,7 +1725,7 @@
   title: How to Access the PostgreSQL Databases
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-postgresql-databases
   description:
-    "Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian
+    Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian
     Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access
     to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
   date: "2022-01-26"
@@ -2070,7 +2070,7 @@
 - id: 132
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
-  description:
+  description: >-
     This tutorial introduces [Gale's Digital Scholar Lab(DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
     humanities tool. In this tutorial, you will learn how to: 
     
@@ -2182,7 +2182,7 @@
 - id: 138
   title: "OpenRefine Augmenting Activity 4: Using Python"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-4-using-python
-  description:
+  description: >-
     The goal of this activity is to try out running Python in OpenRefine.
     We will use it to make an API call to augment our books dataset with information
     on the authors from Wikipedia. 
@@ -2201,7 +2201,7 @@
 - id: 139
   title: "OpenRefine Augmenting Activity 3: Using Add Column by Fetching URLs"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3-using-add-column-fetching-urls
-  description:
+  description: >-
     This tutorial will show you how to use the Add Column by Fetching URLs
     feature in OpenRefine. 
     
@@ -2218,7 +2218,7 @@
 - id: 140
   title: "OpenRefine Augmenting Activity 1: Preparing the data"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data
-  description:
+  description: >-
     In this tutorial, we will begin work on augmenting datasets. 
     
     *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine
@@ -2233,7 +2233,7 @@
 - id: 141
   title: "OpenRefine Augmenting Activity 2: Using Reconciliation Services"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2-using-reconciliation-services
-  description:
+  description: >-
     This tutorial will teach you how to use OpenRefine's reconciliation
     service to connect data in your dataset with Wikidata. 
     
@@ -2446,7 +2446,7 @@
 - id: 151
   title: Accessing CANSIM data through CHASS
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
-  description:
+  description: 
     This guide is primarily designed to help users unfamiliar with the
     CANSIM database to find and download data through CHASS. 
     
