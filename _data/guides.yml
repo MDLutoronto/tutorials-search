@@ -2286,7 +2286,7 @@
 - id: 143
   title: OpenRefine Tutorial 3. Regular Expressions (Regex) Activity
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-3-regular-expressions-regex-activity
-  description:
+  description: >-
     *This tutorial has been developed for OpenRefine version 3.7.5*
     
     You were introduced to GREL in the previous activity, so you know that GREL is a powerful
@@ -2296,7 +2296,9 @@
     within text. In OpenRefine, you can use it in your GREL expressions to create
     sophisticated patterns describing what type of information you want to find within
     your dataset, then do something with the matching text (edit it, delete it, put
-    it in a new column, etc.). This activity assumes you have already completed the [Survey
+    it in a new column, etc.). 
+    
+    This activity assumes you have already completed the [Survey
     of Household Spending](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and [Citizen Science](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity) activities, have a familiarity with OpenRefine
     and know how to create simple GREL expressions. Before you begin, please download
     the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
