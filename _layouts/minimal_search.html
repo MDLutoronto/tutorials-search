@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Configure marked to open links in new tabs
+        const renderer = new marked.Renderer();
+        renderer.link = function(token) {
+            return `<a href="${token.href}" target="_blank" rel="noopener noreferrer">${token.text}</a>`;
+        };
+        marked.setOptions({ renderer: renderer });
+    </script>
     <style>
         :root {
             /* Maximum number of cards to display per row on wider screens */
