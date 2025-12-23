@@ -28,3 +28,8 @@ node_modules
 *.gem
 .bundle
 .ruby-version
+
+# Python files
+__pycache__/
+*/.venv/
+venv/
