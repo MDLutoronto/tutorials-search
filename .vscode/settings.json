@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "stefanzweifel"
+    ],
+    "ruff.interpreter": [
+        "${workspaceFolder}/tools/py/.venv/bin/python"
     ]
 }
