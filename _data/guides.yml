@@ -137,7 +137,7 @@
     (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains
     11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains
     1.5-2.5 million records per year. Records provide information about business location
-    (including address, census geography & lat/long coordinates (US database only)),
+    (including address, census geography & lat/long coordinates (US database only),
     number of employees, sales volume, NAICS & SIC codes, unique identifier across
     time for businesses and parent entities. Complete record layouts and decodes are
     available for download via the Borealis links above.
