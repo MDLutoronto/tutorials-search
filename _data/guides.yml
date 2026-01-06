@@ -2739,7 +2739,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-learning-modules-ucla
   description: >-
     Comprehensive set of guides that include installing Stata, learning
-    Stata fundamentals including graphics and advanced data analysis examples.Link:
+    Stata fundamentals including graphics and advanced data analysis examples. Link: http://stats.idre.ucla.edu/stata/
   tool:
     - Stata
   date: "2017-05-05"
