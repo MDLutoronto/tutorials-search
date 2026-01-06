@@ -461,8 +461,8 @@
     This page provides a video recording of a workshop on various text
     analysis tools. 
 
-    **Please note that [Constellate](https://constellate.org/docs/constellate-sunset) is ending on July 1st, 2025.** Some learning
-    materials will remain available afterwards. Please also note that Hathi Trust Research
+     **Please note that [Constellate](https://constellate.org/docs/constellate-sunset) is ending on July 1st, 2025.** Some learning
+    materials will remain available afterwards. Please also note that HathiTrust Research
     Center will no longer be funded by the end of 2026.
   technique:
     - Text and Data Mining
@@ -471,7 +471,7 @@
   tool:
     - Constellate
     - Digital Scholar Lab
-    - Hathi Trust Research Center
+    - HathiTrust Research Center
   date: "2025-01-28"
   series: MDL Tutorials
   type: Tutorial
