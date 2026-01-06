@@ -2071,22 +2071,22 @@
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
   description: |-
-    This tutorial introduces [Gale's Digital Scholar Lab(DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
+    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
     humanities tool. In this tutorial, you will learn how to: 
     
-    - Build a collection of texts, including uploading your own materials 
+    1. Build a collection of texts, including uploading your own materials 
     
-    - Create collaborative workspaces
+    2. Create collaborative workspaces
     
-    - Clean texts
+    3. Clean texts
     
-    - Run analytical tools on texts and visualize the results
+    4. Run analytical tools on texts and visualize the results
     
-    - Download the data, graphs, and other visualizations produced through this tool
+    5. Download the data, graphs, and other visualizations produced through this tool
     
-    - Download the scanned texts in your collection, so that you can use them in other programs
+    6. Download the scanned texts in your collection, so that you can use them in other programs
     
-    - Find additional training and resources
+    7. Find additional training and resources
     
     *Note: Gale periodically updates the Digital Scholar Lab,
     so some features of this tutorial might not always match the latest interface.
