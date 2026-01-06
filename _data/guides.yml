@@ -2260,7 +2260,7 @@
     and so their service is not available for API calls. Until service resumes, please
     skip step 3, and during step 5, please chose to Get Data From: This Computer and
     select the 311.json file in the packaged workshop files. This represents a snapshot
-    of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca if
+    of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca *if
     you run into difficulties.* 
     
     Sometimes you don't have your data in a file. Instead
