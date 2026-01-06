@@ -476,14 +476,14 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 33
-  title: "Workshop Recording: Working with Messy Data in Open Refine (Oct. 28, 2021)"
+  title: "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-working-messy-data-openrefine-oct-28-2021
   description: >-
-    This page provides a video recording of a workshop on Open Refine.
+    This page provides a video recording of a workshop on OpenRefine.
   technique:
     - Cleaning data
   tool:
-    - Open Refine
+    - OpenRefine
   date: "2025-01-28"
   series: MDL Tutorials
   type: Tutorial
