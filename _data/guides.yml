@@ -906,18 +906,18 @@
   title: "Excel: Beyond The Basics - Mac"
   url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-mac
   description: |
-    About this workshop 
-    
+    About this workshop
+
     **What**: This is a beginner to intermediate tutorial, that will allow you to gain a deeper understanding of the uses and types of data that can be manipulated in Excel, an extremely popular spreadsheet software. Through practical exercises using real world data from the Toronto Transit Commission (TTC), you will learn important terminology and software features, and gain a better understanding of Excel’s built-in methods for data manipulation and cleaning, as well as analysis and visualization. 
-  
+
     **Why**: Excel is a popular spreadsheet software that allows you to organize, modify and analyze your data. It remains one of the most widely used software for data analytics. A deeper understanding of Excel will help you better navigate the tool to work with your data sets, in the classroom and beyond. 
 
     **Who**: This tutorial assumes you have used Excel before at a basic level, but haven’t explored all it has to offer. There are no prerequisites or assumptions of knowledge of math, statistics, or programming! 
 
     **Software**: Excel is freely available for download for University of Toronto staff, faculty and students. Note: This tutorial is intended for Mac users. If you are using Windows, check out this tutorial instead. 
-    
+
     **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment for learning. To learn more, check out our Code of Conduct. 
-    
+
     **For help contact**: Map & Data Library, mdl@library.utoronto.ca
   tool:
     - Excel
@@ -929,19 +929,19 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-windows
   description: |
     About this workshop 
-    
+
     **What**: This is a beginner to intermediate tutorial, that will allow you to gain a deeper understanding of the uses and types of data that can be manipulated in Excel, an extremely popular spreadsheet software. Through practical exercises using real world data from the Toronto Transit Commission (TTC), you will learn important terminology and software features, and gain a better understanding of Excel’s built-in methods for data manipulation and cleaning, as well as analysis and visualization. 
-    
+
     **Why**: Excel is a popular spreadsheet software that allows you to organize, modify and analyze your data. It remains one of the most widely used software for data analytics. A deeper understanding of Excel will help you better navigate the tool to work with your data sets, in the classroom and beyond. 
-    
+
     **Who**: This tutorial assumes you have used Excel before at a basic level, but haven’t explored all it has to offer. There are no prerequisites or assumptions of knowledge of math, statistics, or programming! 
-    
+
     **Software**: Excel is freely available for download for University of Toronto staff, faculty and students. 
-    
+
     **Note**: This tutorial is intended for Windows users. If you are using a Mac, check out this tutorial instead. 
-    
+
     **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment for learning. To learn more, check out our Code of Conduct. 
-    
+
     **For help contact**: Map & Data Library,mdl@library.utoronto.ca
   tool:
     - Excel
@@ -953,7 +953,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-collaboration-and-notes
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     Here is how to collaborate between users in the Gale Digital Scholar Lab using the Workspace and Notes features. This allows for a shared workspace and options for documenting your steps.
   tool:
     - Digital Scholar Lab
@@ -987,7 +987,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/transcription-options
   description: |
     If you have an audio or video file that you need to get transcribed, this page describes some automated options to consider. But keep in mind, though, that none of these options (including NVivo transcription) provides a 100% perfectly accurate transcript. You will always have to go back in and correct your transcript. 
-    
+
     Note: If you want to pay a human to transcribe things accurately (so no or minimal correction is needed later), you could try [Rev](https://www.rev.com/) or [Transcript Divas](https://transcriptdivas.co.uk/about/).
   technique:
     - Qualitative Data Analysis
@@ -1010,14 +1010,13 @@
   type: Tutorial
 - id: 79
   title:
-    Getting Started with the Canadian Intellectual Property Office (CIPO) Patent
-    PostgreSQL Database - Windows
+    Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-WINDOWS
   description: |
     This tutorial will help you get up and running querying the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
-    
+
     You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). 
-    
+
     Note: This tutorial is intended for Windows users. If you are using a Mac, check out this [tutorial](https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-MAC) instead.
   date: "2023-01-05"
   series: MDL Tutorials
@@ -1028,9 +1027,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-MAC
   description: |
     This tutorial will help you get up and running querying the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
-    
+
     You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). 
-    
+
     Note: This tutorial is intended for Mac users. If you are using Windows, check out this [tutorial](https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-WINDOWS) instead.
   date: "2022-11-30"
   series: MDL Tutorials
@@ -1040,7 +1039,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-mapping-and-spatial-analysis-qgis
   description: |-
     Learn the basics of GIS with open source software, QGIS (https://qgis.org).
-    
+ 
     This tutorial/workshop is made up of three modules.
 
     - Module 1. Getting started
@@ -1048,9 +1047,9 @@
     - Module 2. Making a map using layouts
 
     - Module 3. Manipulating geospatial datasets 
-    
+
     Download the datasets used for this workshop at this location: https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zip
-    
+ 
     Note that while the examples shown in this tutorial were captured using the windows version of QGIS, all modules and operations can be completed using the linux or mac OS version of QGIS.
   technique:
     - Mapping
@@ -1293,8 +1292,8 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-additional-training
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
-    Here are some ways to dig deeper into the archival and instructional materials in theDigital Scholar Lab.
+
+    Here are some ways to dig deeper into the archival and instructional materials in the Digital Scholar Lab.
   tool:
     - Digital Scholar Lab
   date: "2022-03-10"
@@ -1305,9 +1304,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-analysis
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     This tutorial demonstrates how to use the Digital Scholar Lab's six analysis tools. 
-    
+
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Data Visualization
@@ -1322,9 +1321,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-cleaning
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     This tutorial demonstrates how to use and customize the Digital Scholar Lab's cleaning configurations. 
-    
+
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Cleaning data
@@ -1338,9 +1337,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-collections
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     This tutorial shows you how to create a collection in the Digital Scholar Lab, both by searching Gale Primary Sources and by uploading your own texts. 
-    
+
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Text and Data Mining
@@ -1355,7 +1354,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-export
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     This tutorial demonstrates how to export documents and metadata from the Digital Scholar Lab. Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Extracting data
@@ -1377,9 +1376,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database-MAC
   description: |
     This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database) on a Mac computer. It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
-    
+
     You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). 
-    
+
     Note: This tutorial is intended for Mac users. If you are using Windows, check out this [tutorial](https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database) instead.
   date: "2022-02-07"
   series: MDL Tutorials
@@ -1389,9 +1388,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database
   description: |
     This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
-    
+
     You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). Note:
-    
+
     This tutorial is intended for Windows users. If you are using a Mac, check out this [tutorial](https://mdl.library.utoronto.ca/getting-started-web-science-postgresql-database-MAC) instead."
   date: "2022-01-26"
   series: MDL Tutorials
@@ -1659,7 +1658,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/logging-digital-scholar-lab-through-catalog
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-    
+
     This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University of Toronto institutional access.
   tool:
     - Digital Scholar Lab
@@ -1703,7 +1702,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
   description: |-
     This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to: 
-    
+
     1. Build a collection of texts, including uploading your own materials 
 
     2. Create collaborative workspaces
@@ -1717,7 +1716,7 @@
     6. Download the scanned texts in your collection, so that you can use them in other programs
 
     7. Find additional training and resources
-    
+
     *Note: Gale periodically updates the Digital Scholar Lab, so some features of this tutorial might not always match the latest interface. This tutorial was last updated in March 2023.*
 
   technique:
@@ -1796,7 +1795,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-4-using-python
   description: |
     The goal of this activity is to try out running Python in OpenRefine. We will use it to make an API call to augment our books dataset with information on the authors from Wikipedia. 
-    
+
     ***Note:*** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1), [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) & [3](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3) first before
     attempting this activity.*
   technique:
@@ -1813,7 +1812,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3-using-add-column-fetching-urls
   description: |
     This tutorial will show you how to use the Add Column by Fetching URLs feature in OpenRefine. 
-    
+
     **Note:** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1) & [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) first before attempting this activity.*
   technique:
     - Cleaning data
@@ -1828,7 +1827,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data
   description: |
     In this tutorial, we will begin work on augmenting datasets. 
-    
+
     *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine tutorial 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1). This tutorial has been developed for OpenRefine version 3.7.5*
   technique:
     - Cleaning data
@@ -1842,9 +1841,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2-using-reconciliation-services
   description: |
     This tutorial will teach you how to use OpenRefine's reconciliation service to connect data in your dataset with Wikidata. 
-    
+ 
     ***Note 1:*** *Complete [Augmenting activity 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data) first before attempting this activity.* 
-    
+
     ***Note 2:*** *In order to complete this activity, you need to be running the latest version of OpenRefine.*
   technique:
     - Cleaning data
@@ -1859,11 +1858,11 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-4-311-calls-activity
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5.*
-    
+
     Update: please note that as of March 18, 2020, Open Data Toronto has suspended service and so their service is not available for API calls. Until service resumes, please skip step 3, and during step 5, please chose to Get Data From: This Computer and select the 311.json file in the packaged workshop files. This represents a snapshot of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca *if you run into difficulties.* 
-    
+
     Sometimes you don't have your data in a file. Instead you want to use an API call to pull data from elsewhere. OpenRefine can help you make these calls and parse the data you receive.The goal of this activity is to create a new project by pulling in 311 call data from the City of Toronto into OpenRefine using an API call and then work with the data. You will construct an API call to download a subset of 311 call data in JSON format, and then use OpenRefine to parse that data and put it into a tabular format. You will then use GREL to further manipulate the data (especially working with date formats) and make some discoveries.
-    
+
     ***Note:*** *This assumes that you have learned the basics of OpenRefine already through [the Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and the [Citizen Science activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity). This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work.***
   technique:
     - Cleaning data
@@ -1878,9 +1877,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-3-regular-expressions-regex-activity
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
-    
+
     You were introduced to GREL in the previous activity, so you know that GREL is a powerful tool for cleaning/editing your data. You can make GREL even more powerful by learning how to use regular expressions (aka regex). A regular expression is a sequence of characters that define a search pattern – it is used to search for matches within text. In OpenRefine, you can use it in your GREL expressions to create sophisticated patterns describing what type of information you want to find within your dataset, then do something with the matching text (edit it, delete it, put it in a new column, etc.). 
-    
+
     This activity assumes you have already completed the [Survey of Household Spending](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and [Citizen Science](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity) activities, have a familiarity with OpenRefine and know how to create simple GREL expressions. Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
   technique:
     - Cleaning data
@@ -1894,9 +1893,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-data-visualizations-using-tableau-desktop-beginner
   description: |
     This guide is suitable for new Tableau users looking for information on producing popular data visualizations in Tableau, such as bar graphs, line graphs, scatterplots, tree maps, and dashboards. If you are looking for more general data visualization tips, please see the Map and Data Library's Data [Visualization Guide](https://mdl.library.utoronto.ca/dataviz/getting-started). You can find instructions on installing and acquiring a free academic license for Tableau [here](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you are running Tableau on a Mac, please note that there may be some variation between the Windows version used to design this guide and the program as it appears on a Mac.
-    
+
     The data used in this guide are public datasets retrieved from the World Bank’s Open Data repository, the United Nation's Open Data Population Division, and the full text of Shakespeare's Romeo and Juliet available through MIT's website, with a frequency table generated through Voyant Tools. You can find more information regarding the data sources used in this guide in the subsection entitled "10. Data Sources".
-    
+
     This tutorial was created using Tableau Desktop version 2020.2.
   technique:
     - Data Visualization
@@ -1911,13 +1910,13 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
-    
+
     We are going to work with a bit messier dataset now for the next few tasks. This is a citizen science dataset captured using an app called iNaturalist. The data was captured for a city nature challenge and shared on [data.world](https://data.world/). 
-    
+
     This activity will showcase some more features in OpenRefine. The goal of this activity is to create a new project with this citizen science dataset and work with the data. You will use clustering to improve the consistency of the dataset. You will also perform various manipulations, such as split and concatenate. Finally, you will learn various ways to remove columns and rows, and work with the Undo/Redo features in OpenRefine. 
-    
+
     Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already. 
-    
+
     ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*
   technique:
     - Cleaning data
@@ -1943,9 +1942,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
-    
+
     Please note that we also have converted some of this tutorial into a self-paced course with videos. U of T students, staff, and faculty can [enroll in our OpenRefine Quercus course](http://q.utoronto.ca/enroll/E4JKAW). This is the first activity in this tutorial series, and assumes no prior knowledge of OpenRefine. In this activity you will be importing a spreadsheet of data into OpenRefine and exploring it. The goal of this activity is to use a simple dataset to introduce you to the OpenRefine user interface and some of the basic types of tasks you can accomplish. This dataset isn’t particularly “messy,” but provides some of the core knowledge needed to work with messier datasets in later activities. If you need a copy of OpenRefine on your personal computer, please follow these [installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions). 
-    
+
     Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip).
   technique:
     - Cleaning data
@@ -1992,7 +1991,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database to find and download data through CHASS. 
-    
+
     **Please note** that a University of Toronto IP address is required to access CHASS.  CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide).
   technique:
     - Searching for maps and data
@@ -2036,7 +2035,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics
   description: |
     This online tutorial will provide an introduction to SimplyAnalytics and a few of its many possible uses. SimplyAnalytics is a web-based data visualization application. 
-    
+
     It can be used to create simple thematic maps and tables from census and other socio-demographic data, as well as business point data.
   technique:
     - Data Visualization
@@ -2091,7 +2090,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/online-resources-build-topography-3d-models
   description: |
     This document compiles online resources that help to build terrain 3D models with a variety of software-options. 
-    
+
     Brief introductions on the pros and cons of each option are provided.
   technique:
     - Searching for maps and data
@@ -2107,11 +2106,11 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-statistics-canadas-socioeconomic-time-series-data-formerly-cansim
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database find and download data.
-    
+
     Note: This guide outlines how to search for CANSIM data on the Statistics Canada website. 
 
     University of Toronto faculty, staff, and students may also [download CANSIM series for free via CHASS](http://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-though-chass). 
-    
+
     You will need to be using a UofT IP address to access CHASS.
   technique:
     - Searching for maps and data
@@ -2308,9 +2307,9 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-census-boundary-files-using-scholars-geoportal
   description: |-
     This exercise will showcase how to use Scholars GeoPortal to extract Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal using two methods:
-    
+
     1. querying the attribute table of the dataset, or
-    
+
     2. downloading based on a predefined census boundary (ex. CMAs).
   technique:
     - Searching for maps and data
@@ -2355,7 +2354,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/citing-geospatial-data-resources
   description: |
     [This guide, compiled by Alberta Auringer Wood of the Association of Canadian Map Libraries and Archives, provides recommended citation formats for a wide variety of geospatial data sources.] (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
-    
+
     Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
     - Citing data
