@@ -1325,10 +1325,7 @@
     
     This tutorial demonstrates how to use and customize the Digital Scholar Lab's cleaning configurations. 
     
-    Please
-    note that Gale is periodically adding new documents to their collections, so your
-    document counts and results may look slightly different from our screenshots and
-    examples below.
+    Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Cleaning data
   tool:
@@ -1342,12 +1339,9 @@
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
     
-    This tutorial shows you how to create a collection in the Digital Scholar Lab, both by searching Gale
-    Primary Sources and by uploading your own texts. 
+    This tutorial shows you how to create a collection in the Digital Scholar Lab, both by searching Gale Primary Sources and by uploading your own texts. 
     
-    Please note that Gale is periodically
-    adding new documents to their collections, so your document counts and results
-    may look slightly different from our screenshots and examples below.
+    Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Text and Data Mining
     - Searching for maps and data
@@ -1362,10 +1356,7 @@
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
     
-    This tutorial demonstrates how to export documents and metadata from the Digital Scholar Lab. Please note
-    that Gale is periodically adding new documents to their collections, so your document
-    counts and results may look slightly different from our screenshots and examples
-    below.
+    This tutorial demonstrates how to export documents and metadata from the Digital Scholar Lab. Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Extracting data
   tool:
@@ -1377,8 +1368,7 @@
   title: Generating SSH Key Pairs on a Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac
   description: |
-    These instructions will help you create SSH key pairs on a Mac computer,
-    for access to the [Web of Science PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/web-science-postgresql-database).
+    These instructions will help you create SSH key pairs on a Mac computer, for access to the [Web of Science PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/web-science-postgresql-database).
   date: "2022-02-07"
   series: MDL Tutorials
   type: Tutorial
@@ -1386,18 +1376,11 @@
   title: Getting Started with the Web of Science PostgreSQL Database - Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database-MAC
   description: |
-    This tutorial will help you get up and running querying the [Web of
-    Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database) on a Mac computer. It will cover accessing the high
-    performance computing environment, querying the database via SQL statements and
-    from within a python script, and downloading the results of the query. 
+    This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database) on a Mac computer. It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
     
-    You will
-    need a Compute Canada account with the proper credentials to access this database.
-    If you haven’t done so already, you should first follow the [instructions to get
-    your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). 
+    You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). 
     
-    Note: This tutorial is intended for Mac users. If you are
-    using Windows, check out this [tutorial](https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database) instead.
+    Note: This tutorial is intended for Mac users. If you are using Windows, check out this [tutorial](https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database) instead.
   date: "2022-02-07"
   series: MDL Tutorials
   type: Tutorial
@@ -1405,17 +1388,11 @@
   title: Getting Started with the Web of Science PostgreSQL Database
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database
   description: |
-    This tutorial will help you get up and running querying the [Web of
-    Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing
-    environment, querying the database via SQL statements and from within a python
-    script, and downloading the results of the query. 
+    This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
     
-    You will need a Compute Canada
-    account with the proper credentials to access this database. If you haven’t done
-    so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). Note:
+    You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdl.library.utoronto.ca/technology/tutorials/how-access-web-science-postgresql-database). Note:
     
-    This tutorial is intended for Windows users. If you are using a Mac, check out
-    this [tutorial](https://mdl.library.utoronto.ca/getting-started-web-science-postgresql-database-MAC) instead."
+    This tutorial is intended for Windows users. If you are using a Mac, check out this [tutorial](https://mdl.library.utoronto.ca/getting-started-web-science-postgresql-database-MAC) instead."
   date: "2022-01-26"
   series: MDL Tutorials
   type: Tutorial
@@ -1423,9 +1400,7 @@
   title: How to Access the PostgreSQL Databases
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-postgresql-databases
   description: |
-    Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian
-    Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access
-    to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
+    Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
   date: "2022-01-26"
   series: MDL Tutorials
   type: Tutorial
@@ -1447,9 +1422,7 @@
   title: ArcGIS Online Part II  (November 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-ii-november-2021
   description: |
-    The following slide deck will guide you through Part 2 of the ArcGIS
-    Online workshop. Part 2 covers topics such as choropleth mapping, spatial analytic
-    tools, and linking ArcGIS Pro to ArcGIS Online.
+    The following slide deck will guide you through Part 2 of the ArcGIS Online workshop. Part 2 covers topics such as choropleth mapping, spatial analytic tools, and linking ArcGIS Pro to ArcGIS Online.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1463,9 +1436,7 @@
   title: ArcGIS Pro Module 1 - The Basics (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-1-basics-fall-2021
   description: |
-    The following slide deck walks you through the basics of learning about
-    ArcGIS Pro's main tools, viewing and manipulating datasets and basemaps, and exporting
-    a basic map view.
+    The following slide deck walks you through the basics of learning about ArcGIS Pro's main tools, viewing and manipulating datasets and basemaps, and exporting a basic map view.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1478,8 +1449,7 @@
   title: ArcGIS Pro Module 2 - Authoring and Publishing a Map (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-2-authoring-and-publishing-map-fall-2021
   description: |
-    Learn to create a map project which will include a legend, scale bar,
-    an inset map, a title and a north arrow.
+    Learn to create a map project which will include a legend, scale bar, an inset map, a title and a north arrow.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1492,9 +1462,7 @@
   title: ArcGIS Pro Module 3 - Loading and Manipulating Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-3-loading-and-manipulating-data-fall-2021
   description: |
-    The following slide deck will walk you through Module 3 of the ArcGIS
-    Pro tutorial. This module will teach you how to add and format vector and raster
-    data layers to your project, as well as how to geocode data.
+    The following slide deck will walk you through Module 3 of the ArcGIS Pro tutorial. This module will teach you how to add and format vector and raster data layers to your project, as well as how to geocode data.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1507,9 +1475,7 @@
   title: ArcGIS Pro Module 4  - Data Analysis (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-4-data-analysis-fall-2021
   description: |
-    The following slide deck is for Module 4 of the ArcGIS Pro tutorial.
-    This module helps the user apply knowledge and skills learned in previous 3 modules
-    in solving a real life spatial problem.
+    The following slide deck is for Module 4 of the ArcGIS Pro tutorial. This module helps the user apply knowledge and skills learned in previous 3 modules in solving a real life spatial problem.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1522,9 +1488,7 @@
   title: ArcGIS Pro Module 5 - Working with Raster Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-5-working-raster-data-fall-2021
   description: |
-    The following slide deck is for Module 5 of the ArcGIS Pro workshop.
-    This module will teach you how to manipulate and analyze raster data in ArcGIS
-    Pro.
+    The following slide deck is for Module 5 of the ArcGIS Pro workshop. This module will teach you how to manipulate and analyze raster data in ArcGIS Pro.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1537,10 +1501,7 @@
   title: ArcGIS Pro Module 6 - Wrangling and Mapping Covid-19 Data (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-6-wrangling-and-mapping-covid-19-data-fall-2021
   description: |
-    The following slide deck is for Module 6 of the ArcGIS Pro tutorial.
-    This module will teach you how to do basic data cleaning and converting to prepare
-    data to be used in ArcGIS Pro. This module will also present a real life problem
-    of doing spatial analysis using public health data.
+    The following slide deck is for Module 6 of the ArcGIS Pro tutorial. This module will teach you how to do basic data cleaning and converting to prepare data to be used in ArcGIS Pro. This module will also present a real life problem of doing spatial analysis using public health data.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1553,9 +1514,7 @@
   title: ArcGIS StoryMaps (Fall 2021)
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps-fall-2021
   description: |
-    The following slide deck is a tutorial on ArcGIS StoryMaps. This tutorial
-    will teach you the basics of ArcGIS StoryMaps, how they can be used, and how you
-    can make your own StoryMap.
+    The following slide deck is a tutorial on ArcGIS StoryMaps. This tutorial will teach you the basics of ArcGIS StoryMaps, how they can be used, and how you can make your own StoryMap.
   technique:
     - Mapping
   tool:
@@ -1580,11 +1539,7 @@
   title: How to Access Constellate
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-constellate
   description: |
-    This tutorial walks you through accessing Constellate using the University
-    of Toronto's institutional privileges. Please see our general Constellate page for
-    more information and see our tutorial on creating a dataset once you have logged
-    in. Please note that Constellate is ending on July 1st, 2025. Some learning materials
-    will remain available afterwards.
+    This tutorial walks you through accessing Constellate using the University of Toronto's institutional privileges. Please see our general Constellate page for more information and see our tutorial on creating a dataset once you have logged in. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
   tool:
     - Constellate
   date: "2021-09-13"
@@ -1594,10 +1549,7 @@
   title: How to Build a Dataset in Constellate
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-build-dataset-constellate
   description: |
-    This tutorial shows you how to build a dataset in Constellate. We recommend
-    reading our general information on Constellate first. Please also see this access
-    tutorial in order to log in with institutional privileges. Please note that Constellate
-    is ending on July 1st, 2025. Some learning materials will remain available afterwards. 
+    This tutorial shows you how to build a dataset in Constellate. We recommend reading our general information on Constellate first. Please also see this access tutorial in order to log in with institutional privileges. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards. 
   technique:
     - Data Visualization
     - Cleaning data
@@ -1611,11 +1563,7 @@
   title: Introduction to SAS
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-sas
   description: |
-    This guide gives users an introduction to SAS. The topics covered are
-    importing, exploring, modifying, and managing data. It has been created using
-    SAS 9.4. The main dataset used is the flights dataset. It contains the US domestic
-    flights in January 2020[1]. For additional support, fill out the [support request
-    form](https://mdl.library.utoronto.ca/about/contact-form).
+    This guide gives users an introduction to SAS. The topics covered are importing, exploring, modifying, and managing data. It has been created using SAS 9.4. The main dataset used is the flights dataset. It contains the US domestic flights in January 2020[1]. For additional support, fill out the [support request form](https://mdl.library.utoronto.ca/about/contact-form).
   tool:
     - SAS
   date: "2021-09-13"
@@ -1625,11 +1573,7 @@
   title: Visualizing a Network Dataset Using Gephi
   url: https://mdl.library.utoronto.ca/technology/tutorials/visualizing-network-dataset-using-gephi
   description: |
-    This tutorial will teach you the basic features in Gephi that will
-    allow you to visualize network data. This tutorial is part of a longer workshop,
-    “An Introduction to Network Visualization and Analysis.” You can [download the workshop
-    materials](https://maps.library.utoronto.ca/workshops/GephiOnline/WorkshopFiles.zip) ([alternate workshop materials download](https://maps.library.utoronto.ca/datapub/workshops/GephiWorkshopFiles.zip)) and [watch the recording (1:44:18)](https://play.library.utoronto.ca/23aef5db74b792db735a4f2fb39f7d7f) to
-    learn more about network theory and see video demonstrations of working with Gephi.
+    This tutorial will teach you the basic features in Gephi that will allow you to visualize network data. This tutorial is part of a longer workshop, “An Introduction to Network Visualization and Analysis.” You can [download the workshop materials](https://maps.library.utoronto.ca/workshops/GephiOnline/WorkshopFiles.zip) ([alternate workshop materials download](https://maps.library.utoronto.ca/datapub/workshops/GephiWorkshopFiles.zip)) and [watch the recording (1:44:18)](https://play.library.utoronto.ca/23aef5db74b792db735a4f2fb39f7d7f) to learn more about network theory and see video demonstrations of working with Gephi.
   technique:
     - Data Visualization
   tool:
@@ -1641,8 +1585,7 @@
   title: Installing and Licensing NVivo 12
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-12
   description: |
-    This tutorial describes how to request a license for NVivo 12 Plus,
-    download it, and license it.
+    This tutorial describes how to request a license for NVivo 12 Plus, download it, and license it.
   technique:
     - Troubleshooting
     - Installation
@@ -1655,9 +1598,7 @@
   title: ArcGIS Online - Workshop videos
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-workshop-videos
   description: |
-    Created by Marcel Fortin, GIS and Map Librarian, in January 2021, this
-    4-part video tutorial will teach you how to format, edit, and map spatial data
-    using ArcGIS Online.
+    Created by Marcel Fortin, GIS and Map Librarian, in January 2021, this 4-part video tutorial will teach you how to format, edit, and map spatial data using ArcGIS Online.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1688,11 +1629,7 @@
   title: Downloading Data from GeoGratis
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-data-geogratis
   description: |
-    *National Resources Canada* *(NRCAN)* produced a portal called GeoGratis
-    for allowing access to, and downloads of, their high-quality, free, and publicly
-    available maps and geospatial data. This tutorial guides you in navigating their
-    Product Index to find data on a specific location, and it is easily adaptable
-    for other locations or desired data products.
+    *National Resources Canada* *(NRCAN)* produced a portal called GeoGratis for allowing access to, and downloads of, their high-quality, free, and publicly available maps and geospatial data. This tutorial guides you in navigating their Product Index to find data on a specific location, and it is easily adaptable for other locations or desired data products.
   technique:
     - Searching for maps and data
     - Extracting data
@@ -1708,9 +1645,7 @@
   title: ArcGIS Pro Workshop Outline
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-workshop-outline
   description: |
-    This tutorial will use 7 modules to teach you the basics of ArcGIS
-    Pro. These modules will cover topics such as adding, manipulating, analyzing,
-    and mapping vector and raster data.
+    This tutorial will use 7 modules to teach you the basics of ArcGIS Pro. These modules will cover topics such as adding, manipulating, analyzing, and mapping vector and raster data.
   technique:
     - Mapping
     - Spatial Analysis
@@ -1725,8 +1660,7 @@
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
     
-    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University
-    of Toronto institutional access.
+    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University of Toronto institutional access.
   tool:
     - Digital Scholar Lab
   date: "2020-07-30"
@@ -1736,9 +1670,7 @@
   title: Getting Started with R and R Studio
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-r-and-r-studio
   description: |
-    This guide helps you get started with the R and RStudio software and
-    R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from
-    the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdl.library.utoronto.ca/technology/tutorials/introduction-r).
+    This guide helps you get started with the R and RStudio software and R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdl.library.utoronto.ca/technology/tutorials/introduction-r).
   tool:
     - R
   date: "2020-07-03"
@@ -1748,8 +1680,7 @@
   title: RTRA SAS Program Guide
   url: https://mdl.library.utoronto.ca/technology/tutorials/rtra-sas-program-guide
   description: |
-    This guide helps users get started with writing a SAS program/code
-    for RTRA purposes.
+    This guide helps users get started with writing a SAS program/code for RTRA purposes.
   technique:
     - Extracting data
   tool:
@@ -1771,20 +1702,23 @@
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
   description: |-
-    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital
-    humanities tool. In this tutorial, you will learn how to: 
+    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to: 
     
     1. Build a collection of texts, including uploading your own materials 
+
     2. Create collaborative workspaces
+
     3. Clean texts
+
     4. Run analytical tools on texts and visualize the results
+
     5. Download the data, graphs, and other visualizations produced through this tool
+
     6. Download the scanned texts in your collection, so that you can use them in other programs
+
     7. Find additional training and resources
     
-    *Note: Gale periodically updates the Digital Scholar Lab,
-    so some features of this tutorial might not always match the latest interface.
-    This tutorial was last updated in March 2023.*
+    *Note: Gale periodically updates the Digital Scholar Lab, so some features of this tutorial might not always match the latest interface. This tutorial was last updated in March 2023.*
 
   technique:
     - Text and Data Mining
@@ -1799,9 +1733,7 @@
   title: Downloading, Installing, and Licensing ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-installing-and-licensing-arcgis-pro
   description: |
-    This tutorial goes over how to download, install, and license ArcGIS
-    Pro with your UTORid. Please be advised that ArcGIS Pro is also [available on library
-    computers](https://mdl.library.utoronto.ca/technology/computers-with-gis-software) on the St George campus.
+    This tutorial goes over how to download, install, and license ArcGIS Pro with your UTORid. Please be advised that ArcGIS Pro is also [available on library computers](https://mdl.library.utoronto.ca/technology/computers-with-gis-software) on the St George campus.
   technique:
     - Installation
   tool:
@@ -1814,10 +1746,7 @@
   title: Creating a Tableau Dashboard using COVID-19 data (Intermediate)
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate
   description: |
-    This tutorial provides an opportunity to learn data visualization skills
-    using a common data visualization tool, Tableau Desktop. People often say that
-    they learn better when using data that resonates with them, so we are using COVID-19
-    data in this tutorial, as this topic is touching many people’s lives right now.
+    This tutorial provides an opportunity to learn data visualization skills using a common data visualization tool, Tableau Desktop. People often say that they learn better when using data that resonates with them, so we are using COVID-19 data in this tutorial, as this topic is touching many people’s lives right now.
   technique:
     - Data Visualization
   tool:
@@ -1829,11 +1758,7 @@
   title: Getting Started with Tableau Desktop (Beginner to Intermediate)
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-tableau-desktop-beginner-intermediate
   description: |
-    This is a beginner-to-intermediate level tutorial for Tableau Desktop
-    version 2020.2. To acquire a free student, researcher, or instructor license for
-    Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If
-    you want to learn this material in an online, self-paced course, with video instructions,
-    you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT). 
+    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT). 
   technique:
     - Data Visualization
   tool:
@@ -1845,10 +1770,7 @@
   title: Installing Tableau Desktop
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop
   description: |
-    NOTE: THIS GUIDE IS OUT OF DATE AS OF MARCH 11, 2025. TABLEAU IS NO
-    LONGER PROVIDING FREE LICENSES FOR TABLEAU DESKTOP FOR STUDENTS. INSTEAD, STUDENTS
-    SHOULD DOWNLOAD AND USE THE FREE VERSION, [TABLEAU PUBLIC](https://www.tableau.com/products/public/download), WHICH IS VERY SIMILAR. This
-    is a guide to installing and running Tableau Desktop on your personal computer.
+    NOTE: THIS GUIDE IS OUT OF DATE AS OF MARCH 11, 2025. TABLEAU IS NO LONGER PROVIDING FREE LICENSES FOR TABLEAU DESKTOP FOR STUDENTS. INSTEAD, STUDENTS SHOULD DOWNLOAD AND USE THE FREE VERSION, [TABLEAU PUBLIC](https://www.tableau.com/products/public/download), WHICH IS VERY SIMILAR. This is a guide to installing and running Tableau Desktop on your personal computer.
   technique:
     - Installation
   tool:
@@ -1860,11 +1782,7 @@
   title: Introduction to Infographic Design and Using Piktochart
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-infographic-design-and-using-piktochart
   description: |
-    This tutorial is an introduction to Piktochart, a popular online tool
-    used to create infographics. This exercise will illustrate some infographic design
-    principles and specific features of Piktochart to create an infographic about
-    comparing housing in Vancouver vs Toronto. To complement this tutorial, you may
-    want to explore the [online self-paced course on Infographic Design](https://q.utoronto.ca/enroll/JXN4XL).
+    This tutorial is an introduction to Piktochart, a popular online tool used to create infographics. This exercise will illustrate some infographic design principles and specific features of Piktochart to create an infographic about comparing housing in Vancouver vs Toronto. To complement this tutorial, you may want to explore the [online self-paced course on Infographic Design](https://q.utoronto.ca/enroll/JXN4XL).
   technique:
     - Data Visualization
   tool:
@@ -1877,9 +1795,7 @@
   title: "OpenRefine Augmenting Activity 4: Using Python"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-4-using-python
   description: |
-    The goal of this activity is to try out running Python in OpenRefine.
-    We will use it to make an API call to augment our books dataset with information
-    on the authors from Wikipedia. 
+    The goal of this activity is to try out running Python in OpenRefine. We will use it to make an API call to augment our books dataset with information on the authors from Wikipedia. 
     
     ***Note:*** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1), [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) & [3](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3) first before
     attempting this activity.*
@@ -1896,11 +1812,9 @@
   title: "OpenRefine Augmenting Activity 3: Using Add Column by Fetching URLs"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3-using-add-column-fetching-urls
   description: |
-    This tutorial will show you how to use the Add Column by Fetching URLs
-    feature in OpenRefine. 
+    This tutorial will show you how to use the Add Column by Fetching URLs feature in OpenRefine. 
     
-    **Note:** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1) & [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) first before attempting
-    this activity.*
+    **Note:** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1) & [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) first before attempting this activity.*
   technique:
     - Cleaning data
     - Extracting data
@@ -1915,8 +1829,7 @@
   description: |
     In this tutorial, we will begin work on augmenting datasets. 
     
-    *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine
-    tutorial 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1). This tutorial has been developed for OpenRefine version 3.7.5*
+    *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine tutorial 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1). This tutorial has been developed for OpenRefine version 3.7.5*
   technique:
     - Cleaning data
   tool:
@@ -1928,14 +1841,11 @@
   title: "OpenRefine Augmenting Activity 2: Using Reconciliation Services"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2-using-reconciliation-services
   description: |
-    This tutorial will teach you how to use OpenRefine's reconciliation
-    service to connect data in your dataset with Wikidata. 
+    This tutorial will teach you how to use OpenRefine's reconciliation service to connect data in your dataset with Wikidata. 
     
-    ***Note 1:*** *Complete [Augmenting
-    activity 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data) first before attempting this activity.* 
+    ***Note 1:*** *Complete [Augmenting activity 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data) first before attempting this activity.* 
     
-    ***Note 2:*** *In order to complete this
-    activity, you need to be running the latest version of OpenRefine.*
+    ***Note 2:*** *In order to complete this activity, you need to be running the latest version of OpenRefine.*
   technique:
     - Cleaning data
     - Extracting data
@@ -1950,27 +1860,11 @@
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5.*
     
-    Update: please note that as of March 18, 2020, Open Data Toronto has suspended service
-    and so their service is not available for API calls. Until service resumes, please
-    skip step 3, and during step 5, please chose to Get Data From: This Computer and
-    select the 311.json file in the packaged workshop files. This represents a snapshot
-    of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca *if
-    you run into difficulties.* 
+    Update: please note that as of March 18, 2020, Open Data Toronto has suspended service and so their service is not available for API calls. Until service resumes, please skip step 3, and during step 5, please chose to Get Data From: This Computer and select the 311.json file in the packaged workshop files. This represents a snapshot of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca *if you run into difficulties.* 
     
-    Sometimes you don't have your data in a file. Instead
-    you want to use an API call to pull data from elsewhere. OpenRefine can help you
-    make these calls and parse the data you receive.The goal of this activity is to
-    create a new project by pulling in 311 call data from the City of Toronto into
-    OpenRefine using an API call and then work with the data. You will construct an
-    API call to download a subset of 311 call data in JSON format, and then use OpenRefine
-    to parse that data and put it into a tabular format. You will then use GREL to
-    further manipulate the data (especially working with date formats) and make some
-    discoveries.
+    Sometimes you don't have your data in a file. Instead you want to use an API call to pull data from elsewhere. OpenRefine can help you make these calls and parse the data you receive.The goal of this activity is to create a new project by pulling in 311 call data from the City of Toronto into OpenRefine using an API call and then work with the data. You will construct an API call to download a subset of 311 call data in JSON format, and then use OpenRefine to parse that data and put it into a tabular format. You will then use GREL to further manipulate the data (especially working with date formats) and make some discoveries.
     
-    ***Note:*** *This assumes that you have learned the basics of OpenRefine already
-    through [the Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and the [Citizen Science activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity).
-    This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON
-    dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work.***
+    ***Note:*** *This assumes that you have learned the basics of OpenRefine already through [the Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and the [Citizen Science activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity). This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work.***
   technique:
     - Cleaning data
     - Extracting data
@@ -1985,19 +1879,9 @@
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
     
-    You were introduced to GREL in the previous activity, so you know that GREL is a powerful
-    tool for cleaning/editing your data. You can make GREL even more powerful by learning
-    how to use regular expressions (aka regex). A regular expression is a sequence
-    of characters that define a search pattern – it is used to search for matches
-    within text. In OpenRefine, you can use it in your GREL expressions to create
-    sophisticated patterns describing what type of information you want to find within
-    your dataset, then do something with the matching text (edit it, delete it, put
-    it in a new column, etc.). 
+    You were introduced to GREL in the previous activity, so you know that GREL is a powerful tool for cleaning/editing your data. You can make GREL even more powerful by learning how to use regular expressions (aka regex). A regular expression is a sequence of characters that define a search pattern – it is used to search for matches within text. In OpenRefine, you can use it in your GREL expressions to create sophisticated patterns describing what type of information you want to find within your dataset, then do something with the matching text (edit it, delete it, put it in a new column, etc.). 
     
-    This activity assumes you have already completed the [Survey
-    of Household Spending](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and [Citizen Science](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity) activities, have a familiarity with OpenRefine
-    and know how to create simple GREL expressions. Before you begin, please download
-    the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
+    This activity assumes you have already completed the [Survey of Household Spending](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and [Citizen Science](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity) activities, have a familiarity with OpenRefine and know how to create simple GREL expressions. Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
   technique:
     - Cleaning data
   tool:
@@ -2009,24 +1893,11 @@
   title: Creating Data Visualizations Using Tableau Desktop (Beginner)
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-data-visualizations-using-tableau-desktop-beginner
   description: |
-    This guide is suitable for new Tableau users looking for information
-    on producing popular data visualizations in Tableau, such as bar graphs, line
-    graphs, scatterplots, tree maps, and dashboards. If you are looking for more general
-    data visualization tips, please see the Map and Data Library's Data [Visualization
-    Guide](https://mdl.library.utoronto.ca/dataviz/getting-started). You can find instructions on installing and acquiring a free academic license
-    for Tableau [here](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you are running Tableau on a Mac, please note that there may
-    be some variation between the Windows version used to design this guide and the
-    program as it appears on a Mac.
+    This guide is suitable for new Tableau users looking for information on producing popular data visualizations in Tableau, such as bar graphs, line graphs, scatterplots, tree maps, and dashboards. If you are looking for more general data visualization tips, please see the Map and Data Library's Data [Visualization Guide](https://mdl.library.utoronto.ca/dataviz/getting-started). You can find instructions on installing and acquiring a free academic license for Tableau [here](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you are running Tableau on a Mac, please note that there may be some variation between the Windows version used to design this guide and the program as it appears on a Mac.
     
-    The data used in this guide are public datasets
-    retrieved from the World Bank’s Open Data repository, the United Nation's Open
-    Data Population Division, and the full text of Shakespeare's Romeo and Juliet
-    available through MIT's website, with a frequency table generated through Voyant
-    Tools. You can find more information regarding the data sources used in this guide
-    in the subsection entitled "10. Data Sources".
+    The data used in this guide are public datasets retrieved from the World Bank’s Open Data repository, the United Nation's Open Data Population Division, and the full text of Shakespeare's Romeo and Juliet available through MIT's website, with a frequency table generated through Voyant Tools. You can find more information regarding the data sources used in this guide in the subsection entitled "10. Data Sources".
     
-    This tutorial was created using
-    Tableau Desktop version 2020.2.
+    This tutorial was created using Tableau Desktop version 2020.2.
   technique:
     - Data Visualization
   tool:
@@ -2041,23 +1912,13 @@
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
     
-    We are going to work with a bit messier dataset now for the next few tasks. This is a
-    citizen science dataset captured using an app called iNaturalist. The data was
-    captured for a city nature challenge and shared on [data.world](https://data.world/). 
+    We are going to work with a bit messier dataset now for the next few tasks. This is a citizen science dataset captured using an app called iNaturalist. The data was captured for a city nature challenge and shared on [data.world](https://data.world/). 
     
-    This activity will
-    showcase some more features in OpenRefine. The goal of this activity is to create
-    a new project with this citizen science dataset and work with the data. You will
-    use clustering to improve the consistency of the dataset. You will also perform
-    various manipulations, such as split and concatenate. Finally, you will learn
-    various ways to remove columns and rows, and work with the Undo/Redo features
-    in OpenRefine. 
+    This activity will showcase some more features in OpenRefine. The goal of this activity is to create a new project with this citizen science dataset and work with the data. You will use clustering to improve the consistency of the dataset. You will also perform various manipulations, such as split and concatenate. Finally, you will learn various ways to remove columns and rows, and work with the Undo/Redo features in OpenRefine. 
     
-    Before you begin, please download the OpenRefine workshop sample
-    datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already. 
+    Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already. 
     
-    ***Note***: *This assumes that you have learned the
-    basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*
+    ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*
   technique:
     - Cleaning data
   tool:
@@ -2069,10 +1930,7 @@
   title: OpenRefine Installation Instructions
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions
   description: |
-    This is a guide to installing and running OpenRefine on your personal
-    computer. Please note that all computers in the Map and Data Library (on the fifth
-    floor of Robarts) and in the computer labs on the fourth and fifth floors of Robarts
-    Library already have OpenRefine installed.
+    This is a guide to installing and running OpenRefine on your personal computer. Please note that all computers in the Map and Data Library (on the fifth floor of Robarts) and in the computer labs on the fourth and fifth floors of Robarts Library already have OpenRefine installed.
   technique:
     - Installation
   tool:
@@ -2086,16 +1944,7 @@
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
     
-    Please note that we also have converted some of this tutorial into a self-paced course
-    with videos. U of T students, staff, and faculty can [enroll in our OpenRefine Quercus
-    course](http://q.utoronto.ca/enroll/E4JKAW). This is the first activity in this tutorial series, and assumes no prior
-    knowledge of OpenRefine. In this activity you will be importing a spreadsheet
-    of data into OpenRefine and exploring it. The goal of this activity is to use
-    a simple dataset to introduce you to the OpenRefine user interface and some of
-    the basic types of tasks you can accomplish. This dataset isn’t particularly “messy,”
-    but provides some of the core knowledge needed to work with messier datasets in
-    later activities. If you need a copy of OpenRefine on your personal computer, please
-    follow these [installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions). 
+    Please note that we also have converted some of this tutorial into a self-paced course with videos. U of T students, staff, and faculty can [enroll in our OpenRefine Quercus course](http://q.utoronto.ca/enroll/E4JKAW). This is the first activity in this tutorial series, and assumes no prior knowledge of OpenRefine. In this activity you will be importing a spreadsheet of data into OpenRefine and exploring it. The goal of this activity is to use a simple dataset to introduce you to the OpenRefine user interface and some of the basic types of tasks you can accomplish. This dataset isn’t particularly “messy,” but provides some of the core knowledge needed to work with messier datasets in later activities. If you need a copy of OpenRefine on your personal computer, please follow these [installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions). 
     
     Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip).
   technique:
@@ -2109,8 +1958,7 @@
   title: Finding Statistics Using Statcan's Data Portal (Laurier)
   url: https://mdl.library.utoronto.ca/technology/tutorials/finding-statistics-using-statcans-data-portal-laurier
   description: |
-    Link to a video tutorial on how to find statistics and manipulate tables
-    to get the data you need.
+    Link to a video tutorial on how to find statistics and manipulate tables to get the data you need.
 
     https://library.wlu.ca/help/tutorials/finding-statistics-using-statcans-data-portal 
   technique:
@@ -2122,8 +1970,7 @@
   title: Logging in to ArcGIS Online
   url: https://mdl.library.utoronto.ca/technology/tutorials/logging-arcgis-online
   description: |
-    This tutorial will take you through two ways of logging in to your
-    ESRI ArcGIS Online account for the first time using your UTORid.
+    This tutorial will take you through two ways of logging in to your ESRI ArcGIS Online account for the first time using your UTORid.
   tool:
     - ArcGIS
     - ArcGIS Online
@@ -2144,12 +1991,9 @@
   title: Accessing CANSIM data through CHASS
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
   description: |
-    This guide is primarily designed to help users unfamiliar with the
-    CANSIM database to find and download data through CHASS. 
+    This guide is primarily designed to help users unfamiliar with the CANSIM database to find and download data through CHASS. 
     
-    **Please note** that a University
-    of Toronto IP address is required to access CHASS. 
-    CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide).
+    **Please note** that a University of Toronto IP address is required to access CHASS.  CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide).
   technique:
     - Searching for maps and data
   tool:
@@ -2161,12 +2005,7 @@
   title: Finding/extracting/downloading GIS data using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/findingextractingdownloading-gis-data-using-scholars-geoportal
   description: |
-    This tutorial provides an example of finding, extracting, and downloading
-    data from Scholars GeoPortal. [Scholars GeoPortal](http://geo2.scholarsportal.info.myaccess.library.utoronto.ca/) is a geospatial discovery tool
-    that provides access to large scale geospatial datasets that can be used for mapping
-    or analysis. Scholars Geoportal can be used to access both vector and raster data
-    on a variety of topics such as land-use, transportation networks, census geography,
-    aerial imagery, geology, and more.
+    This tutorial provides an example of finding, extracting, and downloading data from Scholars GeoPortal. [Scholars GeoPortal](http://geo2.scholarsportal.info.myaccess.library.utoronto.ca/) is a geospatial discovery tool that provides access to large scale geospatial datasets that can be used for mapping or analysis. Scholars Geoportal can be used to access both vector and raster data on a variety of topics such as land-use, transportation networks, census geography, aerial imagery, geology, and more.
   technique:
     - Extracting data
   tool:
@@ -2181,10 +2020,7 @@
   title: Extracting/downloading data using CHASS Canadian Census Analyser
   url: https://mdl.library.utoronto.ca/technology/tutorials/extractingdownloading-data-using-chass-canadian-census-analyser
   description: |
-    The CHASS [Canadian Census Analyser](http://dc.chass.utoronto.ca.myaccess.library.utoronto.ca/census/) allows members of the University of
-    Toronto research community to generate custom tables from the Census of Canada
-    (1961-2016) and the National Household Survey (2011). This tutorial provides an
-    example of extracting and downloading data from CHASS.
+    The CHASS [Canadian Census Analyser](http://dc.chass.utoronto.ca.myaccess.library.utoronto.ca/census/) allows members of the University of Toronto research community to generate custom tables from the Census of Canada (1961-2016) and the National Household Survey (2011). This tutorial provides an example of extracting and downloading data from CHASS.
   technique:
     - Extracting data
   tool:
@@ -2199,12 +2035,9 @@
   title: Introduction to SimplyAnalytics
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics
   description: |
-    This online tutorial will provide an introduction to SimplyAnalytics
-    and a few of its many possible uses. SimplyAnalytics is a web-based data visualization
-    application. 
+    This online tutorial will provide an introduction to SimplyAnalytics and a few of its many possible uses. SimplyAnalytics is a web-based data visualization application. 
     
-    It can be used to create simple thematic maps and tables from census
-    and other socio-demographic data, as well as business point data.
+    It can be used to create simple thematic maps and tables from census and other socio-demographic data, as well as business point data.
   technique:
     - Data Visualization
     - Searching for maps and data
@@ -2220,8 +2053,7 @@
   title: Creating contours using Global Mapper
   url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-global-mapper
   description: |
-    The guide in this PDF will teach the user how to generate contours
-    using DEM files in Global Mapper.
+    The guide in this PDF will teach the user how to generate contours using DEM files in Global Mapper.
   tool:
     - Global Mapper
   dataFormat: DEM
@@ -2232,8 +2064,7 @@
   title: Citation rules for machine-readable data in Canadian historical journals
   url: https://mdl.library.utoronto.ca/technology/tutorials/citation-rules-machine-readable-data-canadian-historical-journals
   description: |
-    The following PDF contains an article that elaborates on citation rules
-    for machine-readable data in Canadian historical journals.
+    The following PDF contains an article that elaborates on citation rules for machine-readable data in Canadian historical journals.
   technique:
     - Citing data
   date: "2017-10-13"
@@ -2259,8 +2090,7 @@
   title: Online resources to build topography 3D models
   url: https://mdl.library.utoronto.ca/technology/tutorials/online-resources-build-topography-3d-models
   description: |
-    This document compiles online resources that help to build terrain
-    3D models with a variety of software-options. 
+    This document compiles online resources that help to build terrain 3D models with a variety of software-options. 
     
     Brief introductions on the pros and cons of each option are provided.
   technique:
@@ -2292,9 +2122,7 @@
   title: Cleaning data in STATA
   url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-stata
   description: |
-    Stata is a good tool for cleaning and manipulating data, regardless
-    of the software you intend to use for analysis. This workshop is suitable for
-    both first time data-cleaners and for those familiar with data cleaning.
+    Stata is a good tool for cleaning and manipulating data, regardless of the software you intend to use for analysis. This workshop is suitable for both first time data-cleaners and for those familiar with data cleaning.
   technique:
     - Cleaning data
   tool:
@@ -2338,9 +2166,7 @@
   title: Introduction to Stata
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata
   description:
-    This guide gives users an introduction to Stata. 
-
-    The topics covered are importing, exploring, modifying and managing data.
+    This guide gives users an introduction to Stata. The topics covered are importing, exploring, modifying and managing data.
   tool:
     - Stata
   date: "2017-05-05"
@@ -2351,9 +2177,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata-princeton
   description: |
     An overview of the guide provided by Princeton with a link to the original
-    guide.
-    
-    If you want to learn how to use Stata, you might find this guide by German
+    guide. If you want to learn how to use Stata, you might find this guide by German
     Rodriguez at Princeton University useful: http://data.princeton.edu/stata/default.html
   tool:
     - Stata
@@ -2364,10 +2188,7 @@
   title: R Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/r-learning-modules-ucla
   description: |
-    Comprehensive set of guides that include installing R, learning R
-    fundamentals including graphics and advanced data analysis examples. 
-    
-    Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/r/
+    Comprehensive set of guides that include installing R, learning R fundamentals including graphics and advanced data analysis examples. Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/r/
   tool:
     - R
   date: "2017-05-05"
@@ -2377,10 +2198,7 @@
   title: SAS Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/sas-learning-modules-ucla
   description: |
-    Comprehensive set of guides that include installing SAS, learning
-    SAS fundamentals and advanced data analysis examples.
-    
-    Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/
+    Comprehensive set of guides that include installing SAS, learning SAS fundamentals and advanced data analysis examples. Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/
   tool:
     - SAS
   date: "2017-05-05"
@@ -2390,8 +2208,7 @@
   title: Scraping tweets using Python
   url: https://mdl.library.utoronto.ca/technology/tutorials/scraping-tweets-using-python
   description: |
-    This tutorial demonstrates how to scrape tweets for data analysis using
-    Python and the Twitter API.
+    This tutorial demonstrates how to scrape tweets for data analysis using Python and the Twitter API.
   technique:
     - Extracting data
   tool:
@@ -2413,8 +2230,7 @@
   title: SPSS Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/spss-learning-modules-ucla
   description: |
-    Comprehensive set of guides that include obtaining SPSS, learning SPSS
-    fundamentals and advanced data analysis examples.
+    Comprehensive set of guides that include obtaining SPSS, learning SPSS fundamentals and advanced data analysis examples.
   tool:
     - SPSS
   date: "2017-05-05"
@@ -2434,8 +2250,7 @@
   title: Stata Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-learning-modules-ucla
   description: |
-    Comprehensive set of guides that include installing Stata, learning
-    Stata fundamentals including graphics and advanced data analysis examples. Link: http://stats.idre.ucla.edu/stata/
+    Comprehensive set of guides that include installing Stata, learning Stata fundamentals including graphics and advanced data analysis examples. Link: http://stats.idre.ucla.edu/stata/
   tool:
     - Stata
   date: "2017-05-05"
@@ -2445,10 +2260,7 @@
   title: Summary statistics in STATA
   url: https://mdl.library.utoronto.ca/technology/tutorials/summary-statistics-stata
   description: |
-    Summary statistics are a way to explore your dataset, find patterns,
-    and maybe even refine your question of interest. In this workshop, you will learn
-    to use Stata to create basic summary statistics, cross-tabulations, and increasingly
-    rich tables of summary statistics.
+    Summary statistics are a way to explore your dataset, find patterns, and maybe even refine your question of interest. In this workshop, you will learn to use Stata to create basic summary statistics, cross-tabulations, and increasingly rich tables of summary statistics.
   tool:
     - Stata
   date: "2017-05-05"
@@ -2468,8 +2280,7 @@
   title: Cleaning Data in Python
   url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-python
   description: |
-    This guide shows the user how to use Spyder to load and clean data
-    for further analysis.
+    This guide shows the user how to use Spyder to load and clean data for further analysis.
   technique:
     - Cleaning data
   tool:
@@ -2481,9 +2292,7 @@
   title: Introduction to R
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r
   description: |
-    This guide is suitable for new R-users or advanced level R-users looking
-    for information on specific topics. The topics covered in this guide are importing,
-    exploring, modifying and managing data.
+    This guide is suitable for new R-users or advanced level R-users looking for information on specific topics. The topics covered in this guide are importing, exploring, modifying and managing data.
   technique:
     - Converting data formats
     - Cleaning data
@@ -2498,10 +2307,10 @@
   title: Downloading census boundary files using Scholars GeoPortal
   url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-census-boundary-files-using-scholars-geoportal
   description: |-
-    This exercise will showcase how to use Scholars GeoPortal to extract
-    Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal
-    using two methods:
+    This exercise will showcase how to use Scholars GeoPortal to extract Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal using two methods:
+    
     1. querying the attribute table of the dataset, or
+    
     2. downloading based on a predefined census boundary (ex. CMAs).
   technique:
     - Searching for maps and data
@@ -2513,13 +2322,7 @@
   title: Converting GIS data in FME Quick Translator
   url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-fme-quick-translator
   description: |
-    FME (File Manipulation Engine) is a powerful software package that
-    allows users to quickly convert spatial and non-spatial datasets into other formats
-    to facilitate sharing and interoperability. One of its components, FME Quick Translator,
-    is an easy-to-use utility that provides a straightforward translation workflow
-    via a simple graphical user interface. This guide demonstrates how to use FME
-    Universal Translator to convert geospatial data from one format to another using
-    an older file format (ArcInfo Coverage, .e00) as an example.
+    FME (File Manipulation Engine) is a powerful software package that allows users to quickly convert spatial and non-spatial datasets into other formats to facilitate sharing and interoperability. One of its components, FME Quick Translator, is an easy-to-use utility that provides a straightforward translation workflow via a simple graphical user interface. This guide demonstrates how to use FME Universal Translator to convert geospatial data from one format to another using an older file format (ArcInfo Coverage, .e00) as an example.
   technique:
     - Converting data formats
   tool:
@@ -2534,8 +2337,7 @@
   title: Selecting the right projection
   url: https://mdl.library.utoronto.ca/technology/tutorials/selecting-right-projection
   description: |
-    Unsure of which projection to use in your GIS work? This tutorial will
-    help you figure out your options.
+    Unsure of which projection to use in your GIS work? This tutorial will help you figure out your options.
   technique:
     - Projecting
   tool:
@@ -2552,9 +2354,7 @@
   title: Citing geospatial data resources
   url: https://mdl.library.utoronto.ca/technology/tutorials/citing-geospatial-data-resources
   description: |
-    [This guide, compiled by Alberta Auringer Wood of the Association of
-    Canadian Map Libraries and Archives, provides recommended citation formats for
-    a wide variety of geospatial data sources.] (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
+    [This guide, compiled by Alberta Auringer Wood of the Association of Canadian Map Libraries and Archives, provides recommended citation formats for a wide variety of geospatial data sources.] (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
     
     Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
@@ -2570,10 +2370,7 @@
   title: Deauthorizing ArcGIS
   url: https://mdl.library.utoronto.ca/technology/tutorials/deauthorizing-arcgis
   description: |
-    If you need to uninstall and reinstall your authorized copy of ArcGIS
-    (for example, if you are reformatting your hard drive or switching to a new computer
-    or **you have entered your eva code in once and it did not authorize**) please follow
-    these instructions before uninstalling the software.
+    If you need to uninstall and reinstall your authorized copy of ArcGIS (for example, if you are reformatting your hard drive or switching to a new computer or **you have entered your eva code in once and it did not authorize**) please follow these instructions before uninstalling the software.
   technique:
     - Installation
   tool:
@@ -2585,9 +2382,7 @@
   title: Finding paper maps and atlases
   url: https://mdl.library.utoronto.ca/technology/tutorials/finding-paper-maps-and-atlases
   description: |
-    This tutorial demonstrates how to find paper maps and atlases in the
-    University of Toronto Libraries catalogue, then locate them in Map & Data Library's
-    fifth floor collection.
+    This tutorial demonstrates how to find paper maps and atlases in the University of Toronto Libraries catalogue, then locate them in Map & Data Library's fifth floor collection.
   technique:
     - Searching for maps and data
   dataFormat: Paper maps
@@ -2598,8 +2393,7 @@
   title: Using the large format scanner
   url: https://mdl.library.utoronto.ca/technology/tutorials/using-large-format-scanner
   description: |
-    This tutorial will help users learn how to properly use the Map and
-    Data Library's large format scanner.
+    This tutorial will help users learn how to properly use the Map and Data Library's large format scanner.
   technique:
     - Scanning
   dataFormat: Paper maps
