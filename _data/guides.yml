@@ -3,9 +3,7 @@
   title: Installing Power BI Desktop
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-power-bi-desktop
   description:
-    This tutorial will run you through the steps for installing **Power BI
-    Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing
-    users to turn their data into insightful visuals.
+    This tutorial will run you through the steps for installing **Power BI Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing users to turn their data into insightful visuals.
   technique:
     - Data Visualization
   tool:
@@ -17,10 +15,7 @@
   title: Introduction to Power BI
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-power-bi
   description: |
-    This tutorial outlines the steps taken in the demonstration during
-    the live workshop on an Introduction to Data Visualization Using Power BI. This
-    is a companion tutorial, but can also be used as a stand-alone introduction to
-    Power BI Desktop.
+    This tutorial outlines the steps taken in the demonstration during the live workshop on an Introduction to Data Visualization Using Power BI. This is a companion tutorial, but can also be used as a stand-alone introduction to Power BI Desktop.
   technique:
     - Data Visualization
   tool:
@@ -33,9 +28,7 @@
   title: Getting MAXQDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-maxqda
   description: |
-    MAXQDA is qualitative data analysis software. You are able to access
-    it in the 4th floor computer lab of Robarts Library or purchase your own personal
-    copy.
+    MAXQDA is qualitative data analysis software. You are able to access it in the 4th floor computer lab of Robarts Library or purchase your own personal copy.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -47,13 +40,7 @@
   title: Introduction to Using MAXQDA for Qualitative Data Analysis
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-using-maxqda-qualitative-data-analysis
   description: |
-    This is an introductory tutorial for MAXQDA. The goal of this tutorial
-    is to learn about the basic features in MAXQDA that will allow you to organize
-    and analyze qualitative data. Part 1 will teach you to use MAXQDA, to load information,
-    code documents, make notes, and export information. Part 2 will explore some of
-    MAXQDA's more advanced features, such as document variables, and analysis and
-    visual tools. If you already have a grasp of the basics and are just interested
-    in learning about the more advanced features, you can jump right to Part 2.
+    This is an introductory tutorial for MAXQDA. The goal of this tutorial is to learn about the basic features in MAXQDA that will allow you to organize and analyze qualitative data. Part 1 will teach you to use MAXQDA, to load information, code documents, make notes, and export information. Part 2 will explore some of MAXQDA's more advanced features, such as document variables, and analysis and visual tools. If you already have a grasp of the basics and are just interested in learning about the more advanced features, you can jump right to Part 2.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -65,8 +52,7 @@
   title: Moving from NVivo to MAXQDA
   url: https://mdl.library.utoronto.ca/technology/tutorials/moving-nvivo-maxqda
   description: |
-    To move between qualitative data analysis tools, you must put your
-    project file into [REFI-QDA standard](https://www.qdasoftware.org/).
+    To move between qualitative data analysis tools, you must put your project file into [REFI-QDA standard](https://www.qdasoftware.org/).
   technique:
     - Qualitative Data Analysis
   tool:
@@ -78,9 +64,7 @@
   title: "MAXQDA: Information, Resources, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/maxqda-information-resources-tutorials-and-workshops
   description: |
-    [MAXQDA](https://www.maxqda.com/) is a program used for qualitative data analysis. It supports
-    researchers in managing, organizing, and analyzing qualitative data to produce
-    new insight, infer relationships, and identify themes.
+    [MAXQDA](https://www.maxqda.com/) is a program used for qualitative data analysis. It supports researchers in managing, organizing, and analyzing qualitative data to produce new insight, infer relationships, and identify themes.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -92,8 +76,7 @@
   title: Accessing JSTOR Text Analysis Support
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-jstor-text-analysis-support
   description: |
-    This tutorial shows how to register for a JSTOR account and use the
-    JSTOR Text Analysis tools, which replace the [now-ended Constellate platform](https://constellate.org/docs/constellate-sunset).
+    This tutorial shows how to register for a JSTOR account and use the JSTOR Text Analysis tools, which replace the [now-ended Constellate platform](https://constellate.org/docs/constellate-sunset).
   technique:
     - Text and Data Mining
   tool:
@@ -105,9 +88,7 @@
   title: Transferring Data to a Public ArcGIS Online Account
   url: https://mdl.library.utoronto.ca/technology/tutorials/transferring-data-public-arcgis-online-account
   description: |
-    This tutorial provides step-by-step guidance on how to transfer work
-    on ArcGIS Online from a University of Toronto (UofT) institutional account to
-    the free (aka ‘public’) version of the service.
+    This tutorial provides step-by-step guidance on how to transfer work on ArcGIS Online from a University of Toronto (UofT) institutional account to the free (aka ‘public’) version of the service.
   technique:
     - Converting data formats
     - Extracting data
@@ -120,8 +101,7 @@
   title: Geospatial Analysis with Python & Jupyter Notebooks
   url: https://mdl.library.utoronto.ca/technology/tutorials/geospatial-analysis-python-jupyter-notebooks
   description: |
-    This tutorial provides detailed walk-throughs of how to use Jupyter
-    Notebooks and open-source Python libraries to perform geospatial analysis.
+    This tutorial provides detailed walk-throughs of how to use Jupyter Notebooks and open-source Python libraries to perform geospatial analysis.
   technique:
     - Spatial Analysis
   tool:
@@ -133,14 +113,7 @@
   title: Working with the Data Axle Historical Business Location Data
   url: https://mdl.library.utoronto.ca/technology/tutorials/working-data-axle-historical-business-location-data
   description: |
-    The Data Axle Historical Business Location Data provides one data file
-    (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains
-    11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains
-    1.5-2.5 million records per year. Records provide information about business location
-    (including address, census geography & lat/long coordinates (US database only)),
-    number of employees, sales volume, NAICS & SIC codes, unique identifier across
-    time for businesses and parent entities. Complete record layouts and decodes are
-    available for download via the Borealis links above.
+    The Data Axle Historical Business Location Data provides one data file (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains 11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains 1.5-2.5 million records per year. Records provide information about business location (including address, census geography & lat/long coordinates (US database only)), number of employees, sales volume, NAICS & SIC codes, unique identifier across time for businesses and parent entities. Complete record layouts and decodes are available for download via the Borealis links above.
   date: "2025-05-22"
   series: MDL Tutorials
   type: Tutorial
@@ -148,13 +121,7 @@
   title: Accessing and Querying the Revelio Datasets
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-and-querying-revelio-datasets
   description: |
-    The University of Toronto has licensed six separate datasets from [Revelio
-    Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate
-    easy access and querying across products, all datasets have been loaded into SciNet's
-    supercomputing environment. Access to this environment can only be granted to
-    current University of Toronto Faculty, Staff and Students, after an application
-    process. This page contains additionals details about this process, as well as
-    the data itself and how to query it.
+    The University of Toronto has licensed six separate datasets from [Revelio Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additionals details about this process, as well as the data itself and how to query it.
   technique:
     - Quantitative Data Analysis
   date: "2025-05-21"
@@ -164,9 +131,7 @@
   title: Introduction to Working with Notebooks in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-working-notebooks-arcgis-pro
   description: |
-    This guide provides some introductory information on how to use notebooks
-    in the ArcGIS Pro environment. You will learn about what notebooks are, how to
-    use them, and some useful tips on using ArcPy to analyze your geospatial data.
+    This guide provides some introductory information on how to use notebooks in the ArcGIS Pro environment. You will learn about what notebooks are, how to use them, and some useful tips on using ArcPy to analyze your geospatial data.
   technique:
     - Data Visualization
     - Mapping
@@ -180,10 +145,7 @@
   title: "Bits and Bytes Series: Canadian Census Discovery Portal (Sept. 22, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-canadian-census-discovery-portal-sept-22-2020
   description: |
-    This page provides a presentation on the **Canadian Census Discovery Portal** as
-    part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
-    features presentations and demonstrations on data-related topics and tools, such
-    as web archives, visualization, GIS and statistics.
+    This page provides a presentation on the **Canadian Census Discovery Portal** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Searching for maps and data
   date: "2025-02-13"
@@ -195,11 +157,7 @@
     (Jun. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-constellate-new-platform-learn-text-analysis-jun-28-2021
   description: |
-    Please note that Constellate is ending on July 1st, 2025. Some learning
-    materials will remain available afterwards. This page provides a presentation on Constellate:
-    A New Platform to Learn Text Analysis as part of the Bits and Bytes Webinar Series hosted
-    by the Map & Data Library that features presentations and demonstrations on data-related
-    topics and tools, such as web archives, visualization, GIS and statistics.
+    Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards. This page provides a presentation on Constellate: A New Platform to Learn Text Analysis as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Text and Data Mining
   tool:
@@ -213,10 +171,7 @@
     2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-getting-started-python-arcgis-pro-nov-17-2020
   description: |
-    This page provides a presentation on **Getting Started with Python in
-    ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data
-    Library that features presentations and demonstrations on data-related topics
-    and tools, such as web archives, visualization, GIS and statistics.
+    This page provides a presentation on **Getting Started with Python in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Mapping
     - Spatial Analysis
@@ -229,14 +184,10 @@
   type: Tutorial
 - id: 16
   title:
-    "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.
-    1, 2020)"
+    "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.1, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
   description: |
-    This page provides a presentation on an **Introduction to Dataverse for
-    Sharing Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data
-    Library that features presentations and demonstrations on data-related topics
-    and tools, such as web archives, visualization, GIS and statistics.
+    This page provides a presentation on an **Introduction to Dataverse for Sharing Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   date: "2025-02-13"
   series: MDL Tutorials
   type: Tutorial
@@ -244,10 +195,7 @@
   title: "Bits and Bytes Series: Introduction to Web APIs (Apr. 1, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-web-apis-apr-1-2021
   description: |
-    This page provides a presentation on an **Introduction to Web APIs** as part
-    of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features
-    presentations and demonstrations on data-related topics and tools, such as web
-    archives, visualization, GIS and statistics.
+    This page provides a presentation on an **Introduction to Web APIs** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Text and Data Mining
     - Searching for maps and data
@@ -258,10 +206,7 @@
   title: "Bits and Bytes Series: Using LiDAR Data in ArcGIS Pro (Feb. 25, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-using-lidar-data-arcgis-pro-feb-25-2021
   description: |
-    This page provides a presentation on **Using LiDAR Data in ArcGIS Pro** as
-    part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
-    features presentations and demonstrations on data-related topics and tools, such
-    as web archives, visualization, GIS and statistics.
+    This page provides a presentation on **Using LiDAR Data in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Mapping
   tool:
@@ -273,10 +218,7 @@
   title: "Bits and Bytes Series: Working with Web Archive Data (Sept. 29, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-working-web-archive-data-sept-29-2020
   description: |
-    This page provides a presentation on **Working with Web Archive Data** as
-    part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that
-    features presentations and demonstrations on data-related topics and tools, such
-    as web archives, visualization, GIS and statistics.
+    This page provides a presentation on **Working with Web Archive Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Searching for maps and data
     - Extracting data
@@ -288,8 +230,7 @@
     "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-programming-absolute-beginners-using-python-pt-2-march-2025
   description: |
-    This page provides a video recording of an introductory workshop on
-    Python, continuing from where the first part of the Python series left off.
+    This page provides a video recording of an introductory workshop on Python, continuing from where the first part of the Python series left off.
   tool:
     - Python
   date: "2025-01-28"
@@ -297,12 +238,10 @@
   type: Tutorial
 - id: 21
   title:
-    "Workshop Recording: An Introduction to Programming for Absolute Beginners
-    Using Python Pt. 1 (March 2025)"
+    "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-programming-absolute-beginners-using-python-pt
   description: |
-    This page provides a video recording of the first part of an introductory
-    workshop series on Python.
+    This page provides a video recording of the first part of an introductory workshop series on Python.
   tool:
     - Python
   date: "2025-01-28"
@@ -312,8 +251,7 @@
   title: "Workshop Recording: Excel: Beyond the Basics (Oct. 25, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-excel-beyond-basics-oct-25-2022
   description: |
-    This page provides a video recording of a workshop on using intermediate
-    features of Excel.
+    This page provides a video recording of a workshop on using intermediate features of Excel.
   technique:
     - Extracting data
   tool:
@@ -323,12 +261,10 @@
   type: Tutorial
 - id: 23
   title:
-    "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop
-    (Nov. 24, 2021)"
+    "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-data-visualization-using-tableau-desktop-nov
   description: |
-    This page provides a video recording of an introductory workshop on
-    using Tableau Desktop for data visualization.
+    This page provides a video recording of an introductory workshop on using Tableau Desktop for data visualization.
   technique:
     - Data Visualization
   tool:
@@ -338,13 +274,10 @@
   type: Tutorial
 - id: 24
   title:
-    "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social
-    Science Critique Example)"
+    "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-feb-3-2022-social-science
   description: |
-    This page provides a video recording of a workshop on best practices
-    for creating infographics - with a specific social science related infographic
-    critique example.
+    This page provides a video recording of a workshop on best practices for creating infographics - with a specific social science related infographic critique example.
   technique:
     - Data Visualization
   date: "2025-01-28"
@@ -352,13 +285,10 @@
   type: Tutorial
 - id: 25
   title:
-    "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health
-    Critique Example)"
+    "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-nov-16-2021-health-critique
   description: |
-    This page provides a video recording of a workshop on best practices
-    for creating infographics - with a specific health-related infographic critique
-    example.
+    This page provides a video recording of a workshop on best practices for creating infographics - with a specific health-related infographic critique example.
   technique:
     - Data Visualization
   date: "2025-01-28"
@@ -366,12 +296,10 @@
   type: Tutorial
 - id: 26
   title:
-    "Workshop Recording: Introduction to Network Analysis and Visualization Using
-    Gephi (Nov. 2, 2021)"
+    "Workshop Recording: Introduction to Network Analysis and Visualization Using Gephi (Nov. 2, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-network-analysis-and-visualization-using-gephi
   description: |
-    This page provides a video recording of an introductory workshop on
-    using Gephi for network analysis and visualization.
+    This page provides a video recording of an introductory workshop on using Gephi for network analysis and visualization.
   technique:
     - Data Visualization
   tool:
@@ -383,8 +311,7 @@
   title: "Workshop Recording: Introduction to NVivo 12 (Mac Version) (Mar. 17, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-mac-version-mar-17-2022
   description: |
-    This page provides a video recording of an introductory workshop on
-    NVivo 12 for Mac.
+    This page provides a video recording of an introductory workshop on NVivo 12 for Mac.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -396,8 +323,7 @@
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-r-dec-8-2020
   description: |
-    This page provides a video recording of an introductory workshop on
-    using the R statistical programming language.
+    This page provides a video recording of an introductory workshop on using the R statistical programming language.
   technique:
     - Data Visualization
     - Cleaning data
@@ -411,8 +337,7 @@
   title: "Workshop Recording: Introduction to Stata (Dec. 3, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-stata-dec-3-2021
   description: |
-    This page provides a video recording of an introductory workshop on
-    Stata.
+    This page provides a video recording of an introductory workshop on Stata.
   technique:
     - Converting data formats
     - Cleaning data
@@ -424,12 +349,10 @@
   type: Tutorial
 - id: 30
   title:
-    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data
-    Analysis (Mac Version) (Nov. 26, 2024)"
+    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis-mac
   description: |
-    This page provides a video recording of an introductory workshop on
-    NVivo 14/15 for Mac.
+    This page provides a video recording of an introductory workshop on NVivo 14/15 for Mac.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -439,12 +362,10 @@
   type: Tutorial
 - id: 31
   title:
-    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data
-    Analysis (Windows Version) (Nov. 12, 2024)"
+    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis
   description: |
-    This page provides a video recording of an introductory workshop on
-    NVivo 14/15 for Windows.
+    This page provides a video recording of an introductory workshop on NVivo 14/15 for Windows.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -454,16 +375,12 @@
   type: Tutorial
 - id: 32
   title:
-    "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available
-    Tools (Feb. 14, 2022)"
+    "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available Tools (Feb. 14, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-text-analysis-tasting-menu-sampling-available-tools-feb-14
   description: |
-    This page provides a video recording of a workshop on various text
-    analysis tools. 
+    This page provides a video recording of a workshop on various text analysis tools. 
 
-     **Please note that [Constellate](https://constellate.org/docs/constellate-sunset) is ending on July 1st, 2025.** Some learning
-    materials will remain available afterwards. Please also note that HathiTrust Research
-    Center will no longer be funded by the end of 2026.
+    **Please note that [Constellate](https://constellate.org/docs/constellate-sunset) is ending on July 1st, 2025.** Some learning materials will remain available afterwards. Please also note that HathiTrust Research Center will no longer be funded by the end of 2026.
   technique:
     - Text and Data Mining
     - Cleaning data
@@ -476,7 +393,8 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 33
-  title: "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
+  title: 
+    "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-working-messy-data-openrefine-oct-28-2021
   description: |
     This page provides a video recording of a workshop on OpenRefine.
@@ -489,13 +407,10 @@
   type: Tutorial
 - id: 34
   title:
-    "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 –
-    Theory and Critique)"
+    "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-1-theory-and
   description: |
-    This page provides access to a Data Visualization self-paced online
-    Quercus course that focuses on data viz theory and provides opportunities to practice
-    critiquing visualizations.
+    This page provides access to a Data Visualization self-paced online Quercus course that focuses on data viz theory and provides opportunities to practice critiquing visualizations.
   technique:
     - Data Visualization
   date: "2025-01-24"
@@ -503,13 +418,10 @@
   type: Tutorial
 - id: 35
   title:
-    "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 –
-    Practice with Tableau)"
+    "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 – Practice with Tableau)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-2-practice
   description: |
-    This page provides access to a Data Visualization self-paced online
-    Quercus course that introduces participants to Tableau Desktop. Participants will
-    learn to create visualizations using some example datasets.
+    This page provides access to a Data Visualization self-paced online Quercus course that introduces participants to Tableau Desktop. Participants will learn to create visualizations using some example datasets.
   technique:
     - Data Visualization
   tool:
@@ -534,8 +446,7 @@
   title: "Self-Paced Online Course: R - An Introduction"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-introduction
   description: |
-    This page provides access to a self-paced online Quercus course that
-    focuses on how to use R for exploring and manipulating data.
+    This page provides access to a self-paced online Quercus course that focuses on how to use R for exploring and manipulating data.
   technique:
     - Data Visualization
     - Cleaning data
@@ -549,9 +460,7 @@
   title: "Self-Paced Online Course: R - Intermediate"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-intermediate
   description: |
-    This page provides access to a self-paced online Quercus course that
-    focuses on using R for intermediate level data manipulation and visualization,
-    and programming flow control.
+    This page provides access to a self-paced online Quercus course that focuses on using R for intermediate level data manipulation and visualization, and programming flow control.
   technique:
     - Data Visualization
     - Cleaning data
@@ -565,8 +474,7 @@
   title: "Self-Paced Online Course: Working with Messy Data in OpenRefine"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-working-messy-data-openrefine
   description: |
-    This page provides access to a self-paced online Quercus course that
-    focuses on data cleaning using OpenRefine.
+    This page provides access to a self-paced online Quercus course that focuses on data cleaning using OpenRefine.
   technique:
     - Cleaning data
   tool:
@@ -578,8 +486,7 @@
   title: "Workshop Recording: An Introductory Tour of ArcGIS Pro (Oct. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introductory-tour-arcgis-pro-oct-1-2024
   description: |
-    This page provides a video recording of an introductory workshop on
-    ArcGIS Pro.
+    This page provides a video recording of an introductory workshop on ArcGIS Pro.
   technique:
     - Mapping
     - Spatial Analysis
@@ -592,8 +499,7 @@
   title: "Workshop Recording: ArcGIS Pro -  Spatial Analysis (Nov. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-spatial-analysis-nov-1-2024
   description: |
-    This page provides a video recording of a workshop in ArcGIS Pro focusing
-    on spatial analysis.
+    This page provides a video recording of a workshop in ArcGIS Pro focusing on spatial analysis.
   technique:
     - Mapping
     - Spatial Analysis
@@ -604,12 +510,10 @@
   type: Tutorial
 - id: 42
   title:
-    "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15,
-    2024)"
+    "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-loading-and-manipulating-data-oct-15-2024
   description: |
-    This page provides a video recording of a workshop on ArcGIS Pro that
-    focuses on loading and manipulating data.
+    This page provides a video recording of a workshop on ArcGIS Pro that focuses on loading and manipulating data.
   technique:
     - Mapping
     - Spatial Analysis
@@ -620,13 +524,10 @@
   type: Tutorial
 - id: 43
   title:
-    "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov.
-    30, 2021)"
+    "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov. 30, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-constellate-new-platform-text-analysis-nov-30-2021
   description: |
-    This page provides a video recording of an introductory workshop on
-    Constellate. Please note that Constellate is ending on July 1st, 2025. Some learning
-    materials will remain available afterwards.
+    This page provides a video recording of an introductory workshop on Constellate. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
   technique:
     - Text and Data Mining
   tool:
@@ -636,12 +537,10 @@
   type: Tutorial
 - id: 44
   title:
-    "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15,
-    2022)"
+    "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-windows-version-mar-15-2022
   description: |
-    This page provides a video recording of a introductory workshop on
-    NVivo 12 for Windows.
+    This page provides a video recording of a introductory workshop on NVivo 12 for Windows.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -665,10 +564,7 @@
   title: Introduction to GIS using R
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-gis-using-r
   description: |
-    This tutorial is a beginner friendly introduction to work with GIS
-    data using R. The topics covered are creating and importing GIS data including
-    point, line, and polygon features; making maps; and running common spatial analyses.
-    The main spatial package used is the sf package.
+    This tutorial is a beginner friendly introduction to work with GIS data using R. The topics covered are creating and importing GIS data including point, line, and polygon features; making maps; and running common spatial analyses. The main spatial package used is the sf package.
   technique:
     - Quantitative Data Analysis
     - Mapping
@@ -685,9 +581,7 @@
   description: |
     This tutorial is for installing and licensing **NVivo 15** on Mac computers. 
     
-    Find information on how to request a license, download and install the software, as
-    well as how to activate the license key for new and existing users. *Note: If you
-    need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
+    Find information on how to request a license, download and install the software, as well as how to activate the license key for new and existing users. *Note: If you need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
   technique:
     - Qualitative Data Analysis
   tool:
@@ -699,10 +593,7 @@
   title: Installing and Licensing NVivo 15 for Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-15-windows
   description: |
-    This tutorial is for installing and licensing **NVivo 15** on Windows computers. Find
-    information on how to request a license, download and install the software, as
-    well as how to activate the license key for new and existing users. *Note: If you
-    need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
+    This tutorial is for installing and licensing **NVivo 15** on Windows computers. Find information on how to request a license, download and install the software, as well as how to activate the license key for new and existing users. *Note: If you need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
   technique:
     - Installation
   tool:
@@ -714,12 +605,7 @@
   title: Guide for Site Research
   url: https://mdl.library.utoronto.ca/technology/tutorials/guide-site-research
   description: |
-    Site research involves the comprehensive analysis of a location's physical,
-    cultural, and environmental characteristics. This process encompasses assessing
-    topography, climate, zoning regulations, and existing infrastructure, as well
-    as understanding the historical and social context of the site. Other terms often
-    used interchangeably with site research include site analysis, site assessment,
-    and contextual analysis.
+    Site research involves the comprehensive analysis of a location's physical, cultural, and environmental characteristics. This process encompasses assessing topography, climate, zoning regulations, and existing infrastructure, as well as understanding the historical and social context of the site. Other terms often used interchangeably with site research include site analysis, site assessment, and contextual analysis.
   technique:
     - Searching for maps and data
   dataFormat: 
@@ -733,8 +619,7 @@
   title: Introduction to R Shiny
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-shiny
   description: |
-    Shiny is a powerful open-source tool that is used to build easy interactive
-    web applications. This guide will help users get started in creating R Shiny applications.
+    Shiny is a powerful open-source tool that is used to build easy interactive web applications. This guide will help users get started in creating R Shiny applications.
   technique:
     - Quantitative Data Analysis
     - Data Visualization
