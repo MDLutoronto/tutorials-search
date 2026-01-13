@@ -120,7 +120,7 @@
   title: Accessing and Querying the Revelio Datasets
   url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-and-querying-revelio-datasets
   description: |
-    The University of Toronto has licensed six separate datasets from [Revelio Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additionals details about this process, as well as the data itself and how to query it.
+    The University of Toronto has licensed six separate datasets from [Revelio Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additional details about this process, as well as the data itself and how to query it.
   technique:
     - Quantitative Data Analysis
   date: "2025-05-21"
@@ -924,7 +924,7 @@
 
     **Code of Conduct**: Map & Data Library (MDL) workshops are a welcoming and inclusive environment for learning. To learn more, check out our Code of Conduct. 
 
-    **For help contact**: Map & Data Library,mdl@library.utoronto.ca
+    **For help contact**: Map & Data Library, mdl@library.utoronto.ca
   tool:
     - Excel
   date: "2023-02-21"
@@ -1089,7 +1089,7 @@
   title: Introduction to SimplyAnalytics - Video Tutorials
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics-video-tutorials
   description: |
-    [SimplyAnalytics](https://simplyanalytics.com/) is a web-based data visualization application that can be used to create simple thematic maps and support analyses of socio-demographic data. This tutorial introduces SimplyAnalytics and its capabilities with the help of [videos produced by our colleagues at UTSC](https://www.utsc.utoronto.ca/thebridge/%20.).
+    [SimplyAnalytics](https://simplyanalytics.com/) is a web-based data visualization application that can be used to create simple thematic maps and support analyses of socio-demographic data. This tutorial introduces SimplyAnalytics and its capabilities with the help of [videos produced by our colleagues at UTSC](https://www.utsc.utoronto.ca/thebridge/.).
   technique:
     - Data Visualization
     - Mapping
