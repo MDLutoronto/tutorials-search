@@ -2,8 +2,7 @@
 - id: 1
   title: Installing Power BI Desktop
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-power-bi-desktop
-  description:
-    This tutorial will run you through the steps for installing **Power BI Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing users to turn their data into insightful visuals.
+  description: This tutorial will run you through the steps for installing **Power BI Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing users to turn their data into insightful visuals.
   technique:
     - Data Visualization
   tool:
@@ -183,8 +182,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 16
-  title:
-    "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.1, 2020)"
+  title: "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.1, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
   description: |
     This page provides a presentation on an **Introduction to Dataverse for Sharing Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
@@ -226,8 +224,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 20
-  title:
-    "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
+  title: "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-programming-absolute-beginners-using-python-pt-2-march-2025
   description: |
     This page provides a video recording of an introductory workshop on Python, continuing from where the first part of the Python series left off.
@@ -237,8 +234,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 21
-  title:
-    "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
+  title: "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-programming-absolute-beginners-using-python-pt
   description: |
     This page provides a video recording of the first part of an introductory workshop series on Python.
@@ -260,8 +256,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 23
-  title:
-    "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
+  title: "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-data-visualization-using-tableau-desktop-nov
   description: |
     This page provides a video recording of an introductory workshop on using Tableau Desktop for data visualization.
@@ -273,8 +268,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 24
-  title:
-    "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
+  title: "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-feb-3-2022-social-science
   description: |
     This page provides a video recording of a workshop on best practices for creating infographics - with a specific social science related infographic critique example.
@@ -284,8 +278,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 25
-  title:
-    "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
+  title: "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-nov-16-2021-health-critique
   description: |
     This page provides a video recording of a workshop on best practices for creating infographics - with a specific health-related infographic critique example.
@@ -295,8 +288,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 26
-  title:
-    "Workshop Recording: Introduction to Network Analysis and Visualization Using Gephi (Nov. 2, 2021)"
+  title: "Workshop Recording: Introduction to Network Analysis and Visualization Using Gephi (Nov. 2, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-network-analysis-and-visualization-using-gephi
   description: |
     This page provides a video recording of an introductory workshop on using Gephi for network analysis and visualization.
@@ -348,8 +340,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 30
-  title:
-    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
+  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis-mac
   description: |
     This page provides a video recording of an introductory workshop on NVivo 14/15 for Mac.
@@ -361,8 +352,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 31
-  title:
-    "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
+  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis
   description: |
     This page provides a video recording of an introductory workshop on NVivo 14/15 for Windows.
@@ -374,8 +364,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 32
-  title:
-    "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available Tools (Feb. 14, 2022)"
+  title: "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available Tools (Feb. 14, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-text-analysis-tasting-menu-sampling-available-tools-feb-14
   description: |
     This page provides a video recording of a workshop on various text analysis tools.
@@ -393,8 +382,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 33
-  title: 
-    "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
+  title: "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-working-messy-data-openrefine-oct-28-2021
   description: |
     This page provides a video recording of a workshop on OpenRefine.
@@ -406,8 +394,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 34
-  title:
-    "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
+  title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-1-theory-and
   description: |
     This page provides access to a Data Visualization self-paced online Quercus course that focuses on data viz theory and provides opportunities to practice critiquing visualizations.
@@ -417,8 +404,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 35
-  title:
-    "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 – Practice with Tableau)"
+  title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 – Practice with Tableau)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-2-practice
   description: |
     This page provides access to a Data Visualization self-paced online Quercus course that introduces participants to Tableau Desktop. Participants will learn to create visualizations using some example datasets.
@@ -509,8 +495,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 42
-  title:
-    "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15, 2024)"
+  title: "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-loading-and-manipulating-data-oct-15-2024
   description: |
     This page provides a video recording of a workshop on ArcGIS Pro that focuses on loading and manipulating data.
@@ -523,8 +508,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 43
-  title:
-    "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov. 30, 2021)"
+  title: "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov. 30, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-constellate-new-platform-text-analysis-nov-30-2021
   description: |
     This page provides a video recording of an introductory workshop on Constellate. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
@@ -536,8 +520,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 44
-  title:
-    "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15, 2022)"
+  title: "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-windows-version-mar-15-2022
   description: |
     This page provides a video recording of a introductory workshop on NVivo 12 for Windows.
@@ -580,7 +563,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-15-mac
   description: |
     This tutorial is for installing and licensing **NVivo 15** on Mac computers.
-    
+
     Find information on how to request a license, download and install the software, as well as how to activate the license key for new and existing users. *Note: If you need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
   technique:
     - Qualitative Data Analysis
@@ -608,7 +591,7 @@
     Site research involves the comprehensive analysis of a location's physical, cultural, and environmental characteristics. This process encompasses assessing topography, climate, zoning regulations, and existing infrastructure, as well as understanding the historical and social context of the site. Other terms often used interchangeably with site research include site analysis, site assessment, and contextual analysis.
   technique:
     - Searching for maps and data
-  dataFormat: 
+  dataFormat:
     - Paper maps
     - Statistics
     - Vector
@@ -665,7 +648,7 @@
   tool:
     - ArcGIS Pro
     - CHASS Census Analyzer
-  dataFormat: 
+  dataFormat:
     - Statistics
     - Vector
   date: "2024-02-09"
@@ -686,8 +669,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 55
-  title:
-    Extracting the geographic features you need from a larger dataset in ArcGIS Pro
+  title: Extracting the geographic features you need from a larger dataset in ArcGIS Pro
   url: https://mdl.library.utoronto.ca/technology/tutorials/extracting-geographic-features-you-need-larger-dataset-arcgis-pro
   description: |
     You may have noticed that many GIS datasets contain information about a geographic extent that is larger than your area of interest. Your research may involve analysis of data related to a single municipality in Ontario, yet you have only been able to locate a dataset showing all municipalities located within the province. Alternatively, you may be interested in only displaying a selection of features on your completed map, such as the Canadian cities you have selected as case studies for your research. This tutorial will demonstrate how to extract just the features you need from larger datasets, saving them to new files that you can then use to map and analyze your data.
@@ -706,7 +688,7 @@
     Digital elevation models (DEMs) are geospatial datasets that contain elevation values sampled according to a regularly spaced rectangular grid. They can be used in terrain analysis, SD visualizations and hydrological modelling, among other applications. DEMs can be stored in several different formats; however, conversion into a raster dataset is often required for many processes. This tutorial explains how to derive contours from DEMs using ArcGIS Pro.
   tool:
     - ArcGIS Pro
-  dataFormat: 
+  dataFormat:
     - DEM
     - Raster
   date: "2024-01-17"
@@ -721,7 +703,7 @@
     - Extracting data
   tool:
     - ArcGIS Pro
-  dataFormat: 
+  dataFormat:
     - DEM
     - Raster
   date: "2024-01-15"
@@ -736,7 +718,7 @@
     - Projecting
   tool:
     - ArcGIS Pro
-  dataFormat: 
+  dataFormat:
     - Raster
     - Vector
   date: "2024-01-08"
@@ -1009,8 +991,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 79
-  title:
-    Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
+  title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-WINDOWS
   description: |
     This tutorial will help you get up and running querying the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
@@ -1022,8 +1003,7 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 80
-  title:
-    Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Mac
+  title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-MAC
   description: |
     This tutorial will help you get up and running querying the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query. 
@@ -1039,7 +1019,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-mapping-and-spatial-analysis-qgis
   description: |-
     Learn the basics of GIS with open source software, QGIS (https://qgis.org).
- 
+
     This tutorial/workshop is made up of three modules.
 
     - Module 1. Getting started
@@ -1049,7 +1029,7 @@
     - Module 3. Manipulating geospatial datasets 
 
     Download the datasets used for this workshop at this location: https://maps.library.utoronto.ca/workshops/QGIS/2022/QGIS.zip
- 
+
     Note that while the examples shown in this tutorial were captured using the windows version of QGIS, all modules and operations can be completed using the linux or mac OS version of QGIS.
   technique:
     - Mapping
@@ -1548,7 +1528,7 @@
   title: How to Build a Dataset in Constellate
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-build-dataset-constellate
   description: |
-    This tutorial shows you how to build a dataset in Constellate. We recommend reading our general information on Constellate first. Please also see this access tutorial in order to log in with institutional privileges. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards. 
+    This tutorial shows you how to build a dataset in Constellate. We recommend reading our general information on Constellate first. Please also see this access tutorial in order to log in with institutional privileges. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
   technique:
     - Data Visualization
     - Cleaning data
@@ -1618,7 +1598,7 @@
   tool:
     - ArcGIS Online
     - ArcGIS Storymaps
-  dataFormat: 
+  dataFormat:
     - Raster
     - Vector
   date: "2021-03-05"
@@ -1634,7 +1614,7 @@
     - Extracting data
   tool:
     - GeoGratis
-  dataFormat: 
+  dataFormat:
     - DEM
     - Raster
   date: "2021-01-15"
@@ -1756,7 +1736,7 @@
   title: Getting Started with Tableau Desktop (Beginner to Intermediate)
   url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-tableau-desktop-beginner-intermediate
   description: |
-    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT). 
+    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT).
   technique:
     - Data Visualization
   tool:
@@ -1839,7 +1819,7 @@
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2-using-reconciliation-services
   description: |
     This tutorial will teach you how to use OpenRefine's reconciliation service to connect data in your dataset with Wikidata. 
- 
+
     ***Note 1:*** *Complete [Augmenting activity 1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1-preparing-data) first before attempting this activity.* 
 
     ***Note 2:*** *In order to complete this activity, you need to be running the latest version of OpenRefine.*
@@ -1957,7 +1937,7 @@
   description: |
     Link to a video tutorial on how to find statistics and manipulate tables to get the data you need.
 
-    https://library.wlu.ca/help/tutorials/finding-statistics-using-statcans-data-portal 
+    https://library.wlu.ca/help/tutorials/finding-statistics-using-statcans-data-portal
   technique:
     - Searching for maps and data
   date: "2018-09-12"
@@ -2007,7 +1987,7 @@
     - Extracting data
   tool:
     - Scholars GeoPortal
-  dataFormat: 
+  dataFormat:
     - Raster
     - Vector
   date: "2018-01-15"
@@ -2022,7 +2002,7 @@
     - Extracting data
   tool:
     - CHASS Census Analyzer
-  dataFormat: 
+  dataFormat:
     - Statistics
     - Vector
   date: "2018-01-08"
@@ -2040,7 +2020,7 @@
     - Searching for maps and data
   tool:
     - SimplyAnalytics
-  dataFormat: 
+  dataFormat:
     - Statistics
     - Vector
   date: "2018-01-04"
@@ -2162,8 +2142,7 @@
 - id: 165
   title: Introduction to Stata
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata
-  description:
-    This guide gives users an introduction to Stata. The topics covered are importing, exploring, modifying and managing data.
+  description: This guide gives users an introduction to Stata. The topics covered are importing, exploring, modifying and managing data.
   tool:
     - Stata
   date: "2017-05-05"
@@ -2322,7 +2301,7 @@
     - Converting data formats
   tool:
     - FME
-  dataFormat: 
+  dataFormat:
     - Raster
     - Vector
   date: "2016-04-26"
@@ -2339,7 +2318,7 @@
     - ArcGIS
     - Global Mapper
     - QGIS
-  dataFormat: 
+  dataFormat:
     - Raster
     - Vector
   date: "2016-04-26"
@@ -2354,7 +2333,7 @@
     Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
     - Citing data
-  dataFormat: 
+  dataFormat:
     - Paper maps
     - Raster
     - Vector
