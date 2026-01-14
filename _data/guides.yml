@@ -2340,18 +2340,6 @@
   date: "2016-04-12"
   series: MDL Tutorials
   type: Tutorial
-- id: 182
-  title: Deauthorizing ArcGIS
-  url: https://mdl.library.utoronto.ca/technology/tutorials/deauthorizing-arcgis
-  description: |
-    If you need to uninstall and reinstall your authorized copy of ArcGIS (for example, if you are reformatting your hard drive or switching to a new computer or **you have entered your eva code in once and it did not authorize**) please follow these instructions before uninstalling the software.
-  technique:
-    - Installation
-  tool:
-    - ArcGIS
-  date: "2016-04-12"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 183
   title: Finding paper maps and atlases
   url: https://mdl.library.utoronto.ca/technology/tutorials/finding-paper-maps-and-atlases
