@@ -1722,7 +1722,7 @@
   type: Tutorial
 - id: 134
   title: Creating a Tableau Dashboard using COVID-19 data (Intermediate)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate
+  url: https://mdlutoronto.github.io/tableau-creating-dashboard-covid19-data-intermediate/
   description: |
     This tutorial provides an opportunity to learn data visualization skills using a common data visualization tool, Tableau Desktop. People often say that they learn better when using data that resonates with them, so we are using COVID-19 data in this tutorial, as this topic is touching many people’s lives right now.
   technique:
