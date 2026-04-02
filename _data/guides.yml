@@ -1128,7 +1128,7 @@
   type: Tutorial
 - id: 89
   title: "ArcGIS StoryMaps: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/arcgis-storymapss-info-tutorials-workshops/
   description: |
     [ArcGIS StoryMaps](https://storymaps.arcgis.com/) is an online storytelling tool that allows users to craft and publish powerful narratives using maps.
   technique:
