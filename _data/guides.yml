@@ -202,7 +202,7 @@
   type: Video
 - id: 18
   title: "Bits and Bytes Series: Using LiDAR Data in ArcGIS Pro (Feb. 25, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-using-lidar-data-arcgis-pro-feb-25-2021
+  url: https://mdlutoronto.github.io/bits-bytes-series-lidar-data-arcgis-feb-25-2021/
   description: |
     This page provides a presentation on **Using LiDAR Data in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
@@ -211,7 +211,7 @@
     - ArcGIS Pro
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 19
   title: "Bits and Bytes Series: Working with Web Archive Data (Sept. 29, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-working-web-archive-data-sept-29-2020
