@@ -672,7 +672,7 @@
   type: Tutorial
 - id: 55
   title: Extracting the geographic features you need from a larger dataset in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/extracting-geographic-features-you-need-larger-dataset-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-extracting-geographic-features-from-larger-dataset/
   description: |
     You may have noticed that many GIS datasets contain information about a geographic extent that is larger than your area of interest. Your research may involve analysis of data related to a single municipality in Ontario, yet you have only been able to locate a dataset showing all municipalities located within the province. Alternatively, you may be interested in only displaying a selection of features on your completed map, such as the Canadian cities you have selected as case studies for your research. This tutorial will demonstrate how to extract just the features you need from larger datasets, saving them to new files that you can then use to map and analyze your data.
   technique:
