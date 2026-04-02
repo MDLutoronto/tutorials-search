@@ -696,7 +696,7 @@
   type: Tutorial
 - id: 57
   title: Clipping Rasters in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/clipping-rasters-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-clipping-rasters/
   description: |
     This tutorial covers two methods for clipping raster datasets from ArcGIS Pro.
   technique:
