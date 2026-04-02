@@ -1711,7 +1711,7 @@
   type: Tutorial
 - id: 133
   title: Downloading, Installing, and Licensing ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-installing-and-licensing-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-install-license/
   description: |
     This tutorial goes over how to download, install, and license ArcGIS Pro with your UTORid. Please be advised that ArcGIS Pro is also [available on library computers](https://mdl.library.utoronto.ca/technology/computers-with-gis-software) on the St George campus.
   technique:
