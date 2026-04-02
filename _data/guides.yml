@@ -683,7 +683,7 @@
   type: Tutorial
 - id: 56
   title: Creating contours using ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-creating-contours/
   description: |
     Digital elevation models (DEMs) are geospatial datasets that contain elevation values sampled according to a regularly spaced rectangular grid. They can be used in terrain analysis, SD visualizations and hydrological modelling, among other applications. DEMs can be stored in several different formats; however, conversion into a raster dataset is often required for many processes. This tutorial explains how to derive contours from DEMs using ArcGIS Pro.
   tool:
