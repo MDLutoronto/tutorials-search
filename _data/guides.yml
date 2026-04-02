@@ -1465,7 +1465,7 @@
   type: Tutorial
 - id: 115
   title: ArcGIS Pro Module 5 - Working with Raster Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-5-working-raster-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod5-working-raster-data-fall-2021/
   description: |
     The following slide deck is for Module 5 of the ArcGIS Pro workshop. This module will teach you how to manipulate and analyze raster data in ArcGIS Pro.
   technique:
