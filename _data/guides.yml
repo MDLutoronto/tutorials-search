@@ -1670,7 +1670,7 @@
   type: Tutorial
 - id: 131
   title: COVID-19 data in R
-  url: https://mdl.library.utoronto.ca/technology/tutorials/covid-19-data-r
+  url: https://mdlutoronto.github.io/r-covid19-data/
   tool:
     - R
   dataFormat: Statistics
