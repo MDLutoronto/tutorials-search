@@ -1935,7 +1935,7 @@
   type: Tutorial
 - id: 148
   title: Finding Statistics Using Statcan's Data Portal (Laurier)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/finding-statistics-using-statcans-data-portal-laurier
+  url: https://mdlutoronto.github.io/statcan-data-portal-finding-statistics/
   description: |
     Link to a video tutorial on how to find statistics and manipulate tables to get the data you need.
 
