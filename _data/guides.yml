@@ -2252,7 +2252,7 @@
   type: Tutorial
 - id: 176
   title: Cleaning Data in Python
-  url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-python
+  url: https://mdlutoronto.github.io/python-cleaning-data/
   description: |
     This guide shows the user how to use Spyder to load and clean data for further analysis.
   technique:
