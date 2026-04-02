@@ -2081,7 +2081,7 @@
   type: Tutorial
 - id: 160
   title: Accessing Statistics Canada’s Socioeconomic Time Series Data (formerly CANSIM)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-statistics-canadas-socioeconomic-time-series-data-formerly-cansim
+  url: https://mdlutoronto.github.io/statcan-socioeconomic-time-series-access/
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database find and download data.
 
