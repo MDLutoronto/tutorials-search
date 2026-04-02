@@ -1868,7 +1868,7 @@
   type: Tutorial
 - id: 144
   title: Creating Data Visualizations Using Tableau Desktop (Beginner)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-data-visualizations-using-tableau-desktop-beginner
+  url: https://mdlutoronto.github.io/tableau-creating-data-viz-beginner/
   description: |
     This guide is suitable for new Tableau users looking for information on producing popular data visualizations in Tableau, such as bar graphs, line graphs, scatterplots, tree maps, and dashboards. If you are looking for more general data visualization tips, please see the Map and Data Library's Data [Visualization Guide](https://mdl.library.utoronto.ca/dataviz/getting-started). You can find instructions on installing and acquiring a free academic license for Tableau [here](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you are running Tableau on a Mac, please note that there may be some variation between the Windows version used to design this guide and the program as it appears on a Mac.
 
