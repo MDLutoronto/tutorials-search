@@ -1478,7 +1478,7 @@
   type: Tutorial
 - id: 116
   title: ArcGIS Pro Module 6 - Wrangling and Mapping Covid-19 Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-6-wrangling-and-mapping-covid-19-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod6-wrangling-mapping-covid19-fall-2021/
   description: |
     The following slide deck is for Module 6 of the ArcGIS Pro tutorial. This module will teach you how to do basic data cleaning and converting to prepare data to be used in ArcGIS Pro. This module will also present a real life problem of doing spatial analysis using public health data.
   technique:
