@@ -2344,7 +2344,7 @@
   type: Tutorial
 - id: 183
   title: Finding paper maps and atlases
-  url: https://mdl.library.utoronto.ca/technology/tutorials/finding-paper-maps-and-atlases
+  url: https://mdlutoronto.github.io/paper-maps-atlases-finding/
   description: |
     This tutorial demonstrates how to find paper maps and atlases in the University of Toronto Libraries catalogue, then locate them in Map & Data Library's fifth floor collection.
   technique:
