@@ -1439,7 +1439,7 @@
   type: Tutorial
 - id: 113
   title: ArcGIS Pro Module 3 - Loading and Manipulating Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-3-loading-and-manipulating-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod3-loading-manipulating-data-fall-2021/
   description: |
     The following slide deck will walk you through Module 3 of the ArcGIS Pro tutorial. This module will teach you how to add and format vector and raster data layers to your project, as well as how to geocode data.
   technique:
