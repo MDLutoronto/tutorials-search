@@ -1413,7 +1413,7 @@
   type: Tutorial
 - id: 111
   title: ArcGIS Pro Module 1 - The Basics (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-1-basics-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod1-basics-fall-2021-fall-2021/
   description: |
     The following slide deck walks you through the basics of learning about ArcGIS Pro's main tools, viewing and manipulating datasets and basemaps, and exporting a basic map view.
   technique:
