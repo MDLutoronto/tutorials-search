@@ -728,7 +728,7 @@
   type: Tutorial
 - id: 59
   title: Exporting Data from OpenStreetMap for QGIS
-  url: https://mdl.library.utoronto.ca/tutorials/exporting-map-data-osm-qgis
+  url: https://mdlutoronto.github.io/qgis-exporting-data-openstreetmap/
   description: |
     In the case you need to acquire detailed city data to produce a large-scale map and we don’t have what you’re looking for in our data inventory, there is a chance that the user-contributed maps of OpenStreetMap.org may do the trick. QGIS can query and load this data into your map for a specified area of interest. The data can then be exported into common geospatial file formats.
   tool:
