@@ -2294,7 +2294,7 @@
   type: Tutorial
 - id: 179
   title: Converting GIS data in FME Quick Translator
-  url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-fme-quick-translator
+  url: https://mdlutoronto.github.io/fme-quick-translator-converting-gis-data/
   description: |
     FME (File Manipulation Engine) is a powerful software package that allows users to quickly convert spatial and non-spatial datasets into other formats to facilitate sharing and interoperability. One of its components, FME Quick Translator, is an easy-to-use utility that provides a straightforward translation workflow via a simple graphical user interface. This guide demonstrates how to use FME Universal Translator to convert geospatial data from one format to another using an older file format (ArcInfo Coverage, .e00) as an example.
   technique:
