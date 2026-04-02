@@ -2097,7 +2097,7 @@
   type: Tutorial
 - id: 161
   title: Cleaning data in STATA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-stata
+  url: https://mdlutoronto.github.io/stata-cleaning-data/
   description: |
     Stata is a good tool for cleaning and manipulating data, regardless of the software you intend to use for analysis. This workshop is suitable for both first time data-cleaners and for those familiar with data cleaning.
   technique:
