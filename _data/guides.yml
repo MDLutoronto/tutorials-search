@@ -1622,7 +1622,7 @@
   type: Tutorial
 - id: 127
   title: ArcGIS Pro Workshop Outline
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-workshop-outline
+  url: https://mdlutoronto.github.io/arcgis-pro-workshop-outline/
   description: |
     This tutorial will use 7 modules to teach you the basics of ArcGIS Pro. These modules will cover topics such as adding, manipulating, analyzing, and mapping vector and raster data.
   technique:
