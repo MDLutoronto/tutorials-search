@@ -1426,7 +1426,7 @@
   type: Tutorial
 - id: 112
   title: ArcGIS Pro Module 2 - Authoring and Publishing a Map (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-2-authoring-and-publishing-map-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod2-authoring-publishing-map-fall-2021/
   description: |
     Learn to create a map project which will include a legend, scale bar, an inset map, a title and a north arrow.
   technique:
