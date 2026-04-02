@@ -1245,7 +1245,7 @@
   type: Tutorial
 - id: 98
   title: "Data Visualization and Tableau: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/data-visualization-and-tableau-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/tableau-data-viz-info-tutorials-workshops/
   description: |
     Data Visualization is a broad term that basically involves anything that uses graphical or pictorial representations of data for exploration, sense-making, and communication. Data visualization allows you and your audience to identify patterns, trends, exceptions, and relationships. It has broad applicability from conveying abstract concepts or ideas to highly complex scientific data. This page will highlight the resources we offer on data visualization and using Tableau. Tableau is a commercial program used to create data visualizations and interactive dashboards.
   technique:
@@ -1254,7 +1254,7 @@
     - Tableau
   date: "2022-05-04"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 99
   title: "OpenRefine: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-information-tutorials-and-workshops
