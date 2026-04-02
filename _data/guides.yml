@@ -73,7 +73,7 @@
   type: Tutorial
 - id: 7
   title: Accessing JSTOR Text Analysis Support
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-jstor-text-analysis-support
+  url: https://mdlutoronto.github.io/jstor-text-analysis-support-access/
   description: |
     This tutorial shows how to register for a JSTOR account and use the JSTOR Text Analysis tools, which replace the [now-ended Constellate platform](https://constellate.org/docs/constellate-sunset).
   technique:
