@@ -627,7 +627,7 @@
   type: Tutorial
 - id: 52
   title: Creating a point layer of locations in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-point-layer-locations-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-creating-point-layer-locations/
   description: |
     This is a beginner’s guide to creating a point layer in ArcGIS Pro using the latitude and longitude of the locations you wish to display. How to locate coordinates online will be discussed. The first part of this guide will walk you through creating an Excel file of coordinates found in decimal degrees that are set up and ready to be imported into ArcGIS. This guide will then walk you through bringing your data into ArcGIS and creating your point layer on top of a base layer of countries.
   tool:
