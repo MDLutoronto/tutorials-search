@@ -1588,7 +1588,7 @@
   type: Video
 - id: 125
   title: ArcGIS Storymaps
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps
+  url: https://mdlutoronto.github.io/arcgis-storymapss/
   description: |
     ESRI ArcGIS StoryMaps online workshop videos, January 2021
   technique:
