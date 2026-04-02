@@ -2028,7 +2028,7 @@
   type: Tutorial
 - id: 155
   title: Creating contours using Global Mapper
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-global-mapper
+  url: https://mdlutoronto.github.io/global-mapper-creating-contours/
   description: |
     The guide in this PDF will teach the user how to generate contours using DEM files in Global Mapper.
   tool:
