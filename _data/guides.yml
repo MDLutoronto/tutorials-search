@@ -614,7 +614,7 @@
   type: Tutorial
 - id: 51
   title: Adding Media Layers in ArcGIS Online
-  url: https://mdl.library.utoronto.ca/technology/tutorials/adding-media-layers-arcgis-online
+  url: https://mdlutoronto.github.io/arcgis-online-adding-media-layers/
   description: |
     This tutorial will cover how to 'georeference' a raster image through media layers in ArcGIS Online.
   technique:
