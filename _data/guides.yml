@@ -1966,7 +1966,7 @@
   type: Tutorial
 - id: 151
   title: Accessing CANSIM data through CHASS
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
+  url: https://mdlutoronto.github.io/chass-access-cansim-data/
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database to find and download data through CHASS.
 
