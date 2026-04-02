@@ -656,7 +656,7 @@
   type: Tutorial
 - id: 54
   title: Converting GIS data to AutoCAD in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-autocad-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-converting-gis-data-to-autocad/
   description: |
     This tutorial will demonstrate how to convert geospatial datasets saved as shapefiles into AutoCAD format.
   technique:
