@@ -73,7 +73,7 @@
   type: Tutorial
 - id: 7
   title: Accessing JSTOR Text Analysis Support
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-jstor-text-analysis-support
+  url: https://mdlutoronto.github.io/jstor-text-analysis-support-access/
   description: |
     This tutorial shows how to register for a JSTOR account and use the JSTOR Text Analysis tools, which replace the [now-ended Constellate platform](https://constellate.org/docs/constellate-sunset).
   technique:
@@ -118,7 +118,7 @@
   type: Tutorial
 - id: 11
   title: Accessing and Querying the Revelio Datasets
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-and-querying-revelio-datasets
+  url: https://mdlutoronto.github.io/revelio-datasets-accessing-querying/
   description: |
     The University of Toronto has licensed six separate datasets from [Revelio Labs](https://www.reveliolabs.com/data/). These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additional details about this process, as well as the data itself and how to query it.
   technique:
@@ -142,14 +142,14 @@
   type: Tutorial
 - id: 13
   title: "Bits and Bytes Series: Canadian Census Discovery Portal (Sept. 22, 2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-canadian-census-discovery-portal-sept-22-2020
+  url: https://mdlutoronto.github.io/bits-bytes-series-canadian-census-discovery-sep-22-2020/
   description: |
     This page provides a presentation on the **Canadian Census Discovery Portal** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Searching for maps and data
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 14
   title:
     "Bits and Bytes Series: Constellate - A New Platform to Learn Text Analysis
@@ -168,7 +168,7 @@
   title:
     "Bits and Bytes Series: Getting Started with Python in ArcGIS Pro (Nov. 17,
     2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-getting-started-python-arcgis-pro-nov-17-2020
+  url: https://mdlutoronto.github.io/bits-bytes-series-getting-started-python-nov-17-2020/
   description: |
     This page provides a presentation on **Getting Started with Python in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
@@ -180,7 +180,7 @@
     - Python
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 16
   title: "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.1, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
@@ -191,7 +191,7 @@
   type: Tutorial
 - id: 17
   title: "Bits and Bytes Series: Introduction to Web APIs (Apr. 1, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-web-apis-apr-1-2021
+  url: https://mdlutoronto.github.io/bits-bytes-series-intro-web-apis-apr-1-2021/
   description: |
     This page provides a presentation on an **Introduction to Web APIs** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
@@ -199,10 +199,10 @@
     - Searching for maps and data
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 18
   title: "Bits and Bytes Series: Using LiDAR Data in ArcGIS Pro (Feb. 25, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-using-lidar-data-arcgis-pro-feb-25-2021
+  url: https://mdlutoronto.github.io/bits-bytes-series-lidar-data-arcgis-feb-25-2021/
   description: |
     This page provides a presentation on **Using LiDAR Data in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
@@ -211,10 +211,10 @@
     - ArcGIS Pro
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 19
   title: "Bits and Bytes Series: Working with Web Archive Data (Sept. 29, 2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-working-web-archive-data-sept-29-2020
+  url: https://mdlutoronto.github.io/bits-bytes-series-working-web-archive-sep-29-2020/
   description: |
     This page provides a presentation on **Working with Web Archive Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
@@ -222,17 +222,17 @@
     - Extracting data
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 20
   title: "An Introduction to Programming for Absolute Beginners Using Python Pt. 2 (March, 2025)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-programming-absolute-beginners-using-python-pt-2-march-2025
+  url: https://mdlutoronto.github.io/python-programming-absolute-beginners-part2-mar-2025/
   description: |
     This page provides a video recording of an introductory workshop on Python, continuing from where the first part of the Python series left off.
   tool:
     - Python
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 21
   title: "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-programming-absolute-beginners-using-python-pt
@@ -533,7 +533,9 @@
   type: Tutorial
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-installing-and-licensing-arcgis-cityengine
+  url: https://mdlutoronto.github.io/arcgis-cityengine-install-license/
+  description: |
+    This tutorial goes over how to download, install, and license ArcGIS CityEngine with your UTORid.
   technique:
     - Mapping
     - Spatial Analysis
@@ -614,7 +616,7 @@
   type: Tutorial
 - id: 51
   title: Adding Media Layers in ArcGIS Online
-  url: https://mdl.library.utoronto.ca/technology/tutorials/adding-media-layers-arcgis-online
+  url: https://mdlutoronto.github.io/arcgis-online-adding-media-layers/
   description: |
     This tutorial will cover how to 'georeference' a raster image through media layers in ArcGIS Online.
   technique:
@@ -627,7 +629,7 @@
   type: Tutorial
 - id: 52
   title: Creating a point layer of locations in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-point-layer-locations-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-creating-point-layer-locations/
   description: |
     This is a beginner’s guide to creating a point layer in ArcGIS Pro using the latitude and longitude of the locations you wish to display. How to locate coordinates online will be discussed. The first part of this guide will walk you through creating an Excel file of coordinates found in decimal degrees that are set up and ready to be imported into ArcGIS. This guide will then walk you through bringing your data into ArcGIS and creating your point layer on top of a base layer of countries.
   tool:
@@ -656,7 +658,7 @@
   type: Tutorial
 - id: 54
   title: Converting GIS data to AutoCAD in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-autocad-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-converting-gis-data-to-autocad/
   description: |
     This tutorial will demonstrate how to convert geospatial datasets saved as shapefiles into AutoCAD format.
   technique:
@@ -683,7 +685,7 @@
   type: Tutorial
 - id: 56
   title: Creating contours using ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-creating-contours/
   description: |
     Digital elevation models (DEMs) are geospatial datasets that contain elevation values sampled according to a regularly spaced rectangular grid. They can be used in terrain analysis, SD visualizations and hydrological modelling, among other applications. DEMs can be stored in several different formats; however, conversion into a raster dataset is often required for many processes. This tutorial explains how to derive contours from DEMs using ArcGIS Pro.
   tool:
@@ -696,7 +698,7 @@
   type: Tutorial
 - id: 57
   title: Clipping Rasters in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/clipping-rasters-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-clipping-rasters/
   description: |
     This tutorial covers two methods for clipping raster datasets from ArcGIS Pro.
   technique:
@@ -932,7 +934,7 @@
   type: Tutorial
 - id: 74
   title: Digital Scholar Lab - Collaboration and Notes
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-collaboration-and-notes
+  url: https://mdlutoronto.github.io/dsl-collaboration-notes/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1100,7 +1102,7 @@
   type: Tutorial
 - id: 87
   title: "ArcGIS Pro: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/arcgis-pro-info-tutorials-workshops/
   description: |
     [ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) is a desktop GIS software developed by Esri.
   technique:
@@ -1115,7 +1117,7 @@
   type: Tutorial
 - id: 88
   title: "ArcGIS Online: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/arcgis-online-info-tutorials-workshops/
   description: |
     [ArcGIS Online](https://www.arcgis.com/index.html) is a web-based mapping software that allows you to build, share, and access interactive web maps.
   technique:
@@ -1128,7 +1130,7 @@
   type: Tutorial
 - id: 89
   title: "ArcGIS StoryMaps: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/arcgis-storymapss-info-tutorials-workshops/
   description: |
     [ArcGIS StoryMaps](https://storymaps.arcgis.com/) is an online storytelling tool that allows users to craft and publish powerful narratives using maps.
   technique:
@@ -1245,7 +1247,7 @@
   type: Tutorial
 - id: 98
   title: "Data Visualization and Tableau: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/data-visualization-and-tableau-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/tableau-data-viz-info-tutorials-workshops/
   description: |
     Data Visualization is a broad term that basically involves anything that uses graphical or pictorial representations of data for exploration, sense-making, and communication. Data visualization allows you and your audience to identify patterns, trends, exceptions, and relationships. It has broad applicability from conveying abstract concepts or ideas to highly complex scientific data. This page will highlight the resources we offer on data visualization and using Tableau. Tableau is a commercial program used to create data visualizations and interactive dashboards.
   technique:
@@ -1254,7 +1256,7 @@
     - Tableau
   date: "2022-05-04"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 99
   title: "OpenRefine: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-information-tutorials-and-workshops
@@ -1269,7 +1271,7 @@
   type: Tutorial
 - id: 100
   title: Digital Scholar Lab - Additional Training
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-additional-training
+  url: https://mdlutoronto.github.io/dsl-additional-training/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1281,7 +1283,7 @@
   type: Tutorial
 - id: 101
   title: Digital Scholar Lab - Analysis
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-analysis
+  url: https://mdlutoronto.github.io/dsl-analysis/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1298,7 +1300,7 @@
   type: Tutorial
 - id: 102
   title: Digital Scholar Lab - Cleaning
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-cleaning
+  url: https://mdlutoronto.github.io/dsl-cleaning/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1314,7 +1316,7 @@
   type: Tutorial
 - id: 103
   title: Digital Scholar Lab - Collections
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-collections
+  url: https://mdlutoronto.github.io/dsl-collections/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1331,7 +1333,7 @@
   type: Tutorial
 - id: 104
   title: Digital Scholar Lab - Export
-  url: https://mdl.library.utoronto.ca/technology/tutorials/digital-scholar-lab-export
+  url: https://mdlutoronto.github.io/dsl-export/
   description: |
     [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
@@ -1385,7 +1387,7 @@
   type: Tutorial
 - id: 109
   title: ArcGIS Online Part I (October 2022) - https://uoft.me/AGOL
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-i-october-2022-httpsuoftmeagol
+  url: https://mdlutoronto.github.io/arcgis-online-part1-2022/
   description: |
     The following slide deck is Part 1 of an introduction to ArcGIS Online. https://uoft.me/AGOL
   technique:
@@ -1399,7 +1401,7 @@
   type: Tutorial
 - id: 110
   title: ArcGIS Online Part II  (November 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-part-ii-november-2021
+  url: https://mdlutoronto.github.io/arcgis-online-part2-2021/
   description: |
     The following slide deck will guide you through Part 2 of the ArcGIS Online workshop. Part 2 covers topics such as choropleth mapping, spatial analytic tools, and linking ArcGIS Pro to ArcGIS Online.
   technique:
@@ -1413,7 +1415,7 @@
   type: Tutorial
 - id: 111
   title: ArcGIS Pro Module 1 - The Basics (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-1-basics-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod1-basics-fall-2021-fall-2021/
   description: |
     The following slide deck walks you through the basics of learning about ArcGIS Pro's main tools, viewing and manipulating datasets and basemaps, and exporting a basic map view.
   technique:
@@ -1426,7 +1428,7 @@
   type: Tutorial
 - id: 112
   title: ArcGIS Pro Module 2 - Authoring and Publishing a Map (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-2-authoring-and-publishing-map-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod2-authoring-publishing-map-fall-2021/
   description: |
     Learn to create a map project which will include a legend, scale bar, an inset map, a title and a north arrow.
   technique:
@@ -1439,7 +1441,7 @@
   type: Tutorial
 - id: 113
   title: ArcGIS Pro Module 3 - Loading and Manipulating Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-3-loading-and-manipulating-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod3-loading-manipulating-data-fall-2021/
   description: |
     The following slide deck will walk you through Module 3 of the ArcGIS Pro tutorial. This module will teach you how to add and format vector and raster data layers to your project, as well as how to geocode data.
   technique:
@@ -1452,7 +1454,7 @@
   type: Tutorial
 - id: 114
   title: ArcGIS Pro Module 4 - Data Analysis (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-4-data-analysis-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod4-data-analysis-fall-fall-2021/
   description: |
     The following slide deck is for Module 4 of the ArcGIS Pro tutorial. This module helps the user apply knowledge and skills learned in previous 3 modules in solving a real life spatial problem.
   technique:
@@ -1465,7 +1467,7 @@
   type: Tutorial
 - id: 115
   title: ArcGIS Pro Module 5 - Working with Raster Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-5-working-raster-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod5-working-raster-data-fall-2021/
   description: |
     The following slide deck is for Module 5 of the ArcGIS Pro workshop. This module will teach you how to manipulate and analyze raster data in ArcGIS Pro.
   technique:
@@ -1478,7 +1480,7 @@
   type: Tutorial
 - id: 116
   title: ArcGIS Pro Module 6 - Wrangling and Mapping Covid-19 Data (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-module-6-wrangling-and-mapping-covid-19-data-fall-2021
+  url: https://mdlutoronto.github.io/arcgis-pro-mod6-wrangling-mapping-covid19-fall-2021/
   description: |
     The following slide deck is for Module 6 of the ArcGIS Pro tutorial. This module will teach you how to do basic data cleaning and converting to prepare data to be used in ArcGIS Pro. This module will also present a real life problem of doing spatial analysis using public health data.
   technique:
@@ -1575,7 +1577,7 @@
   type: Tutorial
 - id: 124
   title: ArcGIS Online - Workshop videos
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-workshop-videos
+  url: https://mdlutoronto.github.io/arcgis-online-workshop-videos/
   description: |
     Created by Marcel Fortin, GIS and Map Librarian, in January 2021, this 4-part video tutorial will teach you how to format, edit, and map spatial data using ArcGIS Online.
   technique:
@@ -1585,10 +1587,10 @@
     - ArcGIS Online
   date: "2021-03-05"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 125
   title: ArcGIS Storymaps
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps
+  url: https://mdlutoronto.github.io/arcgis-storymapss/
   description: |
     ESRI ArcGIS StoryMaps online workshop videos, January 2021
   technique:
@@ -1606,7 +1608,7 @@
   type: Tutorial
 - id: 126
   title: Downloading Data from GeoGratis
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-data-geogratis
+  url: https://mdlutoronto.github.io/geogratis-downloading-data/
   description: |
     *National Resources Canada* *(NRCAN)* produced a portal called GeoGratis for allowing access to, and downloads of, their high-quality, free, and publicly available maps and geospatial data. This tutorial guides you in navigating their Product Index to find data on a specific location, and it is easily adaptable for other locations or desired data products.
   technique:
@@ -1622,7 +1624,7 @@
   type: Tutorial
 - id: 127
   title: ArcGIS Pro Workshop Outline
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-pro-workshop-outline
+  url: https://mdlutoronto.github.io/arcgis-pro-workshop-outline/
   description: |
     This tutorial will use 7 modules to teach you the basics of ArcGIS Pro. These modules will cover topics such as adding, manipulating, analyzing, and mapping vector and raster data.
   technique:
@@ -1670,7 +1672,7 @@
   type: Tutorial
 - id: 131
   title: COVID-19 data in R
-  url: https://mdl.library.utoronto.ca/technology/tutorials/covid-19-data-r
+  url: https://mdlutoronto.github.io/r-covid19-data/
   tool:
     - R
   dataFormat: Statistics
@@ -1722,7 +1724,7 @@
   type: Tutorial
 - id: 134
   title: Creating a Tableau Dashboard using COVID-19 data (Intermediate)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate
+  url: https://mdlutoronto.github.io/tableau-creating-dashboard-covid19-data-intermediate/
   description: |
     This tutorial provides an opportunity to learn data visualization skills using a common data visualization tool, Tableau Desktop. People often say that they learn better when using data that resonates with them, so we are using COVID-19 data in this tutorial, as this topic is touching many people’s lives right now.
   technique:
@@ -1868,7 +1870,7 @@
   type: Tutorial
 - id: 144
   title: Creating Data Visualizations Using Tableau Desktop (Beginner)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-data-visualizations-using-tableau-desktop-beginner
+  url: https://mdlutoronto.github.io/tableau-creating-data-viz-beginner/
   description: |
     This guide is suitable for new Tableau users looking for information on producing popular data visualizations in Tableau, such as bar graphs, line graphs, scatterplots, tree maps, and dashboards. If you are looking for more general data visualization tips, please see the Map and Data Library's Data [Visualization Guide](https://mdl.library.utoronto.ca/dataviz/getting-started). You can find instructions on installing and acquiring a free academic license for Tableau [here](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you are running Tableau on a Mac, please note that there may be some variation between the Windows version used to design this guide and the program as it appears on a Mac.
 
@@ -1966,7 +1968,7 @@
   type: Tutorial
 - id: 151
   title: Accessing CANSIM data through CHASS
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-through-chass
+  url: https://mdlutoronto.github.io/chass-access-cansim-data/
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database to find and download data through CHASS.
 
@@ -2028,7 +2030,7 @@
   type: Tutorial
 - id: 155
   title: Creating contours using Global Mapper
-  url: https://mdl.library.utoronto.ca/technology/tutorials/creating-contours-using-global-mapper
+  url: https://mdlutoronto.github.io/global-mapper-creating-contours/
   description: |
     The guide in this PDF will teach the user how to generate contours using DEM files in Global Mapper.
   tool:
@@ -2081,7 +2083,7 @@
   type: Tutorial
 - id: 160
   title: Accessing Statistics Canada’s Socioeconomic Time Series Data (formerly CANSIM)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/accessing-statistics-canadas-socioeconomic-time-series-data-formerly-cansim
+  url: https://mdlutoronto.github.io/statcan-socioeconomic-time-series-access/
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database find and download data.
 
@@ -2097,7 +2099,7 @@
   type: Tutorial
 - id: 161
   title: Cleaning data in STATA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-stata
+  url: https://mdlutoronto.github.io/stata-cleaning-data/
   description: |
     Stata is a good tool for cleaning and manipulating data, regardless of the software you intend to use for analysis. This workshop is suitable for both first time data-cleaners and for those familiar with data cleaning.
   technique:
@@ -2109,7 +2111,7 @@
   type: Tutorial
 - id: 162
   title: Downloading SDA data from CHASS into STATA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-sda-data-chass-stata
+  url: https://mdlutoronto.github.io/chass-downloading-sda-data-to-stata/
   description: |
     This tutorial demonstrates how to load SDA data for use in Stata.
   technique:
@@ -2252,7 +2254,7 @@
   type: Tutorial
 - id: 176
   title: Cleaning Data in Python
-  url: https://mdl.library.utoronto.ca/technology/tutorials/cleaning-data-python
+  url: https://mdlutoronto.github.io/python-cleaning-data/
   description: |
     This guide shows the user how to use Spyder to load and clean data for further analysis.
   technique:
@@ -2279,7 +2281,7 @@
   type: Tutorial
 - id: 178
   title: Downloading census boundary files using Scholars GeoPortal
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-census-boundary-files-using-scholars-geoportal
+  url: https://mdlutoronto.github.io/scholars-geoportal-downloading-census-boundary-files/
   description: |-
     This exercise will showcase how to use Scholars GeoPortal to extract Census Tract (CT) census geography for the Census Metropolitan Area (CMA) of Montreal using two methods:
 
@@ -2294,7 +2296,7 @@
   type: Tutorial
 - id: 179
   title: Converting GIS data in FME Quick Translator
-  url: https://mdl.library.utoronto.ca/technology/tutorials/converting-gis-data-fme-quick-translator
+  url: https://mdlutoronto.github.io/fme-quick-translator-converting-gis-data/
   description: |
     FME (File Manipulation Engine) is a powerful software package that allows users to quickly convert spatial and non-spatial datasets into other formats to facilitate sharing and interoperability. One of its components, FME Quick Translator, is an easy-to-use utility that provides a straightforward translation workflow via a simple graphical user interface. This guide demonstrates how to use FME Universal Translator to convert geospatial data from one format to another using an older file format (ArcInfo Coverage, .e00) as an example.
   technique:
