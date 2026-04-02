@@ -533,7 +533,9 @@
   type: Tutorial
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-installing-and-licensing-arcgis-cityengine
+  url: https://mdlutoronto.github.io/arcgis-cityengine-install-license/
+  description: |
+    This tutorial goes over how to download, install, and license ArcGIS CityEngine with your UTORid.
   technique:
     - Mapping
     - Spatial Analysis
@@ -2109,7 +2111,7 @@
   type: Tutorial
 - id: 162
   title: Downloading SDA data from CHASS into STATA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/downloading-sda-data-chass-stata
+  url: https://mdlutoronto.github.io/chass-downloading-sda-data-to-stata/
   description: |
     This tutorial demonstrates how to load SDA data for use in Stata.
   technique:
