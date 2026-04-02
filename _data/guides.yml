@@ -142,14 +142,14 @@
   type: Tutorial
 - id: 13
   title: "Bits and Bytes Series: Canadian Census Discovery Portal (Sept. 22, 2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-canadian-census-discovery-portal-sept-22-2020
+  url: https://mdlutoronto.github.io/bits-bytes-series-canadian-census-discovery-sep-22-2020/
   description: |
     This page provides a presentation on the **Canadian Census Discovery Portal** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
   technique:
     - Searching for maps and data
   date: "2025-02-13"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 14
   title:
     "Bits and Bytes Series: Constellate - A New Platform to Learn Text Analysis
