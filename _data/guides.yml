@@ -1575,7 +1575,7 @@
   type: Tutorial
 - id: 124
   title: ArcGIS Online - Workshop videos
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-online-workshop-videos
+  url: https://mdlutoronto.github.io/arcgis-online-workshop-videos/
   description: |
     Created by Marcel Fortin, GIS and Map Librarian, in January 2021, this 4-part video tutorial will teach you how to format, edit, and map spatial data using ArcGIS Online.
   technique:
@@ -1585,7 +1585,7 @@
     - ArcGIS Online
   date: "2021-03-05"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 125
   title: ArcGIS Storymaps
   url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps
