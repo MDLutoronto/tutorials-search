@@ -1367,7 +1367,7 @@
   type: Tutorial
 - id: 107
   title: Getting Started with the Web of Science PostgreSQL Database
-  url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-web-science-postgresql-database
+  url: https://mdlutoronto.github.io/wos-postgresql-database-getting-started/
   description: |
     This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query.
 
