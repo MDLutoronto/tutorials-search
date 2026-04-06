@@ -1347,7 +1347,7 @@
   type: Tutorial
 - id: 105
   title: Generating SSH Key Pairs on a Mac
-  url: https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac
+  url: https://mdlutoronto.github.io/ssh-key-pairs-mac-generating/
   description: |
     These instructions will help you create SSH key pairs on a Mac computer, for access to the [Web of Science PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/web-science-postgresql-database).
   date: "2022-02-07"
