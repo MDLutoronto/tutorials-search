@@ -994,7 +994,7 @@
   type: Tutorial
 - id: 79
   title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
-  url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-cipo-postgresql-database-WINDOWS
+  url: https://mdlutoronto.github.io/cipo-windows/
   description: |
     This tutorial will help you get up and running querying the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query.
 
