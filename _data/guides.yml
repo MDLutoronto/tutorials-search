@@ -588,7 +588,7 @@
   type: Tutorial
 - id: 49
   title: Guide for Site Research
-  url: https://mdl.library.utoronto.ca/technology/tutorials/guide-site-research
+  url: https://mdlutoronto.github.io/site-research-guide/
   description: |
     Site research involves the comprehensive analysis of a location's physical, cultural, and environmental characteristics. This process encompasses assessing topography, climate, zoning regulations, and existing infrastructure, as well as understanding the historical and social context of the site. Other terms often used interchangeably with site research include site analysis, site assessment, and contextual analysis.
   technique:
@@ -599,7 +599,7 @@
     - Vector
   date: "2024-08-12"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 50
   title: Introduction to R Shiny
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-shiny
