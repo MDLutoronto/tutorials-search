@@ -1157,7 +1157,7 @@
   type: Tutorial
 - id: 91
   title: "Infographics: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/infographics-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/infographics-info-tutorials-workshops/
   description: |
     Infographics are a type of data visualization. They are usually a mixture of text and images, but they are graphic heavy, often only visualize a small amount of data, and have specific goals. Those goals are normally to inform or persuade through storytelling. They are often shared on websites and social media for marketing purposes, but they are becoming more popular in a variety of situations to convey your data and message to your audience in a more unique and appealing way.
   technique:
@@ -1166,7 +1166,7 @@
     - Piktochart
   date: "2022-05-09"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 92
   title: "ProQuest TDM Studio: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/proquest-tdm-studio-information-tutorials-and-workshops
