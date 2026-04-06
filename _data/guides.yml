@@ -25,7 +25,7 @@
   type: Tutorial
 - id: 3
   title: Getting MAXQDA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/getting-maxqda
+  url: https://mdlutoronto.github.io/maxqda-getting/
   description: |
     MAXQDA is qualitative data analysis software. You are able to access it in the 4th floor computer lab of Robarts Library or purchase your own personal copy.
   technique:
@@ -34,7 +34,7 @@
     - MAXQDA
   date: "2025-08-08"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 4
   title: Introduction to Using MAXQDA for Qualitative Data Analysis
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-using-maxqda-qualitative-data-analysis
