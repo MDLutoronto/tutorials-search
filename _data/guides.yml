@@ -797,7 +797,7 @@
   type: Tutorial
 - id: 65
   title: How to georeference images in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-georeference-images-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-georeference-images/
   description: |
     This tutorial will explain how to georeference a raster image in ArcGIS so it can be used as an overlay or for digitizing purposes.
   technique:
