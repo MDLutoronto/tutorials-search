@@ -98,7 +98,7 @@
   type: Tutorial
 - id: 9
   title: Geospatial Analysis with Python & Jupyter Notebooks
-  url: https://mdl.library.utoronto.ca/technology/tutorials/geospatial-analysis-python-jupyter-notebooks
+  url: https://mdlutoronto.github.io/python-jupyter-notebooks-geospatial-analysis/
   description: |
     This tutorial provides detailed walk-throughs of how to use Jupyter Notebooks and open-source Python libraries to perform geospatial analysis.
   technique:
@@ -1192,7 +1192,7 @@
     - Digital Scholar Lab
   date: "2022-05-06"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 94
   title: "Gephi: Information, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/gephi-information-tutorials-and-workshops
