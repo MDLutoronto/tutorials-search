@@ -1960,7 +1960,7 @@
   title: Helpful tips when using Scholars GeoPortal
   url: https://mdlutoronto.github.io/scholars-geoportal-tips/
   description: |
-    Please [visit this link](http://guides.scholarsportal.info.myaccess.library.utoronto.ca/geoportal/usinggeoportal) for extensive help with Scholars GeoPortal.
+    Please [visit this link](http://guides.scholarsportal.info/geoportal/usinggeoportal) for extensive help with Scholars GeoPortal.
   tool:
     - Scholars GeoPortal
   date: "2018-02-07"
@@ -2123,9 +2123,9 @@
   type: Tutorial
 - id: 163
   title: How to use SDA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-use-sda
+  url: https://mdlutoronto.github.io/sda-use/
   description: |
-    Link to CHASS list of how-to guides for SDA: [How-to guides for SDA](http://sda.chass.utoronto.ca/legacy_sda/sda.htm#how_to)
+    Link to CHASS list of how-to guides for SDA: [How-to guides for SDA](https://sda.artsci.utoronto.ca/index.html/sda.htm#how_to)
   technique:
     - Searching for maps and data
   date: "2017-05-05"
