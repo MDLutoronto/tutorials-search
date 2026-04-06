@@ -1181,7 +1181,7 @@
   type: Tutorial
 - id: 93
   title: "Gale Digital Scholar Lab: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/gale-digital-scholar-lab-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/dsl-info-tutorials-workshops/
   description: |
     The [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab) is a platform that allows users to discover and create collections of digitized texts from the Gale Historical Collections, run a variety of textual analysis on them, and visualize the resulting data.
   technique:
@@ -2330,7 +2330,7 @@
   title: Citing geospatial data resources
   url: https://mdlutoronto.github.io/geospatial-data-resources-citing/
   description: |
-    This guide, compiled by Alberta Auringer Wood of the Association of Canadian Map Libraries and Archives, provides recommended citation formats for a wide variety of geospatial data sources. (http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
+    [This guide, compiled by Alberta Auringer Wood of the Association of Canadian Map Libraries and Archives, provides recommended citation formats for a wide variety of geospatial data sources.](http://www.acmla-acacc.ca/docs/ACMLA_BestPracticesCitations.pdf)
 
     Additionally, if using Esri products (e.g. ArcGIS Online) or Esri data, please consult this [guide on How to Cite ArcGIS Maps and Data.](https://resources.esri.ca/education-and-research/how-to-cite-arcgis-maps-and-data)
   technique:
