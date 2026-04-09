@@ -830,13 +830,15 @@
     - R
     - SAS
     - SPSS
+    - Stata
+    - Python
   dataFormat: Microdata
   date: "2023-06-06"
   series: MDL Tutorials
   type: Tutorial
 - id: 68
   title: PCCF+ Guide
-  url: https://mdl.library.utoronto.ca/technology/tutorials/pccf-plus-guide
+  url: https://mdlutoronto.github.io/pccf-plus-guide/
   description: |
     In this tutorial, we will use the Postal Code Conversion File Plus (PCCF+) to match postal codes to dissemination areas in order to incorporate additional neighbourhood-level demographic data into your dataset.
   technique:
@@ -845,6 +847,8 @@
     - R
     - SAS
     - SPSS
+    - Stata
+    - Python
   dataFormat: Microdata
   date: "2023-06-06"
   series: MDL Tutorials
