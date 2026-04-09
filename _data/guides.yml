@@ -396,14 +396,14 @@
   type: Tutorial
 - id: 34
   title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-1-theory-and
+  url: https://mdlutoronto.github.io/self-paced-data-viz-part-1/
   description: |
     This page provides access to a Data Visualization self-paced online Quercus course that focuses on data viz theory and provides opportunities to practice critiquing visualizations.
   technique:
     - Data Visualization
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 35
   title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 – Practice with Tableau)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-2-practice
