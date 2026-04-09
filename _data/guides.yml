@@ -2156,7 +2156,7 @@
   type: Tutorial
 - id: 166
   title: Introduction to STATA (Princeton)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-stata-princeton
+  url: https://mdlutoronto.github.io/stata-intro-princeton/
   description: |
     An overview of the guide provided by Princeton with a link to the original guide. If you want to learn how to use Stata, you might find this guide by German Rodriguez at Princeton University useful: http://data.princeton.edu/stata/default.html
   tool:
