@@ -1264,7 +1264,7 @@
   type: Guide
 - id: 99
   title: "OpenRefine: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/
   description: |
     [OpenRefine](https://openrefine.org/) is a free, open-source program used for working with messy data. It allows you to clean, transform, and augment data in preparation for analysis and visualization.
   technique:
@@ -1273,7 +1273,7 @@
     - OpenRefine
   date: "2022-05-04"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 100
   title: Digital Scholar Lab - Additional Training
   url: https://mdlutoronto.github.io/dsl-additional-training/
