@@ -1951,7 +1951,7 @@
   type: Tutorial
 - id: 149
   title: Logging in to ArcGIS Online
-  url: https://mdl.library.utoronto.ca/technology/tutorials/logging-arcgis-online
+  url: https://mdlutoronto.github.io/arcgis-online-log-in/
   description: |
     This tutorial will take you through two ways of logging in to your ESRI ArcGIS Online account for the first time using your UTORid.
   tool:
