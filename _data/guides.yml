@@ -128,7 +128,7 @@
   type: Tutorial
 - id: 12
   title: Introduction to Working with Notebooks in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-working-notebooks-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-intro-working-notebooks/
   description: |
     This guide provides some introductory information on how to use notebooks in the ArcGIS Pro environment. You will learn about what notebooks are, how to use them, and some useful tips on using ArcPy to analyze your geospatial data.
   technique:
