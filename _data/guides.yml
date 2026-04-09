@@ -1668,7 +1668,7 @@
   type: Tutorial
 - id: 130
   title: RTRA SAS Program Guide
-  url: https://mdl.library.utoronto.ca/technology/tutorials/rtra-sas-program-guide
+  url: https://mdlutoronto.github.io/rtra-sas-program-guide/
   description: |
     This guide helps users get started with writing a SAS program/code for RTRA purposes.
   technique:
