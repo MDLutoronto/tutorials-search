@@ -761,7 +761,7 @@
   type: Tutorial
 - id: 62
   title: Installing and Licensing NVivo 14
-  url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-14
+  url: https://mdlutoronto.github.io/nvivo-14-install-license/
   description: |
     This tutorial describes how to request a license for NVivo 14, download it, and license it.
   technique:
