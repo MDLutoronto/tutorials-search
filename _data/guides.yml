@@ -49,16 +49,17 @@
   type: Tutorial
 - id: 5
   title: Moving from NVivo to MAXQDA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/moving-nvivo-maxqda
+  url: https://mdlutoronto.github.io/nvivo-to-maxqda/
   description: |
     To move between qualitative data analysis tools, you must put your project file into [REFI-QDA standard](https://www.qdasoftware.org/).
   technique:
     - Qualitative Data Analysis
   tool:
     - MAXQDA
+    - NVivo
   date: "2025-08-08"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 6
   title: "MAXQDA: Information, Resources, Tutorials, and Workshops"
   url: https://mdl.library.utoronto.ca/technology/tutorials/maxqda-information-resources-tutorials-and-workshops
