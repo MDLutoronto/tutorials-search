@@ -2072,7 +2072,7 @@
   type: Tutorial
 - id: 159
   title: Online resources to build topography 3D models
-  url: https://mdl.library.utoronto.ca/technology/tutorials/online-resources-build-topography-3d-models
+  url: https://mdlutoronto.github.io/online-resources-build-topography-3d-models/
   description: |
     This document compiles online resources that help to build terrain 3D models with a variety of software-options.
 
