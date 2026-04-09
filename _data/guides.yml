@@ -568,7 +568,7 @@
 
     Find information on how to request a license, download and install the software, as well as how to activate the license key for new and existing users. *Note: If you need NVivo 14, please reach out to us using our [contact form](https://mdl.library.utoronto.ca/about/contact-form)*
   technique:
-    - Qualitative Data Analysis
+    - Installation
   tool:
     - NVivo
   date: "2024-09-06"
@@ -885,7 +885,7 @@
     - R
   date: "2023-02-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 72
   title: "Excel: Beyond The Basics - Mac"
   url: https://mdlutoronto.github.io/excel-beyond-basics-mac/
@@ -1043,14 +1043,18 @@
   type: Tutorial
 - id: 82
   title: Introduction to R Course
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-course
+  url: https://mdlutoronto.github.io/r-course-intro/
   description: |
     For a gentle and thorough introduction to R, enroll in this [Introduction to R](https://q.utoronto.ca/courses/176769/assignments/syllabus) quercus course [here](https://q.utoronto.ca/enroll/ET679B). To enroll, you will need to use your UTORid login. This course consists of demonstration video, activity and quizzes. By enrolling in this course, you can keep track of your progress! If you are a member of the public and you do not have a UTORid login, you can access the videos in the following guide below.
+  technique:
+    - Data Visualization
+    - Cleaning data
+    - Extracting data
   tool:
     - R
   date: "2022-09-16"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 83
   title: Introduction to NVivo 12 for Mac
   url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-mac
