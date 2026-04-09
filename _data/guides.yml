@@ -547,7 +547,7 @@
   type: Tutorial
 - id: 46
   title: Introduction to GIS using R
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-gis-using-r
+  url: https://mdlutoronto.github.io/r-gis-intro/
   description: |
     This tutorial is a beginner friendly introduction to work with GIS data using R. The topics covered are creating and importing GIS data including point, line, and polygon features; making maps; and running common spatial analyses. The main spatial package used is the sf package.
   technique:
