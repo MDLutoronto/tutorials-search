@@ -418,7 +418,7 @@
   type: Self-paced course
 - id: 36
   title: "Self-Paced Online Course: Introduction to Infographics"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-introduction-infographics
+  url: https://mdlutoronto.github.io/self-paced-intro-infographics/
   description: |
     This page provides access to an Infographics self-paced online Quercus
     course that focuses on best practices for creating infographics.
@@ -428,7 +428,7 @@
     - Piktochart
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 37
   title: "Self-Paced Online Course: R - An Introduction"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-introduction
