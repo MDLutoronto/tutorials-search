@@ -1912,7 +1912,7 @@
   type: Tutorial
 - id: 146
   title: OpenRefine Installation Instructions
-  url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions
+  url: https://mdlutoronto.github.io/openrefine-install-guide/
   description: |
     This is a guide to installing and running OpenRefine on your personal computer. Please note that all computers in the Map and Data Library (on the fifth floor of Robarts) and in the computer labs on the fourth and fifth floors of Robarts Library already have OpenRefine installed.
   technique:
