@@ -1892,7 +1892,7 @@
   type: Tutorial
 - id: 145
   title: OpenRefine Tutorial 2. Citizen Science Activity
-  url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity
+  url: https://mdlutoronto.github.io/openrefine-tutorial-2-citizen-science-activity/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
 
@@ -1902,7 +1902,7 @@
 
     Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
 
-    ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1).*
+    ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/).*
   technique:
     - Cleaning data
   tool:
