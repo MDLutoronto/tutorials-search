@@ -641,7 +641,7 @@
   type: Tutorial
 - id: 53
   title: Mapping Census Data in ArcGIS Pro
-  url: https://mdl.library.utoronto.ca/technology/tutorials/mapping-census-data-arcgis-pro
+  url: https://mdlutoronto.github.io/arcgis-pro-mapping-census-data/
   description: |
     This tutorial will cover how to download census data and census boundary files and match them together in ArcGIS Pro for further analysis. Census data will be downloaded using CHASS.
   technique:
