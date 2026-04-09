@@ -459,7 +459,7 @@
   type: Self-paced course
 - id: 39
   title: "Self-Paced Online Course: Working with Messy Data in OpenRefine"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-working-messy-data-openrefine
+  url: https://mdlutoronto.github.io/self-paced-openrefine-messy-data/
   description: |
     This page provides access to a self-paced online Quercus course that focuses on data cleaning using OpenRefine.
   technique:
@@ -468,7 +468,7 @@
     - OpenRefine
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 40
   title: "Workshop Recording: An Introductory Tour of ArcGIS Pro (Oct. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introductory-tour-arcgis-pro-oct-1-2024
