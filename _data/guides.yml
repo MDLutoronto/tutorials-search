@@ -602,7 +602,7 @@
   type: Guide
 - id: 50
   title: Introduction to R Shiny
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-shiny
+  url: https://mdlutoronto.github.io/r-shiny-intro/
   description: |
     Shiny is a powerful open-source tool that is used to build easy interactive web applications. This guide will help users get started in creating R Shiny applications.
   technique:
