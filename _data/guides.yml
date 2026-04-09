@@ -2016,7 +2016,7 @@
   type: Tutorial
 - id: 154
   title: Introduction to SimplyAnalytics
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-simplyanalytics
+  url: https://mdlutoronto.github.io/simplyanalytics-intro/
   description: |
     This online tutorial will provide an introduction to SimplyAnalytics and a few of its many possible uses. SimplyAnalytics is a web-based data visualization application.
 
