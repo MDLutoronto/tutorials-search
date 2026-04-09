@@ -2320,7 +2320,7 @@
   type: Tutorial
 - id: 180
   title: Selecting the right projection
-  url: https://mdl.library.utoronto.ca/technology/tutorials/selecting-right-projection
+  url: https://mdlutoronto.github.io/selecting-right-projection/
   description: |
     Unsure of which projection to use in your GIS work? This tutorial will help you figure out your options.
   technique:
