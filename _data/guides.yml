@@ -445,7 +445,7 @@
   type: Self-paced course
 - id: 38
   title: "Self-Paced Online Course: R - Intermediate"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-intermediate
+  url: https://mdlutoronto.github.io/self-paced-intermediate-r/
   description: |
     This page provides access to a self-paced online Quercus course that focuses on using R for intermediate level data manipulation and visualization, and programming flow control.
   technique:
@@ -456,7 +456,7 @@
     - R
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 39
   title: "Self-Paced Online Course: Working with Messy Data in OpenRefine"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-working-messy-data-openrefine
