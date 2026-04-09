@@ -821,7 +821,7 @@
   type: Tutorial
 - id: 67
   title: PCCF Guide
-  url: https://mdl.library.utoronto.ca/technology/tutorials/pccf-guide
+  url: https://mdlutoronto.github.io/pccf-guide/
   description: |
     In this tutorial, we will use the Postal Code Conversion File (PCCF) to match postal codes to dissemination areas in order to incorporate additional neighbourhood-level demographic data into your dataset.
   technique:
