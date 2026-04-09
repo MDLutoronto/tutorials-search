@@ -1760,7 +1760,7 @@
   type: Tutorial
 - id: 137
   title: Introduction to Infographic Design and Using Piktochart
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-infographic-design-and-using-piktochart
+  url: https://mdlutoronto.github.io/piktochart-infographic-design-intro/
   description: |
     This tutorial is an introduction to Piktochart, a popular online tool used to create infographics. This exercise will illustrate some infographic design principles and specific features of Piktochart to create an infographic about comparing housing in Vancouver vs Toronto. To complement this tutorial, you may want to explore the [online self-paced course on Infographic Design](https://q.utoronto.ca/enroll/JXN4XL).
   technique:
