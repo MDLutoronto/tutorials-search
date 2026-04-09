@@ -406,7 +406,7 @@
   type: Self-paced course
 - id: 35
   title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 2 – Practice with Tableau)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-data-visualization-introduction-part-2-practice
+  url: https://mdlutoronto.github.io/self-paced-data-viz-part-2/
   description: |
     This page provides access to a Data Visualization self-paced online Quercus course that introduces participants to Tableau Desktop. Participants will learn to create visualizations using some example datasets.
   technique:
@@ -415,7 +415,7 @@
     - Tableau
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 36
   title: "Self-Paced Online Course: Introduction to Infographics"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-introduction-infographics
