@@ -1123,7 +1123,7 @@
     - ArcGIS Pro
   date: "2022-07-21"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 88
   title: "ArcGIS Online: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/arcgis-online-info-tutorials-workshops/
@@ -1136,7 +1136,7 @@
     - ArcGIS Online
   date: "2022-06-20"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 89
   title: "ArcGIS StoryMaps: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/arcgis-storymapss-info-tutorials-workshops/
@@ -2202,8 +2202,8 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 170
-  title: Searching microdata in <odesi>
-  url: https://mdl.library.utoronto.ca/technology/tutorials/searching-microdata
+  title: Searching microdata in Odesi
+  url: https://mdlutoronto.github.io/odesi-searching-microdata/
   description: |
     Link to Scholars Portal guide: http://guides.scholarsportal.info/odesi
   technique:
@@ -2350,7 +2350,7 @@
     - Vector
   date: "2016-04-12"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 183
   title: Finding paper maps and atlases
   url: https://mdlutoronto.github.io/paper-maps-atlases-finding/
