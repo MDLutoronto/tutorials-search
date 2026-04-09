@@ -431,7 +431,7 @@
   type: Self-paced course
 - id: 37
   title: "Self-Paced Online Course: R - An Introduction"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-introduction
+  url: https://mdlutoronto.github.io/self-paced-intro-r/
   description: |
     This page provides access to a self-paced online Quercus course that focuses on how to use R for exploring and manipulating data.
   technique:
@@ -442,7 +442,7 @@
     - R
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Self-paced course
 - id: 38
   title: "Self-Paced Online Course: R - Intermediate"
   url: https://mdl.library.utoronto.ca/technology/tutorials/self-paced-online-course-r-intermediate
