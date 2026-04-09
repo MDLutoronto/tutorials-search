@@ -951,14 +951,14 @@
   type: Tutorial
 - id: 75
   title: "Python: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/python-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/python-info-tutorials-workshops/
   description: |
     Python is a simple programming language that is popular for being easy to learn to read, write, and understand. You can use Python for automating repetitive tasks like cleaning data, creating data visualizations, analyzing data, conducting complex statistical calculations, or even building machine learning algorithms. Its ease of use and versatility means that many tools have been built on top of Python, but being able to explore those requires a good foundation and understanding of the language itself first!
   tool:
     - Python
   date: "2023-02-03"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 76
   title: Qualitative Data Analysis Software Options
   url: https://mdl.library.utoronto.ca/technology/tutorials/qualitative-data-analysis-software-options
