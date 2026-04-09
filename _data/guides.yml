@@ -2173,7 +2173,7 @@
   title: R Learning Modules (UCLA)
   url: https://mdlutoronto.github.io/r-learning-mods-ucla/
   description: |
-    Comprehensive set of guides that include installing R, learning R fundamentals including graphics and advanced data analysis examples. Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/r/
+    Comprehensive set of guides that include installing R, learning R fundamentals including graphics and advanced data analysis examples. Link: https://stats.oarc.ucla.edu/r/
   tool:
     - R
   date: "2017-05-05"
@@ -2181,9 +2181,9 @@
   type: Tutorial
 - id: 168
   title: SAS Learning Modules (UCLA)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/sas-learning-modules-ucla
+  url: https://mdlutoronto.github.io/sas-learning-mods-ucla/
   description: |
-    Comprehensive set of guides that include installing SAS, learning SAS fundamentals and advanced data analysis examples. Link: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/
+    Comprehensive set of guides that include installing SAS, learning SAS fundamentals and advanced data analysis examples. Link: https://stats.oarc.ucla.edu/sas/
   tool:
     - SAS
   date: "2017-05-05"
