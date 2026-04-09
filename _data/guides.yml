@@ -1778,11 +1778,11 @@
   type: Tutorial
 - id: 138
   title: "OpenRefine Augmenting Activity 4: Using Python"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-4-using-python
+  url: https://mdlutoronto.github.io/openrefine-augmenting-activity-4-python/
   description: |
     The goal of this activity is to try out running Python in OpenRefine. We will use it to make an API call to augment our books dataset with information on the authors from Wikipedia.
 
-    ***Note:*** *Complete Augmenting Activities [1](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-1), [2](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-2) & [3](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-augmenting-activity-3) first before attempting this activity.*
+    ***Note:*** *Complete Augmenting Activities [1](https://mdlutoronto.github.io/openrefine-augmenting-activity-1-preparing-data/), [2](https://mdlutoronto.github.io/openrefine-augmenting-activity-2-reconciliation-services/) & [3](https://mdlutoronto.github.io/openrefine-augmenting-activity-3-add-column/) first before attempting this activity.*
   technique:
     - Cleaning data
     - Extracting data
