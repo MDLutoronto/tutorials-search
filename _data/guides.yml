@@ -1840,7 +1840,7 @@
   type: Tutorial
 - id: 142
   title: OpenRefine Tutorial 4. 311 Calls Activity
-  url: https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-4-311-calls-activity
+  url: https://mdlutoronto.github.io/openrefine-tutorial-4-311-calls-activity/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5.*
 
@@ -1848,7 +1848,7 @@
 
     Sometimes you don't have your data in a file. Instead you want to use an API call to pull data from elsewhere. OpenRefine can help you make these calls and parse the data you receive.The goal of this activity is to create a new project by pulling in 311 call data from the City of Toronto into OpenRefine using an API call and then work with the data. You will construct an API call to download a subset of 311 call data in JSON format, and then use OpenRefine to parse that data and put it into a tabular format. You will then use GREL to further manipulate the data (especially working with date formats) and make some discoveries.
 
-    ***Note:*** *This assumes that you have learned the basics of OpenRefine already through [the Survey of Household Spending activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-1-survey-household-spending-activity) and the [Citizen Science activity](https://mdl.library.utoronto.ca/technology/tutorials/openrefine-tutorial-2-citizen-science-activity). This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work.***
+    ***Note:*** *This assumes that you have learned the basics of OpenRefine already through [the Survey of Household Spending activity](https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/) and the [Citizen Science activity](https://mdlutoronto.github.io/openrefine-tutorial-2-citizen-science-activity/). This also assumes that you have a basic understanding of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82) and [JSON](https://www.w3schools.com/whatis/whatis_json.asp).* ***The 311 JSON dataset can be found in the sample data (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip) in case the API call does not work.***
   technique:
     - Cleaning data
     - Extracting data
