@@ -1690,7 +1690,7 @@
   type: Tutorial
 - id: 132
   title: Text Analysis Fundamentals with the Digital Scholar Lab
-  url: https://mdl.library.utoronto.ca/technology/tutorials/text-analysis-fundamentals-digital-scholar-lab
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/
   description: |-
     This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to:
 
