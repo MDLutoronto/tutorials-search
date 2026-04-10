@@ -328,7 +328,7 @@
   type: Video
 - id: 29
   title: "Workshop Recording: Introduction to Stata (Dec. 3, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-stata-dec-3-2021
+  url: https://mdlutoronto.github.io/workshop-intro-stata-2021-dec-3-2021/
   description: |
     This page provides a video recording of an introductory workshop on Stata.
   technique:
@@ -339,7 +339,7 @@
     - Stata
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 30
   title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis-mac
