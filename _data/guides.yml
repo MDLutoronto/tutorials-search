@@ -280,14 +280,14 @@
   type: Video
 - id: 25
   title: "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-nov-16-2021-health-critique
+  url: https://mdlutoronto.github.io/workshop-intro-infographics-2021-health-nov-16-2021/
   description: |
     This page provides a video recording of a workshop on best practices for creating infographics - with a specific health-related infographic critique example.
   technique:
     - Data Visualization
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 26
   title: "Workshop Recording: Introduction to Network Analysis and Visualization Using Gephi (Nov. 2, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-network-analysis-and-visualization-using-gephi
