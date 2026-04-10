@@ -270,14 +270,14 @@
   type: Video
 - id: 24
   title: "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-feb-3-2022-social-science
+  url: https://mdlutoronto.github.io/workshop-intro-infographics-2022-social-feb-3-2022/
   description: |
     This page provides a video recording of a workshop on best practices for creating infographics - with a specific social science related infographic critique example.
   technique:
     - Data Visualization
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 25
   title: "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-nov-16-2021-health-critique
