@@ -1239,7 +1239,7 @@
     - R
   date: "2022-05-06"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 97
   title: "Stata: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/stata-info-tutorials-workshops/
@@ -1952,7 +1952,7 @@
   technique:
     - Searching for maps and data
   date: "2018-09-12"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 149
   title: Logging in to ArcGIS Online
@@ -1973,7 +1973,7 @@
   tool:
     - Scholars GeoPortal
   date: "2018-02-07"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 151
   title: Accessing CANSIM data through CHASS
@@ -2138,7 +2138,7 @@
   technique:
     - Searching for maps and data
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 164
   title: Introduction to R (Datacamp)
@@ -2167,7 +2167,7 @@
   tool:
     - Stata
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 167
   title: R Learning Modules (UCLA)
@@ -2177,7 +2177,7 @@
   tool:
     - R
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 168
   title: SAS Learning Modules (UCLA)
@@ -2187,7 +2187,7 @@
   tool:
     - SAS
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 169
   title: Scraping tweets using Python
@@ -2209,7 +2209,7 @@
   technique:
     - Searching for maps and data
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 171
   title: SPSS Learning Modules (UCLA)
@@ -2219,7 +2219,7 @@
   tool:
     - SPSS
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 172
   title: Stat/Transfer (File Transfer Utility)
@@ -2239,7 +2239,7 @@
   tool:
     - Stata
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 174
   title: Summary statistics in STATA
@@ -2255,11 +2255,11 @@
   title: What statistical analysis should I use? Statistical analysis using SAS (UCLA)
   url: https://mdlutoronto.github.io/what-statistical-analysis-should-i-use/
   description: |
-    UCLA's introductory guide to various statistical analyses in SAS: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/whatstat/what-statistical-analysis-should-i-usestatistical-analyses-using-sas/
+    UCLA's introductory guide to various statistical analyses in SAS: https://stats.oarc.ucla.edu/sas/whatstat/what.statistical.analysis.should.i.usestatistical.analyses.using.sas/
   tool:
     - SAS
   date: "2017-05-05"
-  series: MDL Tutorials
+  series: External
   type: Tutorial
 - id: 176
   title: Cleaning Data in Python
