@@ -1242,7 +1242,7 @@
   type: Tutorial
 - id: 97
   title: "Stata: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/stata-information-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/stata-info-tutorials-workshops/
   description: |
     [Stata](https://www.stata.com/) is a statistical software for data manipulation, data visualization and data analysis.
   technique:
@@ -1253,7 +1253,7 @@
     - Stata
   date: "2022-05-06"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 98
   title: "Data Visualization and Tableau: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/tableau-data-viz-info-tutorials-workshops/
