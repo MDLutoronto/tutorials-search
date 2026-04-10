@@ -2213,7 +2213,7 @@
   type: Tutorial
 - id: 171
   title: SPSS Learning Modules (UCLA)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/spss-learning-modules-ucla
+  url: https://mdlutoronto.github.io/spss-learning-mods-ucla/
   description: |
     Comprehensive set of guides that include obtaining SPSS, learning SPSS fundamentals and advanced data analysis examples.
   tool:
