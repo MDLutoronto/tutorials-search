@@ -2253,7 +2253,7 @@
   type: Tutorial
 - id: 175
   title: What statistical analysis should I use? Statistical analysis using SAS (UCLA)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/what-statistical-analysis-should-i-use-statistical-analysis-using-sas-ucla
+  url: https://mdlutoronto.github.io/what-statistical-analysis-should-i-use/
   description: |
     UCLA's introductory guide to various statistical analyses in SAS: http://stats.idre.ucla.edu.myaccess.library.utoronto.ca/sas/whatstat/what-statistical-analysis-should-i-usestatistical-analyses-using-sas/
   tool:
