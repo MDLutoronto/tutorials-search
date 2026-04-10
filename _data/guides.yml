@@ -471,7 +471,7 @@
   type: Self-paced course
 - id: 40
   title: "Workshop Recording: An Introductory Tour of ArcGIS Pro (Oct. 1, 2024)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introductory-tour-arcgis-pro-oct-1-2024
+  url: https://mdlutoronto.github.io/workshop-intro-arcgis-pro-oct-1-2024/
   description: |
     This page provides a video recording of an introductory workshop on ArcGIS Pro.
   technique:
@@ -481,7 +481,7 @@
     - ArcGIS Pro
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 41
   title: "Workshop Recording: ArcGIS Pro -  Spatial Analysis (Nov. 1, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-spatial-analysis-nov-1-2024
