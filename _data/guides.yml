@@ -302,7 +302,7 @@
   type: Video
 - id: 27
   title: "Workshop Recording: Introduction to NVivo 12 (Mac Version) (Mar. 17, 2022)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-mac-version-mar-17-2022
+  url: https://mdlutoronto.github.io/workshop-intro-nvivo-mac-version-mar-17-2022/
   description: |
     This page provides a video recording of an introductory workshop on NVivo 12 for Mac.
   technique:
@@ -311,7 +311,7 @@
     - NVivo
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 28
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-r-dec-8-2020
