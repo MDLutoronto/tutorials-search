@@ -314,7 +314,7 @@
   type: Video
 - id: 28
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-r-dec-8-2020
+  url: https://mdlutoronto.github.io/workshop-intro-r-2020-dec-8-2020/
   description: |
     This page provides a video recording of an introductory workshop on using the R statistical programming language.
   technique:
@@ -325,7 +325,7 @@
     - R
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 29
   title: "Workshop Recording: Introduction to Stata (Dec. 3, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-stata-dec-3-2021
