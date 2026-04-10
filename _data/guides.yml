@@ -236,14 +236,14 @@
   type: Video
 - id: 21
   title: "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-programming-absolute-beginners-using-python-pt
+  url: https://mdlutoronto.github.io/python-programming-absolute-beginners-part1-mar-2025/
   description: |
     This page provides a video recording of the first part of an introductory workshop series on Python.
   tool:
     - Python
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 22
   title: "Workshop Recording: Excel: Beyond the Basics (Oct. 25, 2022)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-excel-beyond-basics-oct-25-2022
