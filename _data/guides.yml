@@ -342,7 +342,7 @@
   type: Video
 - id: 30
   title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis-mac
+  url: https://mdlutoronto.github.io/workshop-intro-nvivo-qualitative-nov-26-2024/
   description: |
     This page provides a video recording of an introductory workshop on NVivo 14/15 for Mac.
   technique:
@@ -351,7 +351,7 @@
     - NVivo
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 31
   title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-using-nvivo-1415-qualitative-data-analysis
