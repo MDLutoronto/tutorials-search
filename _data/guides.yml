@@ -1187,7 +1187,7 @@
     - Extracting data
   date: "2022-05-09"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 93
   title: "Gale Digital Scholar Lab: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/dsl-info-tutorials-workshops/
@@ -1953,7 +1953,7 @@
     - Searching for maps and data
   date: "2018-09-12"
   series: External
-  type: Tutorial
+  type: Video
 - id: 149
   title: Logging in to ArcGIS Online
   url: https://mdlutoronto.github.io/arcgis-online-log-in/
@@ -1974,7 +1974,7 @@
     - Scholars GeoPortal
   date: "2018-02-07"
   series: External
-  type: Tutorial
+  type: Guide
 - id: 151
   title: Accessing CANSIM data through CHASS
   url: https://mdlutoronto.github.io/chass-access-cansim-data/
@@ -2210,7 +2210,7 @@
     - Searching for maps and data
   date: "2017-05-05"
   series: External
-  type: Tutorial
+  type: Guide
 - id: 171
   title: SPSS Learning Modules (UCLA)
   url: https://mdlutoronto.github.io/spss-learning-mods-ucla/
