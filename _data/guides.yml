@@ -86,7 +86,7 @@
   type: Tutorial
 - id: 8
   title: Transferring Data to a Public ArcGIS Online Account
-  url: https://mdl.library.utoronto.ca/technology/tutorials/transferring-data-public-arcgis-online-account
+  url: https://mdlutoronto.github.io/arcgis-online-account-transferring-data-public/
   description: |
     This tutorial provides step-by-step guidance on how to transfer work on ArcGIS Online from a University of Toronto (UofT) institutional account to the free (aka ‘public’) version of the service.
   technique:
