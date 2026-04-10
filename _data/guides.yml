@@ -484,7 +484,7 @@
   type: Video
 - id: 41
   title: "Workshop Recording: ArcGIS Pro -  Spatial Analysis (Nov. 1, 2024)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-spatial-analysis-nov-1-2024
+  url: https://mdlutoronto.github.io/workshop-arcgis-pro-spatial-analysis-nov-1-2024/
   description: |
     This page provides a video recording of a workshop in ArcGIS Pro focusing on spatial analysis.
   technique:
@@ -494,7 +494,7 @@
     - ArcGIS Pro
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 42
   title: "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15, 2024)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-arcgis-pro-loading-and-manipulating-data-oct-15-2024
