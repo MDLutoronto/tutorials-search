@@ -258,7 +258,7 @@
   type: Video 
 - id: 23
   title: "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-data-visualization-using-tableau-desktop-nov
+  url: https://mdlutoronto.github.io/workshop-intro-data-viz-tableau-nov-24-2021/
   description: |
     This page provides a video recording of an introductory workshop on using Tableau Desktop for data visualization.
   technique:
@@ -267,7 +267,7 @@
     - Tableau
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 24
   title: "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-infographics-feb-3-2022-social-science
