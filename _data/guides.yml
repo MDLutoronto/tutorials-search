@@ -1074,7 +1074,7 @@
   type: Tutorial
 - id: 84
   title: Tableau Workshop Demonstration Tutorial
-  url: https://mdl.library.utoronto.ca/technology/tutorials/tableau-workshop-demonstration-tutorial
+  url: https://mdlutoronto.github.io/tableau-workshop-demonstration-tutorial/
   description: |
     This tutorial outlines the steps taken in the demonstration during the live workshop on an Introduction to Data Visualization Using Tableau Desktop. This is a companion tutorial, but can also be used as a stand-alone introduction to Tableau Desktop.
   technique:
