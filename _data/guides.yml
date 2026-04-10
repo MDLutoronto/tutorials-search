@@ -522,7 +522,7 @@
   type: Tutorial
 - id: 44
   title: "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15, 2022)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-nvivo-12-windows-version-mar-15-2022
+  url: https://mdlutoronto.github.io/workshop-intro-nvivo-windows-version-mar-15-2022/
   description: |
     This page provides a video recording of a introductory workshop on NVivo 12 for Windows.
   technique:
@@ -531,7 +531,7 @@
     - NVivo
   date: "2025-01-24"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
   url: https://mdlutoronto.github.io/arcgis-cityengine-install-license/
