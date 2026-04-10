@@ -246,7 +246,7 @@
   type: Video
 - id: 22
   title: "Workshop Recording: Excel: Beyond the Basics (Oct. 25, 2022)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-excel-beyond-basics-oct-25-2022
+  url: https://mdlutoronto.github.io/workshop-excel-beyond-basics-oct-25-2022/
   description: |
     This page provides a video recording of a workshop on using intermediate features of Excel.
   technique:
@@ -255,7 +255,7 @@
     - Excel
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video 
 - id: 23
   title: "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
   url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-introduction-data-visualization-using-tableau-desktop-nov
