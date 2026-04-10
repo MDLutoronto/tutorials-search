@@ -2223,14 +2223,14 @@
   type: Tutorial
 - id: 172
   title: Stat/Transfer (File Transfer Utility)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/stattransfer-file-transfer-utility
+  url: https://mdlutoronto.github.io/stat-transfer-file-utility/
   description: |
     Introductory guide to the Stat/Transfer utility (version 10).
   technique:
     - Converting data formats
   date: "2017-05-05"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 173
   title: Stata Learning Modules (UCLA)
   url: https://mdl.library.utoronto.ca/technology/tutorials/stata-learning-modules-ucla
