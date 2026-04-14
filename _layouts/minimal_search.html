@@ -794,10 +794,9 @@
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
             </a>
             <h1><a href="{{ '/' | relative_url }}">📚 Learn@MDL</a></h1>
-            <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto.</p>
-            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-top: 10px;">Last updated: {{ site.time | date: "%Y-%m-%d" | default: "N/A" }}</p>
+            <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto. </p> <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px;">Last updated: {{ site.time | date: "%Y-%m-%d" | default: "N/A" }}  </p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px;"><span style="vertical-align: middle;"><a href="https://github.com/MDLutoronto/tutorials-search" target="_blank" rel="noopener">{% octicon mark-github height:24 %}</a></span></p>
         </header>
-
         <div class="sticky-search-wrapper">
             <div class="sticky-search-container">
                 <div class="search-box">
@@ -806,7 +805,6 @@
                 </div>
             </div>
         </div>
-
         <button class="filter-toggle" id="filterToggle">Filters</button>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 

@@ -190,6 +190,7 @@ plugins:
   - jekyll-sitemap
   # - jekyll-toc
   - jekyll-remote-theme
+  - jekyll-octicons
 kramdown:
   syntax_highlighter_opts:
     block:
