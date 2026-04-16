@@ -166,8 +166,7 @@
   series: Bits and Bytes
   type: Tutorial
 - id: 15
-  title:
-    "Bits and Bytes Series: Getting Started with Python in ArcGIS Pro (Nov. 17, 2020)"
+  title: "Bits and Bytes Series: Getting Started with Python in ArcGIS Pro (Nov. 17, 2020)"
   url: https://mdlutoronto.github.io/bits-bytes-series-getting-started-python-nov-17-2020/
   description: |
     This page provides a presentation on **Getting Started with Python in ArcGIS Pro** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
@@ -254,7 +253,7 @@
     - Excel
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Video 
+  type: Video
 - id: 23
   title: "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
   url: https://mdlutoronto.github.io/workshop-intro-data-viz-tableau-nov-24-2021/
