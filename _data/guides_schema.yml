@@ -1,0 +1,65 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Tutorial Entry Schema
+description: Schema defining the structure of a tutorial entry
+type: array
+items:
+  type: object
+  properties:
+    id:
+      oneOf:
+        - type: string
+        - type: integer
+      description: A unique identifier for the tutorial.
+    title:
+      type: string
+      description: The title of the tutorial.
+    description:
+      type: string
+      description: A brief description of the tutorial.
+    url:
+      type: string
+      format: uri
+      description: The URL of the tutorial.
+    technique:
+      description: The technique(s) covered in the tutorial.
+      oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    tool:
+      description: The tool(s) used in the tutorial.
+      oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    dataFormat:
+      description: The data format(s) used in the tutorial.
+      oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    type:
+      description: The type(s) of the tutorial.
+      oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    series:
+      description: The series associated with the tutorial. If none is set, then the series field will be blank.
+      oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    date:
+      type: string
+      description: The publication date of the tutorial.
+      pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+  required:
+    - title
+    - url
+  additionalProperties: false
