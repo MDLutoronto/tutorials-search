@@ -971,7 +971,7 @@
   type: Tutorial
 - id: 77
   title: Transcription Options
-  url: https://mdl.library.utoronto.ca/technology/tutorials/transcription-options
+  url: https://mdlutoronto.github.io/transcription-options/
   description: |
     If you have an audio or video file that you need to get transcribed, this page describes some automated options to consider. But keep in mind, though, that none of these options (including NVivo transcription) provides a 100% perfectly accurate transcript. You will always have to go back in and correct your transcript.
 
@@ -980,6 +980,7 @@
     - Qualitative Data Analysis
   tool:
     - NVivo
+    - MAXQDA
   date: "2023-01-27"
   series: MDL Tutorials
   type: Tutorial
