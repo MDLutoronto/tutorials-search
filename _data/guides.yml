@@ -62,7 +62,7 @@
   type: Guide
 - id: 6
   title: "MAXQDA: Information, Resources, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/maxqda-information-resources-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/maxqda-info-resources-tutorials-workshops/
   description: |
     [MAXQDA](https://www.maxqda.com/) is a program used for qualitative data analysis. It supports researchers in managing, organizing, and analyzing qualitative data to produce new insight, infer relationships, and identify themes.
   technique:
@@ -1743,9 +1743,9 @@
   type: Tutorial
 - id: 135
   title: Getting Started with Tableau Desktop (Beginner to Intermediate)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-tableau-desktop-beginner-intermediate
+  url: https://mdlutoronto.github.io/tableau-beginner-intermediate/
   description: |
-    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT).
+    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdlutoronto.github.io/tableau-install/). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT).
   technique:
     - Data Visualization
   tool:
