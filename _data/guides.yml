@@ -71,7 +71,7 @@
     - MAXQDA
   date: "2025-07-22"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 7
   title: Accessing JSTOR Text Analysis Support
   url: https://mdlutoronto.github.io/jstor-text-analysis-support-access/
@@ -968,7 +968,7 @@
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 77
   title: Transcription Options
   url: https://mdlutoronto.github.io/transcription-options/
@@ -983,7 +983,7 @@
     - MAXQDA
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 78
   title: Working in Teams Using NVivo
   url: https://mdlutoronto.github.io/working-teams-nvivo/
@@ -995,7 +995,7 @@
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 79
   title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
   url: https://mdlutoronto.github.io/cipo-windows/
