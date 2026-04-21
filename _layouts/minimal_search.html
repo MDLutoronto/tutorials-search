@@ -1137,17 +1137,30 @@
             filteredGuides = guides.filter(guide => {
                 if (activeFilters.search) {
                     const { include, exclude } = parseSearchQuery(activeFilters.search);
-                    const title = (guide.title || '').toLowerCase();
-                    const description = (guide.description || '').toLowerCase();
+
+                    // Collect all searchable text fields for this guide
+                    const toStr = v => {
+                        if (!v || v === 'undefined' || v === 'null') return '';
+                        return (Array.isArray(v) ? v.join(' ') : String(v)).toLowerCase();
+                    };
+                    const searchableText = [
+                        toStr(guide.title),
+                        toStr(guide.description),
+                        toStr(guide.series),
+                        toStr(guide.technique),
+                        toStr(guide.tool),
+                        toStr(guide.type),
+                        toStr(guide.dataFormat)
+                    ].join(' ');
 
                     // Must match ALL include terms (if any)
                     const matchesInclude = include.length === 0 || include.every(term =>
-                        title.includes(term) || description.includes(term)
+                        searchableText.includes(term)
                     );
 
                     // Must NOT match ANY exclude terms
                     const matchesExclude = exclude.every(term =>
-                        !title.includes(term) && !description.includes(term)
+                        !searchableText.includes(term)
                     );
 
                     if (!matchesInclude || !matchesExclude) return false;

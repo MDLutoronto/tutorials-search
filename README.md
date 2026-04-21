@@ -20,6 +20,9 @@ It is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](h
 # 📄 Updating tutorials data
 See the [instructions for updating the tutorials data](/docs/update-data/README.md).
 
+# 🔎 Search guide
+See the [search guide](/docs/search/README.md) for instructions on how to use the search syntax.
+
 # 🏗️ Development
 ## Site structure
 - The main layout file is located at [`_layouts/minimal_search.html`](_layouts/minimal_search.html).
