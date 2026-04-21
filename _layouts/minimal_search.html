@@ -795,12 +795,12 @@
             </a>
             <h1><a href="{{ '/' | relative_url }}">📚 Learn@MDL</a></h1>
             <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto. </p> <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px;">Last updated: {{ site.time | date: "%Y-%m-%d" | default: "N/A" }}  </p>
-            <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px;"><span style="vertical-align: middle;"><a href="https://github.com/MDLutoronto/tutorials-search" target="_blank" rel="noopener">{% octicon mark-github height:24 %}</a></span></p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 16px;"><a href="https://github.com/MDLutoronto/tutorials-search" target="_blank" rel="noopener" style="display: inline-flex; align-items: center;">{% octicon mark-github height:24 %}</a><a href="https://github.com/MDLutoronto/blob/main/docs/search/README.md" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px;">{% octicon search height:24 %}Search syntax</a></p>
         </header>
         <div class="sticky-search-wrapper">
             <div class="sticky-search-container">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search guides...">
+                    <input type="text" id="searchInput" placeholder="Search guides…">
                     <span class="search-hint">Ctrl+K</span>
                 </div>
             </div>
@@ -879,7 +879,14 @@
             tool: new Set(),
             dataFormat: new Set(),
             type: new Set(),
-            series: new Set()
+            series: new Set(),
+            exclude: {
+                technique: new Set(),
+                tool: new Set(),
+                dataFormat: new Set(),
+                type: new Set(),
+                series: new Set()
+            }
         };
         let currentSort = 'title';
         let displayedCount = 0;
@@ -902,6 +909,10 @@
                 const values = params.getAll(facet);
                 if (values.length > 0) {
                     activeFilters[facet] = new Set(values);
+                }
+                const excluded = params.getAll('not_' + facet).map(v => v.replace(/^"|"$/g, ''));
+                if (excluded.length > 0) {
+                    activeFilters.exclude[facet] = new Set(excluded);
                 }
             });
 
@@ -935,6 +946,11 @@
                         params.append(facet, value);
                     });
                 }
+                if (activeFilters.exclude[facet].size > 0) {
+                    activeFilters.exclude[facet].forEach(value => {
+                        params.append('not_' + facet, value);
+                    });
+                }
             });
 
             // Add sort parameter if not default
@@ -961,7 +977,14 @@
                 tool: new Set(),
                 dataFormat: new Set(),
                 type: new Set(),
-                series: new Set()
+                series: new Set(),
+                exclude: {
+                    technique: new Set(),
+                    tool: new Set(),
+                    dataFormat: new Set(),
+                    type: new Set(),
+                    series: new Set()
+                }
             };
 
             // Read URL parameters again
@@ -1090,74 +1113,126 @@
             applyFilters();
         }
 
+        // Parse search query into include/exclude term lists.
+        // Supports: -term  -"multi word"  "quoted include"  plain words
+        function parseSearchQuery(query) {
+            const terms = { include: [], exclude: [] };
+            const regex = /(-?"[^"]*"|[^\s]+)/g;
+            let match;
+            while ((match = regex.exec(query)) !== null) {
+                const token = match[1];
+                if (token.startsWith('-')) {
+                    const term = token.slice(1).replace(/^"|"$/g, '').toLowerCase().trim();
+                    if (term) terms.exclude.push(term);
+                } else {
+                    const term = token.replace(/^"|"$/g, '').toLowerCase().trim();
+                    if (term) terms.include.push(term);
+                }
+            }
+            return terms;
+        }
+
         // Apply all filters
         function applyFilters() {
             filteredGuides = guides.filter(guide => {
                 if (activeFilters.search) {
-                    const searchTerm = activeFilters.search.toLowerCase();
-                    const title = guide.title || '';
-                    const description = guide.description || '';
-                    const matchesSearch =
-                        title.toLowerCase().includes(searchTerm) ||
-                        description.toLowerCase().includes(searchTerm);
-                    if (!matchesSearch) return false;
+                    const { include, exclude } = parseSearchQuery(activeFilters.search);
+
+                    // Collect all searchable text fields for this guide
+                    const toStr = v => {
+                        if (!v || v === 'undefined' || v === 'null') return '';
+                        return (Array.isArray(v) ? v.join(' ') : String(v)).toLowerCase();
+                    };
+                    const searchableText = [
+                        toStr(guide.title),
+                        toStr(guide.description),
+                        toStr(guide.series),
+                        toStr(guide.technique),
+                        toStr(guide.tool),
+                        toStr(guide.type),
+                        toStr(guide.dataFormat)
+                    ].join(' ');
+
+                    // Must match ALL include terms (if any)
+                    const matchesInclude = include.length === 0 || include.every(term =>
+                        searchableText.includes(term)
+                    );
+
+                    // Must NOT match ANY exclude terms
+                    const matchesExclude = exclude.every(term =>
+                        !searchableText.includes(term)
+                    );
+
+                    if (!matchesInclude || !matchesExclude) return false;
                 }
 
                 if (activeFilters.technique.size > 0) {
                     const guideCategories = Array.isArray(guide.technique) ? guide.technique : [guide.technique];
-                    // Check if guide has ALL selected techniques (AND logic)
                     const hasAllTechniques = Array.from(activeFilters.technique).every(selectedTech =>
                         guideCategories.includes(selectedTech)
                     );
-                    if (!hasAllTechniques) {
-                        return false;
-                    }
+                    if (!hasAllTechniques) return false;
+                }
+                if (activeFilters.exclude.technique.size > 0) {
+                    const guideCategories = Array.isArray(guide.technique) ? guide.technique : [guide.technique];
+                    const hasExcluded = Array.from(activeFilters.exclude.technique).some(t => guideCategories.includes(t));
+                    if (hasExcluded) return false;
                 }
 
                 if (activeFilters.tool.size > 0) {
                     const guideFormats = Array.isArray(guide.tool) ? guide.tool : [guide.tool];
-                    // Check if guide has ALL selected tools (AND logic)
                     const hasAllTools = Array.from(activeFilters.tool).every(selectedTool =>
                         guideFormats.includes(selectedTool)
                     );
-                    if (!hasAllTools) {
-                        return false;
-                    }
+                    if (!hasAllTools) return false;
+                }
+                if (activeFilters.exclude.tool.size > 0) {
+                    const guideFormats = Array.isArray(guide.tool) ? guide.tool : [guide.tool];
+                    const hasExcluded = Array.from(activeFilters.exclude.tool).some(t => guideFormats.includes(t));
+                    if (hasExcluded) return false;
                 }
 
                 if (activeFilters.type.size > 0) {
                     const guideTypes = Array.isArray(guide.type) ? guide.type : [guide.type];
-                    // Check if guide has ALL selected types (AND logic)
                     const hasAllTypes = Array.from(activeFilters.type).every(selectedType =>
                         guideTypes.includes(selectedType)
                     );
-                    if (!hasAllTypes) {
-                        return false;
-                    }
+                    if (!hasAllTypes) return false;
                 }
+                if (activeFilters.exclude.type.size > 0) {
+                    const guideTypes = Array.isArray(guide.type) ? guide.type : [guide.type];
+                    const hasExcluded = Array.from(activeFilters.exclude.type).some(t => guideTypes.includes(t));
+                    if (hasExcluded) return false;
+                }
+
                 if (activeFilters.series.size > 0) {
                     const guideSeries = Array.isArray(guide.series) ? guide.series : [guide.series];
-                    // Check if guide has ALL selected series (AND logic)
                     const hasAllSeries = Array.from(activeFilters.series).every(selectedSeries =>
                         guideSeries.includes(selectedSeries)
                     );
-                    if (!hasAllSeries) {
-                        return false;
-                    }
+                    if (!hasAllSeries) return false;
+                }
+                if (activeFilters.exclude.series.size > 0) {
+                    const guideSeries = Array.isArray(guide.series) ? guide.series : [guide.series];
+                    const hasExcluded = Array.from(activeFilters.exclude.series).some(s => guideSeries.includes(s));
+                    if (hasExcluded) return false;
                 }
 
                 if (activeFilters.dataFormat.size > 0) {
-                    // If guide has no dataFormat, treat it as an empty array
                     const guideDataFormats = (guide.dataFormat === undefined || guide.dataFormat === null)
                         ? []
                         : (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat]);
-                    // Check if guide has ALL selected data formats (AND logic)
                     const hasAllFormats = Array.from(activeFilters.dataFormat).every(selectedFormat =>
                         guideDataFormats.includes(selectedFormat)
                     );
-                    if (!hasAllFormats) {
-                        return false;
-                    }
+                    if (!hasAllFormats) return false;
+                }
+                if (activeFilters.exclude.dataFormat.size > 0) {
+                    const guideDataFormats = (guide.dataFormat === undefined || guide.dataFormat === null)
+                        ? []
+                        : (Array.isArray(guide.dataFormat) ? guide.dataFormat : [guide.dataFormat]);
+                    const hasExcluded = Array.from(activeFilters.exclude.dataFormat).some(f => guideDataFormats.includes(f));
+                    if (hasExcluded) return false;
                 }
 
                 return true;
@@ -1388,7 +1463,14 @@
                 tool: new Set(),
                 dataFormat: new Set(),
                 type: new Set(),
-                series: new Set()
+                series: new Set(),
+                exclude: {
+                    technique: new Set(),
+                    tool: new Set(),
+                    dataFormat: new Set(),
+                    type: new Set(),
+                    series: new Set()
+                }
             };
             document.getElementById('searchInput').value = '';
             displayedCount = 0;
