@@ -230,7 +230,7 @@
   tool:
     - Python
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 21
   title: "Workshop Recording: An Introduction to Programming for Absolute Beginners Using Python Pt. 1 (March 2025)"
@@ -240,7 +240,7 @@
   tool:
     - Python
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 22
   title: "Workshop Recording: Excel: Beyond the Basics (Oct. 25, 2022)"
@@ -252,7 +252,7 @@
   tool:
     - Excel
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 23
   title: "Workshop Recording: Introduction to Data Visualization Using Tableau Desktop (Nov. 24, 2021)"
@@ -264,7 +264,7 @@
   tool:
     - Tableau
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 24
   title: "Workshop Recording: Introduction to Infographics (Feb. 3, 2022 - Social Science Critique Example)"
@@ -274,7 +274,7 @@
   technique:
     - Data Visualization
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 25
   title: "Workshop Recording: Introduction to Infographics (Nov. 16, 2021 - Health Critique Example)"
@@ -284,7 +284,7 @@
   technique:
     - Data Visualization
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 26
   title: "Workshop Recording: Introduction to Network Analysis and Visualization Using Gephi (Nov. 2, 2021)"
@@ -296,7 +296,7 @@
   tool:
     - Gephi
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 27
   title: "Workshop Recording: Introduction to NVivo 12 (Mac Version) (Mar. 17, 2022)"
@@ -308,7 +308,7 @@
   tool:
     - NVivo
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 28
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
@@ -322,7 +322,7 @@
   tool:
     - R
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 29
   title: "Workshop Recording: Introduction to Stata (Dec. 3, 2021)"
@@ -336,7 +336,7 @@
   tool:
     - Stata
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 30
   title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
@@ -348,7 +348,7 @@
   tool:
     - NVivo
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 31
   title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
@@ -360,7 +360,7 @@
   tool:
     - NVivo
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 32
   title: "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available Tools (Feb. 14, 2022)"
@@ -478,7 +478,7 @@
   tool:
     - ArcGIS Pro
   date: "2025-01-24"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 41
   title: "Workshop Recording: ArcGIS Pro -  Spatial Analysis (Nov. 1, 2024)"
@@ -491,7 +491,7 @@
   tool:
     - ArcGIS Pro
   date: "2025-01-24"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 42
   title: "Workshop Recording: ArcGIS Pro - Loading and Manipulating Data (Oct. 15, 2024)"
@@ -504,7 +504,7 @@
   tool:
     - ArcGIS Pro
   date: "2025-01-24"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 43
   title: "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov. 30, 2021)"
@@ -528,7 +528,7 @@
   tool:
     - NVivo
   date: "2025-01-24"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
@@ -1593,7 +1593,7 @@
   tool:
     - ArcGIS Online
   date: "2021-03-05"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 125
   title: ArcGIS Storymaps
