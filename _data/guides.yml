@@ -2378,3 +2378,15 @@
   date: "2016-04-12"
   series: MDL Tutorials
   type: Tutorial
+- id: 185
+  title: Introduction to Using MAXQDA for Qualitative Data Analysis
+  url: https://mdlutoronto.github.io/maxqda-intro-quali-data-analysis/
+  description: |
+    This is an introductory tutorial for MAXQDA. The goal of this tutorial is to learn about the basic features in MAXQDA that will allow you to organize and analyze qualitative data.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - MAXQDA
+  date: "2026-04-08"
+  series: MDL Tutorials
+  type: Tutorial
