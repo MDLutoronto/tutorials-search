@@ -37,7 +37,7 @@
   type: Guide
 - id: 4
   title: Introduction to Using MAXQDA for Qualitative Data Analysis
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-using-maxqda-qualitative-data-analysis
+  url: https://mdlutoronto.github.io/maxqda-intro-quali-data-analysis/
   description: |
     This is an introductory tutorial for MAXQDA. The goal of this tutorial is to learn about the basic features in MAXQDA that will allow you to organize and analyze qualitative data. Part 1 will teach you to use MAXQDA, to load information, code documents, make notes, and export information. Part 2 will explore some of MAXQDA's more advanced features, such as document variables, and analysis and visual tools. If you already have a grasp of the basics and are just interested in learning about the more advanced features, you can jump right to Part 2.
   technique:
@@ -2376,17 +2376,5 @@
     - Scanning
   dataFormat: Paper maps
   date: "2016-04-12"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 185
-  title: Introduction to Using MAXQDA for Qualitative Data Analysis
-  url: https://mdlutoronto.github.io/maxqda-intro-quali-data-analysis/
-  description: |
-    This is an introductory tutorial for MAXQDA. The goal of this tutorial is to learn about the basic features in MAXQDA that will allow you to organize and analyze qualitative data.
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - MAXQDA
-  date: "2026-04-08"
   series: MDL Tutorials
   type: Tutorial
