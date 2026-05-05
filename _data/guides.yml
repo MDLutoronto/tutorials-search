@@ -2378,3 +2378,15 @@
   date: "2016-04-12"
   series: MDL Tutorials
   type: Tutorial
+- id: 219
+  title: Install and License MAXQDA
+  url: https://mdlutoronto.github.io/MAXQDA-installation-license/
+  description: |
+    This tutorial is for installing and licensing MAXQDA on Windows and MacOS computers.
+  technique:
+    - Installation
+  tool:
+    - MAXQDA
+  date: "2026-05-05"
+  series: MDL Tutorials
+  type: Guide
