@@ -62,7 +62,7 @@
   type: Guide
 - id: 6
   title: "MAXQDA: Information, Resources, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/maxqda-information-resources-tutorials-and-workshops
+  url: https://mdlutoronto.github.io/maxqda-info-resources-tutorials-workshops/
   description: |
     [MAXQDA](https://www.maxqda.com/) is a program used for qualitative data analysis. It supports researchers in managing, organizing, and analyzing qualitative data to produce new insight, infer relationships, and identify themes.
   technique:
@@ -71,7 +71,7 @@
     - MAXQDA
   date: "2025-07-22"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 7
   title: Accessing JSTOR Text Analysis Support
   url: https://mdlutoronto.github.io/jstor-text-analysis-support-access/
@@ -114,6 +114,12 @@
   url: https://mdlutoronto.github.io/working-data-axle-historical-business-location/
   description: |
     The Data Axle Historical Business Location Data provides one data file (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains 11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains 1.5-2.5 million records per year. Records provide information about business location (including address, census geography & lat/long coordinates (US database only)), number of employees, sales volume, NAICS & SIC codes, unique identifier across time for businesses and parent entities. Complete record layouts and decodes are available for download via the Borealis links above.
+  technique:
+    - Extracting data
+  tool:
+    - Python
+  dataFormat:
+    - Microdata
   date: "2025-05-22"
   series: MDL Tutorials
   type: Tutorial
@@ -959,19 +965,19 @@
   type: Guide
 - id: 76
   title: Qualitative Data Analysis Software Options
-  url: https://mdl.library.utoronto.ca/technology/tutorials/qualitative-data-analysis-software-options
+  url: https://mdlutoronto.github.io/qualitative-data-analysis-software-options/
   description: |
-    UofT currently subscribes to the latest few versions of NVivo. Consult our [NVivo software license page](https://mdl.library.utoronto.ca/technology/nvivo-software) to request a license key. Consult our [getting started guide for NVivo](https://mdl.library.utoronto.ca/technology/tutorials/nvivo-12-information-tutorials-and-workshops) or our for tutorials, resources, and workshop recordings to help you get started using the software.
+    UofT currently subscribes to the latest few versions of NVivo. Consult our [NVivo software license page](https://mdl.library.utoronto.ca/technology/nvivo-software) to request a license key. Consult our [getting started guide for NVivo](https://mdlutoronto.github.io/nvivo-info-resources-tutorials-workshops/) or our for tutorials, resources, and workshop recordings to help you get started using the software.
   technique:
     - Qualitative Data Analysis
   tool:
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 77
   title: Transcription Options
-  url: https://mdl.library.utoronto.ca/technology/tutorials/transcription-options
+  url: https://mdlutoronto.github.io/transcription-options/
   description: |
     If you have an audio or video file that you need to get transcribed, this page describes some automated options to consider. But keep in mind, though, that none of these options (including NVivo transcription) provides a 100% perfectly accurate transcript. You will always have to go back in and correct your transcript.
 
@@ -980,12 +986,13 @@
     - Qualitative Data Analysis
   tool:
     - NVivo
+    - MAXQDA
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 78
   title: Working in Teams Using NVivo
-  url: https://mdl.library.utoronto.ca/technology/tutorials/working-teams-using-nvivo
+  url: https://mdlutoronto.github.io/working-teams-nvivo/
   description: |
     This page provides an overview and tips for working as a team using NVivo. There are three main options: the manual way, the old collaboration cloud, and the new collaboration cloud. There is also [NVivo Collaboration Server](https://community.lumivero.com/s/article/TRC-Using-NVivo-with-NVivo-Collaboration-Server?language=en_US), but that involves purchasing, setting up, and maintaining NVivo Server software, and it only works in a Windows environment with NVivo 12 or 13.
   technique:
@@ -994,7 +1001,7 @@
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Tutorial
+  type: Guide
 - id: 79
   title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database - Windows
   url: https://mdlutoronto.github.io/cipo-windows/
@@ -1743,9 +1750,9 @@
   type: Tutorial
 - id: 135
   title: Getting Started with Tableau Desktop (Beginner to Intermediate)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/getting-started-tableau-desktop-beginner-intermediate
+  url: https://mdlutoronto.github.io/tableau-beginner-intermediate/
   description: |
-    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT).
+    This is a beginner-to-intermediate level tutorial for Tableau Desktop version 2020.2. To acquire a free student, researcher, or instructor license for Tableau Desktop, please follow [these licensing and installation instructions](https://mdlutoronto.github.io/tableau-install/). If you want to learn this material in an online, self-paced course, with video instructions, you can self-enroll in our [Practice with Tableau course](https://q.utoronto.ca/enroll/WTYPDT).
   technique:
     - Data Visualization
   tool:
