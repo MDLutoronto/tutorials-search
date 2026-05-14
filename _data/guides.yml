@@ -304,18 +304,6 @@
   date: "2025-01-28"
   series: MDL Workshops
   type: Video
-- id: 27
-  title: "Workshop Recording: Introduction to NVivo 12 (Mac Version) (Mar. 17, 2022)"
-  url: https://mdlutoronto.github.io/workshop-intro-nvivo-mac-version-mar-17-2022/
-  description: |
-    This page provides a video recording of an introductory workshop on NVivo 12 for Mac.
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2025-01-28"
-  series: MDL Workshops
-  type: Video
 - id: 28
   title: "Workshop Recording: Introduction to R (Dec. 8, 2020)"
   url: https://mdlutoronto.github.io/workshop-intro-r-2020-dec-8-2020/
@@ -345,7 +333,7 @@
   series: MDL Workshops
   type: Video
 - id: 30
-  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Nov. 26, 2024)"
+  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Mac Version) (Feb. 3, 2025)"
   url: https://mdlutoronto.github.io/workshop-intro-nvivo-qualitative-nov-26-2024/
   description: |
     This page provides a video recording of an introductory workshop on NVivo 14/15 for Mac.
@@ -357,7 +345,7 @@
   series: MDL Workshops
   type: Video
 - id: 31
-  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Nov. 12, 2024)"
+  title: "Workshop Recording: Introduction to Using NVivo 14/15 for Qualitative Data Analysis (Windows Version) (Jan. 28, 2025)"
   url: https://mdlutoronto.github.io/workshop-intro-nvivo-qualitative-nov-12-2024/
   description: |
     This page provides a video recording of an introductory workshop on NVivo 14/15 for Windows.
@@ -524,18 +512,6 @@
   date: "2025-01-24"
   series: MDL Tutorials
   type: Tutorial
-- id: 44
-  title: "Workshop Recording: Introduction to NVivo 12 (Windows Version) (Mar. 15, 2022)"
-  url: https://mdlutoronto.github.io/workshop-intro-nvivo-windows-version-mar-15-2022/
-  description: |
-    This page provides a video recording of a introductory workshop on NVivo 12 for Windows.
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2025-01-24"
-  series: MDL Workshops
-  type: Video
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
   url: https://mdlutoronto.github.io/arcgis-cityengine-install-license/
@@ -764,18 +740,6 @@
   date: "2023-11-20"
   series: MDL Tutorials
   type: Tutorial
-- id: 62
-  title: Installing and Licensing NVivo 14
-  url: https://mdlutoronto.github.io/nvivo-14-install-license/
-  description: |
-    This tutorial describes how to request a license for NVivo 14, download it, and license it.
-  technique:
-    - Installation
-  tool:
-    - NVivo
-  date: "2023-11-20"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 63
   title: Introduction to NVivo 14/15 for Mac
   url: https://mdlutoronto.github.io/nvivo-14-15-mac-intro/
@@ -855,30 +819,6 @@
     - Python
   dataFormat: Microdata
   date: "2023-06-06"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 69
-  title: Importing Alternative Sources in NVivo 12 for Mac
-  url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-12-mac
-  description: |
-    NVivo can handle many types of files, such as text, audio, videos, images, etc. You would import these from the Data menu, by choosing the appropriate option. However, this tutorial will show you two common sources of data that you might want to code in NVivo that are a bit more complicated to import.
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2023-03-10"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 70
-  title: Importing Alternative Sources in NVivo 12 for Windows
-  url: https://mdl.library.utoronto.ca/technology/tutorials/importing-alternative-sources-nvivo-12-windows
-  description: |
-    NVivo can handle many types of files, such as text, audio, videos, images, etc. You would import these from the Import Ribbon, by choosing the Files option. However, this tutorial will show you two common sources of data that you might want to code in NVivo that are a bit more complicated to import.
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2023-03-10"
   series: MDL Tutorials
   type: Tutorial
 - id: 71
@@ -1065,18 +1005,6 @@
   date: "2022-09-16"
   series: MDL Tutorials
   type: Self-paced course
-- id: 83
-  title: Introduction to NVivo 12 for Mac
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-mac
-  description: |
-    This is a beginner level tutorial for NVivo 12 for Mac. The goal of this tutorial is to learn about the basic features in NVivo that will allow you to organize and analyze qualitative data. Part 1 will go over the basics of navigating the NVivo interface, importing data, and coding with nodes. Part 2 will explore the different types of queries you can run in NVivo. If you already have a grasp of the basics and are just interested in learning about queries, you can jump right to [Part 2](https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-mac#Queries).
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2022-09-09"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 84
   title: Tableau Workshop Demonstration Tutorial
   url: https://mdlutoronto.github.io/tableau-workshop-demonstration-tutorial/
@@ -1087,18 +1015,6 @@
   tool:
     - Tableau
   date: "2022-08-31"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 85
-  title: Introduction to NVivo 12 for Windows
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-windows
-  description: |
-    This is a beginner level tutorial for NVivo 12 for Windows. The goal of this tutorial is to learn about the basic features in NVivo that will allow you to organize and analyze qualitative data. Part 1 will go over the basics of navigating the NVivo interface, importing data, and coding with nodes. Part 2 will explore the different types of queries you can run in NVivo. If you already have a grasp of the basics and are just interested in learning about queries, you can jump right to [Part 2](https://mdl.library.utoronto.ca/technology/tutorials/introduction-nvivo-12-windows#Queries).
-  technique:
-    - Qualitative Data Analysis
-  tool:
-    - NVivo
-  date: "2022-08-18"
   series: MDL Tutorials
   type: Tutorial
 - id: 86
@@ -1574,19 +1490,6 @@
   tool:
     - Gephi
   date: "2021-09-13"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 123
-  title: Installing and Licensing NVivo 12
-  url: https://mdl.library.utoronto.ca/technology/tutorials/installing-and-licensing-nvivo-12
-  description: |
-    This tutorial describes how to request a license for NVivo 12 Plus, download it, and license it.
-  technique:
-    - Troubleshooting
-    - Installation
-  tool:
-    - NVivo
-  date: "2021-04-08"
   series: MDL Tutorials
   type: Tutorial
 - id: 124
