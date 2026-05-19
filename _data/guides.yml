@@ -779,7 +779,9 @@
   type: Tutorial
 - id: 66
   title: Introduction to GGPLOT2
-  url: https://mdl.library.utoronto.ca/technology/tutorials/ggplot2
+  url: https://mdlutoronto.github.io/ggplot2-intro/
+  description:
+    This guide introduces users to the ggplot2 R package. Ggplot2 is a popular package that is used to make publication quality graphs in R. The official documentation for the ggplot2 package can be found [here](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf). It includes descriptions of functions and sample datasets.
   technique:
     - Data Visualization
   tool:
@@ -859,7 +861,7 @@
   type: Tutorial
 - id: 73
   title: "Excel: Beyond The Basics - Windows"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/excel-beyond-basics-windows
+  url: https://mdlutoronto.github.io/excel-beyond-basics-windows/
   description: |
     About this workshop
 
