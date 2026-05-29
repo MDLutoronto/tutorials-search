@@ -1536,7 +1536,7 @@
   title: Logging into Digital Scholar Lab through the Catalog
   url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/1-access/
   description: |
-    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University of Toronto institutional access.
+    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab) via the University of Toronto institutional access.
   tool:
     - Digital Scholar Lab
   date: "2020-07-30"
@@ -1578,7 +1578,7 @@
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/
   description: |-
-    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to:
+    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://www.gale.com/primary-sources/digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to:
 
     1. Build a collection of texts, including uploading your own materials
 
