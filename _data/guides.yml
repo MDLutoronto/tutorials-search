@@ -885,9 +885,8 @@
   type: Tutorial
 - id: 74
   title: Digital Scholar Lab - Collaboration and Notes
-  url: https://mdlutoronto.github.io/dsl-collaboration-notes/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/2-collaboration-and-notes/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
     Here is how to collaborate between users in the Gale Digital Scholar Lab using the Workspace and Notes features. This allows for a shared workspace and options for documenting your steps.
   tool:
@@ -1191,9 +1190,8 @@
   type: Guide
 - id: 100
   title: Digital Scholar Lab - Additional Training
-  url: https://mdlutoronto.github.io/dsl-additional-training/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/7-additional-training/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
 
     Here are some ways to dig deeper into the archival and instructional materials in the Digital Scholar Lab.
   tool:
@@ -1203,10 +1201,8 @@
   type: Tutorial
 - id: 101
   title: Digital Scholar Lab - Analysis
-  url: https://mdlutoronto.github.io/dsl-analysis/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/5-analysis/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-
     This tutorial demonstrates how to use the Digital Scholar Lab's six analysis tools.
 
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
@@ -1220,10 +1216,8 @@
   type: Tutorial
 - id: 102
   title: Digital Scholar Lab - Cleaning
-  url: https://mdlutoronto.github.io/dsl-cleaning/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/4-cleaning/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-
     This tutorial demonstrates how to use and customize the Digital Scholar Lab's cleaning configurations.
 
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
@@ -1236,10 +1230,8 @@
   type: Tutorial
 - id: 103
   title: Digital Scholar Lab - Collections
-  url: https://mdlutoronto.github.io/dsl-collections/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/3-collections/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-
     This tutorial shows you how to create a collection in the Digital Scholar Lab, both by searching Gale Primary Sources and by uploading your own texts.
 
     Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
@@ -1253,10 +1245,8 @@
   type: Tutorial
 - id: 104
   title: Digital Scholar Lab - Export
-  url: https://mdlutoronto.github.io/dsl-export/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/6-export/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdl.library.utoronto.ca/technology/tutorials/digital-humanities-tools-digital-scholar-lab)
-
     This tutorial demonstrates how to export documents and metadata from the Digital Scholar Lab. Please note that Gale is periodically adding new documents to their collections, so your document counts and results may look slightly different from our screenshots and examples below.
   technique:
     - Extracting data
@@ -1544,10 +1534,8 @@
   type: Tutorial
 - id: 128
   title: Logging into Digital Scholar Lab through the Catalog
-  url: https://mdlutoronto.github.io/dsl-catalog-log-in/
+  url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/1-access/
   description: |
-    [Return to the main Gale Digital Scholar Lab tutorial](https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/)
-
     This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University of Toronto institutional access.
   tool:
     - Digital Scholar Lab
