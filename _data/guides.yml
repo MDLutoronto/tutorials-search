@@ -2287,6 +2287,19 @@
   date: "2026-06-04"
   series: MDL Tutorials
   type: Guide
+- id: 222
+  title: Clipping vector data in ArcGIS Pro
+  url: https://mdlutoronto.github.io/clipping-vector-data-in-arcgis-pro/
+  description: |
+    How to clip - cut out a piece of a dataset using another layer as a cookie cutter - vector data in ArcGIS Pro.
+  technique:
+    - Extracting data
+  tool:
+    - ArcGIS Pro
+  dataFormat: Vector
+  date: "2026-06-04"
+  series: MDL Tutorials
+  type: Tutorial
 - id: 219
   title: Install and License MAXQDA
   url: https://mdlutoronto.github.io/MAXQDA-installation-license/
