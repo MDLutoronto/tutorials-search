@@ -2259,6 +2259,19 @@
   date: "2016-04-12"
   series: MDL Tutorials
   type: Tutorial
+- id: 220
+  title: Extracting geographic features from a larger dataset in QGIS
+  url: https://mdlutoronto.github.io/qgis-extracting-geographic-features-from-larger-dataset/
+  description: |
+    This tutorial will demonstrate how to use QGIS to extract just the features you need from larger spatial datasets.
+  technique:
+    - Extracting data
+  tool:
+    - QGIS
+  dataFormat: Vector
+  date: "2026-06-04"
+  series: MDL Tutorials
+  type: Tutorial
 - id: 219
   title: Install and License MAXQDA
   url: https://mdlutoronto.github.io/MAXQDA-installation-license/
