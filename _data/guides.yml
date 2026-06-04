@@ -2272,6 +2272,21 @@
   date: "2026-06-04"
   series: MDL Tutorials
   type: Tutorial
+- id: 221
+  title: ArcGIS Online data management
+  url: https://mdlutoronto.github.io/arcgis-online-data-management/
+  description: |
+    Strategies for effectively managing your content hosted in UofT's ArcGIS Online instance.
+  technique:
+    - Extracting data
+    - Cleaning data
+    - Converting data formats
+  tool:
+    - ArcGIS Online
+  dataFormat: Vector
+  date: "2026-06-04"
+  series: MDL Tutorials
+  type: Guide
 - id: 219
   title: Install and License MAXQDA
   url: https://mdlutoronto.github.io/MAXQDA-installation-license/
