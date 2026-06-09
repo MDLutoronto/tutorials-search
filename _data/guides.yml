@@ -2312,3 +2312,16 @@
   date: "2026-05-05"
   series: MDL Tutorials
   type: Guide
+  - id: 223
+  title: Open source web map creation with qgis2web and GitHub Pages
+  url: https://mdlutoronto.github.io/qgis2web-github-pages/
+  description: |
+    How to design a map in QGIS, then deploy it to the web using qgis2web and GitHub Pages.
+  technique:
+    - Mapping
+  tool:
+    - QGIS
+  dataFormat: Vector
+  date: "2026-06-08"
+  series: MDL Tutorials
+  type: Tutorial
