@@ -1416,7 +1416,7 @@
   type: Tutorial
 - id: 118
   title: How to Access Online GIS Classes in ESRI Academy
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
+  url: https://mdlutoronto.github.io/gis-class-esri-academy/
   description: |
     ​University of Toronto community members can access online GIS courses through ESRI Academy. Content is designed for beginners and experienced users.
   tool:
