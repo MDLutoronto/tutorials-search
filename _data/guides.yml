@@ -2314,3 +2314,16 @@
   date: "2026-05-05"
   series: MDL Tutorials
   type: Guide
+- id: 223
+  title: Canadian Queer Data Guide
+  url: https://mdlutoronto.github.io/canadian-queer-data-guide/
+  description: |
+    This guide compiles data sources about Canadian 2SLGBTQIA+ populations.
+  technique:
+    - Searching for maps and data
+  dataFormat:
+    - Microdata
+    - Statistics
+  date: "2024-12-12"
+  series: MDL Tutorials
+  type: Guide
