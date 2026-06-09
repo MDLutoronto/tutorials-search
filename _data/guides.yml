@@ -1415,10 +1415,10 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 118
-  title: How to Access Online GIS Classes in ESRI Academy
+  title: How to Access Online GIS Classes in Esri Academy
   url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
   description: |
-    ​University of Toronto community members can access online GIS courses through ESRI Academy. Content is designed for beginners and experienced users.
+    ​University of Toronto community members can access online GIS courses through Esri Academy. Content is designed for beginners and experienced users.
   tool:
     - ArcGIS
     - ArcGIS Online
@@ -1489,7 +1489,7 @@
   title: ArcGIS Storymaps
   url: https://mdlutoronto.github.io/arcgis-storymapss/
   description: |
-    ESRI ArcGIS StoryMaps online workshop videos, January 2021
+    Esri ArcGIS StoryMaps online workshop videos, January 2021
   technique:
     - Data Visualization
     - Mapping
@@ -1844,7 +1844,7 @@
   title: Logging in to ArcGIS Online
   url: https://mdlutoronto.github.io/arcgis-online-log-in/
   description: |
-    This tutorial will take you through two ways of logging in to your ESRI ArcGIS Online account for the first time using your UTORid.
+    This tutorial will take you through two ways of logging in to your Esri ArcGIS Online account for the first time using your UTORid.
   tool:
     - ArcGIS
     - ArcGIS Online
