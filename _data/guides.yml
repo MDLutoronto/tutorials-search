@@ -1568,6 +1568,8 @@
 - id: 131
   title: COVID-19 data in R
   url: https://mdlutoronto.github.io/r-covid19-data/
+  description: 
+    This tutorial will teach you how to import, clean, explore and visualize public health Covid-19 data using R.
   tool:
     - R
   dataFormat: Statistics
