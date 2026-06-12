@@ -1292,6 +1292,7 @@
   url: https://mdlutoronto.github.io/postgresql-databases-access/
   description: |
     Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
+  technique: Text and Data Mining
   date: "2022-01-26"
   series: MDL Tutorials
   type: Tutorial
