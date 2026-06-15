@@ -376,7 +376,7 @@
   type: Tutorial
 - id: 33
   title: "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-working-messy-data-openrefine-oct-28-2021
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/working-with-messy-data/
   description: |
     This page provides a video recording of a workshop on OpenRefine.
   technique:
@@ -385,7 +385,7 @@
     - OpenRefine
   date: "2025-01-28"
   series: MDL Tutorials
-  type: Tutorial
+  type: Video
 - id: 34
   title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
   url: https://mdlutoronto.github.io/self-paced-data-viz-part-1/
@@ -451,7 +451,7 @@
   type: Self-paced course
 - id: 39
   title: "Self-Paced Online Course: Working with Messy Data in OpenRefine"
-  url: https://mdlutoronto.github.io/self-paced-openrefine-messy-data/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/working-with-messy-data/
   description: |
     This page provides access to a self-paced online Quercus course that focuses on data cleaning using OpenRefine.
   technique:
@@ -1444,10 +1444,10 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 118
-  title: How to Access Online GIS Classes in ESRI Academy
-  url: https://mdlutoronto.github.io/gis-class-esri-academy/
+  title: How to Access Online GIS Classes in Esri Academy
+  url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
   description: |
-    ​University of Toronto community members can access online GIS courses through ESRI Academy. Content is designed for beginners and experienced users.
+    ​University of Toronto community members can access online GIS courses through Esri Academy. Content is designed for beginners and experienced users.
   tool:
     - ArcGIS
     - ArcGIS Online
@@ -1518,7 +1518,7 @@
   title: ArcGIS Storymaps
   url: https://mdlutoronto.github.io/arcgis-storymapss/
   description: |
-    ESRI ArcGIS StoryMaps online workshop videos, January 2021
+    Esri ArcGIS StoryMaps online workshop videos, January 2021
   technique:
     - Data Visualization
     - Mapping
@@ -1699,11 +1699,11 @@
   type: Tutorial
 - id: 138
   title: "OpenRefine Augmenting Activity 4: Using Python"
-  url: https://mdlutoronto.github.io/openrefine-augmenting-activity-4-python/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-4/
   description: |
     The goal of this activity is to try out running Python in OpenRefine. We will use it to make an API call to augment our books dataset with information on the authors from Wikipedia.
 
-    ***Note:*** *Complete Augmenting Activities [1](https://mdlutoronto.github.io/openrefine-augmenting-activity-1-preparing-data/), [2](https://mdlutoronto.github.io/openrefine-augmenting-activity-2-reconciliation-services/) & [3](https://mdlutoronto.github.io/openrefine-augmenting-activity-3-add-column/) first before attempting this activity.*
+    ***Note:*** *Complete Augmenting Activities [1](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-1/), [2](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-2/) & [3](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-3/) first before attempting this activity.*
   technique:
     - Cleaning data
     - Extracting data
@@ -1715,11 +1715,11 @@
   type: Tutorial
 - id: 139
   title: "OpenRefine Augmenting Activity 3: Using Add Column by Fetching URLs"
-  url: https://mdlutoronto.github.io/openrefine-augmenting-activity-3-add-column/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-3/
   description: |
     This tutorial will show you how to use the Add Column by Fetching URLs feature in OpenRefine.
 
-    **Note:** *Complete Augmenting Activities [1](https://mdlutoronto.github.io/openrefine-augmenting-activity-1-preparing-data/) & [2](https://mdlutoronto.github.io/openrefine-augmenting-activity-2-reconciliation-services/) first before attempting this activity.*
+    **Note:** *Complete Augmenting Activities [1](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-1/) & [2](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-2/) first before attempting this activity.*
   technique:
     - Cleaning data
     - Extracting data
@@ -1730,11 +1730,11 @@
   type: Tutorial
 - id: 140
   title: "OpenRefine Augmenting Activity 1: Preparing the data"
-  url: https://mdlutoronto.github.io/openrefine-augmenting-activity-1-preparing-data/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-1/
   description: |
     In this tutorial, we will begin work on augmenting datasets.
 
-    *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine tutorial 1](https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/). This tutorial has been developed for OpenRefine version 3.7.5*
+    *Note:* *This is an advanced tutorial. If you are new to OpenRefine, please begin with [OpenRefine tutorial 1](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-1/). This tutorial has been developed for OpenRefine version 3.7.5*
   technique:
     - Cleaning data
   tool:
@@ -1744,13 +1744,11 @@
   type: Tutorial
 - id: 141
   title: "OpenRefine Augmenting Activity 2: Using Reconciliation Services"
-  url: https://mdlutoronto.github.io/openrefine-augmenting-activity-2-reconciliation-services/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-2/
   description: |
     This tutorial will teach you how to use OpenRefine's reconciliation service to connect data in your dataset with Wikidata.
 
-    ***Note 1:*** *Complete [Augmenting activity 1](https://mdlutoronto.github.io/openrefine-augmenting-activity-1-preparing-data/) first before attempting this activity.*
-
-    ***Note 2:*** *In order to complete this activity, you need to be running the latest version of OpenRefine.*
+    ***Note 1:*** *Complete [Augmenting activity 1](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/augmenting-activity-1/) first before attempting this activity.*
   technique:
     - Cleaning data
     - Extracting data
@@ -1761,11 +1759,11 @@
   type: Tutorial
 - id: 142
   title: OpenRefine Tutorial 4. 311 Calls Activity
-  url: https://mdlutoronto.github.io/openrefine-tutorial-4-311-calls-activity/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-4/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5.*
 
-    Update: please note that as of March 18, 2020, Open Data Toronto has suspended service and so their service is not available for API calls. Until service resumes, please skip step 3, and during step 5, please chose to Get Data From: This Computer and select the 311.json file in the packaged workshop files. This represents a snapshot of the data that will work with the exercises. Please feel free to email mdl@library.utoronto.ca *if you run into difficulties.*
+    *Update: please note that this API is no longer available. Please skip steps 1-4, and during step 5, please chose to Get Data From: This Computer and select the 311\.json file in the packaged workshop files. This represents a snapshot of the data that will work with the exercises. Please feel free to email [mdl@library.utoronto.ca](mailto:mdl@library.utoronto.ca) if you run into difficulties.*
 
     Sometimes you don't have your data in a file. Instead you want to use an API call to pull data from elsewhere. OpenRefine can help you make these calls and parse the data you receive.The goal of this activity is to create a new project by pulling in 311 call data from the City of Toronto into OpenRefine using an API call and then work with the data. You will construct an API call to download a subset of 311 call data in JSON format, and then use OpenRefine to parse that data and put it into a tabular format. You will then use GREL to further manipulate the data (especially working with date formats) and make some discoveries.
 
@@ -1780,13 +1778,13 @@
   type: Tutorial
 - id: 143
   title: OpenRefine Tutorial 3. Regular Expressions (Regex) Activity
-  url: https://mdlutoronto.github.io/openrefine-tutorial-3-regular-expressions-regex/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-3/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
 
     You were introduced to GREL in the previous activity, so you know that GREL is a powerful tool for cleaning/editing your data. You can make GREL even more powerful by learning how to use regular expressions (aka regex). A regular expression is a sequence of characters that define a search pattern – it is used to search for matches within text. In OpenRefine, you can use it in your GREL expressions to create sophisticated patterns describing what type of information you want to find within your dataset, then do something with the matching text (edit it, delete it, put it in a new column, etc.).
 
-    This activity assumes you have already completed the [Survey of Household Spending](https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/) and [Citizen Science](https://mdlutoronto.github.io/openrefine-tutorial-2-citizen-science-activity/) activities, have a familiarity with OpenRefine and know how to create simple GREL expressions. Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
+    This activity assumes you have already completed the [Survey of Household Spending](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-1/) and [Citizen Science](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-2/) activities, have a familiarity with OpenRefine and know how to create simple GREL expressions. Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
   technique:
     - Cleaning data
   tool:
@@ -1813,7 +1811,7 @@
   type: Tutorial
 - id: 145
   title: OpenRefine Tutorial 2. Citizen Science Activity
-  url: https://mdlutoronto.github.io/openrefine-tutorial-2-citizen-science-activity/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-2/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
 
@@ -1823,7 +1821,7 @@
 
     Before you begin, please download the OpenRefine workshop sample datasets (https://maps.library.utoronto.ca/datapub/workshops/OpenRefineWorkshop.zip), if you have not already.
 
-    ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/).*
+    ***Note***: *This assumes that you have learned the basics of OpenRefine already through the [Survey of Household Spending activity](https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-1/).*
   technique:
     - Cleaning data
   tool:
@@ -1833,7 +1831,7 @@
   type: Tutorial
 - id: 146
   title: OpenRefine Installation Instructions
-  url: https://mdlutoronto.github.io/openrefine-install-guide/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/installation/
   description: |
     This is a guide to installing and running OpenRefine on your personal computer. Please note that all computers in the Map and Data Library (on the fifth floor of Robarts) and in the computer labs on the fourth and fifth floors of Robarts Library already have OpenRefine installed.
   technique:
@@ -1845,7 +1843,7 @@
   type: Tutorial
 - id: 147
   title: OpenRefine Tutorial 1. Survey of Household Spending Activity
-  url: https://mdlutoronto.github.io/openrefine-tutorial-1-survey-household-spending/
+  url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/tutorial-1/
   description: |
     *This tutorial has been developed for OpenRefine version 3.7.5*
 
@@ -1875,7 +1873,7 @@
   title: Logging in to ArcGIS Online
   url: https://mdlutoronto.github.io/arcgis-online-log-in/
   description: |
-    This tutorial will take you through two ways of logging in to your ESRI ArcGIS Online account for the first time using your UTORid.
+    This tutorial will take you through two ways of logging in to your Esri ArcGIS Online account for the first time using your UTORid.
   tool:
     - ArcGIS
     - ArcGIS Online
@@ -2329,6 +2327,19 @@
     - ArcGIS Pro
   dataFormat: Vector
   date: "2026-06-04"
+  series: MDL Tutorials
+  type: Tutorial
+- id: 223
+  title: Open source web map creation with qgis2web and GitHub Pages
+  url: https://mdlutoronto.github.io/qgis2web-github-pages/
+  description: |
+    How to design a map in QGIS, then deploy it to the web using qgis2web and GitHub Pages.
+  technique:
+    - Mapping
+  tool:
+    - QGIS
+  dataFormat: Vector
+  date: "2026-06-08"
   series: MDL Tutorials
   type: Tutorial
 - id: 219
