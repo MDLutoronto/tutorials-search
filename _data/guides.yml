@@ -1300,8 +1300,8 @@
   description: |
     This tutorial will help you get up and running querying the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/web-science-postgresql-database). It will cover accessing the high performance computing environment, querying the database via SQL statements and from within a python script, and downloading the results of the query.
 
-    You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdlutoronto.github.io/postgresql-databases-access/). 
-    
+    You will need a Compute Canada account with the proper credentials to access this database. If you haven’t done so already, you should first follow the [instructions to get your account set up](https://mdlutoronto.github.io/postgresql-databases-access/).
+
     Note: This tutorial is intended for Windows users. If you are using a Mac, check out this [tutorial](https://mdlutoronto.github.io/wos-postgresql-database-mac-getting-started/) instead.
   technique:
     - Searching for maps and data
@@ -1316,10 +1316,10 @@
   url: https://mdlutoronto.github.io/postgresql-databases-access/
   description: |
     Since access to both the [Web of Science PostgreSQL database](https://mdl.library.utoronto.ca/postgresql-database-version-web-science-raw-data-xml) and the [Canadian Intellectual Property Office (CIPO) Patent PostgreSQL database](https://mdl.library.utoronto.ca/technology/text-data-mining-software/cipo-postgresql-database) is tied to access to supercomputers, it can only be granted after a multi-step process that ensures security and access rights
-  technique: 
+  technique:
     - Text and Data Mining
   tool:
-    - Web of Science 
+    - Web of Science
     - CIPO
   date: "2022-01-26"
   series: MDL Tutorials
@@ -1597,7 +1597,7 @@
 - id: 131
   title: COVID-19 data in R
   url: https://mdlutoronto.github.io/r-covid19-data/
-  description: 
+  description:
     This tutorial will teach you how to import, clean, explore and visualize public health Covid-19 data using R.
   tool:
     - R
