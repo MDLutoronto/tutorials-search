@@ -2354,7 +2354,7 @@
   date: "2026-05-05"
   series: MDL Tutorials
   type: Guide
-- id: 223
+- id: 224
   title: Canadian Queer Data Guide
   url: https://mdlutoronto.github.io/canadian-queer-data-guide/
   description: |
@@ -2367,3 +2367,18 @@
   date: "2024-12-12"
   series: MDL Tutorials
   type: Guide
+- id: 225
+  title: Clipping Rasters in QGIS
+  url: https://mdlutoronto.github.io/qgis-clipping-rasters/
+  description: |
+    This tutorial covers two methods for clipping raster datasets in QGIS.
+  technique:
+    - Extracting data
+  tool:
+    - QGIS
+  dataFormat:
+    - DEM
+    - Raster
+  date: "2026-06-17"
+  series: MDL Tutorials
+  type: Tutorial
