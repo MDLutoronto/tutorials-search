@@ -157,20 +157,6 @@
   date: "2025-02-13"
   series: Bits and Bytes
   type: Video
-- id: 14
-  title:
-    "Bits and Bytes Series: Constellate - A New Platform to Learn Text Analysis
-    (Jun. 28, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-constellate-new-platform-learn-text-analysis-jun-28-2021
-  description: |
-    Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards. This page provides a presentation on Constellate: A New Platform to Learn Text Analysis as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
-  technique:
-    - Text and Data Mining
-  tool:
-    - Constellate
-  date: "2025-02-13"
-  series: Bits and Bytes
-  type: Tutorial
 - id: 15
   title: "Bits and Bytes Series: Getting Started with Python in ArcGIS Pro (Nov. 17, 2020)"
   url: https://mdlutoronto.github.io/bits-bytes-series-getting-started-python-nov-17-2020/
@@ -186,14 +172,6 @@
   date: "2025-02-13"
   series: Bits and Bytes
   type: Video
-- id: 16
-  title: "Bits and Bytes Series: Introduction to Dataverse for Sharing Data (Dec.1, 2020)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/bits-and-bytes-series-introduction-dataverse-sharing-data-dec-1-2020
-  description: |
-    This page provides a presentation on an **Introduction to Dataverse for Sharing Data** as part of the Bits and Bytes Webinar Series hosted by the Map & Data Library that features presentations and demonstrations on data-related topics and tools, such as web archives, visualization, GIS and statistics.
-  date: "2025-02-13"
-  series: Bits and Bytes
-  type: Tutorial
 - id: 17
   title: "Bits and Bytes Series: Introduction to Web APIs (Apr. 1, 2021)"
   url: https://mdlutoronto.github.io/bits-bytes-series-intro-web-apis-apr-1-2021/
@@ -356,24 +334,6 @@
   date: "2025-01-28"
   series: MDL Workshops
   type: Video
-- id: 32
-  title: "Workshop Recording: Text Analysis Tasting Menu: A Sampling of Available Tools (Feb. 14, 2022)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-text-analysis-tasting-menu-sampling-available-tools-feb-14
-  description: |
-    This page provides a video recording of a workshop on various text analysis tools.
-
-    **Please note that [Constellate](https://constellate.org/docs/constellate-sunset) is ending on July 1st, 2025. **Some learning materials will remain available afterwards. Please also note that HathiTrust Research Center will no longer be funded by the end of 2026.
-  technique:
-    - Text and Data Mining
-    - Cleaning data
-    - Extracting data
-  tool:
-    - Constellate
-    - Digital Scholar Lab
-    - HathiTrust Research Center
-  date: "2025-01-28"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 33
   title: "Workshop Recording: Working with Messy Data in OpenRefine (Oct. 28, 2021)"
   url: https://mdlutoronto.github.io/openrefine-info-tutorials-workshops/working-with-messy-data/
@@ -500,18 +460,6 @@
   date: "2025-01-24"
   series: MDL Workshops
   type: Video
-- id: 43
-  title: "Workshop Recording: Constellate - A New Platform for Text Analysis (Nov. 30, 2021)"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/workshop-recording-constellate-new-platform-text-analysis-nov-30-2021
-  description: |
-    This page provides a video recording of an introductory workshop on Constellate. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
-  technique:
-    - Text and Data Mining
-  tool:
-    - Constellate
-  date: "2025-01-24"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 45
   title: Downloading, Installing, and Licensing ArcGIS CityEngine
   url: https://mdlutoronto.github.io/arcgis-cityengine-install-license/
@@ -977,19 +925,6 @@
   date: "2022-11-30"
   series: MDL Tutorials
   type: Tutorial
-- id: 81
-  title: An Introduction to Mapping and Spatial Analysis with QGIS
-  url: https://mdlutoronto.github.io/qgis-mapping-spatial-analysis-intro/
-  description: |-
-    Learn the basics of GIS with open source software, QGIS (https://qgis.org).
-  technique:
-    - Mapping
-    - Spatial Analysis
-  tool:
-    - QGIS
-  date: "2026-05-27"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 82
   title: Introduction to R Course
   url: https://mdlutoronto.github.io/r-course-intro/
@@ -1070,20 +1005,6 @@
   date: "2022-06-20"
   series: MDL Tutorials
   type: Tutorial
-- id: 90
-  title: "HathiTrust Research Center: Information, Tutorials, and Workshops"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/hathitrust-research-center-information-tutorials-and-workshops
-  description: |
-    The HathiTrust Research Center (HTRC) is the research arm of HathiTrust. It develops tools and resources that enable text or computational analysis of the HathiTrust corpus. This corpus or digital library includes over 10 million volumes (mostly books and journals), 3 million of which are in the public domain. It covers 400 languages and publication dates from 1500 to the present day, representing a broad variety of subjects.
-  technique:
-    - Data Visualization
-    - Text and Data Mining
-    - Extracting data
-  tool:
-    - HathiTrust Research Center
-  date: "2022-05-09"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 91
   title: "Infographics: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/infographics-info-tutorials-workshops/
@@ -1108,20 +1029,6 @@
   tool:
     - ProQuest TDM Studio
   date: "2022-05-09"
-  series: MDL Tutorials
-  type: Guide
-- id: 93
-  title: "Gale Digital Scholar Lab: Information, Tutorials, and Workshops"
-  url: https://mdlutoronto.github.io/dsl-info-tutorials-workshops/
-  description: |
-    The [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab) is a platform that allows users to discover and create collections of digitized texts from the Gale Historical Collections, run a variety of textual analysis on them, and visualize the resulting data.
-  technique:
-    - Data Visualization
-    - Text and Data Mining
-    - Extracting data
-  tool:
-    - Digital Scholar Lab
-  date: "2022-05-06"
   series: MDL Tutorials
   type: Guide
 - id: 94
@@ -1432,22 +1339,9 @@
   date: "2022-01-12"
   series: MDL Tutorials
   type: Tutorial
-- id: 117
-  title: ArcGIS StoryMaps (Fall 2021)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/arcgis-storymaps-fall-2021
-  description: |
-    The following slide deck is a tutorial on ArcGIS StoryMaps. This tutorial will teach you the basics of ArcGIS StoryMaps, how they can be used, and how you can make your own StoryMap.
-  technique:
-    - Mapping
-  tool:
-    - ArcGIS Online
-    - ArcGIS Storymaps
-  date: "2022-01-12"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 118
   title: How to Access Online GIS Classes in Esri Academy
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-online-gis-classes-esri-academy
+  url: https://mdlutoronto.github.io/gis-class-esri-academy/
   description: |
     ​University of Toronto community members can access online GIS courses through Esri Academy. Content is designed for beginners and experienced users.
   tool:
@@ -1455,30 +1349,6 @@
     - ArcGIS Online
     - ArcGIS Pro
   date: "2021-09-14"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 119
-  title: How to Access Constellate
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-access-constellate
-  description: |
-    This tutorial walks you through accessing Constellate using the University of Toronto's institutional privileges. Please see our general Constellate page for more information and see our tutorial on creating a dataset once you have logged in. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
-  tool:
-    - Constellate
-  date: "2021-09-13"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 120
-  title: How to Build a Dataset in Constellate
-  url: https://mdl.library.utoronto.ca/technology/tutorials/how-build-dataset-constellate
-  description: |
-    This tutorial shows you how to build a dataset in Constellate. We recommend reading our general information on Constellate first. Please also see this access tutorial in order to log in with institutional privileges. Please note that Constellate is ending on July 1st, 2025. Some learning materials will remain available afterwards.
-  technique:
-    - Data Visualization
-    - Cleaning data
-    - Extracting data
-  tool:
-    - Constellate
-  date: "2021-09-13"
   series: MDL Tutorials
   type: Tutorial
 - id: 121
@@ -1550,24 +1420,11 @@
   date: "2021-01-15"
   series: MDL Tutorials
   type: Tutorial
-- id: 127
-  title: ArcGIS Pro Workshop Outline
-  url: https://mdlutoronto.github.io/arcgis-pro-workshop-outline/
-  description: |
-    This tutorial will use 7 modules to teach you the basics of ArcGIS Pro. These modules will cover topics such as adding, manipulating, analyzing, and mapping vector and raster data.
-  technique:
-    - Mapping
-    - Spatial Analysis
-  tool:
-    - ArcGIS Pro
-  date: "2021-01-07"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 128
   title: Logging into Digital Scholar Lab through the Catalog
   url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/1-access/
   description: |
-    This short guide provides instructions on how to log into the [Gale Digital Scholar Lab](https://mdl.library.utoronto.ca/technology/text-data-mining-software/gale-digital-scholar-lab) via the University of Toronto institutional access.
+    This short guide provides instructions on how to log into the Gale Digital Scholar Lab via the University of Toronto institutional access.
   tool:
     - Digital Scholar Lab
   date: "2020-07-30"
@@ -1577,7 +1434,7 @@
   title: Getting Started with R and R Studio
   url: https://mdlutoronto.github.io/r-studio-getting-started/
   description: |
-    This guide helps you get started with the R and RStudio software and R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdl.library.utoronto.ca/technology/tutorials/introduction-r).
+    This guide helps you get started with the R and RStudio software and R code. You can install R from the [R homepage](https://www.r-project.org/). And you can install RStudio from the [RStudio homepage](https://rstudio.com/). A more thorough introduction to the R language is covered [here](https://mdlutoronto.github.io/r-intro/).
   tool:
     - R
   date: "2020-07-03"
@@ -1611,7 +1468,7 @@
   title: Text Analysis Fundamentals with the Digital Scholar Lab
   url: https://mdlutoronto.github.io/dsl-text-analysis-fundamentals/
   description: |-
-    This tutorial introduces [Gale's Digital Scholar Lab (DSL)](https://www.gale.com/primary-sources/digital-scholar-lab), a digital humanities tool. In this tutorial, you will learn how to:
+    This tutorial introduces Gale's Digital Scholar Lab (DSL), a digital humanities tool. In this tutorial, you will learn how to:
 
     1. Build a collection of texts, including uploading your own materials
 
@@ -1898,7 +1755,7 @@
   description: |
     This guide is primarily designed to help users unfamiliar with the CANSIM database to find and download data through CHASS.
 
-    **Please note** that a University of Toronto IP address is required to access CHASS.  CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdl.library.utoronto.ca/technology/tutorials/cansim-guide).
+    **Please note** that a University of Toronto IP address is required to access CHASS.  CANSIM data may also be accessed through the Statistics Canada website. Tutorial available [here](https://mdlutoronto.github.io/statcan-socioeconomic-time-series-access/).
   technique:
     - Searching for maps and data
   tool:
@@ -1965,48 +1822,6 @@
   date: "2017-10-20"
   series: MDL Tutorials
   type: Tutorial
-- id: 156
-  title: Citation rules for machine-readable data in Canadian historical journals
-  url: https://mdl.library.utoronto.ca/technology/tutorials/citation-rules-machine-readable-data-canadian-historical-journals
-  description: |
-    The following PDF contains an article that elaborates on citation rules for machine-readable data in Canadian historical journals.
-  technique:
-    - Citing data
-  date: "2017-10-13"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 157
-  title: "Citing data and statistics files in computer-readable form: a quick overview"
-  url: https://mdl.library.utoronto.ca/technology/tutorials/citing-data-and-statistics-files-computer-readable-form-quick-overview
-  technique:
-    - Citing data
-  date: "2017-10-13"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 158
-  title: Comment citer les séries ou données extraites d’E-STAT
-  url: https://mdl.library.utoronto.ca/technology/tutorials/comment-citer-les-s%C3%A9ries-ou-donn%C3%A9es-extraites-d%E2%80%99e-stat
-  technique:
-    - Citing data
-  date: "2017-10-13"
-  series: MDL Tutorials
-  type: Tutorial
-- id: 159
-  title: Online resources to build topography 3D models
-  url: https://mdlutoronto.github.io/online-resources-build-topography-3d-models/
-  description: |
-    This document compiles online resources that help to build terrain 3D models with a variety of software-options.
-
-    Brief introductions on the pros and cons of each option are provided.
-  technique:
-    - Searching for maps and data
-    - Converting data formats
-  tool:
-    - ArcGIS
-  dataFormat: DEM
-  date: "2017-09-11"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 160
   title: Accessing Statistics Canada’s Socioeconomic Time Series Data (formerly CANSIM)
   url: https://mdlutoronto.github.io/statcan-socioeconomic-time-series-access/
@@ -2015,7 +1830,7 @@
 
     Note: This guide outlines how to search for CANSIM data on the Statistics Canada website.
 
-    University of Toronto faculty, staff, and students may also [download CANSIM series for free via CHASS](http://mdl.library.utoronto.ca/technology/tutorials/accessing-cansim-data-though-chass).
+    University of Toronto faculty, staff, and students may also [download CANSIM series for free via CHASS](https://mdlutoronto.github.io/chass-access-cansim-data/).
 
     You will need to be using a UofT IP address to access CHASS.
   technique:
@@ -2057,16 +1872,6 @@
   date: "2017-05-05"
   series: External
   type: Tutorial
-- id: 164
-  title: Introduction to R (Datacamp)
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r-datacamp
-  description: |
-    Link to Datacamp's free intro course on R: https://www.datacamp.com/courses/free-introduction-to-r
-  tool:
-    - R
-  date: "2017-05-05"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 165
   title: Introduction to Stata
   url: https://mdlutoronto.github.io/stata-intro/
@@ -2075,16 +1880,6 @@
     - Stata
   date: "2017-05-05"
   series: MDL Tutorials
-  type: Tutorial
-- id: 166
-  title: Introduction to STATA (Princeton)
-  url: https://mdlutoronto.github.io/stata-intro-princeton/
-  description: |
-    An overview of the guide provided by Princeton with a link to the original guide. If you want to learn how to use Stata, you might find this guide by German Rodriguez at Princeton University useful: http://data.princeton.edu/stata/default.html
-  tool:
-    - Stata
-  date: "2017-05-05"
-  series: External
   type: Tutorial
 - id: 167
   title: R Learning Modules (UCLA)
@@ -2105,18 +1900,6 @@
     - SAS
   date: "2017-05-05"
   series: External
-  type: Tutorial
-- id: 169
-  title: Scraping tweets using Python
-  url: https://mdl.library.utoronto.ca/technology/tutorials/scraping-tweets-using-python
-  description: |
-    This tutorial demonstrates how to scrape tweets for data analysis using Python and the Twitter API.
-  technique:
-    - Extracting data
-  tool:
-    - Python
-  date: "2017-05-05"
-  series: MDL Tutorials
   type: Tutorial
 - id: 170
   title: Searching microdata in Odesi
@@ -2158,16 +1941,6 @@
   date: "2017-05-05"
   series: External
   type: Tutorial
-- id: 174
-  title: Summary statistics in STATA
-  url: https://mdl.library.utoronto.ca/technology/tutorials/summary-statistics-stata
-  description: |
-    Summary statistics are a way to explore your dataset, find patterns, and maybe even refine your question of interest. In this workshop, you will learn to use Stata to create basic summary statistics, cross-tabulations, and increasingly rich tables of summary statistics.
-  tool:
-    - Stata
-  date: "2017-05-05"
-  series: MDL Tutorials
-  type: Tutorial
 - id: 175
   title: What statistical analysis should I use? Statistical analysis using SAS (UCLA)
   url: https://mdlutoronto.github.io/what-statistical-analysis-should-i-use/
@@ -2192,7 +1965,7 @@
   type: Tutorial
 - id: 177
   title: Introduction to R
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-r
+  url: https://mdlutoronto.github.io/r-intro/
   description: |
     This guide is suitable for new R-users or advanced level R-users looking for information on specific topics. The topics covered in this guide are importing, exploring, modifying and managing data.
   technique:
