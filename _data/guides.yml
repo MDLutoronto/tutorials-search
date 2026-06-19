@@ -2281,7 +2281,7 @@
   type: Tutorial
 - id: 184
   title: Using the large format scanner
-  url: https://mdl.library.utoronto.ca/technology/tutorials/using-large-format-scanner
+  url: https://mdlutoronto.github.io/using-large-format-scanner/
   description: |
     This tutorial will help users learn how to properly use the Map and Data Library's large format scanner.
   technique:
