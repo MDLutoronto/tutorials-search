@@ -1105,6 +1105,8 @@
     - Data Visualization
     - Text and Data Mining
     - Extracting data
+  tool:
+    - ProQuest TDM Studio
   date: "2022-05-09"
   series: MDL Tutorials
   type: Guide
@@ -2380,5 +2382,17 @@
     - DEM
     - Raster
   date: "2026-06-17"
+  series: MDL Tutorials
+  type: Tutorial
+- id: 226
+  title: ProQuest TDM Studio
+  url: https://mdlutoronto.github.io/proquest-tdm-studio/
+  description: |
+    An overview of ProQuest TDM Studio and tutorial covering its main features
+  technique:
+    - Text and Data Mining
+  tool:
+    - ProQuest TDM Studio
+  date: "2021-09-23"
   series: MDL Tutorials
   type: Tutorial
