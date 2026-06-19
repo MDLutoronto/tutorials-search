@@ -1031,6 +1031,20 @@
   date: "2022-05-09"
   series: MDL Tutorials
   type: Guide
+- id: 93
+  title: "Gale Digital Scholar Lab: Information, Tutorials, and Workshops"
+  url: https://mdlutoronto.github.io/dsl-info-tutorials-workshops/
+  description: |
+    The [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab) is a platform that allows users to discover and create collections of digitized texts from the Gale Historical Collections, run a variety of textual analysis on them, and visualize the resulting data.
+  technique:
+    - Data Visualization
+    - Text and Data Mining
+    - Extracting data
+  tool:
+    - ProQuest TDM Studio
+  date: "2022-05-09"
+  series: MDL Tutorials
+  type: Guide
 - id: 94
   title: "Gephi: Information, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/gephi-info-tutorials-workshops/
