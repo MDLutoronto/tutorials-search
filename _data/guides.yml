@@ -2183,3 +2183,15 @@
   date: "2021-09-23"
   series: MDL Tutorials
   type: Tutorial
+- id: 227
+  title: "Workshop Recording: Introduction to Data Visualization Using Tableau Public (Mar. 19, 2025)"
+  url: https://mdlutoronto.github.io/workshop-recording-intro-tableau-public/
+  description: |
+    This page provides a video recording of an introductory workshop on using Tableau Public for data visualization.
+  technique:
+    - Data Visualization
+  tool:
+    - Tableau
+  date: "2026-06-22"
+  series: MDL Workshops
+  type: Video
