@@ -2195,7 +2195,7 @@
   date: "2026-06-22"
   series: MDL Workshops
   type: Video
-  - id: 228
+- id: 228
   title: Citing data
   url: https://mdlutoronto.github.io/citing-data/
   description: |
