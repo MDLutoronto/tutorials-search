@@ -2213,6 +2213,8 @@
   technique:
     - Spatial Analysis
     - Mapping
+  tool:
+    - QGIS
   date: "2026-05-25"
   series: MDL Tutorials
   type: Tutorial
