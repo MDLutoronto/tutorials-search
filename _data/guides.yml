@@ -2205,3 +2205,14 @@
   date: "2026-06-23"
   series: MDL Tutorials
   type: Tutorial
+- id: 229
+  title: An Introduction to Mapping and Spatial Analysis with QGIS
+  url: https://mdlutoronto.github.io/qgis-mapping-spatial-analysis-intro/
+  description: |
+    Learn the basics of GIS with the open source software QGIS (https://qgis.org).
+  technique:
+    - Spatial Analysis
+    - Mapping
+  date: "2026-05-25"
+  series: MDL Tutorials
+  type: Tutorial
