@@ -1,10 +1,11 @@
 ---
 - id: 1
   title: Installing Power BI Desktop
-  url: https://mdl.library.utoronto.ca/technology/tutorials/installing-power-bi-desktop
+  url: https://mdlutoronto.github.io/power-bi-desktop-installing/
   description: This tutorial will run you through the steps for installing **Power BI Desktop** on your own device. Power BI is Microsoft's Data Visualization tool, allowing users to turn their data into insightful visuals.
   technique:
     - Data Visualization
+    - Installation
   tool:
     - Power BI
   date: "2025-09-05"
@@ -12,7 +13,7 @@
   type: Tutorial
 - id: 2
   title: Introduction to Power BI
-  url: https://mdl.library.utoronto.ca/technology/tutorials/introduction-power-bi
+  url: https://mdlutoronto.github.io/power-bi-introduction
   description: |
     This tutorial outlines the steps taken in the demonstration during the live workshop on an Introduction to Data Visualization Using Power BI. This is a companion tutorial, but can also be used as a stand-alone introduction to Power BI Desktop.
   technique:
@@ -2219,6 +2220,32 @@
   series: MDL Tutorials
   type: Tutorial
 - id: 230
+  title: "Power BI: Information, Tutorials, and Workshops"
+  url: https://mdlutoronto.github.io/power-bi-information-tutorials-and-workshops
+  description: |
+    Power BI is a commercial program used to create data visualizations and is part of the Microsoft ecosystem.
+  technique:
+    - Data Visualization
+  tool:
+    - Power BI
+  dataFormat: Statistics
+  date: "2025-11-25"
+  series: MDL Tutorials
+  type: Guide
+- id: 231
+  title: "Workshop Recording: Introduction to Using Power BI to Create Data Visualizations (Nov. 19, 2025)"
+  url: https://mdlutoronto.github.io/workshop-recording-intro-power-bi-data-viz-nov/
+  description: |
+    This page provides a video recording of an introductory workshop on using Power BI for data visualization.
+  technique:
+    - Data Visualization
+  tool:
+    - Power BI
+  dataFormat: Statistics
+  date: "2025-12-16"
+  series: MDL Tutorials
+  type: Video
+- id: 232
   title: "Workshop recording: QGIS essentials"
   url: https://mdlutoronto.github.io/workshop-qgis-feb-10-2026/
   description: |
