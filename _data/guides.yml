@@ -2026,7 +2026,6 @@
   technique:
     - Projecting
   tool:
-    - ArcGIS
     - Global Mapper
     - QGIS
   dataFormat:
