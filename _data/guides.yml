@@ -471,7 +471,7 @@
     - Spatial Analysis
     - Installation
   tool:
-    - ArcGIS
+    - CityEngine
   date: "2024-11-21"
   series: MDL Tutorials
   type: Tutorial
@@ -975,7 +975,6 @@
     - Spatial Analysis
     - Searching for maps and data
   tool:
-    - ArcGIS
     - ArcGIS Pro
   date: "2022-07-21"
   series: MDL Tutorials
@@ -1257,7 +1256,6 @@
     - Mapping
     - Spatial Analysis
   tool:
-    - ArcGIS
     - ArcGIS Online
   date: "2022-01-12"
   series: MDL Tutorials
@@ -1360,7 +1358,6 @@
   description: |
     ​University of Toronto community members can access online GIS courses through Esri Academy. Content is designed for beginners and experienced users.
   tool:
-    - ArcGIS
     - ArcGIS Online
     - ArcGIS Pro
   date: "2021-09-14"
@@ -1517,7 +1514,6 @@
   technique:
     - Installation
   tool:
-    - ArcGIS
     - ArcGIS Pro
   date: "2020-04-16"
   series: MDL Tutorials
@@ -1749,7 +1745,6 @@
   description: |
     This tutorial will take you through two ways of logging in to your Esri ArcGIS Online account for the first time using your UTORid.
   tool:
-    - ArcGIS
     - ArcGIS Online
   date: "2018-03-22"
   series: MDL Tutorials
@@ -2246,7 +2241,7 @@
   series: MDL Tutorials
   type: Video
 - id: 232
-  title: "Workshop recording: QGIS essentials"
+  title: "Workshop recording: QGIS essentials (February 10, 2026)"
   url: https://mdlutoronto.github.io/workshop-qgis-feb-10-2026/
   description: |
     This page provides a video recording of the Map and Data Library's introductory QGIS workshop.
@@ -2256,5 +2251,19 @@
   tool:
     - QGIS
   date: "2026-05-25"
+  series: MDL Workshops
+  type: Video
+- id: 233
+  title: "Workshop recording: Introduction to geospatial Python programming with QGIS (April 8, 2026)"
+  url: https://mdlutoronto.github.io/workshop-intro-python-qgis-april-8-2026/
+  description: |
+    This page provides a video recording of the Map and Data Library's introductory QGIS and Python workshop.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - QGIS
+    - Python
+  date: "2026-06-26"
   series: MDL Workshops
   type: Video
