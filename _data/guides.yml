@@ -2266,3 +2266,18 @@
   date: "2026-06-26"
   series: MDL Workshops
   type: Video
+- id: 234
+  title: "Workshop recording: Introduction to geospatial Python programming with ArcGIS (March 25, 2026)"
+  url: https://mdlutoronto.github.io/workshop-arcgis-python-march-25-2026/
+  description: |
+    This page provides a video recording of the Map and Data Library's introductory ArcGIS and Python workshop.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - ArcGIS Pro
+    - ArcGIS Online
+    - Python
+  date: "2026-06-26"
+  series: MDL Workshops
+  type: Video
