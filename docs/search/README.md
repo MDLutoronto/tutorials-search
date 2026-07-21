@@ -1,5 +1,7 @@
 ## Search Syntax
 
+This guide explains how to use the search box and URL parameters to filter and sort results on the Tutorials Search page.
+
 ### Search Box
 
 | Goal | Syntax | Example |
