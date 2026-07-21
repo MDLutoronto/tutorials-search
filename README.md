@@ -55,7 +55,7 @@ Getting Pages deployment status...
 ...
 ```
 ## Unpublishing and republishing the site
-A way to fix is is to go to the repository's **Settings** > **Pages**, unpublish the site by clicking the **Unpublish site** button, then republish it by clicking the **Save** button.
+A way to fix is to go to the repository's **Settings** > **Pages**, unpublish the site by clicking the **Unpublish site** button, then republish it by clicking the **Save** button.
 
 ## Changing the source temporarily
 Another way to fix it is to change the source of the GitHub Pages deployment temporarily:
