@@ -879,7 +879,7 @@
     - MAXQDA
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 78
   title: Working in Teams Using NVivo
   url: https://mdlutoronto.github.io/working-teams-nvivo/
@@ -891,7 +891,7 @@
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 80
   title: Getting Started with the Canadian Intellectual Property Office (CIPO) Patent PostgreSQL Database
   url: https://mdlutoronto.github.io/cipo-mac/
