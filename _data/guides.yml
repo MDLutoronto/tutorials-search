@@ -864,7 +864,7 @@
     - NVivo
   date: "2023-01-27"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 77
   title: Transcription Options
   url: https://mdlutoronto.github.io/transcription-options/
@@ -2244,7 +2244,7 @@
   date: "2026-06-26"
   series: MDL Workshops
   type: Video
-  - id: 235
+- id: 235
   title: Working in Teams Using MAXQDA
   url: https://mdlutoronto.github.io/working-teams-maxqda/
   description: |
