@@ -35,7 +35,7 @@
     - MAXQDA
   date: "2025-08-08"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 4
   title: Introduction to Using MAXQDA for Qualitative Data Analysis
   url: https://mdlutoronto.github.io/maxqda-intro-quali-data-analysis/
@@ -60,7 +60,7 @@
     - NVivo
   date: "2025-08-08"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 6
   title: "MAXQDA: Information, Resources, Tutorials, and Workshops"
   url: https://mdlutoronto.github.io/maxqda-info-resources-tutorials-workshops/
@@ -2100,7 +2100,7 @@
     - MAXQDA
   date: "2026-05-05"
   series: MDL Tutorials
-  type: Guide
+  type: Tutorial
 - id: 224
   title: Canadian Queer Data Guide
   url: https://mdlutoronto.github.io/canadian-queer-data-guide/
@@ -2244,3 +2244,15 @@
   date: "2026-06-26"
   series: MDL Workshops
   type: Video
+  - id: 235
+  title: Working in Teams Using MAXQDA
+  url: https://mdlutoronto.github.io/working-teams-maxqda/
+  description: |
+    This page provides instructions and tips for how to work as a team using MAXQDA.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - MAXQDA
+  date: "2026-08-14"
+  series: MDL Tutorials
+  type: Tutorial
