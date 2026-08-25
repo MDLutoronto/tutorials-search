@@ -2256,3 +2256,43 @@
   date: "2026-08-14"
   series: MDL Tutorials
   type: Tutorial
+- id: 236
+  title: Projecting data in QGIS
+  url: https://mdlutoronto.github.io/projecting-data-qgis/
+  description: |
+    Learn how to work with coordinate reference systems and projections in QGIS.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - QGIS
+  date: "2026-08-25"
+  series: MDL Tutorials
+  type: Tutorial
+- id: 237
+  title: Mapping census data with QGIS
+  url: https://mdlutoronto.github.io/mapping-census-data-qgis
+  description: |
+    How to download census data and census boundary files and match them together in QGIS for further analysis. Census data will be downloaded using CHASS.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - QGIS
+  date: "2026-08-25"
+  series: MDL Tutorials
+  type: Tutorial
+ - id: 238
+  title: Georeferencing in QGIS
+  url: https://mdlutoronto.github.io/georeferencing-qgis
+  description: |
+    How to georeference a raster image in QGIS so it can be used as an overlay or for digitizing purposes.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - QGIS
+  date: "2026-08-25"
+  series: MDL Tutorials
+  type: Tutorial
+  
