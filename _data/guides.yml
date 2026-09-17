@@ -2295,3 +2295,16 @@
   date: "2026-08-26"
   series: MDL Tutorials
   type: Tutorial
+- id: 239
+  title: Creating contours in QGIS
+  url: https://mdlutoronto.github.io/qgis-creating-contours/
+  description: |
+    How to generate contour lines from digital elevation raster data in QGIS.
+  technique:
+    - Spatial Analysis
+    - Mapping
+  tool:
+    - QGIS
+  date: "2026-09-17"
+  series: MDL Tutorials
+  type: Tutorial
