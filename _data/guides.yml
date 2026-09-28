@@ -345,7 +345,7 @@
   tool:
     - OpenRefine
   date: "2025-01-28"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 34
   title: "Self-Paced Online Course: Data Visualization - An Introduction (Part 1 – Theory and Critique)"
@@ -2200,7 +2200,7 @@
     - Power BI
   dataFormat: Statistics
   date: "2025-12-16"
-  series: MDL Tutorials
+  series: MDL Workshops
   type: Video
 - id: 232
   title: "Workshop recording: QGIS essentials (February 10, 2026)"
