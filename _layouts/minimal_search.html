@@ -630,7 +630,7 @@
         .no-results {
             text-align: center;
             padding: 60px 20px;
-            color: #999;
+            color: #666;
         }
 
         .no-results h3 {
@@ -863,7 +863,7 @@
             <main class="results-section" aria-labelledby="resultsHeading">
                 <h2 id="resultsHeading" class="section-heading">Results</h2>
                 <div class="results-header">
-                    <div class="results-count" id="resultsCount">Loading...</div>
+                    <div class="results-count" id="resultsCount" role="status">Loading...</div>
                     <div class="results-controls">
                         <div class="per-page-selector">
                             <label for="perPageSelect">Show:</label>
@@ -875,7 +875,7 @@
                             </select>
                         </div>
                         <div class="sort-options">
-                            <select id="sortSelect">
+                            <select id="sortSelect" aria-label="Sort guides">
                                 <option value="title">Sort by Title</option>
                                 <option value="date">Sort by Date</option>
                             </select>
@@ -1286,7 +1286,6 @@
         // Render guides cards with infinite scroll
         function renderGuides(clear = false) {
             const grid = document.getElementById('guidesGrid');
-            const resultsCount = document.getElementById('resultsCount');
             const loadingIndicator = document.getElementById('loadingIndicator');
 
             if (clear) {
@@ -1294,9 +1293,8 @@
                 displayedCount = 0;
             }
 
-            resultsCount.textContent = `${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
-
             if (filteredGuides.length === 0) {
+                updatePageInfo();
                 grid.innerHTML = `
                     <div class="no-results">
                         <h3>No guides found</h3>
@@ -1376,16 +1374,15 @@
             updatePageInfo();
         }
 
-        // Update page info
+        // Update the header count and footer page info together so they never disagree
         function updatePageInfo() {
-            const pageInfo = document.getElementById('pageInfo');
-            if (filteredGuides.length === 0) {
-                pageInfo.textContent = '';
-            } else if (displayedCount >= filteredGuides.length) {
-                pageInfo.textContent = `Showing all ${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
-            } else {
-                pageInfo.textContent = `Showing ${displayedCount} of ${filteredGuides.length} guide${filteredGuides.length !== 1 ? 's' : ''}`;
-            }
+            const total = filteredGuides.length;
+            const label = `${total} guide${total !== 1 ? 's' : ''}`;
+            document.getElementById('resultsCount').textContent = label;
+            document.getElementById('pageInfo').textContent =
+                total === 0 ? '' :
+                displayedCount >= total ? `Showing all ${label}` :
+                `Showing ${displayedCount} of ${label}`;
         }
 
         // Infinite scroll handler
