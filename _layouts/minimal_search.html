@@ -227,6 +227,12 @@
             margin-bottom: 25px;
         }
 
+        .section-heading {
+            font-size: 20px;
+            color: #1E3765;
+            margin-bottom: 15px;
+        }
+
         .facet-group h3 {
             font-size: 14px;
             text-transform: uppercase;
@@ -825,7 +831,8 @@
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <div class="main-content">
-            <aside class="sidebar" id="sidebar">
+            <aside class="sidebar" id="sidebar" aria-labelledby="filtersHeading">
+                <h2 id="filtersHeading" class="section-heading">Filters</h2>
                 <button class="clear-filters" id="clearFilters">Clear All Filters</button><br><br>
                 <div class="facet-group">
                     <h3>Technique</h3>
@@ -853,7 +860,8 @@
                 </div>
             </aside>
 
-            <main class="results-section">
+            <main class="results-section" aria-labelledby="resultsHeading">
+                <h2 id="resultsHeading" class="section-heading">Results</h2>
                 <div class="results-header">
                     <div class="results-count" id="resultsCount">Loading...</div>
                     <div class="results-controls">
