@@ -2308,3 +2308,47 @@
   date: "2026-09-17"
   series: MDL Tutorials
   type: Tutorial
+- id: 240
+  title: "Workshop Recording: Depositing Research Data in U of T Dataverse (Borealis) (Feb. 12, 2025)"
+  url: https://mdlutoronto.github.io/workshop-depositing-research-data-feb-12-2025/
+  description: |
+    This page provides a video recording of the Map and Data Library's deposting research data in U of Dataverse (Borealis) workshop.
+  date: "2025-04-04"
+  series: MDL Workshops
+  type: Video
+- id: 241
+  title: "Workshop Recording: Introduction to Using MAXQDA for Qualitative Data Analysis: Part 1 (Feb. 24, 2026)"
+  url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part1-feb-24-2026/
+  description: |
+    This page provides a video recording of the Map and Data Library's introductory MAXQDA workshop. Learn to perform common tasks, such as loading in data, coding, writing memos, and exporting.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - MAXQDA
+  date: "2025-04-04"
+  series: MDL Workshops
+  type: Video
+- id: 242
+  title: "Workshop Recording: Introduction to Using MAXQDA for Qualitative Data Analysis: Part 2 (Feb. 25, 2026)"
+  url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part2-feb-25-2026/
+  description: |
+    This page provides a video recording of a Map and Data Library MAXQDA workshop. Learn to use some of MAXQDA’s analysis and visualization tools, and how to work with document variables.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - MAXQDA
+  date: "2025-04-04"
+  series: MDL Workshops
+  type: Video
+- id: 243
+  title: "Workshop Recording: Introduction to Using MAXQDA & AI for Qualitative Data Analysis: Part 3 (Feb. 26, 2026)"
+  url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part3-feb-26-2026/
+  description: |
+    This page provides a video recording of a Map and Data Library MAXQDA workshop. Learn about using AI in qualitative research and some of MAXQDA’s AI tools.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - MAXQDA
+  date: "2025-04-04"
+  series: MDL Workshops
+  type: Video
