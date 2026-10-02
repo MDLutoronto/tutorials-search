@@ -158,9 +158,9 @@
             color: white;
         }
 
-        .filter-toggle::before {
-            content: '☰ ';
-            font-size: 16px;
+        .filter-toggle svg,
+        #back-to-top svg {
+            fill: currentColor;
         }
 
         .filter-toggle.scrolled {
@@ -668,12 +668,6 @@
             cursor: pointer;
         }
 
-        #back-to-top::before {
-            content: '↑';
-            font-size: 24px;
-            font-weight: bold;
-        }
-
         #back-to-top.show {
             opacity: 1;
             visibility: visible;
@@ -695,7 +689,9 @@
             }
 
             .filter-toggle {
-                display: block;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
             }
 
             .sidebar {
@@ -792,8 +788,9 @@
                 height: 45px;
             }
 
-            #back-to-top::before {
-                font-size: 20px;
+            #back-to-top svg {
+                width: 20px;
+                height: 20px;
             }
 
             header h1 {
@@ -836,7 +833,7 @@
                 </div>
             </div>
         </div>
-        <button class="filter-toggle" id="filterToggle">Filters</button>
+        <button class="filter-toggle" id="filterToggle">{% octicon three-bars height:16 %}Filters</button>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <div class="main-content">
@@ -1619,7 +1616,7 @@
         applyFilters();
     </script>
 
-    <a href="#top" id="back-to-top" aria-label="Back to top"></a>
+    <a href="#top" id="back-to-top" aria-label="Back to top">{% octicon arrow-up height:24 %}</a>
     <script>
       // Show/hide back to top button based on scroll position
       const backToTop = document.getElementById('back-to-top');
