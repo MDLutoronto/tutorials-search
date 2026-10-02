@@ -28,3 +28,8 @@ node_modules
 *.gem
 .bundle
 .ruby-version
+
+# .agents and .claude
+.agents
+.claude
+skills-lock.json
