@@ -901,6 +901,8 @@
         </div>
     </div>
 
+    <a href="#top" id="back-to-top" aria-label="Back to top">{% octicon arrow-up height:24 %}</a>
+
     <script>
         // Jekyll injects the data here at build time using Liquid
         const guides = {{ site.data.guides | jsonify }};
@@ -1509,9 +1511,6 @@
             applyFilters();
         });
 
-        // Back-to-top button functionality
-        const backToTopButton = document.getElementById('back-to-top');
-
         // Handle tag clicks for filtering (EXCLUSIVE/ONLY mode)
         document.getElementById('guidesGrid').addEventListener('click', (event) => {
             const tag = event.target.closest('.tag');
@@ -1620,7 +1619,6 @@
         applyFilters();
     </script>
 
-    <a href="#top" id="back-to-top" aria-label="Back to top">{% octicon arrow-up height:24 %}</a>
     <script>
       // Show/hide back to top button based on scroll position
       const backToTop = document.getElementById('back-to-top');
