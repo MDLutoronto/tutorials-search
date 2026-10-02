@@ -150,7 +150,7 @@
             font-size: 14px;
             font-weight: 600;
             color: #1E3765;
-            transition: background-color 0.3s, color 0.3s, translate 200ms ease-out;
+            transition: background-color 0.3s, color 0.3s, translate 200ms ease-out, scale 150ms ease-out;
         }
 
         .filter-toggle:hover {
@@ -224,6 +224,15 @@
             font-weight: 600;
         }
 
+        /* Tactile feedback on press */
+        .filter-toggle:active,
+        .clear-filters:active,
+        .show-more-btn:active,
+        .tag:active,
+        #back-to-top:active {
+            scale: 0.96;
+        }
+
         .facet-group {
             margin-bottom: 25px;
         }
@@ -286,7 +295,7 @@
             cursor: pointer;
             font-size: 13px;
             color: #666;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, scale 150ms ease-out;
         }
 
         .clear-filters:hover {
@@ -304,7 +313,7 @@
             text-align: center;
             margin-top: 5px;
             border-radius: 4px;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, scale 150ms ease-out;
             font-weight: 500;
         }
 
@@ -491,7 +500,7 @@
             font-size: 12px;
             color: #666;
             cursor: pointer;
-            transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+            transition: transform 150ms ease-out, box-shadow 150ms ease-out, scale 150ms ease-out;
             user-select: none;
         }
 
@@ -654,7 +663,7 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s, transform 0.3s, translate 200ms ease-out;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s, translate 200ms ease-out, scale 150ms ease-out;
             z-index: 1000;
             cursor: pointer;
         }
