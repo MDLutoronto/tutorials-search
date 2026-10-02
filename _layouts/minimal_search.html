@@ -149,7 +149,7 @@
             font-size: 14px;
             font-weight: 600;
             color: #1E3765;
-            transition: background-color 0.3s, color 0.3s, right 0.3s;
+            transition: background-color 0.3s, color 0.3s, translate 200ms ease-out;
         }
 
         .filter-toggle:hover {
@@ -163,7 +163,7 @@
         }
 
         .filter-toggle.scrolled {
-            right: -150px;
+            translate: calc(100% + 20px) 0;
         }
 
         .sidebar::-webkit-scrollbar {
@@ -653,7 +653,7 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s, translate 200ms ease-out;
             z-index: 1000;
             cursor: pointer;
         }
@@ -676,7 +676,7 @@
         }
 
         #back-to-top.scrolled {
-            right: -100px;
+            translate: calc(100% + 40px) 0;
         }
 
         @media (max-width: 1024px) {
