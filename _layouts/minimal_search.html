@@ -203,9 +203,14 @@
         }
 
         .search-box input:focus {
-            outline: none;
             background: white;
-            border-color: #1E3765;
+        }
+
+        /* Two-tone ring: white shows on the navy page, navy shows over the white panels */
+        .search-box input:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 6px #1E3765;
         }
 
         .search-hint {
