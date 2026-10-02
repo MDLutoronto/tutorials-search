@@ -479,6 +479,7 @@ header p.header-meta {
 }
 
 .read-more-btn {
+    display: block;
     background: none;
     border: none;
     color: #1E3765;
@@ -489,6 +490,11 @@ header p.header-meta {
     font-weight: 600;
     text-decoration: underline;
     transition: color 0.2s;
+}
+
+/* Shown only when the description is clamped */
+.read-more-btn[hidden] {
+    display: none;
 }
 
 .read-more-btn:hover {

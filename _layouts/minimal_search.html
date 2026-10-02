@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
     {% if site.ga_tracking != nil %}
     {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
 
@@ -120,10 +121,7 @@
 
     <a href="#top" id="back-to-top" aria-label="Back to top">{% octicon arrow-up height:24 %}</a>
 
-    <script>
-        // Jekyll injects the data here at build time using Liquid
-        const guides = {{ site.data.guides | jsonify }};
-    </script>
-    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    <!-- Entry point; it imports the other modules in assets/js/search/ -->
+    <script type="module" src="{{ '/assets/js/search/main.js' | relative_url }}"></script>
 </body>
 </html>
