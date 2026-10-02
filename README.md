@@ -26,6 +26,8 @@ See the [search guide](/docs/search/README.md) for instructions on how to use th
 # 🏗️ Development
 ## Site structure
 - The main layout file is located at [`_layouts/minimal_search.html`](_layouts/minimal_search.html).
+- The search page styles are in [`assets/css/search.css`](assets/css/search.css) and its behaviour is in the ES modules under [`assets/js/search/`](assets/js/search/), starting from `main.js`.
+- The 404 page uses the [`MDLutoronto/jtd-theme`](https://github.com/MDLutoronto/jtd-theme) remote theme.
 - The tutorials data is stored in the [`_data/guides.yml`](_data/guides.yml) file.
 - The site configuration is in the [`_config.yml`](_config.yml) file.
 - The homepage is located at [`page.md`](page.md) and uses the `minimal_search` layout, powering the search interface.
