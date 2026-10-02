@@ -272,13 +272,14 @@
         }
 
         .facet-option input[type="checkbox"] {
-            margin-right: 8px;
+            margin-right: 0;
             cursor: pointer;
             width: 16px;
             height: 16px;
         }
 
         .facet-option label {
+            padding-left: 8px;
             cursor: pointer;
             font-size: 14px;
             flex: 1;
@@ -447,7 +448,8 @@
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
-            overflow: hidden;
+            /* clip, not hidden: a screen reader's reading cursor can't scroll the clamped text and garble it */
+            overflow: clip;
             text-overflow: ellipsis;
             word-wrap: break-word;
             overflow-wrap: break-word;
@@ -503,6 +505,8 @@
 
         .tag {
             display: inline-block;
+            border: none;
+            font-family: inherit;
             padding: 4px 10px;
             background-color: #f0f0f0;
             border-radius: 12px;
@@ -692,6 +696,46 @@
             translate: calc(100% + 40px) 0;
         }
 
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            clip-path: inset(50%);
+            white-space: nowrap;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 20px;
+            top: -100px;
+            z-index: 1001;
+            background: white;
+            color: #1E3765;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 20px;
+        }
+
+        #results,
+        #top {
+            scroll-margin-top: 20px;
+        }
+
+        .section-heading:focus,
+        #top:focus {
+            outline: none;
+        }
+
+        .sidebar-close {
+            display: none;
+        }
+
         @media (max-width: 1024px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -714,12 +758,33 @@
                 z-index: 102;
                 border-radius: 0;
                 transform: translateX(-100%);
-                transition: transform 0.3s ease-out;
+                visibility: hidden;
+                /* Stay visible while sliding out; become visible at once on open so focus can land */
+                transition: transform 0.3s ease-out, visibility 0s 0.3s;
                 padding: 20px 15px;
+                overscroll-behavior: contain;
             }
 
             .sidebar.open {
                 transform: translateX(0);
+                visibility: visible;
+                transition: transform 0.3s ease-out, visibility 0s;
+            }
+
+            .sidebar-close {
+                display: block;
+                position: absolute;
+                top: 8px;
+                right: 15px;
+                min-width: 44px;
+                min-height: 44px;
+                padding: 0 12px;
+                background: #f5f5f5;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                color: #1E3765;
+                cursor: pointer;
             }
 
             .sidebar-overlay {
@@ -819,35 +884,58 @@
                 padding: 10px 0;
             }
         }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                transition-property: opacity, visibility, background-color, color, border-color, box-shadow !important;
+            }
+
+            .guides-card:hover,
+            .tag:hover,
+            #back-to-top:hover,
+            .sticky-search-wrapper.scrolled {
+                transform: none;
+            }
+
+            .filter-toggle:active,
+            .clear-filters:active,
+            .show-more-btn:active,
+            .tag:active,
+            #back-to-top:active {
+                scale: none;
+            }
+        }
     </style>
 </head>
 <body>
+    <a href="#results" class="skip-link">Skip to results</a>
     <div class="container">
-        <header>
+        <header id="top" tabindex="-1">
             <a href="https://library.utoronto.ca/library/mdl" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/mdl_logo_transparent.png' | relative_url }}" alt="Map & Data Library Logo" style="height: 100px; margin-bottom: 15px;">
             </a>
             <a href="https://library.utoronto.ca" target="_blank" rel="noopener">
                 <img src="{{ '/assets/images/UTL-white.png' | relative_url }}" alt="University of Toronto Libraries Logo" style="height: 70px; margin-bottom: 30px;">
             </a>
-            <h1><a href="{{ '/' | relative_url }}">📚 Learn@MDL</a></h1>
+            <h1><a href="{{ '/' | relative_url }}"><span aria-hidden="true">📚 </span>Learn@MDL</a></h1>
             <p>Browse and discover tutorials and workshops from the Map & Data Library, University of Toronto. </p> <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px;">Last updated: {{ site.time | date: "%Y-%m-%d" | default: "N/A" }}  </p>
-            <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 16px;"><a href="https://github.com/MDLutoronto/tutorials-search" target="_blank" rel="noopener" style="display: inline-flex; align-items: center;" alt="View the Learn@MDL GitHub repository.">{% octicon mark-github height:24 %}</a><a href="https://github.com/MDLutoronto/tutorials-search/blob/main/docs/search/README.md" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px;">{% octicon search height:24 %}Search syntax</a></p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.0rem; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 16px;"><a href="https://github.com/MDLutoronto/tutorials-search" target="_blank" rel="noopener" style="display: inline-flex; align-items: center;" aria-label="Learn@MDL GitHub repository">{% octicon mark-github height:24 %}</a><a href="https://github.com/MDLutoronto/tutorials-search/blob/main/docs/search/README.md" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px;">{% octicon search height:24 %}Search syntax</a></p>
         </header>
         <div class="sticky-search-wrapper">
             <div class="sticky-search-container">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search guides…">
-                    <span class="search-hint">Ctrl+K</span>
+                <div class="search-box" role="search">
+                    <label for="searchInput" class="visually-hidden">Search guides</label>
+                    <input type="text" id="searchInput" placeholder="Search guides…" aria-keyshortcuts="Control+K Meta+K">
+                    <span class="search-hint" aria-hidden="true">Ctrl+K</span>
                 </div>
             </div>
         </div>
-        <button class="filter-toggle" id="filterToggle">{% octicon three-bars height:16 %}Filters</button>
+        <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="sidebar">{% octicon three-bars height:16 %}Filters</button>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <div class="main-content">
             <aside class="sidebar" id="sidebar" aria-labelledby="filtersHeading">
-                <h2 id="filtersHeading" class="section-heading">Filters</h2>
+                <h2 id="filtersHeading" class="section-heading" tabindex="-1">Filters</h2>
+                <button class="sidebar-close" id="sidebarClose" type="button">Close</button>
                 <button class="clear-filters" id="clearFilters">Clear All Filters</button><br><br>
                 <div class="facet-group">
                     <h3>Technique</h3>
@@ -875,8 +963,8 @@
                 </div>
             </aside>
 
-            <main class="results-section" aria-labelledby="resultsHeading">
-                <h2 id="resultsHeading" class="section-heading">Results</h2>
+            <main class="results-section" id="results" aria-labelledby="resultsHeading">
+                <h2 id="resultsHeading" class="section-heading" tabindex="-1">Results</h2>
                 <div class="results-header">
                     <div class="results-count" id="resultsCount" role="status">Loading...</div>
                     <div class="results-controls">
@@ -933,6 +1021,9 @@
         let displayedCount = 0;
         let itemsPerLoad = 12;
         let isLoading = false;
+        const expandedFacets = new Set();
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const scrollBehavior = () => prefersReducedMotion.matches ? 'auto' : 'smooth';
 
         // URL Parameter Management
         function readURLParameters() {
@@ -1076,7 +1167,7 @@
             const facetHTML = values.map((value, index) => {
                 const count = countFacetValues(facetKey, value);
                 const isChecked = activeFilters[facetKey].has(value);
-                const isHidden = index >= maxVisible ? 'hidden' : '';
+                const isHidden = index >= maxVisible && !expandedFacets.has(facetKey) ? 'hidden' : '';
                 return `
                     <div class="facet-option ${isHidden}" data-facet-item="${facetKey}">
                         <input type="checkbox" id="${facetKey}-${value}"
@@ -1092,9 +1183,10 @@
             }).join('');
 
             // Add show more button if there are more than maxVisible items
+            const isExpanded = expandedFacets.has(facetKey);
             const showMoreBtn = values.length > maxVisible
-                ? `<button class="show-more-btn" data-facet="${facetKey}" data-expanded="false">
-                     Show more (${values.length - maxVisible})
+                ? `<button type="button" class="show-more-btn" data-facet="${facetKey}" data-expanded="${isExpanded}" aria-expanded="${isExpanded}">
+                     ${isExpanded ? 'Show less' : `Show more (${values.length - maxVisible})`}
                    </button>`
                 : '';
 
@@ -1128,6 +1220,8 @@
                 });
                 button.textContent = `Show more (${totalCount - maxVisible})`;
                 button.dataset.expanded = 'false';
+                button.setAttribute('aria-expanded', 'false');
+                expandedFacets.delete(facetKey);
             } else {
                 // Expand - show all items
                 allItems.forEach(item => {
@@ -1135,6 +1229,8 @@
                 });
                 button.textContent = 'Show less';
                 button.dataset.expanded = 'true';
+                button.setAttribute('aria-expanded', 'true');
+                expandedFacets.add(facetKey);
             }
         }
 
@@ -1284,9 +1380,22 @@
             renderGuides(true); // true = clear existing guides
         }
 
-        // Update facet counts
+        // Update facet counts, keeping keyboard focus on the same control after the re-render
         function updateFacets() {
+            const focused = document.activeElement;
+            const sidebarHadFocus = sidebar.contains(focused);
+            const focusedFacet = focused && focused.dataset ? focused.dataset.facet : null;
+            const focusedValue = focused && focused.dataset ? focused.dataset.value : null;
+            const focusedShowMore = focused && focused.classList && focused.classList.contains('show-more-btn');
+
             initializeFacets();
+
+            if (!sidebarHadFocus || !focusedFacet) return;
+            const selector = focusedShowMore
+                ? `.show-more-btn[data-facet="${CSS.escape(focusedFacet)}"]`
+                : `input[data-facet="${CSS.escape(focusedFacet)}"][data-value="${CSS.escape(focusedValue)}"]`;
+            const target = sidebar.querySelector(selector);
+            if (target) target.focus();
         }
 
         // Sort guides
@@ -1350,12 +1459,12 @@
                 <div class="guides-card">
                     <h3><a href="${guide.url}" target="_blank">${guide.title}</a></h3>
                     <div class="guides-description" id="${uniqueId}" data-full-text="${description.replace(/"/g, '&quot;')}">${descriptionHtml}</div>
-                    <button class="read-more-btn" id="btn-${uniqueId}" onclick="toggleDescription('${uniqueId}', this)" style="display: none;">Read more</button>
-                    <div class="guides-tags">
-                        ${techniques.map(cat => `<span class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" data-facet="technique" data-value="${cat}">${cat}</span>`).join('')}
-                        ${tools.map(fmt => `<span class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" data-facet="tool" data-value="${fmt}">${fmt}</span>`).join('')}
-                        ${dataFormats.map(fmt => `<span class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" data-facet="dataFormat" data-value="${fmt}">${fmt}</span>`).join('')}
-                        ${types.map(type => `<span class="tag type${activeFilters.type.has(type) ? ' active' : ''}" data-facet="type" data-value="${type}">${type}</span>`).join('')}
+                    <button type="button" class="read-more-btn" id="btn-${uniqueId}" onclick="toggleDescription('${uniqueId}', this)" aria-expanded="false" aria-controls="${uniqueId}" style="display: none;">Read more</button>
+                    <div class="guides-tags" role="group" aria-label="Filter by tag">
+                        ${techniques.map(cat => `<button type="button" class="tag technique${activeFilters.technique.has(cat) ? ' active' : ''}" aria-pressed="${activeFilters.technique.has(cat)}" data-facet="technique" data-value="${cat}">${cat}</button>`).join('')}
+                        ${tools.map(fmt => `<button type="button" class="tag tool${activeFilters.tool.has(fmt) ? ' active' : ''}" aria-pressed="${activeFilters.tool.has(fmt)}" data-facet="tool" data-value="${fmt}">${fmt}</button>`).join('')}
+                        ${dataFormats.map(fmt => `<button type="button" class="tag dataFormat${activeFilters.dataFormat.has(fmt) ? ' active' : ''}" aria-pressed="${activeFilters.dataFormat.has(fmt)}" data-facet="dataFormat" data-value="${fmt}">${fmt}</button>`).join('')}
+                        ${types.map(type => `<button type="button" class="tag type${activeFilters.type.has(type) ? ' active' : ''}" aria-pressed="${activeFilters.type.has(type)}" data-facet="type" data-value="${type}">${type}</button>`).join('')}
                     </div>
                     <div class="guides-meta">
                         <span>${guide.series && guide.series !== 'null' && guide.series !== 'undefined' ? guide.series : ''}</span>
@@ -1443,8 +1552,9 @@
 
                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-                // Hide search bar when scrolling down (when not at top)
-                if (currentScroll > lastScrollTop && currentScroll > 200) {
+                // Hide search bar when scrolling down (when not at top), unless it holds focus
+                const searchHasFocus = stickySearchWrapper && stickySearchWrapper.contains(document.activeElement);
+                if (currentScroll > lastScrollTop && currentScroll > 200 && !searchHasFocus) {
                     // Scrolling down
                     if (stickySearchWrapper) stickySearchWrapper.classList.add('scrolled');
                 } else {
@@ -1541,8 +1651,21 @@
             updateURL();
             applyFilters();
 
-            // Scroll to top of results smoothly
-            document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // The re-render removed the clicked tag, so move focus to the top of the results
+            document.querySelector('.results-section').scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
+            document.getElementById('resultsHeading').focus({ preventScroll: true });
+        });
+
+        // A link in the clamped part of a description would scroll the clipped box and garble it,
+        // so expand the description when focus lands on something it hides
+        document.getElementById('guidesGrid').addEventListener('focusin', (event) => {
+            const description = event.target.closest('.guides-description');
+            if (!description || description.classList.contains('expanded')) return;
+
+            description.scrollTop = 0;
+            if (event.target.getBoundingClientRect().bottom > description.getBoundingClientRect().bottom) {
+                toggleDescription(description.id, document.getElementById(`btn-${description.id}`));
+            }
         });
 
         // Keyboard shortcut: Ctrl+K or Cmd+K to show and focus search box
@@ -1582,9 +1705,11 @@
             if (description.classList.contains('expanded')) {
                 description.classList.remove('expanded');
                 button.textContent = 'Read more';
+                button.setAttribute('aria-expanded', 'false');
             } else {
                 description.classList.add('expanded');
                 button.textContent = 'Read less';
+                button.setAttribute('aria-expanded', 'true');
             }
         }
 
@@ -1602,19 +1727,50 @@
         const sidebar = document.getElementById('sidebar');
         const sidebarOverlay = document.getElementById('sidebarOverlay');
 
-        function toggleSidebar() {
-            sidebar.classList.toggle('open');
-            sidebarOverlay.classList.toggle('show');
-            document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+        const drawerBackground = [
+            document.querySelector('.container > header'),
+            stickySearchWrapper,
+            filterToggle,
+            document.getElementById('results'),
+            backToTopBtn
+        ];
+
+        function openSidebar() {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('show');
+            filterToggle.setAttribute('aria-expanded', 'true');
+            drawerBackground.forEach(el => el.inert = true);
+            document.body.style.overflow = 'hidden';
+            document.getElementById('filtersHeading').focus();
         }
 
-        filterToggle.addEventListener('click', toggleSidebar);
-        sidebarOverlay.addEventListener('click', toggleSidebar);
+        function closeSidebar() {
+            if (!sidebar.classList.contains('open')) return;
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('show');
+            filterToggle.setAttribute('aria-expanded', 'false');
+            drawerBackground.forEach(el => el.inert = false);
+            document.body.style.overflow = '';
+            filterToggle.focus();
+        }
+
+        filterToggle.addEventListener('click', openSidebar);
+        sidebarOverlay.addEventListener('click', closeSidebar);
+        document.getElementById('sidebarClose').addEventListener('click', closeSidebar);
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeSidebar();
+        });
+
+        // Leaving the mobile layout with the drawer open would strand the inert background
+        window.matchMedia('(max-width: 1024px)').addEventListener('change', (event) => {
+            if (!event.matches) closeSidebar();
+        });
 
         // Close sidebar when a filter is selected on mobile
         sidebar.addEventListener('click', (event) => {
             if (window.innerWidth <= 1024 && event.target.type === 'checkbox') {
-                setTimeout(toggleSidebar, 300); // Small delay for better UX
+                setTimeout(closeSidebar, 300); // Small delay for better UX
             }
         });
 
@@ -1636,13 +1792,14 @@
         }
       }, { passive: true });
 
-      // Smooth scroll to top
+      // Smooth scroll to top, and take keyboard focus there too
       backToTop.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
           top: 0,
-          behavior: 'smooth'
+          behavior: scrollBehavior()
         });
+        document.getElementById('top').focus({ preventScroll: true });
       });
     </script>
 
