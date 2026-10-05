@@ -5,17 +5,22 @@
    Colour). Pantone 655 is U of T Blue, the primary; the rest are secondary
    accents. Every pairing below is checked against WCAG 2.1 AA: 4.5:1 for body
    text, 3:1 for large text and for control borders (1.4.11).
+
+   The brand's colour-accessibility guidance splits the accents by which text
+   colour they carry. Cleared for white button text and for links on white:
+   Pantone 655, 633, 2613 and 227. Cleared for black text: Pantone 2985, 7406
+   and 376. Pantone Warm Red is in neither list and so is not used for text.
    --------------------------------------------------------------------------- */
 :root {
     /* Brand palette, unmodified */
     --uoft-blue: #1E3765;           /* Pantone 655  - primary */
-    --uoft-blue-medium: #007FA3;    /* Pantone 633 */
+    --uoft-blue-medium: #007894;    /* Pantone 633 */
     --uoft-blue-light: #6FC7EA;     /* Pantone 2985 */
     --uoft-purple: #6D247A;         /* Pantone 2613 */
-    --uoft-red: #DC4633;            /* Pantone Warm Red */
-    --uoft-green: #8DBF2E;          /* Pantone 376 - too light for text of any
-                                       colour, so it appears below only as the
-                                       hue the dataFormat chip shades derive from */
+    --uoft-fuchsia: #AB1368;        /* Pantone 227 */
+    --uoft-green: #8DBF2E;          /* Pantone 376 - cleared for black text, but
+                                       has no sanctioned dark counterpart, so the
+                                       selected dataFormat chip shades it below */
 
     /* Neutrals: U of T Blue desaturated to 16%, stepped by contrast on white.
        #5E6B82 is the lightest tone that still clears 4.5:1, so secondary text
@@ -35,37 +40,40 @@
     --on-navy: #FFFFFF;             /* 11.7:1 on U of T Blue */
     --on-navy-muted: rgba(255, 255, 255, 0.8);  /* 8.1:1 on U of T Blue */
 
-    --link: #006682;                /*  6.5:1 - shade of Pantone 633 */
-    --link-hover: #003443;          /* 13.8:1 */
+    --link: var(--uoft-blue-medium);    /* 5.1:1 - Pantone 633, cleared for
+                                           links on white */
+    --link-hover: var(--uoft-blue);     /* 11.7:1 - Pantone 655 */
 
-    /* Guide tag chips. Fills are tints of the brand hues, luminance-matched to
-       Pantone 2985 so the four categories read as one set; text is a shade of
-       the same hue at 7:1, since the chips are 12px. Pantone 376 and Warm Red
-       are too light to carry white text, so their selected states use the
-       shallowest shade that reaches AA. */
+    /* Guide tag chips. Resting fills are tints of the brand hues, all carrying
+       black text -- the pairing the brand clears for its light accents.
+       Selected chips invert to the hue at full strength with white text.
+
+       Pantone 2613 and 227 are only 35 degrees apart, so rather than matching
+       all four tints in luminance the purple is held deeper and the fuchsia
+       lighter; that keeps Tool and Type tellable apart at a glance. Pantone 376
+       has no sanctioned dark counterpart, so the selected dataFormat chip uses
+       the shallowest shade of that hue reaching AA. */
+    --tag-ink: #000000;                         /* 11:1 on every fill below */
+
     --tag-neutral-bg: var(--surface-subtle);
     --tag-neutral-text: var(--text-muted);
     --tag-neutral-edge: var(--border-strong);
 
     --tag-technique-bg: var(--uoft-blue-light);
-    --tag-technique-text: #003443;              /* 7.0:1 on fill */
-    --tag-technique-edge: var(--uoft-blue-medium);   /* 4.6:1 on white */
-    --tag-technique-on: var(--uoft-blue-medium);     /* 4.6:1 with white text */
+    --tag-technique-edge: var(--uoft-blue-medium);  /* 5.1:1 on white */
+    --tag-technique-on: var(--uoft-blue-medium);    /* 5.1:1 with white text */
 
-    --tag-tool-bg: #CDB4D1;
-    --tag-tool-text: #4C1955;                   /* 7.0:1 on fill */
+    --tag-tool-bg: #BD9CC3;      /* 8.7:1 with black text */
     --tag-tool-edge: var(--uoft-purple);        /* 9.6:1 on white */
     --tag-tool-on: var(--uoft-purple);          /* 9.6:1 with white text */
 
     --tag-dataformat-bg: #A0CA50;
-    --tag-dataformat-text: #26340C;             /* 7.0:1 on fill */
     --tag-dataformat-edge: #719925;             /* 3.3:1 on white */
     --tag-dataformat-on: #55731C;               /* 5.5:1 with white text */
 
-    --tag-type-bg: #EFABA3;
-    --tag-type-text: #561B14;                   /* 7.1:1 on fill */
-    --tag-type-edge: var(--uoft-red);           /* 4.2:1 on white */
-    --tag-type-on: #B03829;                     /* 6.1:1 with white text */
+    --tag-type-bg: #EDCBDE;      /* 14.2:1 with black text */
+    --tag-type-edge: var(--uoft-fuchsia);       /* 6.9:1 on white */
+    --tag-type-on: var(--uoft-fuchsia);         /* 6.9:1 with white text */
 }
 
 * {
@@ -596,7 +604,7 @@ header p.header-meta {
 }
 
 .read-more-btn:hover {
-    color: var(--link-hover);
+    color: var(--uoft-blue-medium);
 }
 
 .guides-tags {
@@ -630,7 +638,7 @@ header p.header-meta {
 .tag.technique {
     background-color: var(--tag-technique-bg);
     border-color: var(--tag-technique-edge);
-    color: var(--tag-technique-text);
+    color: var(--tag-ink);
 }
 
 .tag.technique.active {
@@ -643,7 +651,7 @@ header p.header-meta {
 .tag.tool {
     background-color: var(--tag-tool-bg);
     border-color: var(--tag-tool-edge);
-    color: var(--tag-tool-text);
+    color: var(--tag-ink);
 }
 
 .tag.tool.active {
@@ -656,7 +664,7 @@ header p.header-meta {
 .tag.dataFormat {
     background-color: var(--tag-dataformat-bg);
     border-color: var(--tag-dataformat-edge);
-    color: var(--tag-dataformat-text);
+    color: var(--tag-ink);
 }
 
 .tag.dataFormat.active {
@@ -669,7 +677,7 @@ header p.header-meta {
 .tag.type {
     background-color: var(--tag-type-bg);
     border-color: var(--tag-type-edge);
-    color: var(--tag-type-text);
+    color: var(--tag-ink);
 }
 
 .tag.type.active {
