@@ -1,3 +1,81 @@
+/* ---------------------------------------------------------------------------
+   Colour tokens
+
+   Brand hexes are the official U of T palette (brand.utoronto.ca, Guidelines >
+   Colour). Pantone 655 is U of T Blue, the primary; the rest are secondary
+   accents. Every pairing below is checked against WCAG 2.1 AA: 4.5:1 for body
+   text, 3:1 for large text and for control borders (1.4.11).
+
+   The brand's colour-accessibility guidance splits the accents by which text
+   colour they carry. Cleared for white button text and for links on white:
+   Pantone 655, 633, 2613 and 227. Cleared for black text: Pantone 2985, 7406
+   and 376. Pantone Warm Red is in neither list and so is not used for text.
+   --------------------------------------------------------------------------- */
+:root {
+    /* Brand palette, unmodified */
+    --uoft-blue: #1E3765;           /* Pantone 655  - primary */
+    --uoft-blue-medium: #007894;    /* Pantone 633 */
+    --uoft-blue-light: #6FC7EA;     /* Pantone 2985 */
+    --uoft-purple: #6D247A;         /* Pantone 2613 */
+    --uoft-red: #DC4633;            /* Pantone Warm Red - cleared for neither
+                                       text colour, so it is used below only as
+                                       a chip edge, where 3:1 non-text applies */
+    --uoft-green: #8DBF2E;          /* Pantone 376 - cleared for black text, but
+                                       has no sanctioned dark counterpart, so the
+                                       selected dataFormat chip shades it below */
+
+    /* Neutrals: U of T Blue desaturated to 16%, stepped by contrast on white.
+       #5E6B82 is the lightest tone that still clears 4.5:1, so secondary text
+       stops there rather than fading into the old #999. Hierarchy is kept by
+       darkening the primary tones instead of lightening the secondary ones. */
+    --text-strong: #2B313B;         /* 13.1:1 on white - headings, counts */
+    --text-body: #3C4453;           /*  9.8:1 - body copy, control labels */
+    --text-muted: #515C70;          /*  6.7:1 - subheads, secondary controls */
+    --text-subtle: #5E6B82;         /*  5.4:1 - facet counts, card metadata */
+
+    --surface: #FFFFFF;
+    --surface-subtle: #F3F4F7;      /* resting fill for quiet controls */
+    --surface-hover: #E7E9EF;
+    --divider: #E7E9EF;             /* decorative rules only */
+    --border-strong: #7D89A1;       /*  3.5:1 on white - control borders */
+
+    --on-navy: #FFFFFF;             /* 11.7:1 on U of T Blue */
+    --on-navy-muted: rgba(255, 255, 255, 0.8);  /* 8.1:1 on U of T Blue */
+
+    --link: var(--uoft-blue-medium);    /* 5.1:1 - Pantone 633, cleared for
+                                           links on white */
+    --link-hover: var(--uoft-blue);     /* 11.7:1 - Pantone 655 */
+
+    /* Guide tag chips. Resting fills are tints of the brand hues, luminance-
+       matched to Pantone 2985 so the four categories read as one set, and all
+       carry black text -- the pairing the brand clears for its light accents.
+       Selected chips invert to the hue at full strength with white text.
+
+       Neither Pantone 376 nor Warm Red is cleared for white text, so those two
+       selected chips use the shallowest shade of their hue that reaches AA. */
+    --tag-ink: #000000;                         /* 11:1 on every fill below */
+
+    --tag-neutral-bg: var(--surface-subtle);
+    --tag-neutral-text: var(--text-muted);
+    --tag-neutral-edge: var(--border-strong);
+
+    --tag-technique-bg: var(--uoft-blue-light);
+    --tag-technique-edge: var(--uoft-blue-medium);  /* 5.1:1 on white */
+    --tag-technique-on: var(--uoft-blue-medium);    /* 5.1:1 with white text */
+
+    --tag-tool-bg: #CDB4D1;                     /* 11.1:1 with black text */
+    --tag-tool-edge: var(--uoft-purple);        /* 9.6:1 on white */
+    --tag-tool-on: var(--uoft-purple);          /* 9.6:1 with white text */
+
+    --tag-dataformat-bg: #A0CA50;
+    --tag-dataformat-edge: #719925;             /* 3.3:1 on white */
+    --tag-dataformat-on: #55731C;               /* 5.5:1 with white text */
+
+    --tag-type-bg: #EFABA3;                     /* 11.0:1 with black text */
+    --tag-type-edge: var(--uoft-red);           /* 4.2:1 on white */
+    --tag-type-on: #B03829;                     /* 6.1:1 with white text */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +102,8 @@ color: inherit;
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background: linear-gradient(135deg, #1E3765 0%, #1E3765 100%);
+    background: linear-gradient(135deg, var(--uoft-blue) 0%, var(--uoft-blue) 100%);
+    color: var(--text-body);
     min-height: 100vh;
     padding: 20px;
 }
@@ -36,7 +115,7 @@ body {
 
 header {
     text-align: center;
-    color: white;
+    color: var(--on-navy);
     margin-bottom: 20px;
 }
 
@@ -62,7 +141,7 @@ header p {
 }
 
 header p.header-meta {
-    color: rgba(255,255,255,0.8);
+    color: var(--on-navy-muted);
     font-size: 1.0rem;
     margin-top: 10px;
 }
@@ -84,7 +163,7 @@ header p.header-meta {
     display: none;
     text-align: center;
     padding: 20px;
-    color: #666;
+    color: var(--text-muted);
     font-size: 14px;
 }
 
@@ -123,7 +202,7 @@ header p.header-meta {
 }
 
 .sidebar {
-    background: white;
+    background: var(--surface);
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -140,21 +219,21 @@ header p.header-meta {
     top: 90px;
     right: 20px;
     z-index: 101;
-    background: white;
-    border: 2px solid #1E3765;
+    background: var(--surface);
+    border: 2px solid var(--uoft-blue);
     border-radius: 8px;
     padding: 10px 15px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     font-size: 14px;
     font-weight: 600;
-    color: #1E3765;
+    color: var(--uoft-blue);
     transition: background-color 0.3s, color 0.3s, translate 200ms ease-out, scale 150ms ease-out;
 }
 
 .filter-toggle:hover {
-    background: #1E3765;
-    color: white;
+    background: var(--uoft-blue);
+    color: var(--on-navy);
 }
 
 .filter-toggle svg,
@@ -171,17 +250,17 @@ header p.header-meta {
 }
 
 .sidebar::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: var(--surface-subtle);
     border-radius: 3px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: #ccc;
+    background: var(--border-strong);
     border-radius: 3px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background: #999;
+    background: var(--text-subtle);
 }
 
 .search-box {
@@ -200,7 +279,7 @@ header p.header-meta {
     display: block;
     margin-bottom: 10px;
     text-align: center;
-    color: rgba(255,255,255,0.8);
+    color: var(--on-navy-muted);
     font-size: 0.875rem;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -210,23 +289,30 @@ header p.header-meta {
     width: 100%;
     padding: 15px 20px;
     padding-right: 70px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--uoft-blue);
     border-radius: 12px;
     font-size: 16px;
+    color: var(--text-body);
     transition: background-color 0.3s, border-color 0.3s;
     background: rgba(255, 255, 255, 0.95);
-    border-color: #1E3765;
+}
+
+/* Opacity reset: Firefox dims placeholders by default, which would undo the
+   contrast this colour is chosen for */
+.search-field input::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
 }
 
 .search-field input:focus {
-    background: white;
+    background: var(--surface);
 }
 
 /* Two-tone ring: white shows on the navy page, navy shows over the white panels */
 .search-field input:focus-visible {
-    outline: 2px solid white;
+    outline: 2px solid var(--on-navy);
     outline-offset: 2px;
-    box-shadow: 0 0 0 6px #1E3765;
+    box-shadow: 0 0 0 6px var(--uoft-blue);
 }
 
 .search-hint {
@@ -239,7 +325,7 @@ header p.header-meta {
     border-radius: 6px;
     padding: 5px 10px;
     font-size: 12px;
-    color: #1E3765;
+    color: var(--uoft-blue);
     pointer-events: none;
     font-family: monospace;
     font-weight: 600;
@@ -260,14 +346,14 @@ header p.header-meta {
 
 .section-heading {
     font-size: 20px;
-    color: #1E3765;
+    color: var(--uoft-blue);
     margin-bottom: 15px;
 }
 
 .facet-group h3 {
     font-size: 14px;
     text-transform: uppercase;
-    color: #666;
+    color: var(--text-muted);
     margin-bottom: 12px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -284,7 +370,7 @@ header p.header-meta {
 }
 
 .facet-option:hover {
-    background-color: #f5f5f5;
+    background-color: var(--surface-subtle);
 }
 
 .facet-option input[type="checkbox"] {
@@ -304,24 +390,24 @@ header p.header-meta {
 }
 
 .facet-count {
-    color: #999;
+    color: var(--text-subtle);
     font-size: 12px;
 }
 
 .clear-filters {
     width: 100%;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: var(--surface-subtle);
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 13px;
-    color: #666;
+    color: var(--text-muted);
     transition: background-color 0.2s, scale 150ms ease-out;
 }
 
 .clear-filters:hover {
-    background-color: #e0e0e0;
+    background-color: var(--surface-hover);
 }
 
 .show-more-btn {
@@ -329,7 +415,7 @@ header p.header-meta {
     padding: 6px;
     background: none;
     border: none;
-    color: #1E3765;
+    color: var(--uoft-blue);
     cursor: pointer;
     font-size: 12px;
     text-align: center;
@@ -340,7 +426,7 @@ header p.header-meta {
 }
 
 .show-more-btn:hover {
-    background-color: #f5f5f5;
+    background-color: var(--surface-subtle);
 }
 
 .facet-option.hidden {
@@ -348,7 +434,7 @@ header p.header-meta {
 }
 
 .results-section {
-    background: white;
+    background: var(--surface);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -362,14 +448,14 @@ header p.header-meta {
     align-items: center;
     margin-bottom: 25px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--divider);
     flex-wrap: wrap;
     gap: 15px;
 }
 
 .results-count {
     font-size: 18px;
-    color: #333;
+    color: var(--text-strong);
     font-weight: 600;
 }
 
@@ -386,17 +472,18 @@ header p.header-meta {
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    color: #666;
+    color: var(--text-muted);
 }
 
 .per-page-selector select,
 .sort-options select {
     padding: 8px 12px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-strong);
     border-radius: 6px;
     font-size: 14px;
+    color: var(--text-body);
     cursor: pointer;
-    background: white;
+    background: var(--surface);
 }
 
 .guides-grid {
@@ -428,7 +515,7 @@ header p.header-meta {
         0 1px 2px -1px rgba(0,0,0,0.06),
         0 2px 4px rgba(0,0,0,0.04);
     transition: transform 150ms ease-out, box-shadow 150ms ease-out;
-    background: white;
+    background: var(--surface);
     min-width: 0;
     max-width: 100%;
 }
@@ -441,7 +528,7 @@ header p.header-meta {
 }
 
 .guides-card h3 {
-    color: #333;
+    color: var(--text-strong);
     margin-bottom: 10px;
     font-size: 18px;
     word-wrap: break-word;
@@ -449,17 +536,17 @@ header p.header-meta {
 }
 
 .guides-card h3 a {
-    color: #333;
+    color: var(--text-strong);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .guides-card h3 a:hover {
-    color: #1E3765;
+    color: var(--uoft-blue);
 }
 
 .guides-description {
-    color: #666;
+    color: var(--text-body);
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -488,12 +575,12 @@ header p.header-meta {
 }
 
 .guides-description a {
-    color: #0066cc;
+    color: var(--link);
     text-decoration: underline;
 }
 
 .guides-description a:hover {
-    color: #004499;
+    color: var(--link-hover);
     text-decoration: underline;
 }
 
@@ -501,7 +588,7 @@ header p.header-meta {
     display: block;
     background: none;
     border: none;
-    color: #1E3765;
+    color: var(--uoft-blue);
     font-size: 13px;
     cursor: pointer;
     padding: 0;
@@ -517,7 +604,7 @@ header p.header-meta {
 }
 
 .read-more-btn:hover {
-    color: #007FA3;
+    color: var(--uoft-blue-medium);
 }
 
 .guides-tags {
@@ -527,15 +614,17 @@ header p.header-meta {
     margin-bottom: 12px;
 }
 
+/* The 1px edge is what makes the chip's hit area perceivable against the white
+   card; the tinted fills alone sit below 3:1 (1.4.11) */
 .tag {
     display: inline-block;
-    border: none;
+    border: 1px solid var(--tag-neutral-edge);
     font-family: inherit;
     padding: 4px 10px;
-    background-color: #f0f0f0;
+    background-color: var(--tag-neutral-bg);
     border-radius: 12px;
     font-size: 12px;
-    color: #666;
+    color: var(--tag-neutral-text);
     cursor: pointer;
     transition: transform 150ms ease-out, box-shadow 150ms ease-out, scale 150ms ease-out;
     user-select: none;
@@ -547,46 +636,54 @@ header p.header-meta {
 }
 
 .tag.technique {
-    background-color: #6FC7EA;
-    color: #004d63;
+    background-color: var(--tag-technique-bg);
+    border-color: var(--tag-technique-edge);
+    color: var(--tag-ink);
 }
 
 .tag.technique.active {
-    background-color: #007FA3;
-    color: white;
+    background-color: var(--tag-technique-on);
+    border-color: var(--tag-technique-on);
+    color: var(--on-navy);
     font-weight: 600;
 }
 
 .tag.tool {
-    background-color: #D896F9;
-    color: #3d0d46;
+    background-color: var(--tag-tool-bg);
+    border-color: var(--tag-tool-edge);
+    color: var(--tag-ink);
 }
 
 .tag.tool.active {
-    background-color: #6D247A;
-    color: white;
+    background-color: var(--tag-tool-on);
+    border-color: var(--tag-tool-on);
+    color: var(--on-navy);
     font-weight: 600;
 }
 
 .tag.dataFormat {
-    background-color: #B4DF2E;
-    color: #3d5200;
+    background-color: var(--tag-dataformat-bg);
+    border-color: var(--tag-dataformat-edge);
+    color: var(--tag-ink);
 }
 
 .tag.dataFormat.active {
-    background-color: #8DBF46;
-    color: white;
+    background-color: var(--tag-dataformat-on);
+    border-color: var(--tag-dataformat-on);
+    color: var(--on-navy);
     font-weight: 600;
 }
 
 .tag.type {
-    background-color: #FFB470;
-    color: #8b2816;
+    background-color: var(--tag-type-bg);
+    border-color: var(--tag-type-edge);
+    color: var(--tag-ink);
 }
 
 .tag.type.active {
-    background-color: #DC4633;
-    color: white;
+    background-color: var(--tag-type-on);
+    border-color: var(--tag-type-on);
+    color: var(--on-navy);
     font-weight: 600;
 }
 
@@ -595,10 +692,10 @@ header p.header-meta {
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    color: #999;
+    color: var(--text-subtle);
     margin-top: 12px;
     padding-top: 12px;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid var(--divider);
 }
 
 .pagination {
@@ -608,27 +705,32 @@ header p.header-meta {
     gap: 10px;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 2px solid #f0f0f0;
+    border-top: 2px solid var(--divider);
 }
 
 .pagination button {
     padding: 8px 16px;
-    border: 2px solid #e0e0e0;
-    background: white;
+    border: 2px solid var(--border-strong);
+    background: var(--surface);
     border-radius: 6px;
+    color: var(--text-body);
     cursor: pointer;
     font-size: 14px;
     transition: all 0.2s;
 }
 
 .pagination button:hover:not(:disabled) {
-    background-color: #1E3765;
-    color: white;
-    border-color: rgba(30, 55, 101, 0.8);
+    background-color: var(--uoft-blue);
+    color: var(--on-navy);
+    border-color: var(--uoft-blue);
 }
 
+/* A flat 0.4 opacity dropped the label to 2.9:1; grey the fill instead so the
+   control still reads as unavailable while its label stays legible */
 .pagination button:disabled {
-    opacity: 0.4;
+    background-color: var(--surface-subtle);
+    border-color: var(--border-strong);
+    color: var(--text-subtle);
     cursor: not-allowed;
 }
 
@@ -639,9 +741,10 @@ header p.header-meta {
 
 .pagination .page-number {
     padding: 8px 12px;
-    border: 2px solid #e0e0e0;
-    background: white;
+    border: 2px solid var(--border-strong);
+    background: var(--surface);
     border-radius: 6px;
+    color: var(--text-body);
     cursor: pointer;
     font-size: 14px;
     transition: all 0.2s;
@@ -650,24 +753,24 @@ header p.header-meta {
 }
 
 .pagination .page-number:hover {
-    background-color: #f5f5f5;
+    background-color: var(--surface-subtle);
 }
 
 .pagination .page-number.active {
-    background-color: #1E3765;
-    color: white;
-    border-color: rgba(30, 55, 101, 0.8);
+    background-color: var(--uoft-blue);
+    color: var(--on-navy);
+    border-color: var(--uoft-blue);
     font-weight: 600;
 }
 
 .pagination .page-ellipsis {
     padding: 8px 12px;
-    color: #999;
+    color: var(--text-subtle);
 }
 
 .page-info {
     font-size: 14px;
-    color: #666;
+    color: var(--text-muted);
     text-align: center;
     margin-top: 10px;
 }
@@ -676,7 +779,7 @@ header p.header-meta {
     grid-column: 1 / -1;
     text-align: center;
     padding: 60px 20px;
-    color: #666;
+    color: var(--text-body);
 }
 
 .no-results h3 {
@@ -690,8 +793,8 @@ header p.header-meta {
     right: 40px;
     width: 50px;
     height: 50px;
-    background-color: white;
-    color: #1E3765;
+    background-color: var(--surface);
+    color: var(--uoft-blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -713,7 +816,7 @@ header p.header-meta {
 #back-to-top:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-    background-color: #f5f5f5;
+    background-color: var(--surface-subtle);
 }
 
 #back-to-top.scrolled {
@@ -736,8 +839,8 @@ header p.header-meta {
     left: 20px;
     top: -100px;
     z-index: 1001;
-    background: white;
-    color: #1E3765;
+    background: var(--surface);
+    color: var(--uoft-blue);
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 600;
@@ -805,11 +908,11 @@ header p.header-meta {
         min-width: 44px;
         min-height: 44px;
         padding: 0 12px;
-        background: #f5f5f5;
+        background: var(--surface-subtle);
         border: none;
         border-radius: 6px;
         font-size: 14px;
-        color: #1E3765;
+        color: var(--uoft-blue);
         cursor: pointer;
     }
 
