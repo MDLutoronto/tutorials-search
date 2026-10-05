@@ -24,6 +24,10 @@ export const state = {
     expandedFacets: new Set()
 };
 
+// Selecting a filter on mobile closes the drawer after a beat, which puts focus back on
+// the toggle. The status announcement is timed against this so the two do not collide.
+export const DRAWER_CLOSE_DELAY = 300;
+
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 export const scrollBehavior = () => prefersReducedMotion.matches ? 'auto' : 'smooth';
 
