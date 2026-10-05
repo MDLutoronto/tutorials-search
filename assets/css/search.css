@@ -730,8 +730,9 @@ header p.header-meta {
     white-space: nowrap;
 }
 
+/* Fixed, not absolute, so the link is reachable wherever the page is scrolled */
 .skip-link {
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: -100px;
     z-index: 1001;
@@ -752,6 +753,7 @@ header p.header-meta {
 }
 
 .section-heading:focus,
+#results:focus,
 #top:focus {
     outline: none;
 }
