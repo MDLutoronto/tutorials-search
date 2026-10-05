@@ -49,7 +49,7 @@
             <div class="sticky-search-container">
                 <div class="search-box" role="search">
                     <label for="searchInput" class="visually-hidden">Search guides</label>
-                    <input type="text" id="searchInput" placeholder="Search guides…" aria-keyshortcuts="Control+K Meta+K">
+                    <input type="text" id="searchInput" placeholder="Search guides by title, tag, tool…" aria-keyshortcuts="Control+K Meta+K">
                     <span class="search-hint" aria-hidden="true">Ctrl+K</span>
                 </div>
             </div>
@@ -103,9 +103,10 @@
                             </select>
                         </div>
                         <div class="sort-options">
-                            <select id="sortSelect" aria-label="Sort guides">
-                                <option value="title">Sort by Title</option>
-                                <option value="date">Sort by Date</option>
+                            <label for="sortSelect">Sort guides by:</label>
+                            <select id="sortSelect">
+                                <option value="title">Title</option>
+                                <option value="date">Date</option>
                             </select>
                         </div>
                     </div>

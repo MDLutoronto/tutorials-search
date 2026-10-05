@@ -360,9 +360,11 @@ header p.header-meta {
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.per-page-selector {
+.per-page-selector,
+.sort-options {
     display: flex;
     align-items: center;
     gap: 8px;
