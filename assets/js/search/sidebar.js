@@ -1,4 +1,4 @@
-import { sidebar, filterToggle, backToTopBtn, stickySearchWrapper } from './state.js';
+import { sidebar, filterToggle, backToTopBtn, stickySearchWrapper, DRAWER_CLOSE_DELAY } from './state.js';
 
 // Mobile sidebar toggle functionality
 const sidebarOverlay = document.getElementById('sidebarOverlay');
@@ -17,7 +17,7 @@ function openSidebar() {
     filterToggle.setAttribute('aria-expanded', 'true');
     drawerBackground.forEach(el => el.inert = true);
     document.body.style.overflow = 'hidden';
-    document.getElementById('filtersHeading').focus();
+    sidebar.focus();
 }
 
 function closeSidebar() {
@@ -47,7 +47,7 @@ export function initSidebar() {
     // Close sidebar when a filter is selected on mobile
     sidebar.addEventListener('click', (event) => {
         if (window.innerWidth <= 1024 && event.target.type === 'checkbox') {
-            setTimeout(closeSidebar, 300); // Small delay for better UX
+            setTimeout(closeSidebar, DRAWER_CLOSE_DELAY); // Small delay for better UX
         }
     });
 }
