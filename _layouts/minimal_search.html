@@ -93,7 +93,7 @@
             <main class="results-section" id="results" tabindex="-1" aria-labelledby="resultsHeading">
                 <h2 id="resultsHeading" class="section-heading" tabindex="-1">Results</h2>
                 <div class="results-header">
-                    <div class="results-count" id="resultsCount" role="status">Loading...</div>
+                    <div class="results-count" id="resultsCount">Loading...</div>
                     <div class="results-controls">
                         <div class="per-page-selector">
                             <label for="perPageSelect">Show<span class="visually-hidden"> guides per page</span>:</label>
@@ -120,6 +120,10 @@
                 <div class="page-info" id="pageInfo"></div>
             </main>
         </div>
+
+        <!-- Result-count announcements. Kept outside .main-content so it stays in the
+             accessibility tree while the mobile filter drawer makes the page inert. -->
+        <div id="statusAnnouncer" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
     </div>
 
     <a href="#top" id="back-to-top" aria-label="Back to top">{% octicon arrow-up height:24 %}</a>

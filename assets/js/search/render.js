@@ -1,5 +1,6 @@
 import { state } from './state.js';
 import { escapeHTML, renderMarkdown } from './html.js';
+import { announceResultCount } from './announce.js';
 
 const grid = document.getElementById('guidesGrid');
 const loadingIndicator = document.getElementById('loadingIndicator');
@@ -47,6 +48,8 @@ export function renderGuides(clear = false) {
     if (clear) {
         grid.innerHTML = '';
         state.displayedCount = 0;
+        // Only a fresh result set is a status change; appending the next batch is not
+        announceResultCount(state.filteredGuides.length);
     }
 
     const { filteredGuides } = state;
