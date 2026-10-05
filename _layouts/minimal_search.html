@@ -48,9 +48,11 @@
         <div class="sticky-search-wrapper">
             <div class="sticky-search-container">
                 <div class="search-box" role="search">
-                    <label for="searchInput" class="visually-hidden">Search guides</label>
-                    <input type="text" id="searchInput" placeholder="Search guides…" aria-keyshortcuts="Control+K Meta+K">
-                    <span class="search-hint" aria-hidden="true">Ctrl+K</span>
+                    <label for="searchInput" class="search-label">Search guides</label>
+                    <div class="search-field">
+                        <input type="text" id="searchInput" placeholder="Title, topic, tool, series…" aria-keyshortcuts="Control+K Meta+K">
+                        <span class="search-hint" aria-hidden="true">Ctrl+K</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,7 +96,7 @@
                     <div class="results-count" id="resultsCount" role="status">Loading...</div>
                     <div class="results-controls">
                         <div class="per-page-selector">
-                            <label for="perPageSelect">Show:</label>
+                            <label for="perPageSelect">Show<span class="visually-hidden"> guides per page</span>:</label>
                             <select id="perPageSelect">
                                 <option value="12">12</option>
                                 <option value="24">24</option>
@@ -103,9 +105,10 @@
                             </select>
                         </div>
                         <div class="sort-options">
-                            <select id="sortSelect" aria-label="Sort guides">
-                                <option value="title">Sort by Title</option>
-                                <option value="date">Sort by Date</option>
+                            <label for="sortSelect">Sort<span class="visually-hidden"> guides by</span>:</label>
+                            <select id="sortSelect">
+                                <option value="title">Title</option>
+                                <option value="date">Date</option>
                             </select>
                         </div>
                     </div>

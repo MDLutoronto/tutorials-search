@@ -185,11 +185,28 @@ header p.header-meta {
 }
 
 .search-box {
-    position: relative;
     pointer-events: auto;
 }
 
-.search-box input {
+/* Positioning context for the Ctrl+K hint, so it centres on the input rather
+   than on the label-plus-input box */
+.search-field {
+    position: relative;
+}
+
+/* Centred and muted so it continues the centred header copy above it instead
+   of reading as a form label bolted onto the hero search */
+.search-label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.search-field input {
     width: 100%;
     padding: 15px 20px;
     padding-right: 70px;
@@ -201,12 +218,12 @@ header p.header-meta {
     border-color: #1E3765;
 }
 
-.search-box input:focus {
+.search-field input:focus {
     background: white;
 }
 
 /* Two-tone ring: white shows on the navy page, navy shows over the white panels */
-.search-box input:focus-visible {
+.search-field input:focus-visible {
     outline: 2px solid white;
     outline-offset: 2px;
     box-shadow: 0 0 0 6px #1E3765;
@@ -360,9 +377,11 @@ header p.header-meta {
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.per-page-selector {
+.per-page-selector,
+.sort-options {
     display: flex;
     align-items: center;
     gap: 8px;
