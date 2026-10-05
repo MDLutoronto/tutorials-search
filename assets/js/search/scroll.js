@@ -1,4 +1,4 @@
-import { state, scrollBehavior, filterToggle, backToTopBtn, stickySearchWrapper } from './state.js';
+import { state, scrollBehavior, backToTopBtn, stickySearchWrapper } from './state.js';
 import { renderGuides } from './render.js';
 
 const loadingIndicator = document.getElementById('loadingIndicator');
@@ -21,31 +21,29 @@ function handleScroll() {
     }
 }
 
+// The search bar stays pinned, so --sticky-search-h is what keeps the Filters
+// button and every scroll-into-view target clear of it. The stylesheet's value
+// is only a starting guess; measure the bar so the offsets still hold once text
+// is resized or the label wraps (1.4.4).
+function trackStickyHeight() {
+    const sync = () => document.documentElement.style.setProperty(
+        '--sticky-search-h',
+        `${Math.round(stickySearchWrapper.getBoundingClientRect().height)}px`
+    );
+
+    sync();
+    new ResizeObserver(sync).observe(stickySearchWrapper);
+}
+
 export function initScroll() {
-    // Throttle scroll event for performance and handle mobile button hiding
+    trackStickyHeight();
+
+    // Throttle scroll event for performance
     let scrollTimeout;
-    let lastScrollTop = 0;
 
     window.addEventListener('scroll', () => {
         clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            handleScroll();
-
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollingDown = currentScroll > lastScrollTop && currentScroll > 200;
-
-            // Hide search bar when scrolling down (when not at top), unless it holds focus
-            const searchHasFocus = stickySearchWrapper.contains(document.activeElement);
-            stickySearchWrapper.classList.toggle('scrolled', scrollingDown && !searchHasFocus);
-
-            // Hide filter toggle and back-to-top button when scrolling down on mobile
-            if (window.innerWidth <= 1024) {
-                filterToggle.classList.toggle('scrolled', scrollingDown);
-                backToTopBtn.classList.toggle('scrolled', scrollingDown);
-            }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        }, 150);
+        scrollTimeout = setTimeout(handleScroll, 150);
     }, { passive: true });
 
     // Show/hide back to top button based on scroll position

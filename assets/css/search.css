@@ -167,23 +167,33 @@ header p.header-meta {
     font-size: 14px;
 }
 
+/* Height the pinned search bar occupies. The mobile Filters button and every
+   scroll-into-view target below are offset by it, so the bar can stay put
+   without ever covering what the browser just scrolled to (2.4.11).
+   scroll.js replaces this with the bar's measured height once it loads; the
+   values here are the unscripted fallback. */
+:root {
+    --sticky-search-h: 120px;
+}
+
+/* Stays visible for the whole scroll: a control that vanishes mid-scroll can
+   take keyboard focus with it (2.4.7), and hiding it is what sent people back
+   to the top of the page to search again. The navy matches the page behind it,
+   so at rest the bar is invisible and only reads as a band once results start
+   passing underneath. */
 .sticky-search-wrapper {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: transparent;
+    background: var(--uoft-blue);
+    /* The results panel's drop shadow spills about 35px past the container's
+       edges. The band has to reach past them too, or its flat navy stops dead
+       against the darkest part of that shadow and reads as a rule down each
+       side. Solid offset shadows widen the fill without touching layout, so
+       this cannot push out a horizontal scrollbar the way 100vw would. */
+    box-shadow: 60px 0 0 var(--uoft-blue), -60px 0 0 var(--uoft-blue);
     padding: 20px 0;
     margin-bottom: 20px;
-    transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: none;
-}
-
-.sticky-search-wrapper.scrolled {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
 }
 
 .sticky-search-container {
@@ -207,18 +217,17 @@ header p.header-meta {
     padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     position: sticky;
-    top: 20px;
-    max-height: calc(100vh - 40px);
+    /* Pins flush to the underside of the search bar, where the results panel is
+       clipped, so the two columns start on the same line rather than underneath */
+    top: var(--sticky-search-h);
+    max-height: calc(100vh - var(--sticky-search-h) - 20px);
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .filter-toggle {
     display: none;
-    position: fixed;
-    top: 90px;
-    right: 20px;
-    z-index: 101;
+    flex-shrink: 0;
     background: var(--surface);
     border: 2px solid var(--uoft-blue);
     border-radius: 8px;
@@ -228,7 +237,7 @@ header p.header-meta {
     font-size: 14px;
     font-weight: 600;
     color: var(--uoft-blue);
-    transition: background-color 0.3s, color 0.3s, translate 200ms ease-out, scale 150ms ease-out;
+    transition: background-color 0.3s, color 0.3s, scale 150ms ease-out;
 }
 
 .filter-toggle:hover {
@@ -239,10 +248,6 @@ header p.header-meta {
 .filter-toggle svg,
 #back-to-top svg {
     fill: currentColor;
-}
-
-.filter-toggle.scrolled {
-    translate: calc(100% + 20px) 0;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -261,10 +266,6 @@ header p.header-meta {
 
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: var(--text-subtle);
-}
-
-.search-box {
-    pointer-events: auto;
 }
 
 /* Positioning context for the Ctrl+K hint, so it centres on the input rather
@@ -803,7 +804,7 @@ header p.header-meta {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, translate 200ms ease-out, scale 150ms ease-out;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, scale 150ms ease-out;
     z-index: 1000;
     cursor: pointer;
 }
@@ -817,10 +818,6 @@ header p.header-meta {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.4);
     background-color: var(--surface-subtle);
-}
-
-#back-to-top.scrolled {
-    translate: calc(100% + 40px) 0;
 }
 
 .visually-hidden {
@@ -850,9 +847,15 @@ header p.header-meta {
     top: 20px;
 }
 
-#results,
 #top {
     scroll-margin-top: 20px;
+}
+
+/* Everything the browser may scroll to while the bar is pinned -- the skip-link
+   target, and any card link or control reached by Tab -- clears its height */
+#results,
+.results-section :is(a, button, input, select, [tabindex]) {
+    scroll-margin-top: calc(var(--sticky-search-h) + 10px);
 }
 
 .section-heading:focus,
@@ -871,10 +874,25 @@ header p.header-meta {
         grid-template-columns: 1fr;
     }
 
+    /* Search field and Filters share one row, bottom-aligned so the button
+       lines up with the input rather than with the label above it */
+    .sticky-search-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .search-box {
+        flex: 1;
+        min-width: 0;
+    }
+
     .filter-toggle {
         display: inline-flex;
         align-items: center;
         gap: 6px;
+        /* Matches the input's height so the row reads as one control group */
+        min-height: 53px;
     }
 
     .sidebar {
@@ -1010,6 +1028,21 @@ header p.header-meta {
         border-radius: 8px;
     }
 
+    :root {
+        --sticky-search-h: 100px;
+    }
+
+    /* Nothing here can press it, and the field gives up width to the Filters
+       button at this size. The shortcut still works and aria-keyshortcuts
+       still announces it. */
+    .search-hint {
+        display: none;
+    }
+
+    .search-field input {
+        padding-right: 20px;
+    }
+
     .sticky-search-wrapper {
         padding: 10px 0;
     }
@@ -1021,8 +1054,7 @@ header p.header-meta {
 
     .guides-card:hover,
     .tag:hover,
-    #back-to-top:hover,
-    .sticky-search-wrapper.scrolled {
+    #back-to-top:hover {
         transform: none;
     }
 
