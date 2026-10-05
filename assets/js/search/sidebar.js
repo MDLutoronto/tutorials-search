@@ -17,7 +17,7 @@ function openSidebar() {
     filterToggle.setAttribute('aria-expanded', 'true');
     drawerBackground.forEach(el => el.inert = true);
     document.body.style.overflow = 'hidden';
-    document.getElementById('filtersHeading').focus();
+    sidebar.focus();
 }
 
 function closeSidebar() {

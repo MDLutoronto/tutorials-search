@@ -857,6 +857,7 @@ header p.header-meta {
 
 .section-heading:focus,
 #results:focus,
+#sidebar:focus,
 #top:focus {
     outline: none;
 }
