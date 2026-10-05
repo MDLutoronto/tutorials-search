@@ -54,9 +54,12 @@
                         <span class="search-hint" aria-hidden="true">Ctrl+K</span>
                     </div>
                 </div>
+                <!-- Sits in the bar rather than floating over the results: the bar no
+                     longer hides on scroll, so a floating button would permanently
+                     cover the first card. Shown only in the mobile layout. -->
+                <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="sidebar">{% octicon three-bars height:16 %}Filters</button>
             </div>
         </div>
-        <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="sidebar">{% octicon three-bars height:16 %}Filters</button>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <div class="main-content">

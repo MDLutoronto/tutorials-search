@@ -1,4 +1,4 @@
-import { state, emptyFilters, scrollBehavior, stickySearchWrapper } from './state.js';
+import { state, emptyFilters, scrollBehavior } from './state.js';
 
 const searchInput = document.getElementById('searchInput');
 
@@ -53,28 +53,15 @@ export function initControls(onFiltersChange) {
         document.getElementById('resultsHeading').focus({ preventScroll: true });
     });
 
-    // Keyboard shortcut: Ctrl+K or Cmd+K to show and focus search box
+    // Keyboard shortcut: Ctrl+K or Cmd+K to focus search box
     document.addEventListener('keydown', (event) => {
         if (!((event.ctrlKey || event.metaKey) && event.key === 'k')) return;
         event.preventDefault(); // Prevent default browser behavior
         event.stopPropagation(); // Stop event from bubbling
 
-        // Save current scroll position
-        const currentScrollY = window.scrollY;
-
-        // Show the search bar if it's hidden
-        stickySearchWrapper.classList.remove('scrolled');
-
-        // Use setTimeout to ensure focus happens after the transition starts
-        setTimeout(() => {
-            searchInput.focus();
-            searchInput.select(); // Select all text if any exists
-
-            // Restore scroll position if it changed
-            if (window.scrollY !== currentScrollY) {
-                window.scrollTo(0, currentScrollY);
-            }
-        }, 0);
+        // The bar is pinned at the top, so focus lands without moving the page
+        searchInput.focus({ preventScroll: true });
+        searchInput.select(); // Select all text if any exists
     });
 
     // Update search hint text based on OS
