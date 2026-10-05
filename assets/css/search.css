@@ -82,10 +82,10 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-    width: 100%;
-}
+/* No overflow-x clip here on purpose. Hiding horizontal overflow on the root
+   does not remove it, it just makes whatever sits past the edge unreachable --
+   a worse 1.4.10 outcome than a scrollbar. The widths below are sized so that
+   nothing overflows down to 320px, so there is nothing to clip. */
 
 a {
 color: inherit;           
@@ -123,6 +123,10 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    /* "Learn@MDL" is one unbreakable token, and at 2.5rem it is wider than a
+       320px viewport once text is resized to 200%. Breaking it is the lesser
+       evil: capping the size instead would be the thing 1.4.4 forbids. */
+    overflow-wrap: break-word;
 }
 
 header p {
@@ -130,13 +134,23 @@ header p {
     opacity: 0.9;
 }
 
+/* Capped by height on roomy screens, but free to scale down by width once the
+   viewport is narrower than the lockup. Fixed heights made the UTL logo 313px
+   wide, which is wider than the 320px reflow target on its own (1.4.10). */
+.logo-mdl,
+.logo-utl {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .logo-mdl {
-    height: 100px;
+    max-height: 100px;
     margin-bottom: 15px;
 }
 
 .logo-utl {
-    height: 70px;
+    max-height: 70px;
     margin-bottom: 30px;
 }
 
@@ -151,6 +165,7 @@ header p.header-meta {
     align-items: center;
     justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .header-links a {
@@ -196,10 +211,27 @@ header p.header-meta {
     margin-bottom: 20px;
 }
 
+/* A control row at every width: the search field takes the slack and the two
+   buttons keep their intrinsic size. Wraps rather than overflows, so the row
+   still fits a 320px viewport (1.4.10) and still fits once the labels grow at
+   200% text (1.4.4). Bottom-aligned so the buttons line up with the input
+   rather than with the label above it. */
 .sticky-search-container {
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Small basis on purpose: the row has to stay on one line down to 320px, or
+   the pinned bar doubles in height and swallows a 256px-tall viewport. The
+   field gives up width to the buttons rather than pushing them to a new row. */
+.search-box {
+    flex: 1 1 120px;
+    min-width: 0;
 }
 
 .main-content {
@@ -475,6 +507,9 @@ header p.header-meta {
     flex-wrap: wrap;
 }
 
+/* Each label-and-select pair wraps internally before the row does, so at 320px
+   or at 200% text the label stacks over its control instead of pushing the
+   results panel wider than the viewport (1.4.10, 1.4.4) */
 .per-page-selector,
 .sort-options {
     display: flex;
@@ -482,6 +517,8 @@ header p.header-meta {
     gap: 8px;
     font-size: 14px;
     color: var(--text-muted);
+    flex-wrap: wrap;
+    min-width: 0;
 }
 
 .per-page-selector select,
@@ -493,27 +530,32 @@ header p.header-meta {
     color: var(--text-body);
     cursor: pointer;
     background: var(--surface);
+    max-width: 100%;
 }
 
+/* Caps the column count without forcing it. Each track's floor is whichever
+   is larger: 240px, or the width one of --max-cards-per-row columns would get.
+   So the grid never exceeds that many columns, and drops to fewer once the
+   panel is too narrow to give each card 240px -- which is what happens at high
+   zoom. The previous rule pinned the count from 481px up, which at 200% zoom
+   left three ~170px columns breaking titles one word per line (1.4.10). */
 .guides-grid {
+    --card-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            max(
+                240px,
+                (100% - (var(--max-cards-per-row) - 1) * var(--card-gap))
+                    / var(--max-cards-per-row)
+            ),
+            1fr
+        )
+    );
     grid-auto-columns: 1fr;
-    gap: 20px;
+    gap: var(--card-gap);
     margin-bottom: 30px;
-}
-
-/* Limit maximum number of columns */
-@media (min-width: 481px) {
-    .guides-grid {
-        grid-template-columns: repeat(var(--max-cards-per-row), 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .guides-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .guides-card {
@@ -809,36 +851,36 @@ header p.header-meta {
     margin-bottom: 10px;
 }
 
+/* Docked in the search bar rather than floating over the page. A fixed
+   bottom-right overlay has no way to avoid the content beneath it: at high zoom
+   it landed on the sort control, and at full size it still covered card links.
+   Here it holds a slot of its own, so it obscures nothing (1.4.10, 2.4.11) and
+   is operable at any scroll position instead of only past 300px.
+   Height matches the Filters button so the row reads as one control group. */
 #back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    min-width: 44px;
+    min-height: 44px;
+    height: 53px;
+    padding: 0 10px;
     background-color: var(--surface);
     color: var(--uoft-blue);
-    border-radius: 50%;
+    border: 2px solid var(--uoft-blue);
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, scale 150ms ease-out;
-    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, color 0.3s, scale 150ms ease-out;
     cursor: pointer;
 }
 
-#back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
 #back-to-top:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-    background-color: var(--surface-subtle);
+    background-color: var(--uoft-blue);
+    color: var(--on-navy);
+    text-decoration: none;
 }
 
 .visually-hidden {
@@ -893,19 +935,6 @@ header p.header-meta {
 @media (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
-    }
-
-    /* Search field and Filters share one row, bottom-aligned so the button
-       lines up with the input rather than with the label above it */
-    .sticky-search-container {
-        display: flex;
-        align-items: flex-end;
-        gap: 10px;
-    }
-
-    .search-box {
-        flex: 1;
-        min-width: 0;
     }
 
     .filter-toggle {
@@ -1012,28 +1041,27 @@ header p.header-meta {
     }
 
     .guides-grid {
-        gap: 15px;
+        --card-gap: 15px;
     }
 
     .results-controls {
         width: 100%;
         justify-content: space-between;
+        /* Below the width where the two groups fit side by side they stack,
+           rather than the row forcing a horizontal scrollbar */
+        gap: 10px 15px;
     }
 
     .pagination {
         flex-wrap: wrap;
     }
 
-    #back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-    }
-
-    #back-to-top svg {
-        width: 20px;
-        height: 20px;
+    /* Trimmed to match the shorter input at this size, still past the 44px
+       target floor */
+    #back-to-top,
+    .filter-toggle {
+        height: 48px;
+        min-height: 48px;
     }
 
     header h1 {
@@ -1074,8 +1102,7 @@ header p.header-meta {
     }
 
     .guides-card:hover,
-    .tag:hover,
-    #back-to-top:hover {
+    .tag:hover {
         transform: none;
     }
 
