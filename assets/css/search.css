@@ -296,6 +296,9 @@ header p.header-meta {
     color: var(--text-body);
     transition: background-color 0.3s, border-color 0.3s;
     background: rgba(255, 255, 255, 0.95);
+    /* Safari otherwise draws its own search field and ignores the radius and padding */
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 /* Opacity reset: Firefox dims placeholders by default, which would undo the

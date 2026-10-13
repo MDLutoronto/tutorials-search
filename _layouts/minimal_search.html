@@ -50,7 +50,7 @@
                 <div class="search-box" role="search" aria-label="Keyword search">
                     <label for="searchInput" class="search-label">Search guides</label>
                     <div class="search-field">
-                        <input type="text" id="searchInput" placeholder="Title, topic, tool, series…" aria-keyshortcuts="Control+K Meta+K">
+                        <input type="search" id="searchInput" enterkeyhint="search" autocomplete="off" placeholder="Title, topic, tool, series…" aria-keyshortcuts="Control+K Meta+K">
                         <span class="search-hint" aria-hidden="true">Ctrl+K</span>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
         <div class="main-content">
             <aside class="sidebar" id="sidebar" aria-labelledby="filtersHeading" tabindex="-1">
                 <h2 id="filtersHeading" class="section-heading">Filters</h2>
-                <button class="sidebar-close" id="sidebarClose" type="button">Close</button>
+                <button class="sidebar-close" id="sidebarClose" type="button">Close<span class="visually-hidden"> filters</span></button>
                 <button class="clear-filters" id="clearFilters">Clear All Filters</button><br><br>
                 <div class="facet-group">
                     <h3>Technique</h3>
