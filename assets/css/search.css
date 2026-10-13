@@ -688,6 +688,16 @@ header p.header-meta {
     font-weight: 600;
 }
 
+/* Forced colours drop the fill, so give selected chips a cue that survives it.
+   The padding gives back the extra border so the chip doesn't grow. */
+@media (forced-colors: active) {
+    .tag.active {
+        border-width: 2px;
+        padding: 3px 9px;
+        text-decoration: underline;
+    }
+}
+
 .guides-meta {
     display: flex;
     justify-content: space-between;

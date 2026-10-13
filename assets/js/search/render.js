@@ -12,10 +12,18 @@ function getArrayValues(value) {
     return arr.filter(v => v && v !== 'undefined' && v !== 'null');
 }
 
+// Chip hue is not enough to tell the categories apart (1.4.1), so each chip names its category
+const TAG_LABELS = {
+    technique: 'Technique',
+    tool: 'Tool',
+    dataFormat: 'Data Format',
+    type: 'Type'
+};
+
 function tagButtons(facet, values) {
     return values.map(value => {
         const active = state.activeFilters[facet].has(value);
-        return `<button type="button" class="tag ${facet}${active ? ' active' : ''}" aria-pressed="${active}" data-facet="${facet}" data-value="${escapeHTML(value)}">${escapeHTML(value)}</button>`;
+        return `<button type="button" class="tag ${facet}${active ? ' active' : ''}" aria-pressed="${active}" data-facet="${facet}" data-value="${escapeHTML(value)}"><span class="visually-hidden">${TAG_LABELS[facet]}: </span>${escapeHTML(value)}</button>`;
     }).join('');
 }
 
