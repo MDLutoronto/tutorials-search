@@ -59,7 +59,7 @@ function createFacets(facetKey, containerId) {
 
     // Add show more button if there are more than MAX_VISIBLE items
     const showMoreBtn = values.length > MAX_VISIBLE
-        ? `<button type="button" class="show-more-btn" data-facet="${facetKey}" data-expanded="${isExpanded}" aria-expanded="${isExpanded}">
+        ? `<button type="button" class="show-more-btn" data-facet="${facetKey}" data-expanded="${isExpanded}" aria-expanded="${isExpanded}" aria-controls="${containerId}">
              ${isExpanded ? 'Show less' : `Show more (${values.length - MAX_VISIBLE})`}
            </button>`
         : '';
