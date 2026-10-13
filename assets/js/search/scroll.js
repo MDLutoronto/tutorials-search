@@ -46,8 +46,11 @@ export function initScroll() {
         scrollTimeout = setTimeout(handleScroll, 150);
     }, { passive: true });
 
-    // Back to top now sits in the pinned bar rather than appearing past a scroll
-    // threshold, so there is nothing to show or hide -- just the jump itself.
+    // Show/hide back to top button based on scroll position
+    window.addEventListener('scroll', () => {
+        backToTopBtn.classList.toggle('show', window.scrollY > 300);
+    }, { passive: true });
+
     // Smooth scroll to top, and take keyboard focus there too
     backToTopBtn.addEventListener('click', (e) => {
         e.preventDefault();

@@ -851,36 +851,49 @@ header p.header-meta {
     margin-bottom: 10px;
 }
 
-/* Docked in the search bar rather than floating over the page. A fixed
-   bottom-right overlay has no way to avoid the content beneath it: at high zoom
-   it landed on the sort control, and at full size it still covered card links.
-   Here it holds a slot of its own, so it obscures nothing (1.4.10, 2.4.11) and
-   is operable at any scroll position instead of only past 300px.
-   Height matches the Filters button so the row reads as one control group. */
+/* Floats bottom-right, which means it can sit on top of content. Two rules
+   keep that from hiding anything: --back-to-top-clearance reserves room below
+   the page and past every focus target, and the button is dropped entirely at
+   high zoom, where it used to land on the sort control (1.4.10, 2.4.11). */
+:root {
+    --back-to-top-clearance: 100px;  /* 40px offset + 50px button + 10px */
+}
+
 #back-to-top {
-    flex-shrink: 0;
-    box-sizing: border-box;
-    min-width: 44px;
-    min-height: 44px;
-    height: 53px;
-    padding: 0 10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
     background-color: var(--surface);
     color: var(--uoft-blue);
-    border: 2px solid var(--uoft-blue);
-    border-radius: 8px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: background-color 0.3s, color 0.3s, scale 150ms ease-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, scale 150ms ease-out;
+    z-index: 1000;
     cursor: pointer;
 }
 
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 #back-to-top:hover {
-    background-color: var(--uoft-blue);
-    color: var(--on-navy);
-    text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    background-color: var(--surface-subtle);
+}
+
+/* The last card can scroll clear of the button */
+body {
+    padding-bottom: max(20px, var(--back-to-top-clearance));
 }
 
 .visually-hidden {
@@ -919,6 +932,8 @@ header p.header-meta {
 #results,
 .results-section :is(a, button, input, select, [tabindex]) {
     scroll-margin-top: calc(var(--sticky-search-h) + 10px);
+    /* ...and the floating Back to top below it */
+    scroll-margin-bottom: var(--back-to-top-clearance);
 }
 
 .section-heading:focus,
@@ -1033,7 +1048,7 @@ header p.header-meta {
 
 @media (max-width: 768px) {
     body {
-        padding: 8px;
+        padding: 8px 8px max(8px, var(--back-to-top-clearance));
     }
 
     .container {
@@ -1058,10 +1073,25 @@ header p.header-meta {
 
     /* Trimmed to match the shorter input at this size, still past the 44px
        target floor */
-    #back-to-top,
     .filter-toggle {
         height: 48px;
         min-height: 48px;
+    }
+
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    #back-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    :root {
+        --back-to-top-clearance: 75px;  /* 20px + 45px + 10px */
     }
 
     header h1 {
@@ -1096,13 +1126,29 @@ header p.header-meta {
         padding: 10px 0;
     }
 }
+/* 480px wide is 400% zoom on a 1280px screen (or a phone); 500px tall is 200%
+   on a 720px-tall one. There the button would cover controls, so it goes. Home
+   still jumps to the top, and the search bar is pinned there anyway. Sits
+   after the 768px block so its zero clearance wins over the 75px there. */
+@media (max-width: 480px), (max-height: 500px) {
+    #back-to-top,
+    #back-to-top.show {
+        display: none;
+    }
+
+    :root {
+        --back-to-top-clearance: 0px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         transition-property: opacity, visibility, background-color, color, border-color, box-shadow !important;
     }
 
     .guides-card:hover,
-    .tag:hover {
+    .tag:hover,
+    #back-to-top:hover {
         transform: none;
     }
 
