@@ -33,6 +33,8 @@
     --text-muted: #515C70;          /*  6.7:1 - subheads, secondary controls */
     --text-subtle: #5E6B82;         /*  5.4:1 - facet counts, card metadata */
 
+    --panel-padding: 25px;
+
     --surface: #FFFFFF;
     --surface-subtle: #F3F4F7;      /* resting fill for quiet controls */
     --surface-hover: #E7E9EF;
@@ -246,7 +248,8 @@ header p.header-meta {
 .sidebar {
     background: var(--surface);
     border-radius: 12px;
-    padding: 25px;
+    /* Shared with .results-section so the two headings sit on the same line */
+    padding: var(--panel-padding);
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     position: sticky;
     /* Pins flush to the underside of the search bar, where the results panel is
@@ -441,9 +444,11 @@ header p.header-meta {
 
 .clear-filters {
     width: 100%;
-    padding: 10px;
+    min-height: 40px;
+    padding: 9px;
     background-color: var(--surface-subtle);
-    border: none;
+    /* Invisible normally; forced colours paint it, so the button keeps an edge */
+    border: 1px solid transparent;
     border-radius: 6px;
     cursor: pointer;
     font-size: 13px;
@@ -481,19 +486,25 @@ header p.header-meta {
 .results-section {
     background: var(--surface);
     border-radius: 12px;
-    padding: 30px;
+    padding: var(--panel-padding);
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     min-height: 400px;
     min-width: 0;
 }
 
-.results-header {
+/* The first row under each panel heading. Same rule and spacing on both, and
+   its controls share a 40px height, so the Clear button and the results count
+   and selects line up across the two columns. */
+.panel-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 2px solid var(--divider);
+}
+
+.results-header {
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -527,6 +538,7 @@ header p.header-meta {
 
 .per-page-selector select,
 .sort-options select {
+    min-height: 40px;
     padding: 8px 12px;
     border: 2px solid var(--border-strong);
     border-radius: 6px;
@@ -1045,7 +1057,7 @@ body {
     }
 
     .clear-filters {
-        padding: 8px;
+        padding: 7px;
         font-size: 12px;
     }
 }

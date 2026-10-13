@@ -66,7 +66,9 @@
             <aside class="sidebar" id="sidebar" aria-labelledby="filtersHeading" tabindex="-1">
                 <h2 id="filtersHeading" class="section-heading">Filters</h2>
                 <button class="sidebar-close" id="sidebarClose" type="button">Close<span class="visually-hidden"> filters</span></button>
-                <button class="clear-filters" id="clearFilters">Clear All Filters</button><br><br>
+                <div class="panel-header">
+                    <button class="clear-filters" id="clearFilters" type="button">Clear All Filters</button>
+                </div>
                 <div class="facet-group">
                     <h3>Technique</h3>
                     <div id="techniqueFacets"></div>
@@ -95,7 +97,7 @@
 
             <main class="results-section" id="results" tabindex="-1" aria-labelledby="resultsHeading">
                 <h2 id="resultsHeading" class="section-heading" tabindex="-1">Results</h2>
-                <div class="results-header">
+                <div class="panel-header results-header">
                     <div class="results-count" id="resultsCount">Loading...</div>
                     <div class="results-controls">
                         <div class="per-page-selector">
