@@ -115,10 +115,16 @@ body {
     margin: 0 auto;
 }
 
+/* No bottom margin: the sticky bar's own padding is the gap below the header.
+   Stacked with the last line's default margin, it made "Search syntax" read as
+   detached from the search box it explains. */
 header {
     text-align: center;
     color: var(--on-navy);
-    margin-bottom: 20px;
+}
+
+header > :last-child {
+    margin-bottom: 0;
 }
 
 header h1 {
