@@ -66,6 +66,6 @@ export function initControls(onFiltersChange) {
 
     // Update search hint text based on OS
     if (navigator.platform.toUpperCase().includes('MAC')) {
-        document.querySelector('.search-hint').textContent = '⌘K';
+        document.querySelector('.search-hint kbd').textContent = '⌘K';
     }
 }
