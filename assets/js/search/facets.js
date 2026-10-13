@@ -45,12 +45,12 @@ function createFacets(facetKey, containerId) {
         const id = escapeHTML(`${facetKey}-${value}`);
         return `
             <div class="facet-option ${isHidden}" data-facet-item="${facetKey}">
-                <input type="checkbox" id="${id}"
-                       data-facet="${facetKey}"
-                       data-value="${escapeHTML(value)}"
-                       ${isChecked ? 'checked' : ''}>
                 <label for="${id}">
-                    <span>${escapeHTML(value)}</span>
+                    <input type="checkbox" id="${id}"
+                           data-facet="${facetKey}"
+                           data-value="${escapeHTML(value)}"
+                           ${isChecked ? 'checked' : ''}>
+                    <span class="facet-name">${escapeHTML(value)}</span>
                     <span class="facet-count">(${count})</span>
                 </label>
             </div>
