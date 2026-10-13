@@ -34,9 +34,9 @@ function guideCard(guide, uniqueId) {
 
     return `
         <div class="guides-card">
-            <h3><a href="${escapeHTML(guide.url)}" target="_blank">${escapeHTML(guide.title)}</a></h3>
+            <h3><a href="${escapeHTML(guide.url)}" target="_blank" rel="noopener">${escapeHTML(guide.title)}</a></h3>
             <div class="guides-description" id="${uniqueId}">${description ? renderMarkdown(description) : ''}</div>
-            <button type="button" class="read-more-btn" id="btn-${uniqueId}" aria-expanded="false" aria-controls="${uniqueId}" hidden>Read more</button>
+            <button type="button" class="read-more-btn" id="btn-${uniqueId}" aria-expanded="false" aria-controls="${uniqueId}" hidden>Read more<span class="visually-hidden"> about ${escapeHTML(guide.title)}</span></button>
             <div class="guides-tags" role="group" aria-label="Filter by tag">
                 ${tagButtons('technique', getArrayValues(guide.technique))}
                 ${tagButtons('tool', getArrayValues(guide.tool))}
@@ -113,7 +113,8 @@ function updatePageInfo() {
 // Toggle description expand/collapse
 function toggleDescription(description, button) {
     const expanded = description.classList.toggle('expanded');
-    button.textContent = expanded ? 'Read less' : 'Read more';
+    // Swap only the visible text node so the hidden "about {title}" stays in the name
+    button.firstChild.nodeValue = expanded ? 'Read less' : 'Read more';
     button.setAttribute('aria-expanded', String(expanded));
 }
 
