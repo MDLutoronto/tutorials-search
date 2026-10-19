@@ -1,5 +1,5 @@
 ## Site settings
-title: "Map & Data Library just the Docs Theme"
+title: "Learn@MDL"
 description: "Workshops and guides from the Map & Data Library, University of Toronto"
 url: "https://mdlutoronto.github.io"
 baseurl: "/tutorials-search" # the subpath of your site, e.g. /blog
