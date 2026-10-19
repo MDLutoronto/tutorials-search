@@ -1,5 +1,5 @@
 ---
-title: MDL Guides Search Page
+title: Learn@MDL
 layout: minimal_search
 permalink: /
 ---
