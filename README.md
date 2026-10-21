@@ -3,7 +3,7 @@
 
 # 🔍 Learn@MDL
 <a href="https://mdlutoronto.github.io/tutorials-search/" target="_blank">
-  <img src="docs/screenshot-new.png" alt="Screenshot of the Learn@MDL" style="max-width: 600px;">
+  <img src="docs/screenshot.png" alt="Screenshot of the Learn@MDL" style="max-width: 600px;">
 </a>
 
 This repository is the codebase for a javascript based website that serves as a search interface for the [Map & Data Library Tutorials](https://mdlutoronto.github.io/tutorials-search/). 
