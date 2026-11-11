@@ -2320,7 +2320,7 @@
   title: "Workshop Recording: Introduction to Using MAXQDA for Qualitative Data Analysis: Part 1 (Feb. 24, 2026)"
   url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part1-feb-24-2026/
   description: |
-    This page provides a video recording of the Map and Data Library's introductory MAXQDA workshop. Learn to perform common tasks, such as loading in data, coding, writing memos, and exporting.
+    This page provides a video recording of an introductory MAXQDA workshop. Learn to perform common tasks, such as loading in data, coding, writing memos, and exporting.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -2332,7 +2332,7 @@
   title: "Workshop Recording: Introduction to Using MAXQDA for Qualitative Data Analysis: Part 2 (Feb. 25, 2026)"
   url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part2-feb-25-2026/
   description: |
-    This page provides a video recording of a Map and Data Library MAXQDA workshop. Learn to use some of MAXQDA’s analysis and visualization tools, and how to work with document variables.
+    This page provides a video recording of a MAXQDA workshop. Learn to use some of MAXQDA’s analysis and visualization tools, and how to work with document variables.
   technique:
     - Qualitative Data Analysis
   tool:
@@ -2344,11 +2344,24 @@
   title: "Workshop Recording: Introduction to Using MAXQDA & AI for Qualitative Data Analysis: Part 3 (Feb. 26, 2026)"
   url: https://mdlutoronto.github.io/workshop-intro-maxqda-qualitative-part3-feb-26-2026/
   description: |
-    This page provides a video recording of a Map and Data Library MAXQDA workshop. Learn about using AI in qualitative research and some of MAXQDA’s AI tools.
+    This page provides a video recording of a MAXQDA workshop. Learn about using AI in qualitative research and some of MAXQDA’s AI tools.
   technique:
     - Qualitative Data Analysis
   tool:
     - MAXQDA
   date: "2025-04-04"
+  series: MDL Workshops
+  type: Video
+- id: 244
+  title: "Workshop Recording: Comparing NVivo vs MAXQDA (Sept. 29, 2026)"
+  url: https://mdlutoronto.github.io/workshop-comparing-nvivo-vs-maxqda-sep-29-2026/
+  description: |
+    This page provides a video recording of a workshop on comparing NVivo vs MAXQDA.
+  technique:
+    - Qualitative Data Analysis
+  tool:
+    - NVivo
+    - MAXQDA
+  date: "2026-11-03"
   series: MDL Workshops
   type: Video
